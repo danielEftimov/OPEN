@@ -1,4 +1,4 @@
-package org.otw.open.engine
+package org.otw.open.engine.impl
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop
@@ -7,12 +7,14 @@ import com.badlogic.gdx.scenes.scene2d.{InputEvent, Stage}
 import com.badlogic.gdx.utils.viewport.ScreenViewport
 import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, CauseAndEffectFinishedUnsuccessfully, ScreenController}
 import org.otw.open.dto.Drawing
+import org.otw.open.engine.Engine
 import org.otw.open.engine.actor.DragAndDropActor
+import org.otw.open.engine.util.SoundEffects
 
 /**
   * Created by smirakovska on 2/9/2016.
   *
-  * @param theme - name of theme
+  * @param theme             - name of theme
   * @param imgBackgroundPath - path to background image file
   */
 class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) extends Engine {
@@ -20,14 +22,19 @@ class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) e
   /**
     * Stage object
     */
-  private var stage: Stage = _
+  var stage: Stage = _
 
   /**
     * Mutable instance of DragAndDropActor
     */
   private var actor = new DragAndDropActor(theme, imgBackgroundPath, 0, 320)
 
-  private val dragAndDrop = new DragAndDrop()
+  val dragAndDrop = new DragAndDrop()
+
+  /**
+    * Sound instance for cause and effect game
+    */
+  private val sound: SoundEffects = new SoundEffects("guidanceForCauseAndEffect.wav")
 
   /**
     * Number of failed attempts

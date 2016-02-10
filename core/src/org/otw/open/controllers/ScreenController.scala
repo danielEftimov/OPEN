@@ -2,8 +2,8 @@ package org.otw.open.controllers
 
 import com.badlogic.gdx.math.Vector2
 import org.otw.open.dto.StandPoint
-import org.otw.open.engine.impl.{CauseAndEffectEngine, EraserGameEngine, StaticAnimationEngine}
-import org.otw.open.engine.{DragAndDropActorEngine, Engine}
+import org.otw.open.engine.impl.{DragAndDropActorEngine, CauseAndEffectEngine, EraserGameEngine, StaticAnimationEngine}
+import org.otw.open.engine.Engine
 import org.otw.open.{GameScreen, OpenGame}
 
 /**

@@ -62,6 +62,9 @@ class StaticAnimationEngineTest extends UnitSpec with BeforeAndAfterEach {
     staticAnimationEngine.objectIsClicked(600, 850)
     assert(getCurrentGameScreen.engine.isInstanceOf[CauseAndEffectEngine])
   }
+  test("when touchDown is invoked with negative coordinates should return false") {
+    assert(!staticAnimationEngine.touchDown(-10, -10, 1, 1))
+  }
 
   /**
     *
