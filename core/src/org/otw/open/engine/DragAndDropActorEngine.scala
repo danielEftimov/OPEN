@@ -5,79 +5,103 @@ import com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop
 import com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop.{Payload, Source, Target}
 import com.badlogic.gdx.scenes.scene2d.{InputEvent, Stage}
 import com.badlogic.gdx.utils.viewport.ScreenViewport
-import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, ScreenController}
+import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, CauseAndEffectFinishedUnsuccessfully, ScreenController}
 import org.otw.open.dto.Drawing
 import org.otw.open.engine.actor.DragAndDropActor
 
 /**
   * Created by smirakovska on 2/9/2016.
+  *
+  * @param theme - name of theme
+  * @param imgBackgroundPath - path to background image file
   */
-class DragAndDropActorEngine(val imgActorPath: String, val imgBackgroundPath: String) extends Engine {
+class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) extends Engine {
 
+  /**
+    * Stage object
+    */
   private var stage: Stage = _
 
-  private var sourceActor = new DragAndDropActor(imgActorPath, imgBackgroundPath, 0, 320)
+  /**
+    * Mutable instance of DragAndDropActor
+    */
+  private var actor = new DragAndDropActor(theme, imgBackgroundPath, 0, 320)
 
   private val dragAndDrop = new DragAndDrop()
+
+  /**
+    * Number of failed attempts
+    */
+  private var failedAttempts = 0
+
+  /**
+    * Number of maximum allowed failed attempts
+    */
+  private val maxFailedAttempts = 3
 
   stage = new Stage(new ScreenViewport())
   Gdx.input.setInputProcessor(stage)
 
-
   /**
     * adding source actor
     */
-  dragAndDrop.addSource(new Source(sourceActor) {
+  dragAndDrop.addSource(new Source(actor) {
     val payload: Payload = new Payload
 
     override def dragStart(event: InputEvent, x: Float, y: Float, pointer: Int): Payload = {
-      println("dragStart")
-      payload.setObject(sourceActor)
-      payload.setDragActor(sourceActor)
-      payload.setInvalidDragActor(sourceActor)
+      payload.setObject(actor)
+      payload.setDragActor(actor)
+      payload.setInvalidDragActor(actor)
       payload
     }
 
     override def dragStop(event: InputEvent, x: Float, y: Float, pointer: Int, payload: Payload,
                           target: Target) {
-      println("dragStop")
-      if (target == null) sourceActor.resetPosition
-      stage.addActor(sourceActor);
+      if (target == null) {
+        actor.resetPosition
+        failedAttempts += 1
+      }
+      stage.addActor(actor)
+      if (failedAttempts == maxFailedAttempts) {
+        ScreenController.dispatchEvent(CauseAndEffectFinishedUnsuccessfully)
+      }
     }
   })
 
-  dragAndDrop.addTarget(new Target(sourceActor) {
+  /**
+    * adding target object
+    */
+  dragAndDrop.addTarget(new Target(actor) {
 
     def drag(source: Source, payload: Payload, x: Float, y: Float, pointer: Int): Boolean = {
-      println("drag")
-      //      dragAndDrop.setDragActorPosition(-(sourceActor.texture.getWidth() / 2),
-      //        sourceActor.texture.getHeight() / 2);
+      //      dragAndDrop.setDragActorPosition(-(actor.texture.getWidth() / 2),
+      //        actor.texture.getHeight() / 2);
       dragAndDrop.setDragActorPosition(-216, 216)
       true
     }
 
     def drop(source: Source, payload: Payload, x: Float, y: Float, pointer: Int) {
-      println("drop");
       if (source.getActor().getX() >= 900
         && source.getActor().getX() <= 1100
         && source.getActor().getY() >= 259
         && source.getActor().getY() <= 452) {
-        sourceActor = new DragAndDropActor(imgActorPath, imgBackgroundPath, source.getActor.getX(), source.getActor.getY)
+        actor = new DragAndDropActor(theme, imgBackgroundPath, source.getActor.getX(), source.getActor.getY)
         ScreenController.dispatchEvent(CauseAndEffectFinishedSuccessfully)
       }
-      else
-        sourceActor.resetPosition();
+      else {
+        actor.resetPosition
+        failedAttempts += 1
+      }
     }
   })
 
   /**
-    * add the actor to the scene
+    * add actor to the scene
     */
-  stage.addActor(sourceActor)
-
+  stage.addActor(actor)
 
   override def dispose(): Unit = {
-    sourceActor.dispose()
+    actor.dispose()
   }
 
   override def getDrawings(delta: Float): List[Drawing] = {

@@ -10,14 +10,16 @@ import org.otw.open.engine.util.Animator
 /**
   * Created by smirakovska on 2/9/2016.
   *
-  * @param theme             - path to object's image file
+  * @param theme             - path to object's atlas file
   * @param imgBackgroundPath - path to background's image file
   * @param startingX         - starting x coordinate
   * @param startingY         - starting y coordinate
   */
 class DragAndDropActor(val theme: String, val imgBackgroundPath: String, val startingX: Float, val startingY: Float) extends Actor with Disposable {
 
-
+  /**
+    * Elapsed time between frames
+    */
   private var timePassed: Float = 0
 
   /**
