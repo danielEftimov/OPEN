@@ -1,10 +1,9 @@
 package org.otw.open.controllers
 
-import com.badlogic.gdx.Screen
-import org.otw.open.{GameScreen, OpenGame}
 import org.otw.open.engine.Engine
-import org.otw.open.engine.impl.{EraserGameEngine, StaticAnimationEngine, CauseAndEffectEngine}
+import org.otw.open.engine.impl.{DragAndDropActorEngine, CauseAndEffectEngine, EraserGameEngine, StaticAnimationEngine}
 import org.otw.open.testconfig.UnitSpec
+import org.otw.open.{GameScreen, OpenGame}
 
 /**
   * Created by eilievska on 1/28/2016.
@@ -74,7 +73,7 @@ class ScreenControllerTest extends UnitSpec {
 
   test("given generateRandomThemeKey function is called, the current themeKey is 0") {
     val returnedScreenEngine: Engine = ScreenController.initializeEngine(4)
-    assert(returnedScreenEngine.isInstanceOf[EraserGameEngine])
+    assert(returnedScreenEngine.isInstanceOf[DragAndDropActorEngine])
     assert(ScreenController.currentLevel == 1)
   }
 
@@ -84,11 +83,16 @@ class ScreenControllerTest extends UnitSpec {
   }
 
 
+  test("given initializeEngine function is called with non existing level, new EraserGameEngine is returned") {
+    assert(ScreenController.initializeEngine(5).isInstanceOf[EraserGameEngine])
+  }
+
   test("given CauseAndEffectSecondLevel event is dispatched, the current game screen engine is CauseAndEffectEngine") {
     val returnedScreenEngine: Engine = ScreenController.dispatchEvent(NextLevel)
     val currentGameScreen: GameScreen = getCurrentGameScreen
     assert(returnedScreenEngine == currentGameScreen.engine)
   }
+
   /**
     *
     * @return gets the current screen of our singleton game instance.

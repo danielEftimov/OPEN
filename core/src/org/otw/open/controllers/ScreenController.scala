@@ -2,8 +2,8 @@ package org.otw.open.controllers
 
 import com.badlogic.gdx.math.Vector2
 import org.otw.open.dto.StandPoint
+import org.otw.open.engine.impl.{DragAndDropActorEngine, CauseAndEffectEngine, EraserGameEngine, StaticAnimationEngine}
 import org.otw.open.engine.Engine
-import org.otw.open.engine.impl.{EraserGameEngine, CauseAndEffectEngine, StaticAnimationEngine}
 import org.otw.open.{GameScreen, OpenGame}
 
 /**
@@ -20,7 +20,7 @@ object ScreenController {
 
   var currentLevel: Int = 1
 
-  val maxLevel: Int = 3
+  val maxLevel: Int = 4
 
   /**
     * Switches the current game screen based on the Event type received.
@@ -59,6 +59,7 @@ object ScreenController {
           new StandPoint(1000 until 1100, 299 until 402, new Vector2(990, 320))
         )
       )
+      case 4 => new DragAndDropActorEngine("car_theme", "theme/car_theme/light-background.png")
       case _ => currentLevel = 1; new EraserGameEngine
     }
     engine
