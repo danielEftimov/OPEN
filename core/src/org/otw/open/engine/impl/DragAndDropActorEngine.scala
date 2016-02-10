@@ -4,7 +4,6 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop
 import com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop.{Payload, Source, Target}
 import com.badlogic.gdx.scenes.scene2d.{InputEvent, Stage}
-import com.badlogic.gdx.utils.viewport.ScreenViewport
 import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, CauseAndEffectFinishedUnsuccessfully, ScreenController}
 import org.otw.open.dto.Drawing
 import org.otw.open.engine.Engine
@@ -22,7 +21,7 @@ class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) e
   /**
     * Stage object
     */
-  var stage: Stage = _
+  val stage: Stage = new Stage
 
   /**
     * Mutable instance of DragAndDropActor
@@ -46,7 +45,6 @@ class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) e
     */
   private val maxFailedAttempts = 3
 
-  stage = new Stage(new ScreenViewport())
   Gdx.input.setInputProcessor(stage)
 
   /**
@@ -81,8 +79,6 @@ class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) e
   dragAndDrop.addTarget(new Target(actor) {
 
     def drag(source: Source, payload: Payload, x: Float, y: Float, pointer: Int): Boolean = {
-      //      dragAndDrop.setDragActorPosition(-(actor.texture.getWidth() / 2),
-      //        actor.texture.getHeight() / 2);
       dragAndDrop.setDragActorPosition(-216, 216)
       true
     }
