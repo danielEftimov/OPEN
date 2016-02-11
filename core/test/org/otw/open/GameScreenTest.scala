@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.badlogic.gdx.graphics.{Pixmap, Texture, GL20, Color}
 import com.badlogic.gdx.math.{Vector2, Vector3}
+import com.badlogic.gdx.scenes.scene2d.Stage
 import org.mockito.Mockito.{mock, verify, when, times}
 import org.otw.open.dto.Drawing
 import org.otw.open.engine.Engine
@@ -17,8 +18,9 @@ class GameScreenTest extends UnitSpec {
   test("when render is invoked, the screen should be cleaned and color should be set") {
     val delta = 35f
     val mockEngine = mock(classOf[Engine])
-    val gameScreen = new GameScreen(mockEngine)
     when(mockEngine.getDrawings(delta)).thenReturn(List.empty)
+    when(mockEngine.getStage).thenReturn(None)
+    val gameScreen = new GameScreen(mockEngine)
     gameScreen.render(delta)
     verify(mockEngine).getDrawings(delta)
     verify(Gdx.gl).glClear(GL20.GL_COLOR_BUFFER_BIT)
@@ -47,6 +49,7 @@ class GameScreenTest extends UnitSpec {
 
   test("when the transformator function is invoked without resize, it should return the same coordinates") {
     val mockEngine = mock(classOf[Engine])
+    when(mockEngine.getStage).thenReturn(None)
     val gameScreen = new GameScreen(mockEngine)
     val transformator: (Vector2) => Vector2 = gameScreen.transformator
     val vector = new Vector2(12, 12)
@@ -56,6 +59,7 @@ class GameScreenTest extends UnitSpec {
 
   test("when the game screen is disposed, the engine despose method should be disposed as well") {
     val mockEngine = mock(classOf[Engine])
+    when(mockEngine.getStage).thenReturn(None)
     val gameScreen = new GameScreen(mockEngine)
     gameScreen.dispose()
     verify(mockEngine).dispose()
