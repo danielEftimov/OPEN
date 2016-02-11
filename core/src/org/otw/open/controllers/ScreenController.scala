@@ -2,8 +2,8 @@ package org.otw.open.controllers
 
 import com.badlogic.gdx.math.Vector2
 import org.otw.open.dto.StandPoint
-import org.otw.open.engine.impl.{DragAndDropActorEngine, CauseAndEffectEngine, EraserGameEngine, StaticAnimationEngine}
 import org.otw.open.engine.Engine
+import org.otw.open.engine.impl.{CauseAndEffectEngine, DragAndDropActorEngine, EraserGameEngine, StaticAnimationEngine}
 import org.otw.open.{GameScreen, OpenGame}
 
 /**
@@ -34,10 +34,11 @@ object ScreenController {
       case CauseAndEffectFinishedSuccessfully => new StaticAnimationEngine("happy-animation.atlas")
       case CauseAndEffectFinishedUnsuccessfully => new StaticAnimationEngine("unhappy-animation.atlas")
       case RetryLevel => initializeEngine(currentLevel)
-      case NextLevel => if(currentLevel < maxLevel) currentLevel += 1; initializeEngine(currentLevel)
+      case NextLevel => if (currentLevel < maxLevel) currentLevel += 1; initializeEngine(currentLevel)
       case OtherTheme => themeKey = generateRandomThemeKey; initializeEngine(currentLevel)
       case ToMainMenu => currentLevel = 1; new EraserGameEngine
     }
+    OpenGame.getGame.getScreen.dispose
     OpenGame.changeScreen(new GameScreen(engine))
     engine
   }
@@ -67,7 +68,7 @@ object ScreenController {
 
   def generateRandomThemeKey: Int = {
     val nextThemeKey = r.nextInt(themes.size)
-    if(themeKey != nextThemeKey) nextThemeKey
+    if (themeKey != nextThemeKey) nextThemeKey
     else generateRandomThemeKey
   }
 
