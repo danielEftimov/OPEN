@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop
 import com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop.{Payload, Source, Target}
 import com.badlogic.gdx.scenes.scene2d.{InputEvent, Stage}
+import com.badlogic.gdx.utils.viewport.StretchViewport
 import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, CauseAndEffectFinishedUnsuccessfully, ScreenController}
 import org.otw.open.dto.Drawing
 import org.otw.open.engine.Engine
@@ -21,7 +22,7 @@ class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) e
   /**
     * Stage object
     */
-  val stage: Stage = new Stage
+  val stage: Stage = new Stage(new StretchViewport(1440, 900))
 
   /**
     * Mutable instance of DragAndDropActor
@@ -107,8 +108,11 @@ class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) e
     actor.dispose()
   }
 
-  override def getDrawings(delta: Float): List[Drawing] = {
-    stage.draw
-    List.empty
-  }
+  override def getDrawings(delta: Float): List[Drawing] = List.empty
+
+  /**
+    *
+    * @return an option of stage. Returns Some[Stage] in the case when the engine uses a stage with actors.
+    */
+  override def getStage(): Option[Stage] = Some(stage)
 }
