@@ -19,83 +19,39 @@ import org.otw.open.engine.util.{Animator, SoundEffects}
   */
 class CauseAndEffectEngine(objectStandPoints: List[StandPoint]) extends InputAdapter with Engine {
 
-  /**
-    * set current input processor
-    */
+  /** set current input processor */
   Gdx.input.setInputProcessor(this)
-
-  /**
-    * Name of running theme.
-    */
+  /** Name of running theme. */
   private val themeName: String = ScreenController.themes(ScreenController.themeKey)
-
-  /**
-    * Max number of failed attempts allowed
-    */
+  /** Max number of failed attempts allowed */
   private val maxFailedAttempts = 3
-
-  /**
-    * The background texture where the object moves on.
-    */
+  /** The background texture where the object moves on. */
   private val backgroundTexture = new Texture(Gdx.files.internal("theme/" + themeName + "/light-background.png"))
-
-  /**
-    * Time interval on which the movingObject moves.
-    */
+  /** Time interval on which the movingObject moves. */
   private val MOVE_TIME_IN_SECONDS: Float = 0.1F
-
-  /**
-    * Movement of the object
-    */
+  /** Movement of the object */
   private val DELTA_MOVEMENT: Int = 30
-
-  /**
-    * Animator object
-    */
+  /** Animator object */
   private val animator: Animator = new Animator("theme/" + themeName + "/animation-object.atlas")
-
-  /**
-    * Sound instance for cause and effect game
-    */
-  private val sound: SoundEffects = new SoundEffects("guidanceForCauseAndEffect.wav")
-
-  /**
-    * end point of the animation
-    */
+  /** Sound instance */
+  private val sound: SoundEffects = new SoundEffects("audioGuidanceCauseAndEffect.mp3")
+  /** end point of the animation */
   private val endVector = objectStandPoints.reverse.head.standPointCoordinates
-  /**
-    * Transforms the click coordinates based on the screen size. Uses the camera transformation.
-    */
+  /** Transforms the click coordinates based on the screen size. Uses the camera transformation. */
   var transformator: Option[((Vector2) => Vector2)] = None
-  /**
-    * Boolean flag that is set to true when object is clicked
-    */
+  /** Boolean flag that is set to true when object is clicked */
   private var objectClicked: Boolean = false
-  /**
-    * Counter for the number of failed attempts
-    */
+  /** Counter for the number of failed attempts */
   private var numOfFailedAttempts = 0
-  /**
-    * Current time.
-    */
+  /** Current time. */
   private var timer = MOVE_TIME_IN_SECONDS
-  /**
-    * index of the next stand point
-    */
+  /** index of the next stand point */
   private var nextPointIndex: Int = 1
-  /**
-    * next standpoint for the moving object
-    */
+  /** next standpoint for the moving object */
   private var nextPoint: StandPoint = objectStandPoints(nextPointIndex)
-
-  /**
-    * Moving object.
-    */
+  /** Moving object. */
   private var movingObject: HorizontalMovingObject = new HorizontalMovingObject(objectStandPoints(0).standPointCoordinates.x.toInt, objectStandPoints(0).standPointCoordinates.y.toInt, DELTA_MOVEMENT)
-
-  /**
-    * Timer for the vibrating object
-    */
+  /** Timer for the vibrating object */
   private var animationTime = 0f
 
   /**
