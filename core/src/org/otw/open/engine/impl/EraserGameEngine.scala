@@ -17,19 +17,19 @@ class EraserGameEngine extends InputAdapter with Engine {
 
   Gdx.input.setInputProcessor(this)
 
-  /**
-    * Name of running theme.
-    */
+  /** Name of running theme. */
   private val themeName: String = ScreenController.themes(ScreenController.themeKey)
-
+  /** wrapper for drawing actions */
   private val pixmapMask: DrawablePixmap = new DrawablePixmap(new Pixmap(Gdx.files.internal("theme/" + themeName + "/mask.png")))
+  /** Texture under The Mask Texture */
   private val backgroundTexture: Texture = new Texture(Gdx.files.internal("theme/" + themeName + "/dark-background.png"))
+  /** texture crated from the Pixmap */
   private val maskTexture: Texture = pixmapMask.initializePixmapDrawingOntoTexture
-  /**
-    * Sound instance for cause and effect game
-    */
-  private val sound: SoundEffects = new SoundEffects("guidanceForEraser.wav")
+  /** Sound instance */
+  private val sound: SoundEffects = new SoundEffects("audioGuidanceEraserGame.mp3")
+
   private var lastPointerPosition: Option[Vector2] = None
+
   private var mouseMoved = false
 
   var transformator: Option[((Vector2) => Vector2)] = None

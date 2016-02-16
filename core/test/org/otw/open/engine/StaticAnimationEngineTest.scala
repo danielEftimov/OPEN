@@ -1,7 +1,7 @@
 package org.otw.open.engine
 
-import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.math.{Vector2, Vector3}
+import com.badlogic.gdx.math.Vector2
+import org.otw.open.controllers.{EraserGameFinished, ScreenController}
 import org.otw.open.dto.Drawing
 import org.otw.open.engine.impl.{CauseAndEffectEngine, EraserGameEngine, StaticAnimationEngine}
 import org.otw.open.testconfig.UnitSpec
@@ -16,7 +16,7 @@ class StaticAnimationEngineTest extends UnitSpec with BeforeAndAfterEach {
   var staticAnimationEngine: StaticAnimationEngine = _
 
   override def beforeEach(): Unit = {
-    staticAnimationEngine = new StaticAnimationEngine("test.atlas")
+    staticAnimationEngine = new StaticAnimationEngine("happy-animation.atlas")
     staticAnimationEngine.setMouseClickPositionTransformator(
       new Function[Vector2, Vector2] {
         override def apply(vector: Vector2): Vector2 = {

@@ -19,38 +19,26 @@ import org.otw.open.engine.util.SoundEffects
   */
 class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) extends Engine {
 
-  /**
-    * Stage object
-    */
+  /** Stage object */
   val stage: Stage = new Stage(new StretchViewport(1440, 900))
 
-  /**
-    * Mutable instance of DragAndDropActor
-    */
+  /** Mutable instance of DragAndDropActor */
   private var actor = new DragAndDropActor(theme, imgBackgroundPath, 0, 320)
 
   val dragAndDrop = new DragAndDrop()
 
-  /**
-    * Sound instance for cause and effect game
-    */
-  private val sound: SoundEffects = new SoundEffects("guidanceForCauseAndEffect.wav")
+  /** Sound instance */
+  private val sound: SoundEffects = new SoundEffects("audioGuidanceDragAndDrop.mp3")
 
-  /**
-    * Number of failed attempts
-    */
+  /** Number of failed attempts */
   private var failedAttempts = 0
 
-  /**
-    * Number of maximum allowed failed attempts
-    */
+  /** Number of maximum allowed failed attempts */
   private val maxFailedAttempts = 3
 
   Gdx.input.setInputProcessor(stage)
 
-  /**
-    * adding source actor
-    */
+  /** adding source actor */
   dragAndDrop.addSource(new Source(actor) {
     val payload: Payload = new Payload
 
@@ -106,6 +94,7 @@ class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) e
 
   override def dispose(): Unit = {
     actor.dispose()
+    sound.dispose()
   }
 
   override def getDrawings(delta: Float): List[Drawing] = List.empty
