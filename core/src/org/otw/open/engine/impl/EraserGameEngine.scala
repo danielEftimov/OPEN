@@ -59,17 +59,21 @@ class EraserGameEngine extends InputAdapter with Engine {
     *         false otherwise if the mouse is idle
     */
   override def mouseMoved(screenX: Int, screenY: Int): Boolean = {
-    val currentPosition: Vector2 = transformator.get(new Vector2(screenX, screenY))
-    val lastPosition = lastPointerPosition.getOrElse(currentPosition)
-    lastPointerPosition = Some(lastPosition)
-    if (currentPosition != lastPosition) {
-      pixmapMask.drawLerped(lastPosition, currentPosition)
-      mouseMoved = true
-      true
-    }
-    else {
-      mouseMoved = false
-      false
+
+    if(audioGuidance.isPlaying) false
+    else{
+      val currentPosition: Vector2 = transformator.get(new Vector2(screenX, screenY))
+      val lastPosition = lastPointerPosition.getOrElse(currentPosition)
+      lastPointerPosition = Some(lastPosition)
+      if (currentPosition != lastPosition ) {
+        pixmapMask.drawLerped(lastPosition, currentPosition)
+        mouseMoved = true
+        true
+      }
+      else {
+        mouseMoved = false
+        false
+      }
     }
   }
 

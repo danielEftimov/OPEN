@@ -20,7 +20,6 @@ import org.otw.open.engine.util.Animator
   */
 class CauseAndEffectEngine(objectStandPoints: List[StandPoint]) extends InputAdapter with Engine {
 
-  /** set current input processor */
   Gdx.input.setInputProcessor(this)
 
   /** Name of running theme. */
@@ -45,6 +44,7 @@ class CauseAndEffectEngine(objectStandPoints: List[StandPoint]) extends InputAda
   private val endVector = objectStandPoints.reverse.head.standPointCoordinates
 
   /** Transforms the click coordinates based on the screen size. Uses the camera transformation. */
+
   var transformator: Option[((Vector2) => Vector2)] = None
 
   /** Boolean flag that is set to true when object is clicked */
@@ -68,11 +68,11 @@ class CauseAndEffectEngine(objectStandPoints: List[StandPoint]) extends InputAda
   /** Timer for the vibrating object */
   private var animationTime = 0f
 
-  /** Sound instance for audio guidance*/
+  /** Sound instance for audio guidance */
   private val audioGuidance: Music = Gdx.audio.newMusic(Gdx.files.internal("audioGuidanceCauseAndEffect.mp3"))
   audioGuidance.play
 
-  /** animation object sound*/
+  /** animation object sound */
   val animationObjectSound: Music = Gdx.audio.newMusic(Gdx.files.internal("carEngine.mp3"))
 
   /**
@@ -85,7 +85,8 @@ class CauseAndEffectEngine(objectStandPoints: List[StandPoint]) extends InputAda
     * @return true if method is overridden
     */
   override def touchDown(screenX: Int, screenY: Int, pointer: Int, button: Int): Boolean = {
-    if (button == Input.Buttons.LEFT) {
+
+    if (button == Input.Buttons.LEFT && !audioGuidance.isPlaying) {
       if (objectIsClicked(screenX, screenY, objectStandPoints(nextPointIndex - 1))
         && !objectShouldStopMoving(movingObject.x, movingObject.y, objectStandPoints(nextPointIndex))
       ) {
