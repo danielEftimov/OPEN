@@ -1,7 +1,7 @@
 package org.otw.open.engine.util
 
 import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.audio.Sound
+import com.badlogic.gdx.audio.{Music, Sound}
 import com.badlogic.gdx.utils.Disposable
 
 /**
@@ -11,12 +11,32 @@ import com.badlogic.gdx.utils.Disposable
 class SoundEffects(val audioSampleName: String) {
 
   /* sound instance from libGdx */
-  private val sound: Sound = Gdx.audio.newSound(Gdx.files.internal(audioSampleName))
+  private val sound: Music = Gdx.audio.newMusic(Gdx.files.internal(audioSampleName))
 
-  sound.play(1.0f)
+  def playSound() = {
+    sound.play()
+  }
 
-  /**
-    * Disposes all sounds.
+  def stopSound() = {
+    sound.stop()
+  }
+
+  def setLoop() = {
+    sound.setLooping(true)
+  }
+
+  def isLooping: Boolean = {
+
+    sound.isLooping
+  }
+
+  def isPlaying: Boolean = {
+
+    sound.isPlaying
+  }
+
+  /** Disposes all sounds.
+    *
     * @return true if the method is implemented.
     */
   def dispose(): Boolean = {

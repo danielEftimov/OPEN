@@ -1,12 +1,13 @@
 package org.otw.open.engine.impl
 
+import com.badlogic.gdx.audio.Music
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.{Gdx, InputAdapter}
 import org.otw.open.controllers._
 import org.otw.open.dto.Drawing
 import org.otw.open.engine.Engine
-import org.otw.open.engine.util.{SoundEffects, Animator}
+import org.otw.open.engine.util.Animator
 
 /**
   * An engine class used for displaying animation that should be static and placed in the center of the screen.
@@ -23,8 +24,8 @@ class StaticAnimationEngine(val atlasFileName: String) extends InputAdapter with
 
   val maxLevel = ScreenController.maxLevel
 
-  /** Sound instance*/
-  private var sound: Option[SoundEffects] = None
+  /** Sound instance for audio guidance */
+  private var audioGuidance: Option[Music] = None
 
   /**
     * Name of running theme.
@@ -34,42 +35,66 @@ class StaticAnimationEngine(val atlasFileName: String) extends InputAdapter with
   val animator = new Animator(atlasFileName)
 
   animator.atlasFileName match {
-    case "happy-animation.atlas" => sound = Some(new SoundEffects("audioGuidanceHappyAnimation.mp3"))
-    case "unhappy-animation.atlas" => sound = Some(new SoundEffects("audioGuidanceSadAnnimation.mp3"))
+    case "happy-animation.atlas" =>
+      audioGuidance = Some(Gdx.audio.newMusic(Gdx.files.internal("audioGuidanceHappyAnimation.mp3")))
+      audioGuidance.orNull.play
+
+    case "unhappy-animation.atlas" =>
+      audioGuidance = Some(Gdx.audio.newMusic(Gdx.files.internal("audioGuidanceSadAnimation.mp3")))
+      audioGuidance.orNull.play
+
   }
+
   val background = new Texture(Gdx.files.internal("theme/" + themeName + "/dark-background.png"))
+
   private var timePassed = 0f
 
   private val nextLevelButtonTexture = new Texture(Gdx.files.internal("next-level.png"))
+
   private val disabledNextLevelButtonTexture = new Texture(Gdx.files.internal("disabled-next-level.png"))
+
   private val retryLevelButtonTexture = new Texture(Gdx.files.internal("retry-level.png"))
+
   private val toMainMenuButtonTexture = new Texture(Gdx.files.internal("to-main-menu.png"))
+
   private val toOtherThemeButtonTexture = new Texture(Gdx.files.internal("to-other-theme.png"))
 
   /** x-axis coordinate for placing the animation on the center of the screen. */
   private val xCentar = 464
+
   /** y-axis coordinate for placing the animation on the center of the screen. */
   private val yCentar = 194
+
   /** y-axis for all of the menu items. */
   private val gameNavigationButtonsYCoordinate = 5
+
   /** y-axis coordinate for the end of menu buttons. */
   private val endPointY = 900 - gameNavigationButtonsYCoordinate
+
   /** x-axis coordinate for placing retry level button. */
   private val retryLevelButtonX = 535
+
   /** x-axis coordinate for placing the main menu button. */
   private val toMainMenuButtonX = 348
+
   /** x-axis coordinate for placing the next level button. */
   private val nextLevelButtonX = 722
+
   /** x-axis coordinate for placing the "to next level" button. */
   private val toOtherThemeButtonX = 909
+
   /** menu button size on both x and y axis. */
   private val buttonTextureSize: Int = nextLevelButtonTexture.getWidth
 
-  val xRangeToMainMenu: Range = (toMainMenuButtonX.toInt until (toMainMenuButtonX + buttonTextureSize).toInt)
-  val xRangeRetryLevel: Range = (retryLevelButtonX.toInt until (retryLevelButtonX + buttonTextureSize).toInt)
-  val xRangeNextLevel: Range = (nextLevelButtonX.toInt until (nextLevelButtonX + buttonTextureSize).toInt)
-  val xRangeOtherTheme: Range = (toOtherThemeButtonX.toInt until (toOtherThemeButtonX + buttonTextureSize).toInt)
-  val yRangeGameNavigationButtons: Range = ((endPointY - buttonTextureSize).toInt until (endPointY).toInt)
+  val xRangeToMainMenu: Range = toMainMenuButtonX.toInt until (toMainMenuButtonX + buttonTextureSize).toInt
+
+  val xRangeRetryLevel: Range = retryLevelButtonX.toInt until (retryLevelButtonX + buttonTextureSize).toInt
+
+  val xRangeNextLevel: Range = nextLevelButtonX.toInt until (nextLevelButtonX + buttonTextureSize).toInt
+
+  val xRangeOtherTheme: Range = toOtherThemeButtonX.toInt until (toOtherThemeButtonX + buttonTextureSize).toInt
+
+  val yRangeGameNavigationButtons: Range = (endPointY - buttonTextureSize).toInt until endPointY.toInt
 
   /** Transforms the click coordinates based on the screen size. Uses the camera transformation. */
   var transformator: Option[((Vector2) => Vector2)] = None
@@ -134,6 +159,6 @@ class StaticAnimationEngine(val atlasFileName: String) extends InputAdapter with
     nextLevelButtonTexture.dispose()
     disabledNextLevelButtonTexture.dispose()
     toOtherThemeButtonTexture.dispose()
-    sound.get.dispose()
+    audioGuidance.orNull.dispose()
   }
 }
