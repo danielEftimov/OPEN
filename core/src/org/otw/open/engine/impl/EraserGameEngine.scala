@@ -1,13 +1,13 @@
 package org.otw.open.engine.impl
 
+import com.badlogic.gdx.audio.Music
 import com.badlogic.gdx.graphics.Pixmap.Blending
 import com.badlogic.gdx.graphics.{Pixmap, Texture}
-import com.badlogic.gdx.math.{Vector3, Vector2}
+import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.{Gdx, InputAdapter}
 import org.otw.open.controllers.{EraserGameFinished, ScreenController}
 import org.otw.open.dto.{DrawablePixmap, Drawing}
 import org.otw.open.engine.Engine
-import org.otw.open.engine.util.SoundEffects
 
 /**
   * Created by deftimov on 25.01.2016.
@@ -19,14 +19,19 @@ class EraserGameEngine extends InputAdapter with Engine {
 
   /** Name of running theme. */
   private val themeName: String = ScreenController.themes(ScreenController.themeKey)
+
   /** wrapper for drawing actions */
   private val pixmapMask: DrawablePixmap = new DrawablePixmap(new Pixmap(Gdx.files.internal("theme/" + themeName + "/mask.png")))
+
   /** Texture under The Mask Texture */
   private val backgroundTexture: Texture = new Texture(Gdx.files.internal("theme/" + themeName + "/dark-background.png"))
+
   /** texture crated from the Pixmap */
   private val maskTexture: Texture = pixmapMask.initializePixmapDrawingOntoTexture
-  /** Sound instance */
-  private val sound: SoundEffects = new SoundEffects("audioGuidanceEraserGame.mp3")
+
+  /** Sound instance for audio guidance*/
+  private val audioGuidance: Music = Gdx.audio.newMusic(Gdx.files.internal("audioGuidanceEraserGame.mp3"))
+  audioGuidance.play
 
   private var lastPointerPosition: Option[Vector2] = None
 
@@ -38,7 +43,7 @@ class EraserGameEngine extends InputAdapter with Engine {
 
   /** @param delta time elapsed between frames
     * @return List of drawings to be rendered
-    * */
+    **/
   override def getDrawings(delta: Float): List[Drawing] = {
     if (mouseMoved) {
       pixmapMask.drawOnTexture(maskTexture)
@@ -77,7 +82,7 @@ class EraserGameEngine extends InputAdapter with Engine {
     pixmapMask.dispose
     backgroundTexture.dispose
     maskTexture.dispose
-    sound.dispose
+    audioGuidance.dispose
   }
 
   override def setMouseClickPositionTransformator(transformator: (Vector2) => Vector2): Boolean = {

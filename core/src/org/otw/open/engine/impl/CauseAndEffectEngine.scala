@@ -4,13 +4,14 @@ package org.otw.open.engine.impl
   * Created by smirakovska on 1/26/2016.
   */
 
+import com.badlogic.gdx.audio.Music
 import com.badlogic.gdx.graphics.Texture
-import com.badlogic.gdx.math.{Vector2, Vector3}
+import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.{Gdx, Input, InputAdapter}
 import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, CauseAndEffectFinishedUnsuccessfully, ScreenController}
 import org.otw.open.dto.{Drawing, HorizontalMovingObject, StandPoint}
 import org.otw.open.engine.Engine
-import org.otw.open.engine.util.{Animator, SoundEffects}
+import org.otw.open.engine.util.Animator
 
 /**
   * CauseAndEffectEngine - handles horizontal object movement
@@ -21,38 +22,58 @@ class CauseAndEffectEngine(objectStandPoints: List[StandPoint]) extends InputAda
 
   /** set current input processor */
   Gdx.input.setInputProcessor(this)
+
   /** Name of running theme. */
   private val themeName: String = ScreenController.themes(ScreenController.themeKey)
+
   /** Max number of failed attempts allowed */
   private val maxFailedAttempts = 3
+
   /** The background texture where the object moves on. */
   private val backgroundTexture = new Texture(Gdx.files.internal("theme/" + themeName + "/light-background.png"))
+
   /** Time interval on which the movingObject moves. */
   private val MOVE_TIME_IN_SECONDS: Float = 0.1F
+
   /** Movement of the object */
   private val DELTA_MOVEMENT: Int = 30
+
   /** Animator object */
   private val animator: Animator = new Animator("theme/" + themeName + "/animation-object.atlas")
-  /** Sound instance */
-  private val sound: SoundEffects = new SoundEffects("audioGuidanceCauseAndEffect.mp3")
+
   /** end point of the animation */
   private val endVector = objectStandPoints.reverse.head.standPointCoordinates
+
   /** Transforms the click coordinates based on the screen size. Uses the camera transformation. */
   var transformator: Option[((Vector2) => Vector2)] = None
+
   /** Boolean flag that is set to true when object is clicked */
   private var objectClicked: Boolean = false
+
   /** Counter for the number of failed attempts */
   private var numOfFailedAttempts = 0
+
   /** Current time. */
   private var timer = MOVE_TIME_IN_SECONDS
+
   /** index of the next stand point */
   private var nextPointIndex: Int = 1
+
   /** next standpoint for the moving object */
   private var nextPoint: StandPoint = objectStandPoints(nextPointIndex)
+
   /** Moving object. */
   private var movingObject: HorizontalMovingObject = new HorizontalMovingObject(objectStandPoints(0).standPointCoordinates.x.toInt, objectStandPoints(0).standPointCoordinates.y.toInt, DELTA_MOVEMENT)
+
   /** Timer for the vibrating object */
   private var animationTime = 0f
+
+  /** Sound instance for audio guidance*/
+  private val audioGuidance: Music = Gdx.audio.newMusic(Gdx.files.internal("audioGuidanceCauseAndEffect.mp3"))
+  audioGuidance.play
+
+  /** animation object sound*/
+  val animationObjectSound: Music = Gdx.audio.newMusic(Gdx.files.internal("carEngine.mp3"))
 
   /**
     * Method that handles mouse click on screen
@@ -67,8 +88,13 @@ class CauseAndEffectEngine(objectStandPoints: List[StandPoint]) extends InputAda
     if (button == Input.Buttons.LEFT) {
       if (objectIsClicked(screenX, screenY, objectStandPoints(nextPointIndex - 1))
         && !objectShouldStopMoving(movingObject.x, movingObject.y, objectStandPoints(nextPointIndex))
-      ) true
+      ) {
+        animationObjectSound.setLooping(true)
+        animationObjectSound.play
+        true
+      }
       else {
+
         if (!objectClicked)
           numOfFailedAttempts += 1
         if (numOfFailedAttempts == maxFailedAttempts)
@@ -127,6 +153,7 @@ class CauseAndEffectEngine(objectStandPoints: List[StandPoint]) extends InputAda
       nextPointIndex += 1
       nextPoint = objectStandPoints(nextPointIndex)
       objectClicked = false
+      animationObjectSound.stop
       true
     }
     else false
@@ -153,7 +180,8 @@ class CauseAndEffectEngine(objectStandPoints: List[StandPoint]) extends InputAda
   override def dispose(): Unit = {
     backgroundTexture.dispose()
     animator.dispose()
-    sound.dispose()
+    audioGuidance.dispose()
+    animationObjectSound.dispose()
   }
 }
 
