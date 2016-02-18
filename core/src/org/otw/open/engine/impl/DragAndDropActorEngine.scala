@@ -47,24 +47,37 @@ class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) e
     val payload: Payload = new Payload
 
     override def dragStart(event: InputEvent, x: Float, y: Float, pointer: Int): Payload = {
-      animationObjectSound.setLooping(true)
-      animationObjectSound.play
-      payload.setObject(actor)
-      payload.setDragActor(actor)
-      payload.setInvalidDragActor(actor)
+      if (!audioGuidance.isPlaying) {
+        animationObjectSound.setLooping(true)
+        animationObjectSound.play
+        payload.setObject(actor)
+        payload.setDragActor(actor)
+        payload.setInvalidDragActor(actor)
+      }
       payload
     }
 
+    /**
+      *
+      * @param event
+      * @param x
+      * @param y
+      * @param pointer
+      * @param payload
+      * @param target
+      */
     override def dragStop(event: InputEvent, x: Float, y: Float, pointer: Int, payload: Payload,
                           target: Target) {
-      if (target == null) {
-
-        actor.resetPosition
-        failedAttempts += 1
-      }
-      stage.addActor(actor)
-      if (failedAttempts == maxFailedAttempts) {
-        ScreenController.dispatchEvent(CauseAndEffectFinishedUnsuccessfully)
+      if (!audioGuidance.isPlaying) {
+        animationObjectSound.stop
+        if (target == null) {
+          actor.resetPosition
+          failedAttempts += 1
+        }
+        stage.addActor(actor)
+        if (failedAttempts == maxFailedAttempts) {
+          ScreenController.dispatchEvent(CauseAndEffectFinishedUnsuccessfully)
+        }
       }
     }
   })
@@ -80,7 +93,6 @@ class DragAndDropActorEngine(val theme: String, val imgBackgroundPath: String) e
     }
 
     def drop(source: Source, payload: Payload, x: Float, y: Float, pointer: Int) {
-      animationObjectSound.stop
       if (source.getActor().getX() >= 900
         && source.getActor().getX() <= 1100
         && source.getActor().getY() >= 259
