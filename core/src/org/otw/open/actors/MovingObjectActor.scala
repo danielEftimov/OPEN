@@ -27,11 +27,6 @@ class MovingObjectActor extends Actor {
   private var objectMissedCount = 0
 
   /**
-    * A flag to indicate if the actor is moving at the moment.
-    */
-  private var isInMotion = false
-
-  /**
     * Animator object
     */
   private val animator: Animator = new Animator("theme/" + GameState.getThemeName + "/animation-object.atlas")
@@ -71,11 +66,15 @@ class MovingObjectActor extends Actor {
 
   def getObjectMissCount = objectMissedCount
 
-  def isBeginning: Boolean = getX == GameState.getLevelStartPoint.x
+  /**
+    *
+    * @return true if the actor is on the initial position (start_point from the JSON file).
+    */
+  def isOnInitialPosition: Boolean = getX == GameState.getLevelStartPoint.x
 
-  def isMoving = {
+  def isInMotion = {
     val isMoving: Boolean = getX != currentMoveToAction.getX
-    if (isBeginning) false else isMoving
+    if (isOnInitialPosition) false else isMoving
   }
 
   def actorFinishedAllActions = actionStack.isEmpty

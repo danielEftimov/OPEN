@@ -10,9 +10,9 @@ import org.otw.open.controllers.GameState
 /**
   * Created by eilievska on 2/12/2016.
   */
-class BackgroundActor extends Actor with Disposable {
+class BackgroundActor(val backgroundName: String) extends Actor with Disposable {
 
-  private val backgroundTexture = new Texture(Gdx.files.internal("theme/" + GameState.getThemeName + "/light-background.png"))
+  private val backgroundTexture = new Texture(Gdx.files.internal("theme/" + GameState.getThemeName + "/" + backgroundName))
 
   override def draw(batch: Batch, parentAlpha: Float): Unit = {
     batch.draw(backgroundTexture, 0, 0)

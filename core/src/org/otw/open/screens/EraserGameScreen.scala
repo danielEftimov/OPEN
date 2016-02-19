@@ -1,7 +1,6 @@
 package org.otw.open.screens
 
-import com.badlogic.gdx.scenes.scene2d.Actor
-import org.otw.open.actors.{ErasableImageActor, BackgroundActor}
+import org.otw.open.actors.{BackgroundActor, ErasableImageActor}
 
 /**
   * Created by eilievska on 2/12/2016.
@@ -9,7 +8,7 @@ import org.otw.open.actors.{ErasableImageActor, BackgroundActor}
 class EraserGameScreen() extends AbstractGameScreen {
 
   override def buildStage(): Unit = {
-    addActor(new BackgroundActor)
+    addActor(new BackgroundActor("dark-background.png"))
     addActor(new ErasableImageActor)
   }
 }

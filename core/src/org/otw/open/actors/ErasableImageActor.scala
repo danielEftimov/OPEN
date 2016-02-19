@@ -3,9 +3,9 @@ package org.otw.open.actors
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.Pixmap.Blending
 import com.badlogic.gdx.graphics.g2d.Batch
-import com.badlogic.gdx.graphics.{Texture, Pixmap}
+import com.badlogic.gdx.graphics.{Pixmap, Texture}
 import com.badlogic.gdx.math.Vector2
-import com.badlogic.gdx.scenes.scene2d.{InputEvent, InputListener, Actor}
+import com.badlogic.gdx.scenes.scene2d.{Actor, InputEvent, InputListener}
 import com.badlogic.gdx.utils.Disposable
 import org.otw.open.controllers.{EraserGameFinished, ScreenController}
 import org.otw.open.dto.DrawablePixmap
