@@ -11,7 +11,7 @@ import org.otw.open.listeners.{MovingObjectSceneListener, MovingObjectDragAndDro
   */
 class CauseAndEffectScreen extends AbstractGameScreen {
 
-  private val backgroundActor = new BackgroundActor
+  private val backgroundActor = new BackgroundActor("light-background.png")
 
   private val movingObjectActor = new MovingObjectActor
 
@@ -20,7 +20,7 @@ class CauseAndEffectScreen extends AbstractGameScreen {
     Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
     act(delta)
     draw
-    if (!movingObjectActor.isMoving && movingObjectActor.actorFinishedAllActions) ScreenController.dispatchEvent(CauseAndEffectFinishedSuccessfully)
+    if (!movingObjectActor.isInMotion && movingObjectActor.actorFinishedAllActions) ScreenController.dispatchEvent(CauseAndEffectFinishedSuccessfully)
   }
 
   private val level: Int = GameState.getLevel

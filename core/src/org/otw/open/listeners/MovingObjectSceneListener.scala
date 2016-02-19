@@ -9,7 +9,7 @@ import org.otw.open.actors.MovingObjectActor
 class MovingObjectSceneListener(actor: MovingObjectActor) extends InputListener {
 
   override def touchDown(event: InputEvent, x: Float, y: Float, pointer: Int, button: Int): Boolean = {
-    if (!actor.isMoving) actor.incrementMissCount
+    if (!actor.isInMotion) actor.incrementMissCount
     true
   }
 
