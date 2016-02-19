@@ -8,7 +8,9 @@ import com.badlogic.gdx.utils.Disposable
 import org.otw.open.controllers.GameState
 
 /**
-  * Created by eilievska on 2/12/2016.
+  *
+  * @param backgroundName - name of the background file to be used. The file should be located in theme/{theme_name}/
+  *                       resources folder.
   */
 class BackgroundActor(val backgroundName: String) extends Actor with Disposable {
 
