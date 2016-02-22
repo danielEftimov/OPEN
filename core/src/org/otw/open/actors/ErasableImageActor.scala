@@ -1,6 +1,7 @@
 package org.otw.open.actors
 
 import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.audio.Music
 import com.badlogic.gdx.graphics.Pixmap.Blending
 import com.badlogic.gdx.graphics.g2d.Batch
 import com.badlogic.gdx.graphics.{Pixmap, Texture}
@@ -15,24 +16,36 @@ import org.otw.open.dto.DrawablePixmap
   */
 class ErasableImageActor extends Actor with Disposable {
 
+  /** wrapper for drawing actions */
   private val pixmapMask: DrawablePixmap = new DrawablePixmap(new Pixmap(Gdx.files.internal("theme/car_theme/mask.png")))
+
+  /** Texture under The Mask Texture */
   private val maskTexture: Texture = pixmapMask.initializePixmapDrawingOntoTexture
 
   Pixmap.setBlending(Blending.None)
 
   private var lastPointerPosition: Option[Vector2] = None
+
   private var currentPointerPosition: Option[Vector2] = None
 
   setX(0)
+
   setY(0)
+
   setWidth(maskTexture.getWidth)
+
   setHeight(maskTexture.getHeight)
-  setBounds(0, 0, maskTexture.getWidth, maskTexture.getHeight)
+
+  setBounds(0, 0, getWidth, getHeight)
+
+  /** Sound instance for audio guidance */
+  private val audioGuidance: Music = Gdx.audio.newMusic(Gdx.files.internal("audioGuidanceEraserGame.mp3"))
+  audioGuidance.play()
 
   override def draw(batch: Batch, parentAlpha: Float): Unit = {
-    val mouseWasMoved: Boolean = lastPointerPosition.isDefined && lastPointerPosition.get != currentPointerPosition.get
+    val mouseWasMoved: Boolean = lastPointerPosition.isDefined && lastPointerPosition.orNull != currentPointerPosition.orNull
     if (mouseWasMoved) {
-      pixmapMask.drawLerped(lastPointerPosition.get, currentPointerPosition.get)
+      pixmapMask.drawLerped(lastPointerPosition.orNull, currentPointerPosition.orNull)
       pixmapMask.drawOnTexture(maskTexture)
       if (pixmapMask.isTransparent) ScreenController.dispatchEvent(EraserGameFinished)
     }
@@ -42,13 +55,18 @@ class ErasableImageActor extends Actor with Disposable {
 
   addListener(new InputListener() {
     override def mouseMoved(event: InputEvent, x: Float, y: Float) = {
-      currentPointerPosition = Some(new Vector2(x, 900 - y))
-      true
+      audioGuidance.isPlaying match {
+        case true => false
+        case false =>
+          currentPointerPosition = Some(new Vector2(x, 900 - y))
+          true
+      }
     }
   })
 
   override def dispose(): Unit = {
-    pixmapMask.dispose
-    maskTexture.dispose
+    pixmapMask.dispose()
+    maskTexture.dispose()
+    audioGuidance.dispose()
   }
 }
