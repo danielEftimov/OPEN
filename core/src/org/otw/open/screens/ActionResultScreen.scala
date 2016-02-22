@@ -2,14 +2,15 @@ package org.otw.open.screens
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.math.Vector2
-import org.otw.open.actors.{StaticAnimationActor, BackgroundActor, MenuButtonActor}
+import com.sun.media.jfxmediaimpl.MediaDisposer.Disposable
+import org.otw.open.actors.{BackgroundActor, MenuButtonActor, StaticAnimationActor}
 import org.otw.open.controllers._
 import org.otw.open.listeners.DispatchEventListener
 
 /**
   * Created by eilievska on 2/19/2016.
   */
-class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameScreen {
+class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameScreen with Disposable {
 
   /**
     * Screen background.
@@ -56,5 +57,12 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
     addActor(toMainMenuButton)
     addActor(toOtherThemeButton)
     addActor(staticAnimationActor)
+  }
+
+  def getAtlasFileName = atlasFileName
+
+  override def dispose(): Unit = {
+    audioGuidance.dispose
+    staticAnimationActor.dispose
   }
 }

@@ -4,12 +4,14 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.g2d.Batch
 import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.scenes.scene2d.Actor
+import com.badlogic.gdx.utils.Disposable
+import org.json4s.ParserUtil.DisposableSegment
 import org.otw.open.util.Animator
 
 /**
   * Created by eilievska on 2/19/2016.
   */
-class StaticAnimationActor(val position: Vector2, val atlasFileName: String) extends Actor {
+class StaticAnimationActor(val position: Vector2, val atlasFileName: String) extends Actor with Disposable {
 
   private val animator = new Animator(atlasFileName)
 
@@ -24,4 +26,6 @@ class StaticAnimationActor(val position: Vector2, val atlasFileName: String) ext
     timePassed = timePassed + Gdx.graphics.getDeltaTime
     batch.draw(animator.getCurrentTexture(timePassed), getX, getY)
   }
+
+  override def dispose(): Unit = animator.dispose
 }

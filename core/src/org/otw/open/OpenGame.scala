@@ -13,7 +13,6 @@ class OpenGame private() extends Game {
     screen1.buildStage()
     setScreen(screen1)
   }
-
 }
 
 /**
