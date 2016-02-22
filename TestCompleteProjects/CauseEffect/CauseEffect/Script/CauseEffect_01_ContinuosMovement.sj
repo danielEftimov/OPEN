@@ -1,20 +1,23 @@
-﻿function causeEffect()
+﻿//USEUNIT CheckRegions
+function causeEffect()
 {
 try{
   //Launch the tested application.
   launchApp();
   
-  //As a user I want remove leaves from the top layer of the scene by continuous movement of the mouse So that I can see the bottom layer of the scene
+  //Removing leaves from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
-  Log.PopLogFolder();  
-  
-  //As a user I want to be able to click the object on the screen So that it reaches the target in one step
-  Log.AppendFolder("This test is for Reaching the goal with one click");
-  Log.PopLogFolder();  
+  Log.PopLogFolder();    
  }
- 
- finally
+catch(e)
+  {
+    // Posts an exception message to the test log
+    Log.Error(e.description);
+    // Stops the test execution
+    Runner.Stop();
+  }
+finally
  {     
    closeApp();
  }
@@ -41,11 +44,13 @@ function eraser ()
 {
   //Check if the first layer (top layer - leaves) is getting displayed
   Regions.RegionLeaves.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 1, 29, 1445, 906, false));
+  
+  aqUtils.Delay(3000);
 
   //perform the erase action (continuos movement of the mouse over the scene) 
   LLCollection.ContinuousMovement.Execute();
   
   //Check if the second layer (bottom layer - car/street) has been shown properly
-  Regions.AnimationCar.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
- 
+  Region_HappyAnimation();
+  
 }

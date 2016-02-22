@@ -20,7 +20,7 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="data">
-			<Prp name="key" type="S" value="{5E67C95C-168E-4AF5-BC32-6937688E72A6}"/>
+			<Prp name="key" type="S" value="{E503F7F3-DA9E-4333-9D66-2BB1E139D272}"/>
 		</Node>
 		<Prp name="signature" type="S" value="{42D2222C-ACA2-405F-8E67-05D5C42EB839}"/>
 		<Prp name="version" type="I" value="1"/>

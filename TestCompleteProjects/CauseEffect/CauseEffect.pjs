@@ -32,6 +32,15 @@
 				<Prp name="type" type="S" value="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}"/>
 				<Prp name="typename" type="S" value="Project"/>
 			</Node>
+			<Node name="causeeffectblackandwhite">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectBlackAndWhite\CauseEffectBlackAndWhite.mds"/>
+				</Node>
+				<Prp name="key" type="S" value="{B0E0D56B-80FF-49E0-BD3E-972093D9C3F5}"/>
+				<Prp name="pluginname" type="S" value=""/>
+				<Prp name="type" type="S" value="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}"/>
+				<Prp name="typename" type="S" value="Project"/>
+			</Node>
 		</Node>
 		<Node name="folders"/>
 		<Node name="scc">
@@ -53,6 +62,13 @@
 					<Prp name="description" type="S" value=""/>
 					<Prp name="enabled" type="B" value="-1"/>
 					<Prp name="key" type="S" value="{16D9AF07-7169-43F9-B646-FACE569EB0CC}"/>
+					<Prp name="stoponerror" type="B" value="-1"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0001">
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="key" type="S" value="{B0E0D56B-80FF-49E0-BD3E-972093D9C3F5}"/>
 					<Prp name="stoponerror" type="B" value="-1"/>
 					<Prp name="timeout" type="I" value="0"/>
 				</Node>

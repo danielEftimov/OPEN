@@ -5,9 +5,9 @@ import com.badlogic.gdx.graphics.g2d.Batch
 import com.badlogic.gdx.scenes.scene2d.actions.{MoveToAction, MoveByAction}
 import com.badlogic.gdx.scenes.scene2d.{InputEvent, InputListener, Touchable, Actor}
 import com.badlogic.gdx.utils.Pool
-import org.otw.open.controllers.{GameState, CauseAndEffectFinishedUnsuccessfully, ScreenController}
+import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, GameState, CauseAndEffectFinishedUnsuccessfully, ScreenController}
 import org.otw.open.dto.Point
-import org.otw.open.engine.util.Animator
+import org.otw.open.util.Animator
 
 import scala.collection.mutable
 
@@ -84,6 +84,7 @@ class MovingObjectActor extends Actor {
   override def draw(batch: Batch, parentAlpha: Float): Unit = {
     animationTime += Gdx.graphics.getDeltaTime
     batch.draw(animator.getCurrentTexture(animationTime), getX, getY)
+    if (!isInMotion && actorFinishedAllActions) ScreenController.dispatchEvent(CauseAndEffectFinishedSuccessfully)
   }
 
   def move() = {

@@ -23,6 +23,15 @@
 			<Prp name="key" type="S" value="{E2D222AD-E672-4B23-A538-E083830F771D}"/>
 		</Node>
 		<Node name="child list">
+			<Node name="events">
+				<Node name="item data">
+					<Prp name="storage" type="S" value="Events\Events.tcAX"/>
+				</Node>
+				<Prp name="key" type="S" value="{D099ADA4-BB7D-45F4-BBDC-D3E3CC169359}"/>
+				<Prp name="pluginname" type="S" value=""/>
+				<Prp name="type" type="S" value="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}"/>
+				<Prp name="typename" type="S" value="Events"/>
+			</Node>
 			<Node name="keywordtests">
 				<Node name="item data">
 					<Prp name="relpath" type="S" value="KeywordTests\KeywordTests.tcKDT"/>
@@ -87,6 +96,7 @@
 				<Node name="references">
 					<Prp name="{62039cd0-0d9d-4da1-aedf-615749adf8c8}" type="S" value=""/>
 					<Prp name="{8bbde00b-61c3-4325-94ed-d76c0a856bc0}" type="S" value=""/>
+					<Prp name="{d099ada4-bb7d-45f4-bbdc-d3e3cc169359}" type="S" value=""/>
 				</Node>
 				<Prp name="caption" type="S" value="Advanced"/>
 				<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
@@ -102,6 +112,21 @@
 			<Prp name="name" type="S" value=""/>
 		</Node>
 		<Node name="settings">
+			<Node name="{0787aa13-4c49-418a-a688-b23be9f226f4}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="{08e45c74-68e0-4e05-913f-298de287e8ff}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="1"/>
+				<Prp name="colindex" type="I" value="0"/>
+				<Prp name="rowcount" type="I" value="2"/>
+				<Prp name="rowindex" type="I" value="0"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="S" value="ID"/>
+				<Prp name="val0x1" type="S" value="Name"/>
+			</Node>
 			<Node name="{0bd6ae2e-e5d9-4ad0-9bf3-2483d329b22a}">
 				<Prp name="type" type="I" value="1"/>
 				<Prp name="value" type="B" value="-1"/>
@@ -141,6 +166,333 @@
 				<Prp name="type" type="I" value="1"/>
 				<Prp name="value" type="B" value="-1"/>
 			</Node>
+			<Node name="{1fef5dc6-5f46-4cca-a31e-7c325204900b}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="2"/>
+				<Prp name="col1enabled" type="B" value="-1"/>
+				<Prp name="col1type" type="I" value="2"/>
+				<Prp name="col2enabled" type="B" value="-1"/>
+				<Prp name="col2type" type="I" value="1"/>
+				<Prp name="col3enabled" type="B" value="-1"/>
+				<Prp name="col3type" type="I" value="1"/>
+				<Prp name="col4enabled" type="B" value="-1"/>
+				<Prp name="col4type" type="I" value="5"/>
+				<Prp name="col5enabled" type="B" value="-1"/>
+				<Prp name="col5type" type="I" value="5"/>
+				<Prp name="col6enabled" type="B" value="-1"/>
+				<Prp name="col6type" type="I" value="5"/>
+				<Prp name="col7enabled" type="B" value="-1"/>
+				<Prp name="col7type" type="I" value="5"/>
+				<Prp name="col8enabled" type="B" value="-1"/>
+				<Prp name="col8type" type="I" value="5"/>
+				<Prp name="col9enabled" type="B" value="-1"/>
+				<Prp name="col9type" type="I" value="2"/>
+				<Prp name="colcount" type="I" value="10"/>
+				<Prp name="colindex" type="I" value="4"/>
+				<Prp name="rowcount" type="I" value="30"/>
+				<Prp name="rowindex" type="I" value="29"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="I" value="-1"/>
+				<Prp name="val0x1" type="I" value="0"/>
+				<Prp name="val0x10" type="I" value="-1"/>
+				<Prp name="val0x11" type="I" value="10"/>
+				<Prp name="val0x12" type="I" value="10"/>
+				<Prp name="val0x13" type="I" value="10"/>
+				<Prp name="val0x14" type="I" value="-1"/>
+				<Prp name="val0x15" type="I" value="14"/>
+				<Prp name="val0x16" type="I" value="14"/>
+				<Prp name="val0x17" type="I" value="14"/>
+				<Prp name="val0x18" type="I" value="14"/>
+				<Prp name="val0x19" type="I" value="-1"/>
+				<Prp name="val0x2" type="I" value="0"/>
+				<Prp name="val0x20" type="I" value="19"/>
+				<Prp name="val0x21" type="I" value="-1"/>
+				<Prp name="val0x22" type="I" value="21"/>
+				<Prp name="val0x23" type="I" value="21"/>
+				<Prp name="val0x24" type="I" value="21"/>
+				<Prp name="val0x25" type="I" value="21"/>
+				<Prp name="val0x26" type="I" value="-1"/>
+				<Prp name="val0x27" type="I" value="26"/>
+				<Prp name="val0x28" type="I" value="26"/>
+				<Prp name="val0x29" type="I" value="-1"/>
+				<Prp name="val0x3" type="I" value="-1"/>
+				<Prp name="val0x4" type="I" value="3"/>
+				<Prp name="val0x5" type="I" value="-1"/>
+				<Prp name="val0x6" type="I" value="5"/>
+				<Prp name="val0x7" type="I" value="-1"/>
+				<Prp name="val0x8" type="I" value="7"/>
+				<Prp name="val0x9" type="I" value="7"/>
+				<Prp name="val1x0" type="I" value="-1"/>
+				<Prp name="val1x1" type="I" value="-1"/>
+				<Prp name="val1x10" type="I" value="-1"/>
+				<Prp name="val1x11" type="I" value="-1"/>
+				<Prp name="val1x12" type="I" value="-1"/>
+				<Prp name="val1x13" type="I" value="-1"/>
+				<Prp name="val1x14" type="I" value="-1"/>
+				<Prp name="val1x15" type="I" value="-1"/>
+				<Prp name="val1x16" type="I" value="-1"/>
+				<Prp name="val1x17" type="I" value="-1"/>
+				<Prp name="val1x18" type="I" value="-1"/>
+				<Prp name="val1x19" type="I" value="-1"/>
+				<Prp name="val1x2" type="I" value="-1"/>
+				<Prp name="val1x20" type="I" value="-1"/>
+				<Prp name="val1x21" type="I" value="-1"/>
+				<Prp name="val1x22" type="I" value="-1"/>
+				<Prp name="val1x23" type="I" value="-1"/>
+				<Prp name="val1x24" type="I" value="-1"/>
+				<Prp name="val1x25" type="I" value="-1"/>
+				<Prp name="val1x26" type="I" value="-1"/>
+				<Prp name="val1x27" type="I" value="-1"/>
+				<Prp name="val1x28" type="I" value="-1"/>
+				<Prp name="val1x29" type="I" value="-1"/>
+				<Prp name="val1x3" type="I" value="-1"/>
+				<Prp name="val1x4" type="I" value="-1"/>
+				<Prp name="val1x5" type="I" value="-1"/>
+				<Prp name="val1x6" type="I" value="-1"/>
+				<Prp name="val1x7" type="I" value="-1"/>
+				<Prp name="val1x8" type="I" value="-1"/>
+				<Prp name="val1x9" type="I" value="-1"/>
+				<Prp name="val2x0" type="B" value="-1"/>
+				<Prp name="val2x1" type="B" value="0"/>
+				<Prp name="val2x10" type="B" value="-1"/>
+				<Prp name="val2x11" type="B" value="0"/>
+				<Prp name="val2x12" type="B" value="0"/>
+				<Prp name="val2x13" type="B" value="0"/>
+				<Prp name="val2x14" type="B" value="-1"/>
+				<Prp name="val2x15" type="B" value="0"/>
+				<Prp name="val2x16" type="B" value="0"/>
+				<Prp name="val2x17" type="B" value="0"/>
+				<Prp name="val2x18" type="B" value="0"/>
+				<Prp name="val2x19" type="B" value="-1"/>
+				<Prp name="val2x2" type="B" value="0"/>
+				<Prp name="val2x20" type="B" value="0"/>
+				<Prp name="val2x21" type="B" value="-1"/>
+				<Prp name="val2x22" type="B" value="0"/>
+				<Prp name="val2x23" type="B" value="0"/>
+				<Prp name="val2x24" type="B" value="0"/>
+				<Prp name="val2x25" type="B" value="0"/>
+				<Prp name="val2x26" type="B" value="-1"/>
+				<Prp name="val2x27" type="B" value="0"/>
+				<Prp name="val2x28" type="B" value="0"/>
+				<Prp name="val2x29" type="B" value="-1"/>
+				<Prp name="val2x3" type="B" value="-1"/>
+				<Prp name="val2x4" type="B" value="0"/>
+				<Prp name="val2x5" type="B" value="-1"/>
+				<Prp name="val2x6" type="B" value="0"/>
+				<Prp name="val2x7" type="B" value="-1"/>
+				<Prp name="val2x8" type="B" value="0"/>
+				<Prp name="val2x9" type="B" value="0"/>
+				<Prp name="val3x0" type="B" value="-1"/>
+				<Prp name="val3x1" type="B" value="-1"/>
+				<Prp name="val3x10" type="B" value="-1"/>
+				<Prp name="val3x11" type="B" value="-1"/>
+				<Prp name="val3x12" type="B" value="-1"/>
+				<Prp name="val3x13" type="B" value="-1"/>
+				<Prp name="val3x14" type="B" value="-1"/>
+				<Prp name="val3x15" type="B" value="-1"/>
+				<Prp name="val3x16" type="B" value="-1"/>
+				<Prp name="val3x17" type="B" value="-1"/>
+				<Prp name="val3x18" type="B" value="-1"/>
+				<Prp name="val3x19" type="B" value="-1"/>
+				<Prp name="val3x2" type="B" value="-1"/>
+				<Prp name="val3x20" type="B" value="-1"/>
+				<Prp name="val3x21" type="B" value="-1"/>
+				<Prp name="val3x22" type="B" value="-1"/>
+				<Prp name="val3x23" type="B" value="-1"/>
+				<Prp name="val3x24" type="B" value="-1"/>
+				<Prp name="val3x25" type="B" value="-1"/>
+				<Prp name="val3x26" type="B" value="-1"/>
+				<Prp name="val3x27" type="B" value="-1"/>
+				<Prp name="val3x28" type="B" value="-1"/>
+				<Prp name="val3x29" type="B" value="-1"/>
+				<Prp name="val3x3" type="B" value="-1"/>
+				<Prp name="val3x4" type="B" value="-1"/>
+				<Prp name="val3x5" type="B" value="-1"/>
+				<Prp name="val3x6" type="B" value="-1"/>
+				<Prp name="val3x7" type="B" value="-1"/>
+				<Prp name="val3x8" type="B" value="-1"/>
+				<Prp name="val3x9" type="B" value="-1"/>
+				<Prp name="val4x0" type="S" value="Yahoo! UI library"/>
+				<Prp name="val4x1" type="S" value="Do not use IDs starting with &quot;yui-gen&quot;"/>
+				<Prp name="val4x10" type="S" value="ASP.NET"/>
+				<Prp name="val4x11" type="S" value="Do not use IDs ending with a string like &quot;ctl00&quot;"/>
+				<Prp name="val4x12" type="S" value="Remove GUIDs and ctl00-like prefixes from Sharepoint IDs"/>
+				<Prp name="val4x13" type="S" value="For IDs containing a string like &quot;ctl00_&quot;, leave only symbols after this string"/>
+				<Prp name="val4x14" type="S" value="Sencha ExtJS"/>
+				<Prp name="val4x15" type="S" value="Do not use IDs containing &quot;ext-gen&quot;"/>
+				<Prp name="val4x16" type="S" value="Do not use IDs containing &quot;ext-comp&quot;"/>
+				<Prp name="val4x17" type="S" value="Do not use IDs starting with &quot;extdd-&quot;"/>
+				<Prp name="val4x18" type="S" value="Remove digits from IDs like &quot;treepicker-1038&quot; or &quot;treepicker-1038-inputEl&quot;"/>
+				<Prp name="val4x19" type="S" value="Sencha Touch"/>
+				<Prp name="val4x2" type="S" value="Do not use IDs containing &quot;yui_3_&quot;"/>
+				<Prp name="val4x20" type="S" value="Remove dynamic parts of Sencha Touch IDs"/>
+				<Prp name="val4x21" type="S" value="JavaServer Faces"/>
+				<Prp name="val4x22" type="S" value="Do not use IDs like &quot;_t14&quot;"/>
+				<Prp name="val4x23" type="S" value="Do not use IDs like &quot;j_id23&quot; or &quot;j_idt23&quot;"/>
+				<Prp name="val4x24" type="S" value="Remove all but the last part of IDs like &quot;frm:menuLinks:0:link&quot;"/>
+				<Prp name="val4x25" type="S" value="Do not use IDs like &quot;frm:menuLinks:3:link&quot;"/>
+				<Prp name="val4x26" type="S" value="Google Web Toolkit"/>
+				<Prp name="val4x27" type="S" value="Remove all but the last part of IDs like &quot;gwt-uid-370_runButton&quot;"/>
+				<Prp name="val4x28" type="S" value="Remove dynamic parts of Sencha GXT IDs"/>
+				<Prp name="val4x29" type="S" value="Custom"/>
+				<Prp name="val4x3" type="S" value="jQuery UI library"/>
+				<Prp name="val4x4" type="S" value="Do not use IDs starting with &quot;ui-id-&quot;"/>
+				<Prp name="val4x5" type="S" value="Dojo toolkit"/>
+				<Prp name="val4x6" type="S" value="Do not use IDs starting with &quot;dijit_&quot;"/>
+				<Prp name="val4x7" type="S" value="Other"/>
+				<Prp name="val4x8" type="S" value="Do not use IDs containing GUID"/>
+				<Prp name="val4x9" type="S" value="Remove trailing digits from IDs like &quot;unique-123456&quot;"/>
+				<Prp name="val5x0" type="S" value=""/>
+				<Prp name="val5x1" type="S" value="Wildcard"/>
+				<Prp name="val5x10" type="S" value=""/>
+				<Prp name="val5x11" type="S" value="RegExp"/>
+				<Prp name="val5x12" type="S" value="RegExp"/>
+				<Prp name="val5x13" type="S" value="RegExp"/>
+				<Prp name="val5x14" type="S" value=""/>
+				<Prp name="val5x15" type="S" value="RegExp"/>
+				<Prp name="val5x16" type="S" value="RegExp"/>
+				<Prp name="val5x17" type="S" value="Wildcard"/>
+				<Prp name="val5x18" type="S" value="RegExp"/>
+				<Prp name="val5x19" type="S" value=""/>
+				<Prp name="val5x2" type="S" value="Wildcard"/>
+				<Prp name="val5x20" type="S" value="RegExp"/>
+				<Prp name="val5x21" type="S" value=""/>
+				<Prp name="val5x22" type="S" value="RegExp"/>
+				<Prp name="val5x23" type="S" value="RegExp"/>
+				<Prp name="val5x24" type="S" value="RegExp"/>
+				<Prp name="val5x25" type="S" value="RegExp"/>
+				<Prp name="val5x26" type="S" value=""/>
+				<Prp name="val5x27" type="S" value="RegExp"/>
+				<Prp name="val5x28" type="S" value="RegExp"/>
+				<Prp name="val5x29" type="S" value=""/>
+				<Prp name="val5x3" type="S" value=""/>
+				<Prp name="val5x4" type="S" value="Wildcard"/>
+				<Prp name="val5x5" type="S" value=""/>
+				<Prp name="val5x6" type="S" value="Wildcard"/>
+				<Prp name="val5x7" type="S" value=""/>
+				<Prp name="val5x8" type="S" value="RegExp"/>
+				<Prp name="val5x9" type="S" value="RegExp"/>
+				<Prp name="val6x0" type="S" value=""/>
+				<Prp name="val6x1" type="S" value="yui-gen*"/>
+				<Prp name="val6x10" type="S" value=""/>
+				<Prp name="val6x11" type="S" value="^(.*[-_$])?(ctl[0-9]+)$"/>
+				<Prp name="val6x12" type="S" value="(.+?_(\h+_\h+_\h+_\h+_\h+))+(.*ctr?l[0-9]+)?[_$]?{.*}$"/>
+				<Prp name="val6x13" type="S" value=".*(ctl[0-9]+[-_$]+){.*}"/>
+				<Prp name="val6x14" type="S" value=""/>
+				<Prp name="val6x15" type="S" value="^(.*-)?ext-gen"/>
+				<Prp name="val6x16" type="S" value="^(.*-)?ext-comp"/>
+				<Prp name="val6x17" type="S" value="extdd-*"/>
+				<Prp name="val6x18" type="S" value="^{[A-Za-z-]+}-{\d\d\d\d+}{.*}$"/>
+				<Prp name="val6x19" type="S" value=""/>
+				<Prp name="val6x2" type="S" value="*yui_3_*"/>
+				<Prp name="val6x20" type="S" value="^ext-{.*}-\d+$"/>
+				<Prp name="val6x21" type="S" value=""/>
+				<Prp name="val6x22" type="S" value="^{_t}{[0-9]+}$"/>
+				<Prp name="val6x23" type="S" value="^{j_idt?}{[0-9]+}$"/>
+				<Prp name="val6x24" type="S" value="(.+):{[^0-9]+}$"/>
+				<Prp name="val6x25" type="S" value="(.+):(.*)"/>
+				<Prp name="val6x26" type="S" value=""/>
+				<Prp name="val6x27" type="S" value="^(gwt-uid-[0-9]+)(_{.*})?$"/>
+				<Prp name="val6x28" type="S" value="^(x-((widget)|(auto))-.*[0-9]+)([-_]{.*})?$"/>
+				<Prp name="val6x29" type="S" value=""/>
+				<Prp name="val6x3" type="S" value=""/>
+				<Prp name="val6x4" type="S" value="ui-id-*"/>
+				<Prp name="val6x5" type="S" value=""/>
+				<Prp name="val6x6" type="S" value="dijit_*"/>
+				<Prp name="val6x7" type="S" value=""/>
+				<Prp name="val6x8" type="S" value="\h+-\h+-\h+-\h+-\h+"/>
+				<Prp name="val6x9" type="S" value="^{[A-Za-z-]+}(\d\d\d\d\d\d+)$"/>
+				<Prp name="val7x0" type="S" value=""/>
+				<Prp name="val7x1" type="S" value=""/>
+				<Prp name="val7x10" type="S" value=""/>
+				<Prp name="val7x11" type="S" value=""/>
+				<Prp name="val7x12" type="S" value="$1"/>
+				<Prp name="val7x13" type="S" value="$1"/>
+				<Prp name="val7x14" type="S" value=""/>
+				<Prp name="val7x15" type="S" value=""/>
+				<Prp name="val7x16" type="S" value=""/>
+				<Prp name="val7x17" type="S" value=""/>
+				<Prp name="val7x18" type="S" value="$1$3"/>
+				<Prp name="val7x19" type="S" value=""/>
+				<Prp name="val7x2" type="S" value=""/>
+				<Prp name="val7x20" type="S" value="$1"/>
+				<Prp name="val7x21" type="S" value=""/>
+				<Prp name="val7x22" type="S" value=""/>
+				<Prp name="val7x23" type="S" value=""/>
+				<Prp name="val7x24" type="S" value="$1"/>
+				<Prp name="val7x25" type="S" value=""/>
+				<Prp name="val7x26" type="S" value=""/>
+				<Prp name="val7x27" type="S" value="$1"/>
+				<Prp name="val7x28" type="S" value="$1"/>
+				<Prp name="val7x29" type="S" value=""/>
+				<Prp name="val7x3" type="S" value=""/>
+				<Prp name="val7x4" type="S" value=""/>
+				<Prp name="val7x5" type="S" value=""/>
+				<Prp name="val7x6" type="S" value=""/>
+				<Prp name="val7x7" type="S" value=""/>
+				<Prp name="val7x8" type="S" value=""/>
+				<Prp name="val7x9" type="S" value="$1"/>
+				<Prp name="val8x0" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x1" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x10" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x11" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x12" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x13" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x14" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x15" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x16" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x17" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x18" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x19" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x2" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x20" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x21" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x22" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x23" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x24" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x25" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x26" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x27" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x28" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x29" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x3" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x4" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x5" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x6" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x7" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x8" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x9" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val9x0" type="I" value="0"/>
+				<Prp name="val9x1" type="I" value="0"/>
+				<Prp name="val9x10" type="I" value="0"/>
+				<Prp name="val9x11" type="I" value="0"/>
+				<Prp name="val9x12" type="I" value="0"/>
+				<Prp name="val9x13" type="I" value="0"/>
+				<Prp name="val9x14" type="I" value="0"/>
+				<Prp name="val9x15" type="I" value="0"/>
+				<Prp name="val9x16" type="I" value="0"/>
+				<Prp name="val9x17" type="I" value="0"/>
+				<Prp name="val9x18" type="I" value="0"/>
+				<Prp name="val9x19" type="I" value="0"/>
+				<Prp name="val9x2" type="I" value="0"/>
+				<Prp name="val9x20" type="I" value="0"/>
+				<Prp name="val9x21" type="I" value="0"/>
+				<Prp name="val9x22" type="I" value="0"/>
+				<Prp name="val9x23" type="I" value="0"/>
+				<Prp name="val9x24" type="I" value="0"/>
+				<Prp name="val9x25" type="I" value="0"/>
+				<Prp name="val9x26" type="I" value="0"/>
+				<Prp name="val9x27" type="I" value="0"/>
+				<Prp name="val9x28" type="I" value="0"/>
+				<Prp name="val9x29" type="I" value="0"/>
+				<Prp name="val9x3" type="I" value="0"/>
+				<Prp name="val9x4" type="I" value="0"/>
+				<Prp name="val9x5" type="I" value="0"/>
+				<Prp name="val9x6" type="I" value="0"/>
+				<Prp name="val9x7" type="I" value="0"/>
+				<Prp name="val9x8" type="I" value="0"/>
+				<Prp name="val9x9" type="I" value="0"/>
+			</Node>
 			<Node name="{2044dc7f-423e-4668-8114-68d23ae97ad6}">
 				<Prp name="type" type="I" value="2"/>
 				<Prp name="value" type="I" value="50"/>
@@ -170,6 +522,20 @@
 				<Prp name="type" type="I" value="1"/>
 				<Prp name="value" type="B" value="0"/>
 			</Node>
+			<Node name="{323facda-38e8-4c1b-b22c-99e0ab90eadc}">
+				<Prp name="type" type="I" value="5"/>
+				<Prp name="value" type="S" value=""/>
+			</Node>
+			<Node name="{33c0a94e-7f58-493c-bccc-91685352f9b4}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="1"/>
+				<Prp name="colindex" type="I" value="0"/>
+				<Prp name="rowcount" type="I" value="1"/>
+				<Prp name="rowindex" type="I" value="0"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="S" value="*"/>
+			</Node>
 			<Node name="{3a4f97b3-d3d3-41e5-be37-c419b02d488a}">
 				<Prp name="col0enabled" type="B" value="-1"/>
 				<Prp name="col0type" type="I" value="5"/>
@@ -184,7 +550,7 @@
 				<Prp name="col5enabled" type="B" value="-1"/>
 				<Prp name="col5type" type="I" value="1"/>
 				<Prp name="colcount" type="I" value="6"/>
-				<Prp name="colindex" type="I" value="5"/>
+				<Prp name="colindex" type="I" value="0"/>
 				<Prp name="rowcount" type="I" value="0"/>
 				<Prp name="rowindex" type="I" value="-1"/>
 				<Prp name="type" type="I" value="6"/>
@@ -282,6 +648,10 @@
 				<Prp name="rowindex" type="I" value="-1"/>
 				<Prp name="type" type="I" value="6"/>
 			</Node>
+			<Node name="{542b9fa0-35ea-4c4d-bf0b-661005cb94e9}">
+				<Prp name="type" type="I" value="2"/>
+				<Prp name="value" type="I" value="60000"/>
+			</Node>
 			<Node name="{596ca0d0-27cb-40d3-baa5-bc1cecff25ac}">
 				<Prp name="col0enabled" type="B" value="-1"/>
 				<Prp name="col0type" type="I" value="1"/>
@@ -310,9 +680,114 @@
 				<Prp name="val0x0" type="S" value="Tree"/>
 				<Prp name="val0x1" type="S" value="Flat"/>
 			</Node>
+			<Node name="{74cc9f3b-2e52-4b16-844a-9ee33532b51e}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="{7a4ee551-25fe-4c1a-8967-fa26b3c27ad7}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="2"/>
+				<Prp name="col1enabled" type="B" value="-1"/>
+				<Prp name="col1type" type="I" value="2"/>
+				<Prp name="col2enabled" type="B" value="-1"/>
+				<Prp name="col2type" type="I" value="1"/>
+				<Prp name="col3enabled" type="B" value="-1"/>
+				<Prp name="col3type" type="I" value="1"/>
+				<Prp name="col4enabled" type="B" value="-1"/>
+				<Prp name="col4type" type="I" value="1"/>
+				<Prp name="col5enabled" type="B" value="-1"/>
+				<Prp name="col5type" type="I" value="5"/>
+				<Prp name="col6enabled" type="B" value="-1"/>
+				<Prp name="col6type" type="I" value="5"/>
+				<Prp name="col7enabled" type="B" value="-1"/>
+				<Prp name="col7type" type="I" value="2"/>
+				<Prp name="col8enabled" type="B" value="-1"/>
+				<Prp name="col8type" type="I" value="2"/>
+				<Prp name="colcount" type="I" value="9"/>
+				<Prp name="colindex" type="I" value="8"/>
+				<Prp name="rowcount" type="I" value="8"/>
+				<Prp name="rowindex" type="I" value="7"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="I" value="-1"/>
+				<Prp name="val0x1" type="I" value="-1"/>
+				<Prp name="val0x2" type="I" value="-1"/>
+				<Prp name="val0x3" type="I" value="-1"/>
+				<Prp name="val0x4" type="I" value="-1"/>
+				<Prp name="val0x5" type="I" value="-1"/>
+				<Prp name="val0x6" type="I" value="-1"/>
+				<Prp name="val0x7" type="I" value="-1"/>
+				<Prp name="val1x0" type="I" value="-1"/>
+				<Prp name="val1x1" type="I" value="-1"/>
+				<Prp name="val1x2" type="I" value="-1"/>
+				<Prp name="val1x3" type="I" value="-1"/>
+				<Prp name="val1x4" type="I" value="-1"/>
+				<Prp name="val1x5" type="I" value="-1"/>
+				<Prp name="val1x6" type="I" value="-1"/>
+				<Prp name="val1x7" type="I" value="-1"/>
+				<Prp name="val2x0" type="B" value="0"/>
+				<Prp name="val2x1" type="B" value="0"/>
+				<Prp name="val2x2" type="B" value="0"/>
+				<Prp name="val2x3" type="B" value="0"/>
+				<Prp name="val2x4" type="B" value="0"/>
+				<Prp name="val2x5" type="B" value="0"/>
+				<Prp name="val2x6" type="B" value="0"/>
+				<Prp name="val2x7" type="B" value="0"/>
+				<Prp name="val3x0" type="B" value="-1"/>
+				<Prp name="val3x1" type="B" value="-1"/>
+				<Prp name="val3x2" type="B" value="-1"/>
+				<Prp name="val3x3" type="B" value="-1"/>
+				<Prp name="val3x4" type="B" value="-1"/>
+				<Prp name="val3x5" type="B" value="-1"/>
+				<Prp name="val3x6" type="B" value="-1"/>
+				<Prp name="val3x7" type="B" value="-1"/>
+				<Prp name="val4x0" type="B" value="0"/>
+				<Prp name="val4x1" type="B" value="0"/>
+				<Prp name="val4x2" type="B" value="0"/>
+				<Prp name="val4x3" type="B" value="0"/>
+				<Prp name="val4x4" type="B" value="0"/>
+				<Prp name="val4x5" type="B" value="0"/>
+				<Prp name="val4x6" type="B" value="0"/>
+				<Prp name="val4x7" type="B" value="0"/>
+				<Prp name="val5x0" type="S" value="Apple iPad"/>
+				<Prp name="val5x1" type="S" value="Apple iPhone 3"/>
+				<Prp name="val5x2" type="S" value="Apple iPhone 5"/>
+				<Prp name="val5x3" type="S" value="Blackberry Z10"/>
+				<Prp name="val5x4" type="S" value="Nokia Lumia 800"/>
+				<Prp name="val5x5" type="S" value="Samsung Galaxy Mini"/>
+				<Prp name="val5x6" type="S" value="Samsung Galaxy S3"/>
+				<Prp name="val5x7" type="S" value="Samsung Nexus 10"/>
+				<Prp name="val6x0" type="S" value="Mozilla/5.0 (iPad; CPU OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B329 Safari/8536.25"/>
+				<Prp name="val6x1" type="S" value="Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16"/>
+				<Prp name="val6x2" type="S" value="Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_4 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B350 Safari/8536.25"/>
+				<Prp name="val6x3" type="S" value="Mozilla/5.0 (BB10; Touch) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.0.9.2372 Mobile Safari/537.10+"/>
+				<Prp name="val6x4" type="S" value="Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800)"/>
+				<Prp name="val6x5" type="S" value="Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; GT-S5570I Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"/>
+				<Prp name="val6x6" type="S" value="Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; GT-I9300 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"/>
+				<Prp name="val6x7" type="S" value="Mozilla/5.0 (Linux; Android 4.2.1; Nexus 10 Build/JOP40D) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.37 Safari/537.22"/>
+				<Prp name="val7x0" type="I" value="768"/>
+				<Prp name="val7x1" type="I" value="320"/>
+				<Prp name="val7x2" type="I" value="320"/>
+				<Prp name="val7x3" type="I" value="342"/>
+				<Prp name="val7x4" type="I" value="480"/>
+				<Prp name="val7x5" type="I" value="240"/>
+				<Prp name="val7x6" type="I" value="360"/>
+				<Prp name="val7x7" type="I" value="800"/>
+				<Prp name="val8x0" type="I" value="1024"/>
+				<Prp name="val8x1" type="I" value="480"/>
+				<Prp name="val8x2" type="I" value="568"/>
+				<Prp name="val8x3" type="I" value="570"/>
+				<Prp name="val8x4" type="I" value="800"/>
+				<Prp name="val8x5" type="I" value="320"/>
+				<Prp name="val8x6" type="I" value="640"/>
+				<Prp name="val8x7" type="I" value="1280"/>
+			</Node>
 			<Node name="{7e9d3e8b-dff5-4737-a877-e94b6b932bcd}">
 				<Prp name="type" type="I" value="1"/>
 				<Prp name="value" type="B" value="-1"/>
+			</Node>
+			<Node name="{829bc6ca-56d1-46a4-89b9-e15802964005}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
 			</Node>
 			<Node name="{85cd048a-29ff-4abf-95a6-b915aea2c10d}">
 				<Prp name="type" type="I" value="1"/>
@@ -360,6 +835,17 @@
 				<Prp name="rowindex" type="I" value="-1"/>
 				<Prp name="type" type="I" value="6"/>
 			</Node>
+			<Node name="{95e3327a-7433-4a00-9257-6e9a4b4f1795}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="1"/>
+				<Prp name="colindex" type="I" value="0"/>
+				<Prp name="rowcount" type="I" value="2"/>
+				<Prp name="rowindex" type="I" value="0"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="S" value="ID"/>
+				<Prp name="val0x1" type="S" value="Name"/>
+			</Node>
 			<Node name="{98c6a210-59ef-4cd6-aa7e-b41953dec74a}">
 				<Prp name="type" type="I" value="1"/>
 				<Prp name="value" type="B" value="0"/>
@@ -388,7 +874,42 @@
 				<Prp name="type" type="I" value="1"/>
 				<Prp name="value" type="B" value="-1"/>
 			</Node>
+			<Node name="{abe9c069-5d2d-4fba-b1b0-ff96c0f0b1f6}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="1"/>
+				<Prp name="colindex" type="I" value="0"/>
+				<Prp name="rowcount" type="I" value="4"/>
+				<Prp name="rowindex" type="I" value="3"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="S" value="DOM"/>
+				<Prp name="val0x1" type="S" value="Tag"/>
+				<Prp name="val0x2" type="S" value="Hybrid"/>
+				<Prp name="val0x3" type="S" value="Tree"/>
+			</Node>
+			<Node name="{acff4ef1-2d8d-4a5b-a55f-6f64df82662b}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="1"/>
+				<Prp name="colindex" type="I" value="0"/>
+				<Prp name="rowcount" type="I" value="9"/>
+				<Prp name="rowindex" type="I" value="0"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="S" value="None"/>
+				<Prp name="val0x1" type="S" value="Apple iPad"/>
+				<Prp name="val0x2" type="S" value="Apple iPhone 3"/>
+				<Prp name="val0x3" type="S" value="Apple iPhone 5"/>
+				<Prp name="val0x4" type="S" value="Blackberry Z10"/>
+				<Prp name="val0x5" type="S" value="Nokia Lumia 800"/>
+				<Prp name="val0x6" type="S" value="Samsung Galaxy Mini"/>
+				<Prp name="val0x7" type="S" value="Samsung Galaxy S3"/>
+				<Prp name="val0x8" type="S" value="Samsung Nexus 10"/>
+			</Node>
 			<Node name="{ae3f26d8-a5bd-4172-9f50-f2b9d1d03611}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="-1"/>
+			</Node>
+			<Node name="{bc2725ab-c90d-4761-beb2-abace30fe554}">
 				<Prp name="type" type="I" value="1"/>
 				<Prp name="value" type="B" value="-1"/>
 			</Node>
@@ -438,9 +959,353 @@
 				<Prp name="type" type="I" value="2"/>
 				<Prp name="value" type="I" value="10"/>
 			</Node>
+			<Node name="{d852bfd9-d446-4748-906f-1fa580d41304}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="1"/>
+				<Prp name="col1enabled" type="B" value="-1"/>
+				<Prp name="col1type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="2"/>
+				<Prp name="colindex" type="I" value="1"/>
+				<Prp name="rowcount" type="I" value="1"/>
+				<Prp name="rowindex" type="I" value="0"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="B" value="-1"/>
+				<Prp name="val1x0" type="S" value="%PRODUCT_LOCATION%\Open Apps\Flex\FlashInjector.swf"/>
+			</Node>
+			<Node name="{db42ceab-bfc4-40db-9f48-9197d35fb5e2}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="2"/>
+				<Prp name="col1enabled" type="B" value="-1"/>
+				<Prp name="col1type" type="I" value="2"/>
+				<Prp name="col2enabled" type="B" value="-1"/>
+				<Prp name="col2type" type="I" value="1"/>
+				<Prp name="col3enabled" type="B" value="-1"/>
+				<Prp name="col3type" type="I" value="1"/>
+				<Prp name="col4enabled" type="B" value="-1"/>
+				<Prp name="col4type" type="I" value="5"/>
+				<Prp name="col5enabled" type="B" value="-1"/>
+				<Prp name="col5type" type="I" value="5"/>
+				<Prp name="col6enabled" type="B" value="-1"/>
+				<Prp name="col6type" type="I" value="5"/>
+				<Prp name="col7enabled" type="B" value="-1"/>
+				<Prp name="col7type" type="I" value="5"/>
+				<Prp name="col8enabled" type="B" value="-1"/>
+				<Prp name="col8type" type="I" value="5"/>
+				<Prp name="col9enabled" type="B" value="-1"/>
+				<Prp name="col9type" type="I" value="2"/>
+				<Prp name="colcount" type="I" value="10"/>
+				<Prp name="colindex" type="I" value="9"/>
+				<Prp name="rowcount" type="I" value="30"/>
+				<Prp name="rowindex" type="I" value="29"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="I" value="-1"/>
+				<Prp name="val0x1" type="I" value="0"/>
+				<Prp name="val0x10" type="I" value="-1"/>
+				<Prp name="val0x11" type="I" value="10"/>
+				<Prp name="val0x12" type="I" value="10"/>
+				<Prp name="val0x13" type="I" value="10"/>
+				<Prp name="val0x14" type="I" value="-1"/>
+				<Prp name="val0x15" type="I" value="14"/>
+				<Prp name="val0x16" type="I" value="14"/>
+				<Prp name="val0x17" type="I" value="14"/>
+				<Prp name="val0x18" type="I" value="14"/>
+				<Prp name="val0x19" type="I" value="-1"/>
+				<Prp name="val0x2" type="I" value="0"/>
+				<Prp name="val0x20" type="I" value="19"/>
+				<Prp name="val0x21" type="I" value="-1"/>
+				<Prp name="val0x22" type="I" value="21"/>
+				<Prp name="val0x23" type="I" value="21"/>
+				<Prp name="val0x24" type="I" value="21"/>
+				<Prp name="val0x25" type="I" value="21"/>
+				<Prp name="val0x26" type="I" value="-1"/>
+				<Prp name="val0x27" type="I" value="26"/>
+				<Prp name="val0x28" type="I" value="26"/>
+				<Prp name="val0x29" type="I" value="-1"/>
+				<Prp name="val0x3" type="I" value="-1"/>
+				<Prp name="val0x4" type="I" value="3"/>
+				<Prp name="val0x5" type="I" value="-1"/>
+				<Prp name="val0x6" type="I" value="5"/>
+				<Prp name="val0x7" type="I" value="-1"/>
+				<Prp name="val0x8" type="I" value="7"/>
+				<Prp name="val0x9" type="I" value="7"/>
+				<Prp name="val1x0" type="I" value="-1"/>
+				<Prp name="val1x1" type="I" value="-1"/>
+				<Prp name="val1x10" type="I" value="-1"/>
+				<Prp name="val1x11" type="I" value="-1"/>
+				<Prp name="val1x12" type="I" value="-1"/>
+				<Prp name="val1x13" type="I" value="-1"/>
+				<Prp name="val1x14" type="I" value="-1"/>
+				<Prp name="val1x15" type="I" value="-1"/>
+				<Prp name="val1x16" type="I" value="-1"/>
+				<Prp name="val1x17" type="I" value="-1"/>
+				<Prp name="val1x18" type="I" value="-1"/>
+				<Prp name="val1x19" type="I" value="-1"/>
+				<Prp name="val1x2" type="I" value="-1"/>
+				<Prp name="val1x20" type="I" value="-1"/>
+				<Prp name="val1x21" type="I" value="-1"/>
+				<Prp name="val1x22" type="I" value="-1"/>
+				<Prp name="val1x23" type="I" value="-1"/>
+				<Prp name="val1x24" type="I" value="-1"/>
+				<Prp name="val1x25" type="I" value="-1"/>
+				<Prp name="val1x26" type="I" value="-1"/>
+				<Prp name="val1x27" type="I" value="-1"/>
+				<Prp name="val1x28" type="I" value="-1"/>
+				<Prp name="val1x29" type="I" value="-1"/>
+				<Prp name="val1x3" type="I" value="-1"/>
+				<Prp name="val1x4" type="I" value="-1"/>
+				<Prp name="val1x5" type="I" value="-1"/>
+				<Prp name="val1x6" type="I" value="-1"/>
+				<Prp name="val1x7" type="I" value="-1"/>
+				<Prp name="val1x8" type="I" value="-1"/>
+				<Prp name="val1x9" type="I" value="-1"/>
+				<Prp name="val2x0" type="B" value="-1"/>
+				<Prp name="val2x1" type="B" value="0"/>
+				<Prp name="val2x10" type="B" value="-1"/>
+				<Prp name="val2x11" type="B" value="0"/>
+				<Prp name="val2x12" type="B" value="0"/>
+				<Prp name="val2x13" type="B" value="0"/>
+				<Prp name="val2x14" type="B" value="-1"/>
+				<Prp name="val2x15" type="B" value="0"/>
+				<Prp name="val2x16" type="B" value="0"/>
+				<Prp name="val2x17" type="B" value="0"/>
+				<Prp name="val2x18" type="B" value="0"/>
+				<Prp name="val2x19" type="B" value="-1"/>
+				<Prp name="val2x2" type="B" value="0"/>
+				<Prp name="val2x20" type="B" value="0"/>
+				<Prp name="val2x21" type="B" value="-1"/>
+				<Prp name="val2x22" type="B" value="0"/>
+				<Prp name="val2x23" type="B" value="0"/>
+				<Prp name="val2x24" type="B" value="0"/>
+				<Prp name="val2x25" type="B" value="0"/>
+				<Prp name="val2x26" type="B" value="-1"/>
+				<Prp name="val2x27" type="B" value="0"/>
+				<Prp name="val2x28" type="B" value="0"/>
+				<Prp name="val2x29" type="B" value="-1"/>
+				<Prp name="val2x3" type="B" value="-1"/>
+				<Prp name="val2x4" type="B" value="0"/>
+				<Prp name="val2x5" type="B" value="-1"/>
+				<Prp name="val2x6" type="B" value="0"/>
+				<Prp name="val2x7" type="B" value="-1"/>
+				<Prp name="val2x8" type="B" value="0"/>
+				<Prp name="val2x9" type="B" value="0"/>
+				<Prp name="val3x0" type="B" value="-1"/>
+				<Prp name="val3x1" type="B" value="-1"/>
+				<Prp name="val3x10" type="B" value="-1"/>
+				<Prp name="val3x11" type="B" value="-1"/>
+				<Prp name="val3x12" type="B" value="-1"/>
+				<Prp name="val3x13" type="B" value="-1"/>
+				<Prp name="val3x14" type="B" value="-1"/>
+				<Prp name="val3x15" type="B" value="-1"/>
+				<Prp name="val3x16" type="B" value="-1"/>
+				<Prp name="val3x17" type="B" value="-1"/>
+				<Prp name="val3x18" type="B" value="-1"/>
+				<Prp name="val3x19" type="B" value="-1"/>
+				<Prp name="val3x2" type="B" value="-1"/>
+				<Prp name="val3x20" type="B" value="-1"/>
+				<Prp name="val3x21" type="B" value="-1"/>
+				<Prp name="val3x22" type="B" value="-1"/>
+				<Prp name="val3x23" type="B" value="-1"/>
+				<Prp name="val3x24" type="B" value="-1"/>
+				<Prp name="val3x25" type="B" value="-1"/>
+				<Prp name="val3x26" type="B" value="-1"/>
+				<Prp name="val3x27" type="B" value="-1"/>
+				<Prp name="val3x28" type="B" value="-1"/>
+				<Prp name="val3x29" type="B" value="-1"/>
+				<Prp name="val3x3" type="B" value="-1"/>
+				<Prp name="val3x4" type="B" value="-1"/>
+				<Prp name="val3x5" type="B" value="-1"/>
+				<Prp name="val3x6" type="B" value="-1"/>
+				<Prp name="val3x7" type="B" value="-1"/>
+				<Prp name="val3x8" type="B" value="-1"/>
+				<Prp name="val3x9" type="B" value="-1"/>
+				<Prp name="val4x0" type="S" value="Yahoo! UI library"/>
+				<Prp name="val4x1" type="S" value="Do not use IDs starting with &quot;yui-gen&quot;"/>
+				<Prp name="val4x10" type="S" value="ASP.NET"/>
+				<Prp name="val4x11" type="S" value="Do not use IDs ending with a string like &quot;ctl00&quot;"/>
+				<Prp name="val4x12" type="S" value="Remove GUIDs and ctl00-like prefixes from Sharepoint IDs"/>
+				<Prp name="val4x13" type="S" value="For IDs containing a string like &quot;ctl00_&quot;, leave only symbols after this string"/>
+				<Prp name="val4x14" type="S" value="Sencha ExtJS"/>
+				<Prp name="val4x15" type="S" value="Do not use IDs containing &quot;ext-gen&quot;"/>
+				<Prp name="val4x16" type="S" value="Do not use IDs containing &quot;ext-comp&quot;"/>
+				<Prp name="val4x17" type="S" value="Do not use IDs starting with &quot;extdd-&quot;"/>
+				<Prp name="val4x18" type="S" value="Remove digits from IDs like &quot;treepicker-1038&quot; or &quot;treepicker-1038-inputEl&quot;"/>
+				<Prp name="val4x19" type="S" value="Sencha Touch"/>
+				<Prp name="val4x2" type="S" value="Do not use IDs containing &quot;yui_3_&quot;"/>
+				<Prp name="val4x20" type="S" value="Remove dynamic parts of Sencha Touch IDs"/>
+				<Prp name="val4x21" type="S" value="JavaServer Faces"/>
+				<Prp name="val4x22" type="S" value="Do not use IDs like &quot;_t14&quot;"/>
+				<Prp name="val4x23" type="S" value="Do not use IDs like &quot;j_id23&quot; or &quot;j_idt23&quot;"/>
+				<Prp name="val4x24" type="S" value="Remove all but the last part of IDs like &quot;frm:menuLinks:0:link&quot;"/>
+				<Prp name="val4x25" type="S" value="Do not use IDs like &quot;frm:menuLinks:3:link&quot;"/>
+				<Prp name="val4x26" type="S" value="Google Web Toolkit"/>
+				<Prp name="val4x27" type="S" value="Remove all but the last part of IDs like &quot;gwt-uid-370_runButton&quot;"/>
+				<Prp name="val4x28" type="S" value="Remove dynamic parts of Sencha GXT IDs"/>
+				<Prp name="val4x29" type="S" value="Custom"/>
+				<Prp name="val4x3" type="S" value="jQuery UI library"/>
+				<Prp name="val4x4" type="S" value="Do not use IDs starting with &quot;ui-id-&quot;"/>
+				<Prp name="val4x5" type="S" value="Dojo toolkit"/>
+				<Prp name="val4x6" type="S" value="Do not use IDs starting with &quot;dijit_&quot;"/>
+				<Prp name="val4x7" type="S" value="Other"/>
+				<Prp name="val4x8" type="S" value="Do not use IDs containing GUID"/>
+				<Prp name="val4x9" type="S" value="Remove trailing digits from IDs like &quot;unique-123456&quot;"/>
+				<Prp name="val5x0" type="S" value=""/>
+				<Prp name="val5x1" type="S" value="Wildcard"/>
+				<Prp name="val5x10" type="S" value=""/>
+				<Prp name="val5x11" type="S" value="RegExp"/>
+				<Prp name="val5x12" type="S" value="RegExp"/>
+				<Prp name="val5x13" type="S" value="RegExp"/>
+				<Prp name="val5x14" type="S" value=""/>
+				<Prp name="val5x15" type="S" value="RegExp"/>
+				<Prp name="val5x16" type="S" value="RegExp"/>
+				<Prp name="val5x17" type="S" value="Wildcard"/>
+				<Prp name="val5x18" type="S" value="RegExp"/>
+				<Prp name="val5x19" type="S" value=""/>
+				<Prp name="val5x2" type="S" value="Wildcard"/>
+				<Prp name="val5x20" type="S" value="RegExp"/>
+				<Prp name="val5x21" type="S" value=""/>
+				<Prp name="val5x22" type="S" value="RegExp"/>
+				<Prp name="val5x23" type="S" value="RegExp"/>
+				<Prp name="val5x24" type="S" value="RegExp"/>
+				<Prp name="val5x25" type="S" value="RegExp"/>
+				<Prp name="val5x26" type="S" value=""/>
+				<Prp name="val5x27" type="S" value="RegExp"/>
+				<Prp name="val5x28" type="S" value="RegExp"/>
+				<Prp name="val5x29" type="S" value=""/>
+				<Prp name="val5x3" type="S" value=""/>
+				<Prp name="val5x4" type="S" value="Wildcard"/>
+				<Prp name="val5x5" type="S" value=""/>
+				<Prp name="val5x6" type="S" value="Wildcard"/>
+				<Prp name="val5x7" type="S" value=""/>
+				<Prp name="val5x8" type="S" value="RegExp"/>
+				<Prp name="val5x9" type="S" value="RegExp"/>
+				<Prp name="val6x0" type="S" value=""/>
+				<Prp name="val6x1" type="S" value="yui-gen*"/>
+				<Prp name="val6x10" type="S" value=""/>
+				<Prp name="val6x11" type="S" value="^(.*[-_$])?(ctl[0-9]+)$"/>
+				<Prp name="val6x12" type="S" value="(.+?_(\h+_\h+_\h+_\h+_\h+))+(.*ctr?l[0-9]+)?[_$]?{.*}$"/>
+				<Prp name="val6x13" type="S" value=".*(ctl[0-9]+[-_$]+){.*}"/>
+				<Prp name="val6x14" type="S" value=""/>
+				<Prp name="val6x15" type="S" value="^(.*-)?ext-gen"/>
+				<Prp name="val6x16" type="S" value="^(.*-)?ext-comp"/>
+				<Prp name="val6x17" type="S" value="extdd-*"/>
+				<Prp name="val6x18" type="S" value="^{[A-Za-z-]+}-{\d\d\d\d+}{.*}$"/>
+				<Prp name="val6x19" type="S" value=""/>
+				<Prp name="val6x2" type="S" value="*yui_3_*"/>
+				<Prp name="val6x20" type="S" value="^ext-{.*}-\d+$"/>
+				<Prp name="val6x21" type="S" value=""/>
+				<Prp name="val6x22" type="S" value="^{_t}{[0-9]+}$"/>
+				<Prp name="val6x23" type="S" value="^{j_idt?}{[0-9]+}$"/>
+				<Prp name="val6x24" type="S" value="(.+):{[^0-9]+}$"/>
+				<Prp name="val6x25" type="S" value="(.+):(.*)"/>
+				<Prp name="val6x26" type="S" value=""/>
+				<Prp name="val6x27" type="S" value="^(gwt-uid-[0-9]+)(_{.*})?$"/>
+				<Prp name="val6x28" type="S" value="^(x-((widget)|(auto))-.*[0-9]+)([-_]{.*})?$"/>
+				<Prp name="val6x29" type="S" value=""/>
+				<Prp name="val6x3" type="S" value=""/>
+				<Prp name="val6x4" type="S" value="ui-id-*"/>
+				<Prp name="val6x5" type="S" value=""/>
+				<Prp name="val6x6" type="S" value="dijit_*"/>
+				<Prp name="val6x7" type="S" value=""/>
+				<Prp name="val6x8" type="S" value="\h+-\h+-\h+-\h+-\h+"/>
+				<Prp name="val6x9" type="S" value="^{[A-Za-z-]+}(\d\d\d\d\d\d+)$"/>
+				<Prp name="val7x0" type="S" value=""/>
+				<Prp name="val7x1" type="S" value=""/>
+				<Prp name="val7x10" type="S" value=""/>
+				<Prp name="val7x11" type="S" value=""/>
+				<Prp name="val7x12" type="S" value="$1"/>
+				<Prp name="val7x13" type="S" value="$1"/>
+				<Prp name="val7x14" type="S" value=""/>
+				<Prp name="val7x15" type="S" value=""/>
+				<Prp name="val7x16" type="S" value=""/>
+				<Prp name="val7x17" type="S" value=""/>
+				<Prp name="val7x18" type="S" value="$1$3"/>
+				<Prp name="val7x19" type="S" value=""/>
+				<Prp name="val7x2" type="S" value=""/>
+				<Prp name="val7x20" type="S" value="$1"/>
+				<Prp name="val7x21" type="S" value=""/>
+				<Prp name="val7x22" type="S" value=""/>
+				<Prp name="val7x23" type="S" value=""/>
+				<Prp name="val7x24" type="S" value="$1"/>
+				<Prp name="val7x25" type="S" value=""/>
+				<Prp name="val7x26" type="S" value=""/>
+				<Prp name="val7x27" type="S" value="$1"/>
+				<Prp name="val7x28" type="S" value="$1"/>
+				<Prp name="val7x29" type="S" value=""/>
+				<Prp name="val7x3" type="S" value=""/>
+				<Prp name="val7x4" type="S" value=""/>
+				<Prp name="val7x5" type="S" value=""/>
+				<Prp name="val7x6" type="S" value=""/>
+				<Prp name="val7x7" type="S" value=""/>
+				<Prp name="val7x8" type="S" value=""/>
+				<Prp name="val7x9" type="S" value="$1"/>
+				<Prp name="val8x0" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x1" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x10" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x11" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x12" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x13" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x14" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x15" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x16" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x17" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x18" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x19" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x2" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x20" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x21" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x22" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x23" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x24" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x25" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x26" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x27" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x28" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x29" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x3" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x4" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x5" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x6" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x7" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x8" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val8x9" type="S" value="Wildcard&#xA;RegExp"/>
+				<Prp name="val9x0" type="I" value="0"/>
+				<Prp name="val9x1" type="I" value="0"/>
+				<Prp name="val9x10" type="I" value="0"/>
+				<Prp name="val9x11" type="I" value="0"/>
+				<Prp name="val9x12" type="I" value="0"/>
+				<Prp name="val9x13" type="I" value="0"/>
+				<Prp name="val9x14" type="I" value="0"/>
+				<Prp name="val9x15" type="I" value="0"/>
+				<Prp name="val9x16" type="I" value="0"/>
+				<Prp name="val9x17" type="I" value="0"/>
+				<Prp name="val9x18" type="I" value="0"/>
+				<Prp name="val9x19" type="I" value="0"/>
+				<Prp name="val9x2" type="I" value="0"/>
+				<Prp name="val9x20" type="I" value="0"/>
+				<Prp name="val9x21" type="I" value="0"/>
+				<Prp name="val9x22" type="I" value="0"/>
+				<Prp name="val9x23" type="I" value="0"/>
+				<Prp name="val9x24" type="I" value="0"/>
+				<Prp name="val9x25" type="I" value="0"/>
+				<Prp name="val9x26" type="I" value="0"/>
+				<Prp name="val9x27" type="I" value="0"/>
+				<Prp name="val9x28" type="I" value="0"/>
+				<Prp name="val9x29" type="I" value="0"/>
+				<Prp name="val9x3" type="I" value="0"/>
+				<Prp name="val9x4" type="I" value="0"/>
+				<Prp name="val9x5" type="I" value="0"/>
+				<Prp name="val9x6" type="I" value="0"/>
+				<Prp name="val9x7" type="I" value="0"/>
+				<Prp name="val9x8" type="I" value="0"/>
+				<Prp name="val9x9" type="I" value="0"/>
+			</Node>
 			<Node name="{e3ac1830-9216-4dc9-ab7b-884f3b0e9a48}">
 				<Prp name="type" type="I" value="2"/>
 				<Prp name="value" type="I" value="0"/>
+			</Node>
+			<Node name="{e47a2931-ee5d-42d2-8cb7-3796de597aa1}">
+				<Prp name="type" type="I" value="5"/>
+				<Prp name="value" type="S" value=""/>
 			</Node>
 			<Node name="{e5242a20-9b70-4540-aefd-7012791d3284}">
 				<Prp name="type" type="I" value="1"/>
@@ -462,11 +1327,17 @@
 				<Prp name="col0type" type="I" value="5"/>
 				<Prp name="colcount" type="I" value="1"/>
 				<Prp name="colindex" type="I" value="0"/>
-				<Prp name="rowcount" type="I" value="10"/>
-				<Prp name="rowindex" type="I" value="9"/>
+				<Prp name="rowcount" type="I" value="16"/>
+				<Prp name="rowindex" type="I" value="15"/>
 				<Prp name="type" type="I" value="6"/>
 				<Prp name="val0x0" type="S" value="NativeVBObject"/>
 				<Prp name="val0x1" type="S" value="NativeDelphiObject"/>
+				<Prp name="val0x10" type="S" value="NativeSlObject"/>
+				<Prp name="val0x11" type="S" value="NativeWebObject"/>
+				<Prp name="val0x12" type="S" value="NativeSafariObject"/>
+				<Prp name="val0x13" type="S" value="NativeOperaObject"/>
+				<Prp name="val0x14" type="S" value="NativeChromeObject"/>
+				<Prp name="val0x15" type="S" value="NativeFirefoxObject"/>
 				<Prp name="val0x2" type="S" value="NativeTextObject"/>
 				<Prp name="val0x3" type="S" value="NativeJavaObject"/>
 				<Prp name="val0x4" type="S" value="NativeClrObject"/>
@@ -491,6 +1362,10 @@
 			<Node name="{fe195f25-7dc0-457f-9336-71ed39243753}">
 				<Prp name="type" type="I" value="5"/>
 				<Prp name="value" type="S" value="126_0_0_0_97_113_115_111_1_0_0_0_4_0_0_0_114_0_111_0_111_0_116_0_1_0_0_0_9_0_0_0_102_0_111_0_114_0_109_0_97_0_116_0_107_0_101_0_121_0_1_0_0_0_38_0_0_0_123_0_66_0_65_0_55_0_52_0_53_0_49_0_54_0_57_0_45_0_70_0_51_0_52_0_68_0_45_0_52_0_55_0_49_0_48_0_45_0_66_0_51_0_55_0_70_0_45_0_68_0_53_0_69_0_70_0_69_0_56_0_65_0_53_0_49_0_51_0_51_0_57_0_125_0_1_0_0_0_16_0_0_0_112_0_110_0_103_0_99_0_111_0_110_0_102_0_105_0_103_0_117_0_114_0_97_0_116_0_105_0_111_0_110_0_2_0_0_0_16_0_0_0_99_0_111_0_109_0_112_0_114_0_101_0_115_0_115_0_105_0_111_0_110_0_108_0_101_0_118_0_101_0_108_0_0_0_0_0_4_0_0_0_10_0_0_0_105_0_110_0_116_0_101_0_114_0_108_0_97_0_99_0_101_0_100_0_5_0_0_0_0_0_0_0_0_0_"/>
+			</Node>
+			<Node name="agopenapp_extendedsilverlightobjecttree">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
 			</Node>
 			<Node name="applicationhangingprocessfiltermode">
 				<Prp name="col0enabled" type="B" value="-1"/>
@@ -549,7 +1424,7 @@
 				<Prp name="col1enabled" type="B" value="-1"/>
 				<Prp name="col1type" type="I" value="1"/>
 				<Prp name="colcount" type="I" value="2"/>
-				<Prp name="colindex" type="I" value="1"/>
+				<Prp name="colindex" type="I" value="0"/>
 				<Prp name="rowcount" type="I" value="0"/>
 				<Prp name="rowindex" type="I" value="-1"/>
 				<Prp name="type" type="I" value="6"/>
@@ -669,6 +1544,18 @@
 				<Prp name="type" type="I" value="1"/>
 				<Prp name="value" type="B" value="0"/>
 			</Node>
+			<Node name="runstandaloneserver">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="standaloneserveradditionaloptions">
+				<Prp name="type" type="I" value="5"/>
+				<Prp name="value" type="S" value=""/>
+			</Node>
+			<Node name="standaloneserverport">
+				<Prp name="type" type="I" value="2"/>
+				<Prp name="value" type="I" value="4444"/>
+			</Node>
 			<Node name="textrecognizer_acceptedwindows">
 				<Prp name="col0enabled" type="B" value="-1"/>
 				<Prp name="col0type" type="I" value="1"/>
@@ -684,7 +1571,246 @@
 			<Prp name="settingsversion" type="S" value="11.20"/>
 		</Node>
 		<Node name="test data">
-			<Node name="child list"/>
+			<Node name="child list">
+				<Node name="item idx=0000">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{95C8D587-9E42-484A-A3AA-18C5BAF913CA}"/>
+					<Prp name="name" type="S" value="AllgameLevelsFinishedOK"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{61F2C6F2-4A1E-4871-B358-CB084C4A18C4}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0001">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{EDE16D6B-BF67-4A62-90E5-3897B36711B8}"/>
+					<Prp name="name" type="S" value="FailedRetryOkNextLevel"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{33974FFD-26AF-45AE-BDD4-6703581B131B}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0002">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{65DE47FA-48B6-423A-998D-87F96605BC0E}"/>
+					<Prp name="name" type="S" value="EraserBeforeAudioIsFinished"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{127A5BE8-F385-4E3F-8D06-6E450B1F1A1F}causeEffect"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0003">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{B5E75860-3B50-4C3E-ADB0-5D7C19F05F94}"/>
+					<Prp name="name" type="S" value="OneClickLevelBeforeAudioIsFinished"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{03CBCD69-FCA5-4E25-A4D5-9DD4510D75A5}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0004">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{22C86E2C-E31B-473A-AAA2-A0133DD1ECA0}"/>
+					<Prp name="name" type="S" value="3ClicksLevelBeforeAudioIsFinished"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{8BF0088C-E19F-4802-A890-1A5E8A0D7683}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0005">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{EEEBE7EC-7C7C-43A5-81C6-BA421D58D37C}"/>
+					<Prp name="name" type="S" value="DragAndDropBeforeAudioIsFinished"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{C416FFB3-ED42-4761-AE2B-D9364D205EEE}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0006">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{45A960E0-B328-4F91-9064-94B38C9078C0}"/>
+					<Prp name="name" type="S" value="Eraser"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{2D1F8477-3B7F-44BF-BF9F-BFDC8D790A37}causeEffect"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0007">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{AD19EC72-127F-4663-8329-7D1153A732FD}"/>
+					<Prp name="name" type="S" value="OneClickLevelPassed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{65583A63-DE32-4014-9FD6-49B46909170E}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0008">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{7C62905B-D176-4AFB-9AB4-47F87D163668}"/>
+					<Prp name="name" type="S" value="OneClickFailed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{804B8CFE-B2B9-4455-AAC3-F8D3FA878EFC}CauseEffect_ClicksOutOfBounds"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0009">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{A28F3683-25B4-4547-906A-8C838434682E}"/>
+					<Prp name="name" type="S" value="3ClicksPassed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{8BF0088C-E19F-4802-A890-1A5E8A0D7683}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0010">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{E0CCF0BE-980D-4CEA-92EF-B5E3ECA995D0}"/>
+					<Prp name="name" type="S" value="3ClicksFailed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{96C12F62-5406-4F03-8468-635674793FDE}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0011">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{27DE94C7-6FCF-4C79-959E-D30169A941CD}"/>
+					<Prp name="name" type="S" value="DragAndDropPassed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{61F2C6F2-4A1E-4871-B358-CB084C4A18C4}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0012">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{5E066776-1540-4CE7-AC0E-DB95DDAFF7B6}"/>
+					<Prp name="name" type="S" value="DragAndDropFailed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{0A93104D-D946-47FF-B61D-F70C255AB50C}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0013">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{B659296A-01ED-4910-BBA9-FC1F485515A3}"/>
+					<Prp name="name" type="S" value="EraserRetry"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{5B61EE55-972E-485D-93E8-40B9B6CF60B5}causeEffect"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0014">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{617E6DA4-22DB-4484-9300-6557D3059920}"/>
+					<Prp name="name" type="S" value="OneClickRetry"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{97ED9AED-6894-46C2-B9B6-02737C803949}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0015">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{E4A05EA6-1485-4648-817C-8E21175F0A7F}"/>
+					<Prp name="name" type="S" value="3ClickRetry"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{EDD799E6-0B26-4144-919C-5C4462575759}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0016">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{F74B02A6-D7D0-4355-8A61-F2C94DB73B08}"/>
+					<Prp name="name" type="S" value="DragAndDropRetry"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{3A46F12F-96CE-4DC1-A037-9C6B8C70C818}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+			</Node>
 			<Prp name="key" type="S" value="{B524D61F-5551-4B11-BAF0-CEB2F8987358}"/>
 		</Node>
 		<Node name="variables">
