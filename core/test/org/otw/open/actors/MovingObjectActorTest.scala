@@ -1,11 +1,10 @@
 package org.otw.open.actors
 
 import com.badlogic.gdx.Screen
-import org.mockito.Mockito
-import org.otw.open.engine.impl.StaticAnimationEngine
-import org.otw.open.screens.{EraserGameScreen, CauseAndEffectScreen}
+import org.otw.open.OpenGame
+import org.otw.open.controllers.GameState
+import org.otw.open.screens.{AbstractGameScreen, ActionResultScreen, CauseAndEffectScreen}
 import org.otw.open.testconfig.UnitSpec
-import org.otw.open.{GameScreen, OpenGame}
 import org.scalatest.BeforeAndAfterEach
 
 /**
@@ -16,8 +15,9 @@ class MovingObjectActorTest extends UnitSpec with BeforeAndAfterEach {
   var actor: MovingObjectActor = _
 
   override protected def beforeEach(): Unit = {
+
+    GameState.setLevel(3)
     actor = new MovingObjectActor
-    OpenGame.changeScreen(new CauseAndEffectScreen)
   }
 
   test("isOnInitialPosition should return true when actor in inital state") {
@@ -58,16 +58,22 @@ class MovingObjectActorTest extends UnitSpec with BeforeAndAfterEach {
   }
 
   test("Unhappy animation should be shown when actor was missed 3 times") {
+
+
+
     actor.incrementMissCount
     actor.incrementMissCount
     actor.incrementMissCount
 
     val screen: Screen = OpenGame.getGame.getScreen
-    assert(getGameScreen(screen).engine.isInstanceOf[StaticAnimationEngine])
+
+    assert(getGameScreen(screen).isInstanceOf[ActionResultScreen])
   }
 
   def getGameScreen(screen: Screen) = screen match {
-    case x: GameScreen => x
+    case x: AbstractGameScreen => x
     case _ => throw new ClassCastException
   }
+
+  override protected def afterEach(): Unit = actor.dispose
 }

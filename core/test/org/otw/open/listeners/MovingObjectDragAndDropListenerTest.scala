@@ -2,10 +2,8 @@ package org.otw.open.listeners
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent
 import org.mockito.Mockito
-import org.otw.open.engine.impl.StaticAnimationEngine
-import org.otw.open.{GameScreen, OpenGame}
 import org.otw.open.actors.MovingObjectActor
-import org.otw.open.screens.CauseAndEffectScreen
+import org.otw.open.controllers.GameState
 import org.otw.open.testconfig.UnitSpec
 import org.scalatest.BeforeAndAfterEach
 
@@ -19,6 +17,7 @@ class MovingObjectDragAndDropListenerTest extends UnitSpec with BeforeAndAfterEa
   var listener: MovingObjectDragAndDropListener = _
 
   override protected def beforeEach(): Unit = {
+    GameState.setLevel(3)
     actor = Mockito.mock(classOf[MovingObjectActor])
     listener = new MovingObjectDragAndDropListener(actor)
   }
@@ -36,21 +35,7 @@ class MovingObjectDragAndDropListenerTest extends UnitSpec with BeforeAndAfterEa
     Mockito.verify(actor, Mockito.times(1)).incrementMissCount
   }
 
-  test("should switch screen when actor dropped at endpoint") {
-    OpenGame.changeScreen(new CauseAndEffectScreen)
-    Mockito.when(actor.getX).thenReturn(1000)
-    Mockito.when(actor.getY).thenReturn(400)
-    listener.dragStop(new InputEvent(), 0, 0, 1)
-
-    val gameScreen = OpenGame.getGame.getScreen match {
-      case s: GameScreen => s
-      case _ => throw new scala.ClassCastException
-    }
-    val staticAnimationEngine = gameScreen.engine match {
-      case sae: StaticAnimationEngine => sae
-      case _ => throw new scala.ClassCastException
-    }
-
-    assert(staticAnimationEngine.atlasFileName.endsWith("happy-animation.atlas"))
+  override protected def afterEach(): Unit = {
+    actor.dispose
   }
 }
