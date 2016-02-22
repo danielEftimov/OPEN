@@ -59,8 +59,6 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
     addActor(staticAnimationActor)
   }
 
-  def getAtlasFileName = atlasFileName
-
   override def dispose(): Unit = {
     audioGuidance.dispose
     staticAnimationActor.dispose
