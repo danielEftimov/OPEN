@@ -1,11 +1,12 @@
 package org.otw.open.actors
 
 import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.audio.Music
 import com.badlogic.gdx.graphics.g2d.Batch
-import com.badlogic.gdx.scenes.scene2d.actions.{MoveToAction, MoveByAction}
-import com.badlogic.gdx.scenes.scene2d.{InputEvent, InputListener, Touchable, Actor}
-import com.badlogic.gdx.utils.Pool
-import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, GameState, CauseAndEffectFinishedUnsuccessfully, ScreenController}
+import com.badlogic.gdx.scenes.scene2d.actions.{MoveToAction, SequenceAction}
+import com.badlogic.gdx.scenes.scene2d.{Action, Actor}
+import com.badlogic.gdx.utils.Disposable
+import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, CauseAndEffectFinishedUnsuccessfully, GameState, ScreenController}
 import org.otw.open.dto.Point
 import org.otw.open.util.Animator
 
@@ -14,12 +15,17 @@ import scala.collection.mutable
 /**
   * Created by eilievska on 2/12/2016.
   */
-class MovingObjectActor extends Actor {
+class MovingObjectActor extends Actor with Disposable {
 
   /**
     * Timer for the vibrating object
     */
   private var animationTime = 0f
+
+  /**
+    * animation object sound
+    */
+  val sound: Music = Gdx.audio.newMusic(Gdx.files.internal("carEngine.mp3"))
 
   /**
     * Number of times the actor was missed by a click or not placed on the correct position with drag and drop.
@@ -78,6 +84,7 @@ class MovingObjectActor extends Actor {
     val startPoint: Point = GameState.getLevelStartPoint
     setX(startPoint.x)
     setY(startPoint.y)
+    sound.stop
   }
 
   /**
@@ -127,7 +134,10 @@ class MovingObjectActor extends Actor {
   override def draw(batch: Batch, parentAlpha: Float): Unit = {
     animationTime += Gdx.graphics.getDeltaTime
     batch.draw(animator.getCurrentTexture(animationTime), getX, getY)
-    if (!isInMotion && actorFinishedAllActions) ScreenController.dispatchEvent(CauseAndEffectFinishedSuccessfully)
+    if (!isInMotion && actorFinishedAllActions) {
+      sound.stop
+      ScreenController.dispatchEvent(CauseAndEffectFinishedSuccessfully)
+    }
   }
 
   /**
@@ -135,7 +145,27 @@ class MovingObjectActor extends Actor {
     */
   def move() = {
     currentMoveToAction = actionStack.pop
-    addAction(currentMoveToAction)
+    addAction(new SequenceAction(currentMoveToAction, completeAction))
   }
 
+  def playSound(): Unit = {
+    sound.setLooping(true)
+    sound.play
+  }
+
+  def stopSound(): Unit = {
+    sound.stop
+  }
+
+  def completeAction = new Action() {
+    def act(delta: Float): Boolean = {
+      sound.stop
+      true
+    }
+  }
+
+  override def dispose(): Unit = {
+    sound.dispose
+    animator.dispose
+  }
 }

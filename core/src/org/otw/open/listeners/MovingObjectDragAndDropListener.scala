@@ -12,6 +12,7 @@ import org.otw.open.dto.Point
 class MovingObjectDragAndDropListener(val actor: MovingObjectActor) extends DragListener {
 
   override def drag(event: InputEvent, x: Float, y: Float, pointer: Int): Unit = {
+    actor.playSound
     actor.moveBy(x - actor.getWidth / 2, y - actor.getHeight / 2)
   }
 
@@ -24,5 +25,6 @@ class MovingObjectDragAndDropListener(val actor: MovingObjectActor) extends Drag
       actor.resetPosition()
       actor.incrementMissCount
     }
+    actor.stopSound
   }
 }
