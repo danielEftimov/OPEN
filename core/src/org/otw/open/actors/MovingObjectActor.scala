@@ -1,6 +1,6 @@
 package org.otw.open.actors
 
-import com.badlogic.gdx.{InputProcessor, Gdx}
+import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.g2d.Batch
 import com.badlogic.gdx.scenes.scene2d.actions.{MoveToAction, MoveByAction}
 import com.badlogic.gdx.scenes.scene2d.{InputEvent, InputListener, Touchable, Actor}
@@ -31,10 +31,20 @@ class MovingObjectActor extends Actor {
     */
   private val animator: Animator = new Animator("theme/" + GameState.getThemeName + "/animation-object.atlas")
 
+  /**
+    * Move actions for the actor
+    */
   private val actionStack = mutable.Stack[MoveToAction]()
 
+  /**
+    * Standpoints for the animation of the actor
+    * (held in the json property file)
+    */
   private val standPoints: List[Point] = GameState.getLevelStandPoints
 
+  /**
+    * add MoveAction in the stack for each standpoint
+    */
   standPoints.reverse.foreach(point => {
     val moveToAction = new MoveToAction
     moveToAction.setDuration(2f)
@@ -42,21 +52,37 @@ class MovingObjectActor extends Actor {
     actionStack.push(moveToAction)
   })
 
+  /**
+    * next standpoint for animating object
+    */
   private var currentMoveToAction = actionStack.top
 
   resetPosition()
-
+  /**
+    * the width of actor object
+    */
   private val actorWidth: Float = animator.getCurrentTexture(0).getRegionWidth
+
+  /**
+    * the height of actor object
+    */
   private val actorHeight: Float = animator.getCurrentTexture(0).getRegionHeight
+
   setWidth(actorWidth)
   setHeight(actorHeight)
 
+  /**
+    * set actor's position to start point
+    */
   def resetPosition() = {
     val startPoint: Point = GameState.getLevelStartPoint
     setX(startPoint.x)
     setY(startPoint.y)
   }
 
+  /**
+    * Count failed attempts
+    */
   def incrementMissCount = {
     objectMissedCount += 1
     if (objectMissedCount >= 3) {
@@ -64,29 +90,49 @@ class MovingObjectActor extends Actor {
     }
   }
 
+  /**
+    * @return number of missed counts
+    */
   def getObjectMissCount = objectMissedCount
 
   /**
-    *
     * @return true if the actor is on the initial position (start_point from the JSON file).
     */
   def isOnInitialPosition: Boolean = getX == GameState.getLevelStartPoint.x
 
+  /**
+    * @return true if actor is moving on the stage
+    */
   def isInMotion = {
     val isMoving: Boolean = getX != currentMoveToAction.getX
     if (isOnInitialPosition) false else isMoving
   }
 
+  /**
+    * @return true if actor has reached final point
+    */
   def actorFinishedAllActions = actionStack.isEmpty
 
+  /**
+    * decreases missed count if screen was clicked and actor was not
+    */
   def decrementMissCount = objectMissedCount -= 1
 
+  /**
+    * Changes screen if actor has reached endpoint
+    *
+    * @param batch
+    * @param parentAlpha
+    */
   override def draw(batch: Batch, parentAlpha: Float): Unit = {
     animationTime += Gdx.graphics.getDeltaTime
     batch.draw(animator.getCurrentTexture(animationTime), getX, getY)
     if (!isInMotion && actorFinishedAllActions) ScreenController.dispatchEvent(CauseAndEffectFinishedSuccessfully)
   }
 
+  /**
+    * adds new move action to the actor for the next standpoint
+    */
   def move() = {
     currentMoveToAction = actionStack.pop
     addAction(currentMoveToAction)
