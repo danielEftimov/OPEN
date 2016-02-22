@@ -1,8 +1,7 @@
-package org.otw.open.engine.util
+package org.otw.open.util
 
 import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.audio.{Music, Sound}
-import com.badlogic.gdx.utils.Disposable
+import com.badlogic.gdx.audio.Music
 
 /**
   * SoundEffect class that will handle the audio guidance in the application

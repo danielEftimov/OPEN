@@ -1,4 +1,4 @@
-package org.otw.open.engine.util
+package org.otw.open.util
 
 import org.otw.open.testconfig.UnitSpec
 

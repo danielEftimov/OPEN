@@ -15,22 +15,12 @@ object GameState {
 
   private var themeName: String = "car_theme"
 
-  private var level = 3
-
-  def getLevelStandPoints = {
-    val theme: Theme = themeMap.get(themeName).orElse(throw new RuntimeException).get
-    theme.levels.get(level.toString).get
-  }
-
-  def getLevelStartPoint = {
-    val theme: Theme = themeMap.get(themeName).orElse(throw new RuntimeException).get
-    theme.start_point
-  }
+  private var level = 1
 
   private val jsonString: String = getStringFromJsonFile
 
   implicit val formats = org.json4s.DefaultFormats
-  val themeMap: Map[String, Theme] = parse(jsonString).extract[Map[String, Theme]]
+  private val themeMap: Map[String, Theme] = parse(jsonString).extract[Map[String, Theme]]
 
   private def getStringFromJsonFile: String = {
     val inputStream = Gdx.files.internal("cause_and_effect.json").read()
@@ -38,8 +28,33 @@ object GameState {
     jsonString
   }
 
+  def getLevelStandPoints = {
+    val theme: Theme = themeMap.get(themeName).orNull
+    theme.levels.get(level.toString).get
+  }
+
+  def getLevelStartPoint = {
+    val theme: Theme = themeMap.get(themeName).orNull
+    theme.start_point
+  }
+
   def getThemeName = themeName
 
   def getLevel = level
+
+  def incrementLevel = if (level == 4) level = 1 else level += 1
+
+  def nextTheme = {
+    themeName = themeMap.keys.toList match {
+      case themeMap :: x :: _ => x
+      case _ => themeName
+    }
+    setLevel(1)
+  }
+
+  def setLevel(newLevel: Int) = {
+    if (newLevel > 0 && newLevel < 5)
+      level = newLevel
+  }
 
 }

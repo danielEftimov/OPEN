@@ -1,7 +1,7 @@
-package org.otw.open.engine.util
+package org.otw.open.util
 
 import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.graphics.g2d.{TextureRegion, Animation, TextureAtlas}
+import com.badlogic.gdx.graphics.g2d.{Animation, TextureAtlas, TextureRegion}
 import org.otw.open.testconfig.UnitSpec
 
 /**
