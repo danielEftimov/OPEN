@@ -47,6 +47,9 @@
 -dontwarn  android.test.suitebuilder.TestSuiteBuilder$FailedToCreateTests
 -dontwarn  org.hamcrest.**
 -dontwarn  org.junit.**
+-dontwarn  com.fasterxml.**
+-dontwarn  org.json4s.**
+-dontwarn  com.thoughtworks.paranamer.**
 
 -keep class com.badlogic.gdx.controllers.android.AndroidControllers
 
