@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 9">
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;AnimationCar&quot; passed."/>
+			<Prp name="date" type="D" value="42419.6001615509"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{53DE195A-13F1-4EA0-9D3C-E94275C17CBA}&quot;&gt; Click here to show or modify data of the checkpoint &quot;AnimationCar&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="18"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="owner id" type="I" value="8"/>
+			<Prp name="picture" type="S" value="Picture202.png;Picture203.png;Picture204.png"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 15">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="object right" type="I" value="1458"/>
+					<Prp name="image file name" type="S" value="visImage9.png"/>
+					<Prp name="object name" type="S" value="Aliases.javaw.wndLWJGL2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="42419.5587992014"/>
+					<Prp name="line #" type="I" value="37"/>
+					<Prp name="object left" type="I" value="0"/>
+					<Prp name="version" type="I" value="1"/>
+					<Prp name="object top" type="I" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="947"/>
+				</Node>
+			</Node>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The 'OPEN - a children's game' window was closed."/>
+			<Prp name="date" type="D" value="42419.6004696991"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.javaw.wndLWJGL2&#xA;(Sys.Process(&quot;javaw&quot;).Window(&quot;LWJGL&quot;, &quot;OPEN - a children\'s game&quot;, 1))"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Execution of the low-level procedure ContinuousMovement completed."/>
+			<Prp name="date" type="D" value="42419.6000165278"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="50"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="500"/>
+			<Prp name="as html" type="B" value="0"/>
+		</Node>
+		<Node name="message 13">
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="This test is for Reaching the goal with multiple clicks"/>
+			<Prp name="date" type="D" value="42419.600363669"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Execution of the low-level procedure ContinuousMovement started."/>
+			<Prp name="date" type="D" value="42419.5997829051"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="50"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="500"/>
+			<Prp name="as html" type="B" value="0"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 1" type="S" value="{8BF0088C-E19F-4802-A890-1A5E8A0D7683}"/>
+			<Prp name="unit 2" type="S" value="{C590DA2E-7DA7-48FB-81E7-0DDB30703498}"/>
+			<Prp name="unit 0" type="S" value="{2D1F8477-3B7F-44BF-BF9F-BFDC8D790A37}"/>
+		</Node>
+		<Node name="message 11">
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;NextLevel&quot; passed."/>
+			<Prp name="date" type="D" value="42419.600264375"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{96EC226E-7822-4A7B-A6DD-8F605344CCB6}&quot;&gt; Click here to show or modify data of the checkpoint &quot;NextLevel&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="22"/>
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="owner id" type="I" value="8"/>
+			<Prp name="picture" type="S" value="Picture208.png;Picture209.png;Picture210.png"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;happyAnimation&quot; passed."/>
+			<Prp name="date" type="D" value="42419.6002165972"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{5E26A90E-4733-455C-98EE-5918B230D2E8}&quot;&gt; Click here to show or modify data of the checkpoint &quot;happyAnimation&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="8"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="owner id" type="I" value="8"/>
+			<Prp name="picture" type="S" value="Picture205.png;Picture206.png;Picture207.png"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+		</Node>
+		<Node name="message 14">
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;happyAnimation&quot; passed."/>
+			<Prp name="date" type="D" value="42419.6004640972"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{5E26A90E-4733-455C-98EE-5918B230D2E8}&quot;&gt; Click here to show or modify data of the checkpoint &quot;happyAnimation&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="8"/>
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="owner id" type="I" value="13"/>
+			<Prp name="picture" type="S" value="Picture213.png;Picture214.png;Picture215.png"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+		</Node>
+		<Node name="message 12">
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;AnimationCar&quot; passed."/>
+			<Prp name="date" type="D" value="42419.6003056366"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{53DE195A-13F1-4EA0-9D3C-E94275C17CBA}&quot;&gt; Click here to show or modify data of the checkpoint &quot;AnimationCar&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="18"/>
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="owner id" type="I" value="8"/>
+			<Prp name="picture" type="S" value="Picture211.png;Picture212.png"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;AnimationCar&quot; passed."/>
+			<Prp name="date" type="D" value="42419.6000834491"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{53DE195A-13F1-4EA0-9D3C-E94275C17CBA}&quot;&gt; Click here to show or modify data of the checkpoint &quot;AnimationCar&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="18"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="picture" type="S" value="Picture199.png;Picture200.png;Picture201.png"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="d-0" type="D" value="42419.600472338"/>
+			</Node>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="isinteger" type="B" value="0"/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="columnindex" type="I" value="0"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="This test is for Reaching the goal with one click"/>
+			<Prp name="date" type="D" value="42419.6001414468"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="18"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;happyAnimation&quot; passed."/>
+			<Prp name="date" type="D" value="42419.6000286806"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{5E26A90E-4733-455C-98EE-5918B230D2E8}&quot;&gt; Click here to show or modify data of the checkpoint &quot;happyAnimation&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="8"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="picture" type="S" value="Picture194.png;Picture195.png"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 0">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The application &quot;E:\game for testing\test with audio for moving car and disabled clicks untill guidance finishes\desktop.exe&quot; started."/>
+			<Prp name="date" type="D" value="42419.599721088"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="The process ID is 8004."/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+		</Node>
+		<Node name="message 16">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The 'Cause and Effect' game finshed"/>
+			<Prp name="date" type="D" value="42419.600472338"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="38"/>
+			<Prp name="id" type="I" value="16"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;RegionLeaves&quot; passed."/>
+			<Prp name="date" type="D" value="42419.5997479514"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{3A235DF8-796D-412C-A66B-D8ECDF3F44E0}&quot;&gt; Click here to show or modify data of the checkpoint &quot;RegionLeaves&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="45"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="picture" type="S" value="Picture192.png;Picture193.png"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="This test is for ContinuousMovement of the mouse"/>
+			<Prp name="date" type="D" value="42419.5997290972"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="11"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;NextLevel&quot; passed."/>
+			<Prp name="date" type="D" value="42419.6000408333"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{96EC226E-7822-4A7B-A6DD-8F605344CCB6}&quot;&gt; Click here to show or modify data of the checkpoint &quot;NextLevel&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="22"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="picture" type="S" value="Picture196.png;Picture197.png;Picture198.png"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+		<Prp name="perfcounterslength" type="I" value="1"/>
+	</Node>
+</Nodes>

@@ -23,11 +23,11 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42401.6828343866"/>
+				<Prp name="datetime" type="D" value="42419.5932243403"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{21B0D7DB-54B8-4A08-B170-63E43C2826E0}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
-				<Prp name="relpath" type="S" value="2_1_2016_4_23 PM_16_891\Description.tcLog"/>
+				<Prp name="key" type="S" value="{60B2328A-E8B1-46D5-84F3-544A71617FB0}"/>
+				<Prp name="nameofroot" type="S" value="CauseEffect"/>
+				<Prp name="relpath" type="S" value="2_19_2016_2_14 PM_14_583\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 		</Node>

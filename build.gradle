@@ -91,7 +91,8 @@ project(":core") {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
         compile "org.scala-lang:scala-library:2.11.7"
-
+        compile "org.json4s:json4s-native_2.11:3.3.0"
+        compile "org.json4s:json4s-jackson_2.11:3.3.0"
 
         compile "junit:junit:4.+"
         compile "org.mockito:mockito-all:1.9.+"

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root Signature="{B9D9273E-7266-43E0-BF02-97F168593604}" Version="11.0">
+	<TestData Description="" Key="{AD0DC887-FB4D-4EC8-A8B4-7280995659C3}" Type="{79147B28-EE20-4294-B773-1D3787FBF37B}">
+		<Data>
+			<Extenders>
+				<NodeBitmaps />
+			</Extenders>
+		</Data>
+		<Children>
+			<Operation Type="{66F32D5F-A5DB-420E-9CB4-3DB7CADE2692}">
+				<Data Description="Runs the &quot;desktop&quot; tested application." TestedApp="desktop">
+					<Parameters LangId="{E42909F2-4390-4F5D-94B8-FABF59BABFCE}">
+						<Parameter Name="Count" DefVarType="3" DefValueType="1" DefValueValue="-1" VarType="3" ValueType="1" ValueValue="-1" />
+						<Parameter Name="IgnoreRunning" DefVarType="11" DefValueType="7" DefValueValue="False" VarType="11" ValueType="7" ValueValue="False" />
+						<Parameter Name="Timeout" DefVarType="3" DefValueType="1" DefValueValue="-1" VarType="3" ValueType="1" ValueValue="-1" />
+					</Parameters>
+				</Data>
+			</Operation>
+			<Operation Type="{575D0372-CCEB-4D0F-AFE8-D2004F108913}">
+				<Data Description="Clicks at point (%p1, %p2) of the &apos;%n&apos; object." Action="Click" InvokeKind="-1" Initialized="True">
+					<Parameters LangId="{E42909F2-4390-4F5D-94B8-FABF59BABFCE}">
+						<Parameter Name="Param1" DefVarType="0" VarType="3" ValueType="1" ValueValue="812" />
+						<Parameter Name="Param2" DefVarType="0" VarType="3" ValueType="1" ValueValue="839" />
+					</Parameters>
+					<ObjectSyntax LangId="{E42909F2-4390-4F5D-94B8-FABF59BABFCE}" Code="Aliases.javaw.wndLWJGL2;" />
+				</Data>
+			</Operation>
+			<Operation Type="{575D0372-CCEB-4D0F-AFE8-D2004F108913}">
+				<Data Description="Double-clicks at point (%p1, %p2) of the &apos;%n&apos; object." Action="DblClick" InvokeKind="-1" Initialized="True">
+					<Parameters LangId="{E42909F2-4390-4F5D-94B8-FABF59BABFCE}">
+						<Parameter Name="Param1" DefVarType="0" VarType="3" ValueType="1" ValueValue="193" />
+						<Parameter Name="Param2" DefVarType="0" VarType="3" ValueType="1" ValueValue="633" />
+					</Parameters>
+					<ObjectSyntax LangId="{E42909F2-4390-4F5D-94B8-FABF59BABFCE}" Code="Aliases.javaw.wndLWJGL2;" />
+				</Data>
+			</Operation>
+			<Operation Type="{575D0372-CCEB-4D0F-AFE8-D2004F108913}">
+				<Data Description="Clicks at point (%p1, %p2) of the &apos;%n&apos; object." Action="Click" InvokeKind="-1" Initialized="True">
+					<Parameters LangId="{E42909F2-4390-4F5D-94B8-FABF59BABFCE}">
+						<Parameter Name="Param1" DefVarType="0" VarType="3" ValueType="1" ValueValue="193" />
+						<Parameter Name="Param2" DefVarType="0" VarType="3" ValueType="1" ValueValue="633" />
+					</Parameters>
+					<ObjectSyntax LangId="{E42909F2-4390-4F5D-94B8-FABF59BABFCE}" Code="Aliases.javaw.wndLWJGL2;" />
+				</Data>
+			</Operation>
+			<Operation Type="{5006C6DA-7702-45C5-B4BB-DCBD0DC7B03E}">
+				<Data Description="Compares the %n Stores item with the image of the %p1 object." Checkpoint="RestartSad">
+					<Parameters LangId="{E42909F2-4390-4F5D-94B8-FABF59BABFCE}">
+						<Parameter Name="Picture" DefVarType="12" ParamType="{2B146992-A675-4CF3-9B71-7EE4A1CA11B2}" Expression="Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 6, 27, 1451, 919, false)" />
+						<Parameter Name="Transparent" DefVarType="11" DefValueType="7" DefValueValue="False" VarType="11" ValueType="7" ValueValue="False" />
+						<Parameter Name="Mouse" DefVarType="11" DefValueType="7" DefValueValue="False" VarType="11" ValueType="7" ValueValue="False" />
+						<Parameter Name="PixelTolerance" DefVarType="3" DefValueType="1" DefValueValue="0" VarType="3" ValueType="1" ValueValue="0" />
+						<Parameter Name="ColorTolerance" DefVarType="3" DefValueType="1" DefValueValue="0" VarType="3" ValueType="1" ValueValue="0" />
+						<Parameter Name="Mask" DefVarType="12" DefValueType="1" DefValueValue="0" VarType="3" ValueType="1" ValueValue="0" />
+					</Parameters>
+				</Data>
+			</Operation>
+		</Children>
+	</TestData>
+	<Variables Version="3" Key="{777EC9C0-A438-40ED-B311-93CFFB1B4D76}" />
+	<Parameters Key="{4A3575FE-A2DF-4420-84E3-4BCADD43F482}" />
+</Root>

@@ -1,10 +1,9 @@
 package org.otw.open.controllers
 
-import com.badlogic.gdx.math.Vector2
-import org.otw.open.dto.StandPoint
-import org.otw.open.engine.Engine
-import org.otw.open.engine.impl.{CauseAndEffectEngine, DragAndDropActorEngine, EraserGameEngine, StaticAnimationEngine}
-import org.otw.open.{GameScreen, OpenGame}
+import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.graphics.Pixmap
+import org.otw.open.OpenGame
+import org.otw.open.screens._
 
 /**
   * Screen controller.
@@ -12,64 +11,38 @@ import org.otw.open.{GameScreen, OpenGame}
   */
 object ScreenController {
 
-  val r = scala.util.Random
-
-  var themeKey: Int = 0
-
-  val themes: Map[Int, String] = Map(0 -> "car_theme", 1 -> "rabbit_theme")
-
-  var currentLevel: Int = 1
-
-  val maxLevel: Int = 4
-
   /**
     * Switches the current game screen based on the Event type received.
     *
     * @param event - event received form engines.
     * @return the newly set screen engine.
     */
-  def dispatchEvent(event: Event): Engine = {
-    val engine = event match {
-      case EraserGameFinished => new StaticAnimationEngine("happy-animation.atlas")
-      case CauseAndEffectFinishedSuccessfully => new StaticAnimationEngine("happy-animation.atlas")
-      case CauseAndEffectFinishedUnsuccessfully => new StaticAnimationEngine("unhappy-animation.atlas")
-      case RetryLevel => initializeEngine(currentLevel)
-      case NextLevel => if (currentLevel < maxLevel) currentLevel += 1; initializeEngine(currentLevel)
-      case OtherTheme => themeKey = generateRandomThemeKey; initializeEngine(currentLevel)
-      case ToMainMenu => currentLevel = 1; new EraserGameEngine
+  def dispatchEvent(event: Event): AbstractGameScreen = {
+
+    Gdx.graphics.setCursor(null)
+
+    val screen: AbstractGameScreen = event match {
+      case EraserGameFinished => new ActionResultScreen(true)
+      case CauseAndEffectFinishedSuccessfully => new ActionResultScreen(true)
+      case CauseAndEffectFinishedUnsuccessfully => new ActionResultScreen(false)
+      case RetryLevel => getScreenByLevel()
+      case NextLevel => GameState.incrementLevel; getScreenByLevel()
+      case OtherTheme => GameState.nextTheme; getScreenByLevel()
+      case ToMainMenu => GameState.setLevel(1); new EraserGameScreen
     }
-    OpenGame.getGame.getScreen.dispose
-    OpenGame.changeScreen(new GameScreen(engine))
-    engine
+    screen.buildStage()
+    OpenGame.changeScreen(screen)
+    screen
   }
 
-  def initializeEngine(providedLevel: Int): Engine = {
-    val engine = providedLevel match {
-      case 1 => new EraserGameEngine
-      case 2 => new CauseAndEffectEngine(
-        List(
-          new StandPoint(100 until 333, 299 until 402, new Vector2(0, 320)),
-          new StandPoint(101 until 337, 299 until 402, new Vector2(990, 320))
-        )
-      )
-      case 3 => new CauseAndEffectEngine(
-        List(
-          new StandPoint(100 until 333, 299 until 402, new Vector2(0, 320)),
-          new StandPoint(431 until 665, 299 until 402, new Vector2(330, 320)),
-          new StandPoint(761 until 995, 299 until 402, new Vector2(660, 320)),
-          new StandPoint(1000 until 1100, 299 until 402, new Vector2(990, 320))
-        )
-      )
-      case 4 => new DragAndDropActorEngine("car_theme", "theme/car_theme/light-background.png")
-      case _ => currentLevel = 1; new EraserGameEngine
+  def getScreenByLevel(): AbstractGameScreen = {
+    GameState.getLevel match {
+      case 1 => new EraserGameScreen
+      case 2 => new CauseAndEffectScreen
+      case 3 => new CauseAndEffectScreen
+      case 4 => new CauseAndEffectScreen
     }
-    engine
-  }
 
-  def generateRandomThemeKey: Int = {
-    val nextThemeKey = r.nextInt(themes.size)
-    if (themeKey != nextThemeKey) nextThemeKey
-    else generateRandomThemeKey
   }
 
 }
