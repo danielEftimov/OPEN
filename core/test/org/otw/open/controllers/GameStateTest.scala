@@ -2,12 +2,15 @@ package org.otw.open.controllers
 
 import org.otw.open.dto.Point
 import org.otw.open.testconfig.UnitSpec
+import org.scalatest.BeforeAndAfterEach
 
 /**
   * Created by eilievska on 2/22/2016.
   */
-class GameStateTest extends UnitSpec {
-
+class GameStateTest extends UnitSpec with BeforeAndAfterEach {
+  override def beforeEach(): Unit = {
+    GameState.setThemName("car_theme")
+  }
   test("when getLevelStandPoints is invoked, for level 1 of car theme, it should return empty list") {
     GameState.setLevel(1)
     val standPoints: List[Point] = GameState.getLevelStandPoints
@@ -58,7 +61,7 @@ class GameStateTest extends UnitSpec {
     assert(startPoint.x == 0 && startPoint.y == 480)
   }
 
-  test("when getThemeName is ivoked, \"car_theme\" is returned") {
+  test("when getThemeName is invoked, \"car_theme\" is returned") {
     assert(GameState.getThemeName == "car_theme")
   }
 

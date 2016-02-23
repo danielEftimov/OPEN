@@ -23,7 +23,7 @@ object GameState {
   private val themeMap: Map[String, Theme] = parse(jsonString).extract[Map[String, Theme]]
 
   private def getStringFromJsonFile: String = {
-    val inputStream = Gdx.files.internal("cause_and_effect.json").read()
+    val inputStream = Gdx.files.internal("game_theme_settings.json").read()
     val jsonString: String = scala.io.Source.fromInputStream(inputStream).getLines().mkString(" ")
     jsonString
   }
@@ -37,6 +37,8 @@ object GameState {
     val theme: Theme = themeMap.get(themeName).orNull
     theme.start_point
   }
+
+  def setThemName(themeName: String) = this.themeName = themeName
 
   def getThemeName = themeName
 
@@ -56,5 +58,4 @@ object GameState {
     if (newLevel > 0 && newLevel < 5)
       level = newLevel
   }
-
 }

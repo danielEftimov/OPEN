@@ -8,8 +8,9 @@ import com.badlogic.gdx.graphics.{Pixmap, Texture}
 import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.scenes.scene2d.{Actor, InputEvent, InputListener}
 import com.badlogic.gdx.utils.Disposable
-import org.otw.open.controllers.{EraserGameFinished, ScreenController}
+import org.otw.open.controllers.{GameState, EraserGameFinished, ScreenController}
 import org.otw.open.dto.DrawablePixmap
+import org.otw.open.util.AudioManager
 
 /**
   * Created by eilievska on 2/12/2016.
@@ -17,7 +18,7 @@ import org.otw.open.dto.DrawablePixmap
 class ErasableImageActor extends Actor with Disposable {
 
   /** wrapper for drawing actions */
-  private val pixmapMask: DrawablePixmap = new DrawablePixmap(new Pixmap(Gdx.files.internal("theme/car_theme/mask.png")))
+  private val pixmapMask: DrawablePixmap = new DrawablePixmap(new Pixmap(Gdx.files.internal("theme/" + GameState.getThemeName + "/mask.png")))
 
   /** Texture under The Mask Texture */
   private val maskTexture: Texture = pixmapMask.initializePixmapDrawingOntoTexture
@@ -39,8 +40,8 @@ class ErasableImageActor extends Actor with Disposable {
   setBounds(0, 0, getWidth, getHeight)
 
   /** Sound instance for audio guidance */
-  private val audioGuidance: Music = Gdx.audio.newMusic(Gdx.files.internal("audioGuidanceEraserGame.mp3"))
-  audioGuidance.play()
+  private val audioGuidance = AudioManager("audioGuidanceEraserGame.mp3")
+  audioGuidance.getAudio.play()
 
   override def draw(batch: Batch, parentAlpha: Float): Unit = {
     val mouseWasMoved: Boolean = lastPointerPosition.isDefined && lastPointerPosition.orNull != currentPointerPosition.orNull
@@ -55,7 +56,7 @@ class ErasableImageActor extends Actor with Disposable {
 
   addListener(new InputListener() {
     override def mouseMoved(event: InputEvent, x: Float, y: Float) = {
-      audioGuidance.isPlaying match {
+      audioGuidance.getAudio.isPlaying match {
         case true => false
         case false =>
           currentPointerPosition = Some(new Vector2(x, 900 - y))
@@ -67,6 +68,6 @@ class ErasableImageActor extends Actor with Disposable {
   override def dispose(): Unit = {
     pixmapMask.dispose()
     maskTexture.dispose()
-    audioGuidance.dispose()
+    audioGuidance.getAudio.dispose()
   }
 }

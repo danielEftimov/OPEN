@@ -35,7 +35,7 @@ class MovingObjectActor extends Actor with Disposable {
   /**
     * Animator object
     */
-  private val animator: Animator = new Animator("theme/" + GameState.getThemeName + "/animation-object.atlas")
+  private val animator: Animator = new Animator("animation-object.atlas")
 
   /**
     * Move actions for the actor

@@ -2,6 +2,7 @@ package org.otw.open.util
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.g2d.{Animation, TextureAtlas}
+import org.otw.open.controllers.GameState
 
 /**
   * Animator class that will handle all texture transitions for game animations
@@ -11,7 +12,7 @@ import com.badlogic.gdx.graphics.g2d.{Animation, TextureAtlas}
 class Animator(val atlasFileName: String) {
 
   /*global atlas*/
-  private val atlas = new TextureAtlas(Gdx.files.internal(atlasFileName))
+  private val atlas = new TextureAtlas(Gdx.files.internal("theme/" + GameState.getThemeName + "/" + atlasFileName))
 
   /*animation setup*/
   private val animation = new Animation(1 / 7f, atlas.getRegions)
@@ -25,6 +26,7 @@ class Animator(val atlasFileName: String) {
 
   /**
     * Disposes all disposable resources.
+    *
     * @return true if the method is implemented.
     */
   def dispose(): Boolean = {
