@@ -1,5 +1,7 @@
 package org.otw.open.controllers
 
+import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.graphics.Pixmap
 import org.otw.open.OpenGame
 import org.otw.open.screens._
 
@@ -16,6 +18,9 @@ object ScreenController {
     * @return the newly set screen engine.
     */
   def dispatchEvent(event: Event): AbstractGameScreen = {
+
+    Gdx.graphics.setCursor(null)
+
     val screen: AbstractGameScreen = event match {
       case EraserGameFinished => new ActionResultScreen(true)
       case CauseAndEffectFinishedSuccessfully => new ActionResultScreen(true)
