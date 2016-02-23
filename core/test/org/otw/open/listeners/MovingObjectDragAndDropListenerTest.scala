@@ -2,8 +2,10 @@ package org.otw.open.listeners
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent
 import org.mockito.Mockito
+import org.otw.open.OpenGame
 import org.otw.open.actors.MovingObjectActor
-import org.otw.open.controllers.GameState
+import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, GameState}
+import org.otw.open.screens.ActionResultScreen
 import org.otw.open.testconfig.UnitSpec
 import org.scalatest.BeforeAndAfterEach
 
@@ -17,7 +19,7 @@ class MovingObjectDragAndDropListenerTest extends UnitSpec with BeforeAndAfterEa
   var listener: MovingObjectDragAndDropListener = _
 
   override protected def beforeEach(): Unit = {
-    GameState.setLevel(3)
+    GameState.setLevel(4)
     actor = Mockito.mock(classOf[MovingObjectActor])
     listener = new MovingObjectDragAndDropListener(actor)
   }
@@ -30,6 +32,46 @@ class MovingObjectDragAndDropListenerTest extends UnitSpec with BeforeAndAfterEa
   test("should reset actor's position and increment miss count when actor is not dragged to destination") {
     Mockito.when(actor.getX).thenReturn(0)
     Mockito.when(actor.getY).thenReturn(0)
+    listener.dragStop(new InputEvent(), 0, 0, 1)
+    Mockito.verify(actor, Mockito.times(1)).resetPosition
+    Mockito.verify(actor, Mockito.times(1)).incrementMissCount
+  }
+
+  test("should dispatch a CauseAndEffectFinishedSuccessfully event when x and y are the lower limit values (900, 450)") {
+    Mockito.when(actor.getX).thenReturn(900)
+    Mockito.when(actor.getY).thenReturn(450)
+    listener.dragStop(new InputEvent(), 0, 0, 1)
+    val resultScreen = OpenGame.getGame.getScreen match {
+      case x: ActionResultScreen => Some(x)
+      case _ => None
+    }
+    assert(resultScreen.isDefined)
+    assert(resultScreen.get.isSuccessfulAction)
+  }
+
+  test("should dispatch a CauseAndEffectFinishedSuccessfully event when x and y are the upper limit values (900, 450)") {
+    Mockito.when(actor.getX).thenReturn(900 + 200)
+    Mockito.when(actor.getY).thenReturn(450 + 100)
+    listener.dragStop(new InputEvent(), 0, 0, 1)
+    val resultScreen = OpenGame.getGame.getScreen match {
+      case x: ActionResultScreen => Some(x)
+      case _ => None
+    }
+    assert(resultScreen.isDefined)
+    assert(resultScreen.get.isSuccessfulAction)
+  }
+
+  test("should actor position when x coordinate is less then 900") {
+    Mockito.when(actor.getX).thenReturn(900 - 200)
+    Mockito.when(actor.getY).thenReturn(450 + 100)
+    listener.dragStop(new InputEvent(), 0, 0, 1)
+    Mockito.verify(actor, Mockito.times(1)).resetPosition
+    Mockito.verify(actor, Mockito.times(1)).incrementMissCount
+  }
+
+  test("should actor position when x coordinate is greater then 1100") {
+    Mockito.when(actor.getX).thenReturn(1200)
+    Mockito.when(actor.getY).thenReturn(500)
     listener.dragStop(new InputEvent(), 0, 0, 1)
     Mockito.verify(actor, Mockito.times(1)).resetPosition
     Mockito.verify(actor, Mockito.times(1)).incrementMissCount
