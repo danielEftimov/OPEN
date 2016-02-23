@@ -62,5 +62,6 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
   override def dispose(): Unit = {
     audioGuidance.dispose
     staticAnimationActor.dispose
+    backgroundActor.dispose
   }
 }

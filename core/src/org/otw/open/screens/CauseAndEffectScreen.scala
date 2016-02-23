@@ -1,5 +1,9 @@
 package org.otw.open.screens
 
+import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.audio.Music
+import com.badlogic.gdx.audio.Music.OnCompletionListener
+import com.badlogic.gdx.utils.Disposable
 import org.otw.open.actors.{BackgroundActor, MovingObjectActor}
 import org.otw.open.controllers.GameState
 import org.otw.open.listeners.{MovingObjectClickListener, MovingObjectDragAndDropListener, MovingObjectSceneListener}
@@ -8,7 +12,7 @@ import org.otw.open.listeners.{MovingObjectClickListener, MovingObjectDragAndDro
   * Created by eilievska on 2/15/2016.
   * Screen that handles Cause And Effect game
   */
-class CauseAndEffectScreen extends AbstractGameScreen {
+class CauseAndEffectScreen extends AbstractGameScreen with Disposable {
 
   /**
     * instance of BackgroundActor
@@ -20,27 +24,30 @@ class CauseAndEffectScreen extends AbstractGameScreen {
     */
   private val movingObjectActor = new MovingObjectActor
 
+  /** Sound instance for audio guidance in Cause And Effect Game with clicks */
+  private val audioGuidanceClick: Music = Gdx.audio.newMusic(Gdx.files.internal("audioGuidanceCauseAndEffect.mp3"))
+
+  audioGuidanceClick.setOnCompletionListener(new OnCompletionListener {
+    override def onCompletion(music: Music): Unit = {
+      addListener(new MovingObjectSceneListener(movingObjectActor))
+      movingObjectActor.addListener(new MovingObjectClickListener(movingObjectActor))
+    }
+  })
+
+
+  /** Sound instance for audio guidance Cause And Effect Game with drag and drop */
+  private val audioGuidanceDragAndDrop: Music = Gdx.audio.newMusic(Gdx.files.internal("audioGuidanceDragAndDrop.mp3"))
+
+  audioGuidanceDragAndDrop.setOnCompletionListener(new OnCompletionListener {
+    override def onCompletion(music: Music): Unit = {
+      movingObjectActor.addListener(new MovingObjectDragAndDropListener(movingObjectActor))
+    }
+  })
+
   /**
     * Current game level
     */
   private val level: Int = GameState.getLevel
-
-  /**
-    * add click listener to screen if object is moving by 1 or 3 clicks
-    */
-  if (level == 2 || level == 3) {
-    addListener(new MovingObjectSceneListener(movingObjectActor))
-  }
-
-  /**
-    * add listener to actor depending on current game level
-    */
-  val listener = level match {
-    case 2 => new MovingObjectClickListener(movingObjectActor)
-    case 3 => new MovingObjectClickListener(movingObjectActor)
-    case 4 => new MovingObjectDragAndDropListener(movingObjectActor)
-  }
-  movingObjectActor.addListener(listener)
 
   /**
     * Methods to be overriden by all classes.
@@ -48,5 +55,14 @@ class CauseAndEffectScreen extends AbstractGameScreen {
   override def buildStage(): Unit = {
     addActor(backgroundActor)
     addActor(movingObjectActor)
+    if (level == 2 || level == 3) audioGuidanceClick.play
+    if (level == 4) audioGuidanceDragAndDrop.play
+  }
+
+  override def dispose(): Unit = {
+    audioGuidanceClick.dispose
+    audioGuidanceDragAndDrop.dispose
+    backgroundActor.dispose
+    movingObjectActor.dispose
   }
 }
