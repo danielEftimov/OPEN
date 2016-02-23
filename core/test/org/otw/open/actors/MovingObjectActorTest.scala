@@ -20,15 +20,15 @@ class MovingObjectActorTest extends UnitSpec with BeforeAndAfterEach {
     actor = new MovingObjectActor
   }
 
-  test("isOnInitialPosition should return true when actor in inital state") {
+  test("isOnInitialPosition should return true when actor in initial state") {
     assert(actor.isOnInitialPosition)
   }
 
-  test("isInMotion should return false when actor in inital state") {
+  test("isInMotion should return false when actor in initial state") {
     assert(!actor.isInMotion)
   }
 
-  test("actorFinishedAllActions should return false when actor in inital state") {
+  test("actorFinishedAllActions should return false when actor in initial state") {
     assert(!actor.actorFinishedAllActions)
   }
 
@@ -59,15 +59,17 @@ class MovingObjectActorTest extends UnitSpec with BeforeAndAfterEach {
 
   test("Unhappy animation should be shown when actor was missed 3 times") {
 
-
-
     actor.incrementMissCount
     actor.incrementMissCount
     actor.incrementMissCount
 
-    val screen: Screen = OpenGame.getGame.getScreen
+    val screen = OpenGame.getGame.getScreen match {
+      case x: ActionResultScreen => Some(x)
+      case _ => None
+    }
 
-    assert(getGameScreen(screen).isInstanceOf[ActionResultScreen])
+    assert(screen.isDefined)
+    assert(screen.get.isSuccessfulAction == false)
   }
 
   def getGameScreen(screen: Screen) = screen match {
