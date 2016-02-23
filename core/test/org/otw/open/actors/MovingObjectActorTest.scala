@@ -1,9 +1,13 @@
 package org.otw.open.actors
 
 import com.badlogic.gdx.Screen
+import com.badlogic.gdx.graphics.g2d.{Batch, TextureRegion}
+import org.mockito.Matchers
+import org.mockito.Matchers.any
+import org.mockito.Mockito.{mock, verify}
 import org.otw.open.OpenGame
 import org.otw.open.controllers.GameState
-import org.otw.open.screens.{AbstractGameScreen, ActionResultScreen, CauseAndEffectScreen}
+import org.otw.open.screens.{AbstractGameScreen, ActionResultScreen}
 import org.otw.open.testconfig.UnitSpec
 import org.scalatest.BeforeAndAfterEach
 
@@ -15,7 +19,6 @@ class MovingObjectActorTest extends UnitSpec with BeforeAndAfterEach {
   var actor: MovingObjectActor = _
 
   override protected def beforeEach(): Unit = {
-
     GameState.setLevel(3)
     actor = new MovingObjectActor
   }
@@ -58,18 +61,40 @@ class MovingObjectActorTest extends UnitSpec with BeforeAndAfterEach {
   }
 
   test("Unhappy animation should be shown when actor was missed 3 times") {
+    actor.incrementMissCount
+    actor.incrementMissCount
+    actor.incrementMissCount
+    val screen = OpenGame.getGame.getScreen match {
+      case x: ActionResultScreen => Some(x)
+      case _ => None
+    }
+    assert(screen.isDefined)
+    assert(screen.get.isSuccessfulAction == false)
+  }
 
-    actor.incrementMissCount
-    actor.incrementMissCount
-    actor.incrementMissCount
+  test("when draw method is invoked, it should draw a texture of the animator on screen") {
+    val batch = mock(classOf[Batch])
+    actor.setX(1000)
+    actor.move
+    actor.move
+    actor.move
+    actor.draw(batch, 0.1f)
+    verify(batch).draw(any(classOf[TextureRegion]), Matchers.eq(actor.getX), Matchers.eq(actor.getY))
+  }
+
+  test("Happy animation should be shown when actor was clicked 3 times") {
+    val batch = mock(classOf[Batch])
+    actor.setX(1000)
+    actor.setY(0)
+    actor.draw(batch, 0.1f)
 
     val screen = OpenGame.getGame.getScreen match {
       case x: ActionResultScreen => Some(x)
       case _ => None
     }
-
+    verify(batch).draw(any(classOf[TextureRegion]), Matchers.eq(actor.getX), Matchers.eq(actor.getY))
     assert(screen.isDefined)
-    assert(screen.get.isSuccessfulAction == false)
+    assert(screen.get.isSuccessfulAction == true)
   }
 
   def getGameScreen(screen: Screen) = screen match {
@@ -77,5 +102,7 @@ class MovingObjectActorTest extends UnitSpec with BeforeAndAfterEach {
     case _ => throw new ClassCastException
   }
 
-  override protected def afterEach(): Unit = actor.dispose
+  override protected def afterEach(): Unit = {
+    actor.dispose
+  }
 }
