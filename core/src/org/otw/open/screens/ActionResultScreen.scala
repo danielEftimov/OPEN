@@ -63,5 +63,10 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
     audioGuidance.dispose
     staticAnimationActor.dispose
     backgroundActor.dispose
+    toMainMenuButton.dispose
+    retryLevelButton.dispose
+    nextLevelButton.dispose
+    toOtherThemeButton.dispose
+    disabledNextLevelButton.dispose
   }
 }

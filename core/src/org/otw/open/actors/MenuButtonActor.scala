@@ -5,11 +5,12 @@ import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.Batch
 import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.scenes.scene2d.{Actor, Touchable}
+import com.badlogic.gdx.utils.Disposable
 
 /**
   * Created by eilievska on 2/19/2016.
   */
-class MenuButtonActor(val position: Vector2, val imageFileName: String) extends Actor {
+class MenuButtonActor(val position: Vector2, val imageFileName: String) extends Actor with Disposable {
 
   setTouchable(Touchable.enabled)
 
@@ -25,4 +26,5 @@ class MenuButtonActor(val position: Vector2, val imageFileName: String) extends 
     batch.draw(imageText, getX, getY)
   }
 
+  override def dispose(): Unit = imageText.dispose
 }
