@@ -19,7 +19,7 @@ class MovingObjectDragAndDropListener(val actor: MovingObjectActor) extends Drag
   override def dragStop(event: InputEvent, x: Float, y: Float, pointer: Int): Unit = {
     val standPoint: Point = GameState.getLevelStandPoints.head
     val positionWithinTargetRange: Boolean = (actor.getX >= standPoint.x && actor.getX <= standPoint.x + 200
-      && actor.getY >= standPoint.y && actor.getY <= standPoint.y + 100)
+      && actor.getY >= standPoint.y && actor.getY <= standPoint.y + 300)
     if (positionWithinTargetRange) ScreenController.dispatchEvent(CauseAndEffectFinishedSuccessfully)
     else {
       actor.resetPosition()
