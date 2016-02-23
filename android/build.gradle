@@ -34,6 +34,8 @@ android {
 
     packagingOptions {
         exclude 'org/scalactic/ScalacticBundle.properties'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
     }
 }
 
