@@ -12,7 +12,7 @@ import org.otw.open.util.AudioManager
   * Created by eilievska on 2/15/2016.
   * Screen that handles Cause And Effect game
   */
-class CauseAndEffectScreen extends AbstractGameScreen with Disposable {
+class CauseAndEffectScreen extends AbstractGameScreen {
 
   /**
     * instance of BackgroundActor

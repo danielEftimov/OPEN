@@ -10,11 +10,21 @@ import org.otw.open.controllers.GameState
   */
 class EraserGameScreen() extends AbstractGameScreen {
 
-  private val clickCursor = Gdx.graphics.newCursor(new Pixmap(Gdx.files.internal("theme/" + GameState.getThemeName + "/eraser-3.png")), 25, 50)
+  private val cursorPixmap: Pixmap = new Pixmap(Gdx.files.internal("theme/" + GameState.getThemeName + "/eraser-3.png"))
+  private val clickCursor = Gdx.graphics.newCursor(cursorPixmap, 25, 50)
+  val backgroundActor: BackgroundActor = new BackgroundActor("dark-background.png")
+  val erasableImageActor: ErasableImageActor = new ErasableImageActor
+
   Gdx.graphics.setCursor(clickCursor)
 
   override def buildStage(): Unit = {
-    addActor(new BackgroundActor("dark-background.png"))
-    addActor(new ErasableImageActor)
+    addActor(backgroundActor)
+    addActor(erasableImageActor)
+  }
+
+  override def dispose(): Unit = {
+    cursorPixmap.dispose()
+    backgroundActor.dispose()
+    erasableImageActor.dispose()
   }
 }
