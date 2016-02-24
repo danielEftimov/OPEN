@@ -58,4 +58,8 @@ object GameState {
     if (newLevel > 0 && newLevel < 5)
       level = newLevel
   }
+
+  def initializeUserSettings(theme: String): Unit = {
+    setThemName(theme)
+  }
 }
