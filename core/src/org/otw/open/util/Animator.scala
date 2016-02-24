@@ -11,10 +11,10 @@ import org.otw.open.controllers.GameState
   */
 class Animator(val atlasFileName: String) {
 
-  /*global atlas*/
+  /** global atlas */
   private val atlas = new TextureAtlas(Gdx.files.internal("theme/" + GameState.getThemeName + "/" + atlasFileName))
 
-  /*animation setup*/
+  /** animation setup */
   private val animation = new Animation(1 / 7f, atlas.getRegions)
 
   /**

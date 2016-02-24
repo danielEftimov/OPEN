@@ -40,8 +40,8 @@ class ErasableImageActor extends Actor with Disposable {
   setBounds(0, 0, getWidth, getHeight)
 
   /** Sound instance for audio guidance */
-  private val audioGuidance = AudioManager("audioGuidanceEraserGame.mp3")
-  audioGuidance.getAudio.play()
+  private val audio = AudioManager("audioGuidanceEraserGame.mp3")
+  audio.getAudio.play()
 
   override def draw(batch: Batch, parentAlpha: Float): Unit = {
     val mouseWasMoved: Boolean = lastPointerPosition.isDefined && lastPointerPosition.orNull != currentPointerPosition.orNull
@@ -56,7 +56,7 @@ class ErasableImageActor extends Actor with Disposable {
 
   addListener(new InputListener() {
     override def mouseMoved(event: InputEvent, x: Float, y: Float) = {
-      audioGuidance.getAudio.isPlaying match {
+      audio.getAudio.isPlaying match {
         case true => false
         case false =>
           currentPointerPosition = Some(new Vector2(x, 900 - y))
@@ -68,6 +68,6 @@ class ErasableImageActor extends Actor with Disposable {
   override def dispose(): Unit = {
     pixmapMask.dispose()
     maskTexture.dispose()
-    audioGuidance.getAudio.dispose()
+    audio.getAudio.dispose()
   }
 }

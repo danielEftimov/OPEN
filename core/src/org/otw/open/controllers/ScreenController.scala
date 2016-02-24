@@ -14,8 +14,8 @@ object ScreenController {
   /**
     * Switches the current game screen based on the Event type received.
     *
-    * @param event - event received form engines.
-    * @return the newly set screen engine.
+    * @param event - event received form screens.
+    * @return the newly set screen.
     */
   def dispatchEvent(event: Event): AbstractGameScreen = {
 

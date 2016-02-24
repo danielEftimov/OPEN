@@ -2,6 +2,7 @@ package org.otw.open.util
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.g2d.{Animation, TextureAtlas, TextureRegion}
+import org.otw.open.controllers.GameState
 import org.otw.open.testconfig.UnitSpec
 
 /**
@@ -11,7 +12,7 @@ class AnimatorTest extends UnitSpec {
 
   val atlasFileName: String = "test.atlas"
   val animatorToTest = new Animator(atlasFileName)
-  val atlas = new TextureAtlas(Gdx.files.internal(atlasFileName))
+  val atlas = new TextureAtlas(Gdx.files.internal("theme/" + GameState.getThemeName + "/" + atlasFileName))
   val animation = new Animation(1 / 5f, atlas.getRegions)
 
   test("test animator when timePassed for getCurrentTexture is 0") {
