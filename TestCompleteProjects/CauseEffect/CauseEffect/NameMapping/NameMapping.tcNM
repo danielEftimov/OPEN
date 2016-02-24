@@ -87,6 +87,29 @@
 							</Child>
 						</Children>
 					</Child>
+					<Child Name="chrome" Key="{F1D6E503-E9B5-492C-B34F-A05FA3777EBF}" ParallelWalk="True">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value PropertyType="0" Value="chrome" Type="5" />
+							</Property>
+							<Property Name="Index">
+								<Value PropertyType="0" Value="1" Type="0" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndChrome_WidgetWin_1" Key="{31009414-3787-4CE3-B70E-3080DC4CCEC9}" ParallelWalk="True">
+								<TypeInfo Item0="{6644F20C-1D6A-439B-A1C7-B30E640402D7}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value PropertyType="0" Value="Chrome_WidgetWin_1" Type="5" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value PropertyType="0" Value="Keeping your forked repo synced with the upstream source · 2buntu - Google Chrome" Type="5" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
 				</Children>
 			</Child>
 		</Children>
@@ -102,6 +125,9 @@
 					<Child Name="FolderView" Owner="{5311AC68-F406-42DE-B469-AED5477E5A6E}" />
 				</Child>
 			</Child>
+		</Child>
+		<Child Name="chrome" Owner="{F1D6E503-E9B5-492C-B34F-A05FA3777EBF}">
+			<Child Name="wndChrome_WidgetWin_1" Owner="{31009414-3787-4CE3-B70E-3080DC4CCEC9}" />
 		</Child>
 	</LogicalNodes>
 	<TypeInfo StoreCodeCompletion="1">

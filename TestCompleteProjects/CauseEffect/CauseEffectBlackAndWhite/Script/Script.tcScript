@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child list">
+			<Node name="bw_causeeffect_01_continuosmovement">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_01_ContinuosMovement.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{49FC130C-6361-481B-98C0-BA44E71B2CE2}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_02_cm_notcompleted">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_02_CM_NotCompleted.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{F22B6DAB-53BD-4EC4-94BC-B2D379731B5E}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_03_oneclick">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_03_OneClick.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{8913C132-F7EB-4723-B975-A94EEE5A0147}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_04_clicksoutofbounds">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_04_ClicksOutofBounds.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{3DE57029-6F21-45AD-96D9-1CFDA5714587}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_05_multipleclicks">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_05_MultipleClicks.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{6EA047FE-8223-4249-AE98-08C9C2CCB405}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_06_navigation_nextlevel">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_06_Navigation_NextLevel.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{74B5C7CD-A69C-4E66-A049-9186D62BF1AF}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_07_navigation_nexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_07_Navigation_NextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{8528118E-652A-4CB4-915D-121D5D50E281}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_08_navigation_gamemenu">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_08_Navigation_GameMenu.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{4D3F0F51-25B5-45FD-8EF9-0CA8274E9C68}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_09_navigation_restart">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_09_Navigation_Restart.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{940D9493-7B1E-43EF-BD6C-63E8E7957239}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_10_continuosmovement_percentage">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_10_ContinuosMovement_Percentage.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{40D1C661-B76B-465D-B3D9-0E8A1BE670EA}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_11_oneclick_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_11_OneClick_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{C3406ACC-8C4C-4C18-BEFE-984C5BFA95B2}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_12_multipleclicks_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_12_MultipleClicks_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{1194376B-111F-4991-B876-221B39833118}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_13_continuosmovement_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_13_ContinuosMovement_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{F3117C7C-496D-45D8-8148-CF53FA753CEC}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_14_drag_and_drop">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_14_Drag_and_Drop.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{906EE362-84EA-4A56-96D2-20C2AD1671A4}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_15_draganddropfailed">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_15_DragAndDropFailed.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{EAE93CC4-3F1A-4AF2-872B-C0E5B37836FA}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_16_drag_and_drop_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_16_Drag_and_Drop_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{12DEB48A-84FE-4492-A693-7065D30C3AD2}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_17_failedretrysuccessnextlevel">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_17_FailedRetrySuccessNextLevel.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{B4A9AD73-116A-4CF1-8FBD-CB37E76B78EE}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffect_18_multipleclicksofbounds">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffect_18_MultipleClicksOfBounds.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{F51AC917-EF21-45B1-8860-2ECE1B95DA22}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_checkregions">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CheckRegions.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{9CD52A68-547F-4D61-9F87-2249839FBE07}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="onlogerror">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="OnLogError.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{753299DA-F53A-469F-8900-1A0CA1698E59}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+		</Node>
+		<Node name="folders"/>
+		<Node name="settings"/>
+		<Prp name="signature" type="S" value="{9252F941-DB23-4FCA-AA50-858B33BB4A19}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>
