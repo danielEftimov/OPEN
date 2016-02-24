@@ -10,7 +10,7 @@ import org.otw.open.util.AudioManager
 /**
   * Created by eilievska on 2/19/2016.
   */
-class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameScreen with Disposable {
+class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameScreen {
 
   /**
     * Screen background.
