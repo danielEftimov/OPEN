@@ -1,7 +1,6 @@
 package org.otw.open.controllers
 
 import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.graphics.Pixmap
 import org.otw.open.OpenGame
 import org.otw.open.screens._
 
