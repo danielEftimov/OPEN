@@ -46,7 +46,7 @@ class MovingObjectDragAndDropListenerTest extends UnitSpec with BeforeAndAfterEa
       case _ => None
     }
     assert(resultScreen.isDefined)
-    assert(resultScreen.get.isSuccessfulAction)
+    assert(resultScreen.orNull.isSuccessfulAction)
   }
 
   test("should dispatch a CauseAndEffectFinishedSuccessfully event when x and y are the upper limit values (900, 450)") {

@@ -18,7 +18,7 @@ object ScreenController {
     */
   def dispatchEvent(event: Event): AbstractGameScreen = {
 
-    Gdx.graphics.setCursor(null)
+    Gdx.graphics.setCursor(None.orNull)
 
     val screen: AbstractGameScreen = event match {
       case EraserGameFinished => new ActionResultScreen(true)
