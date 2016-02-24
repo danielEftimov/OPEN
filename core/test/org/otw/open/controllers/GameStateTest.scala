@@ -49,7 +49,7 @@ class GameStateTest extends UnitSpec {
   test("when getLevelStandPoints is invoked, for level 4 of car theme, the stand point should be on coordinates 900, 480") {
     GameState.setLevel(4)
     val standPoints: List[Point] = GameState.getLevelStandPoints
-    assert(standPoints.head.x == 900 && standPoints.head.y == 450)
+    assert(standPoints.head.x == 900 && standPoints.head.y == 250)
   }
 
   test("when getLevelStartPoint is invoked, ") {
