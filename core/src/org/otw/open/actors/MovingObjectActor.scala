@@ -39,7 +39,7 @@ class MovingObjectActor extends Actor with Disposable {
   /**
     * Move actions for the actor
     */
-  private val actionStack = mutable.Stack[MoveToAction]()
+  private val actionsQueue = new mutable.Queue[MoveToAction]()
 
   /**
     * Standpoints for the animation of the actor
@@ -50,17 +50,20 @@ class MovingObjectActor extends Actor with Disposable {
   /**
     * add MoveAction in the stack for each standpoint
     */
-  standPoints.reverse.foreach(point => {
+  standPoints.foldLeft(GameState.getLevelStartPoint)((lastPoint: Point, thisPoint: Point) => {
     val moveToAction = new MoveToAction
-    moveToAction.setDuration(2f)
-    moveToAction.setPosition(point.x, point.y)
-    actionStack.push(moveToAction)
+    val moveSpeed = 200f
+    val distance: Float = thisPoint.x.toFloat - lastPoint.x.toFloat
+    moveToAction.setDuration(distance / moveSpeed)
+    moveToAction.setPosition(thisPoint.x, thisPoint.y)
+    actionsQueue += moveToAction
+    thisPoint
   })
 
   /**
     * next standpoint for animating object
     */
-  private var currentMoveToAction = actionStack.top
+  private var currentMoveToAction = actionsQueue.head
 
   resetPosition()
   /**
@@ -117,7 +120,7 @@ class MovingObjectActor extends Actor with Disposable {
   /**
     * @return true if actor has reached final point
     */
-  def actorFinishedAllActions = actionStack.isEmpty
+  def actorFinishedAllActions = actionsQueue.isEmpty
 
   /**
     * decreases missed count if screen was clicked and actor was not
@@ -143,7 +146,7 @@ class MovingObjectActor extends Actor with Disposable {
     * adds new move action to the actor for the next standpoint
     */
   def move() = {
-    currentMoveToAction = actionStack.pop
+    currentMoveToAction = actionsQueue.dequeue()
     addAction(new SequenceAction(currentMoveToAction, completeAction))
   }
 

@@ -30,7 +30,7 @@ object GameState {
 
   def getLevelStandPoints = {
     val theme: Theme = themeMap.get(themeName).orNull
-    theme.levels.get(level.toString).get
+    theme.levels.get(level.toString).orNull
   }
 
   def getLevelStartPoint = {
