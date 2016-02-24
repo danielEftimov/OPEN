@@ -38,6 +38,8 @@ object GameState {
     theme.start_point
   }
 
+  def setThemName(themeName: String) = this.themeName = themeName
+
   def getThemeName = themeName
 
   def getLevel = level
@@ -56,5 +58,4 @@ object GameState {
     if (newLevel > 0 && newLevel < 5)
       level = newLevel
   }
-
 }

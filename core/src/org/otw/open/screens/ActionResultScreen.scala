@@ -1,11 +1,11 @@
 package org.otw.open.screens
 
-import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.utils.Disposable
 import org.otw.open.actors.{BackgroundActor, MenuButtonActor, StaticAnimationActor}
 import org.otw.open.controllers._
 import org.otw.open.listeners.DispatchEventListener
+import org.otw.open.util.AudioManager
 
 /**
   * Created by eilievska on 2/19/2016.
@@ -39,13 +39,14 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
 
   private val audioGuidanceFileName = if (isSuccessfulAction) "audioGuidanceHappyAnimation.mp3" else "audioGuidanceSadAnimation.mp3"
 
-  private val audioGuidance = Gdx.audio.newMusic(Gdx.files.internal(audioGuidanceFileName))
-  audioGuidance.play
+  /** Sound instance for audio guidance */
+  private val audio = AudioManager(audioGuidanceFileName)
+  audio.getAudio.play
 
   private val staticAnimationActor = new StaticAnimationActor(new Vector2(464, 194), atlasFileName)
 
   /**
-    * Methods to be overriden by all classes.
+    * Methods to be overridden by all classes.
     */
   override def buildStage(): Unit = {
     addActor(backgroundActor)
@@ -60,7 +61,6 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
   }
 
   override def dispose(): Unit = {
-    audioGuidance.dispose
     staticAnimationActor.dispose
     backgroundActor.dispose
     toMainMenuButton.dispose
@@ -68,5 +68,6 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
     nextLevelButton.dispose
     toOtherThemeButton.dispose
     disabledNextLevelButton.dispose
+    audio.getAudio.dispose
   }
 }

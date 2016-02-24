@@ -1,14 +1,13 @@
 package org.otw.open.actors
 
 import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.audio.Music
 import com.badlogic.gdx.graphics.g2d.Batch
 import com.badlogic.gdx.scenes.scene2d.actions.{MoveToAction, SequenceAction}
 import com.badlogic.gdx.scenes.scene2d.{Action, Actor}
 import com.badlogic.gdx.utils.Disposable
 import org.otw.open.controllers.{CauseAndEffectFinishedSuccessfully, CauseAndEffectFinishedUnsuccessfully, GameState, ScreenController}
 import org.otw.open.dto.Point
-import org.otw.open.util.Animator
+import org.otw.open.util.{Animator, AudioManager}
 
 import scala.collection.mutable
 
@@ -25,7 +24,7 @@ class MovingObjectActor extends Actor with Disposable {
   /**
     * animation object sound
     */
-  val sound: Music = Gdx.audio.newMusic(Gdx.files.internal("carEngine.mp3"))
+  val sound = AudioManager("carEngine.mp3")
 
   /**
     * Number of times the actor was missed by a click or not placed on the correct position with drag and drop.
@@ -35,7 +34,7 @@ class MovingObjectActor extends Actor with Disposable {
   /**
     * Animator object
     */
-  private val animator: Animator = new Animator("theme/" + GameState.getThemeName + "/animation-object.atlas")
+  private val animator: Animator = new Animator("animation-object.atlas")
 
   /**
     * Move actions for the actor
@@ -84,7 +83,7 @@ class MovingObjectActor extends Actor with Disposable {
     val startPoint: Point = GameState.getLevelStartPoint
     setX(startPoint.x)
     setY(startPoint.y)
-    sound.stop
+    sound.getAudio.stop
   }
 
   /**
@@ -135,7 +134,7 @@ class MovingObjectActor extends Actor with Disposable {
     animationTime += Gdx.graphics.getDeltaTime
     batch.draw(animator.getCurrentTexture(animationTime), getX, getY)
     if (!isInMotion && actorFinishedAllActions) {
-      sound.stop
+      sound.getAudio.stop
       ScreenController.dispatchEvent(CauseAndEffectFinishedSuccessfully)
     }
   }
@@ -149,23 +148,23 @@ class MovingObjectActor extends Actor with Disposable {
   }
 
   def playSound(): Unit = {
-    sound.setLooping(true)
-    sound.play
+    sound.getAudio.setLooping(true)
+    sound.getAudio.play
   }
 
   def stopSound(): Unit = {
-    sound.stop
+    sound.getAudio.stop
   }
 
   def completeAction = new Action() {
     def act(delta: Float): Boolean = {
-      sound.stop
+      sound.getAudio.stop
       true
     }
   }
 
   override def dispose(): Unit = {
-    sound.dispose
+    sound.getAudio.dispose
     animator.dispose
   }
 }
