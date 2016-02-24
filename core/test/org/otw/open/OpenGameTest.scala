@@ -2,8 +2,7 @@ package org.otw.open
 
 import com.badlogic.gdx.{Game, Screen}
 import org.mockito.Mockito.mock
-import org.otw.open.engine.Engine
-import org.otw.open.engine.impl.EraserGameEngine
+import org.otw.open.screens.EraserGameScreen
 import org.otw.open.testconfig.UnitSpec
 
 /**
@@ -16,7 +15,7 @@ class OpenGameTest extends UnitSpec {
     assert(game.isInstanceOf[Game])
   }
 
-  test("when multiple calls to OpenGame.getGame are made, it should always return the same isntance") {
+  test("when multiple calls to OpenGame.getGame are made, it should always return the same instance") {
     val game1: OpenGame = OpenGame.getGame
     val game2: OpenGame = OpenGame.getGame
     assert(game1.eq(game2))
@@ -31,14 +30,10 @@ class OpenGameTest extends UnitSpec {
   }
 
   test("when create() method of the OpenGame class instance is invoked, " +
-    "a new screen should be created with the EraserGameEngine as engine") {
+    "a new screen should be created with the EraserGameScreen as engine") {
     val game: OpenGame = OpenGame.getGame
     game.create()
-    val returnedScreenEngine: Engine = game.getScreen match {
-      case s: GameScreen => s.engine
-      case _ => throw new scala.ClassCastException
-    }
-    assert(returnedScreenEngine.isInstanceOf[EraserGameEngine])
+    assert(game.getScreen.isInstanceOf[EraserGameScreen])
   }
 
 }

@@ -1,0 +1,67 @@
+
+happy-animation1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+smiley1_black&white
+  rotate: false
+  xy: 1, 1
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+happy-animation2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+smiley2_black&white
+  rotate: false
+  xy: 1, 1
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+happy-animation3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+smiley3_black&white
+  rotate: false
+  xy: 1, 1
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+happy-animation4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+smiley4_black&white
+  rotate: false
+  xy: 1, 1
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+smiley6_black&white
+  rotate: false
+  xy: 1, 1
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+happy-animation5.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+smiley5_black&white
+  rotate: false
+  xy: 1, 1
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
