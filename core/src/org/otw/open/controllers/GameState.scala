@@ -23,7 +23,7 @@ object GameState {
   private val themeMap: Map[String, Theme] = parse(jsonString).extract[Map[String, Theme]]
 
   private def getStringFromJsonFile: String = {
-    val inputStream = Gdx.files.internal("game_theme_settings.json").read()
+    val inputStream = Gdx.files.internal("cause_and_effect.json").read()
     val jsonString: String = scala.io.Source.fromInputStream(inputStream).getLines().mkString(" ")
     jsonString
   }
