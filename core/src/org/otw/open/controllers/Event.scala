@@ -40,3 +40,13 @@ case object OtherTheme extends Event
   * Continue to game main menu.
   */
 case object ToMainMenu extends Event
+
+/**
+  * Continue to game main menu.
+  */
+case object ToTheme extends Event {
+
+  var themeName = "car_theme"
+
+  def getThemeName = themeName
+}

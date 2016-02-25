@@ -11,11 +11,15 @@ import com.badlogic.gdx.utils.Disposable
 /**
   * Created by eilievska on 2/19/2016.
   */
-class MenuButtonActor(val position: Vector2, val imageFileName: String) extends Actor with Disposable {
+class MenuButtonActor(val position: Vector2, val imageFileName: String, val theme: String = "") extends Actor with Disposable {
 
   setTouchable(Touchable.enabled)
-
-  private val imageText = new Texture(Gdx.files.internal("theme/" + GameState.getThemeName + "/" + imageFileName))
+  private val imageText = new Texture(Gdx.files.internal("theme/" + {
+    theme match {
+      case "" => GameState.getThemeName
+      case _ => theme
+    }
+  } + "/" + imageFileName))
 
   setX(position.x)
   setY(position.y)

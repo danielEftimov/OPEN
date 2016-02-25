@@ -38,6 +38,13 @@ object GameState {
     theme.start_point
   }
 
+  def goToTheme(themeName: String) = {
+    this.themeName = themeName
+    setLevel(1)
+  }
+
+  def getThemeMap = themeMap
+
   def setThemName(themeName: String) = this.themeName = themeName
 
   def getThemeName = themeName

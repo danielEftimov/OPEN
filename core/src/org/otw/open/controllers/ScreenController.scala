@@ -29,7 +29,8 @@ object ScreenController {
       case RetryLevel => getScreenByLevel()
       case NextLevel => GameState.incrementLevel; getScreenByLevel()
       case OtherTheme => GameState.nextTheme; getScreenByLevel()
-      case ToMainMenu => GameState.setLevel(1); new EraserGameScreen
+      case ToMainMenu => GameState.setLevel(1); new MainMenuScreen
+      case ToTheme => getScreenByLevel()
     }
     screen.buildStage()
     OpenGame.changeScreen(screen)

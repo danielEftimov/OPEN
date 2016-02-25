@@ -2,7 +2,7 @@ package org.otw.open
 
 import com.badlogic.gdx.{Game, Screen}
 import org.mockito.Mockito.mock
-import org.otw.open.screens.EraserGameScreen
+import org.otw.open.screens.MainMenuScreen
 import org.otw.open.testconfig.UnitSpec
 
 /**
@@ -30,10 +30,10 @@ class OpenGameTest extends UnitSpec {
   }
 
   test("when create() method of the OpenGame class instance is invoked, " +
-    "a new screen should be created with the EraserGameScreen as engine") {
+    "a new screen should be created with the MainMenuScreen as engine") {
     val game: OpenGame = OpenGame.getGame
     game.create()
-    assert(game.getScreen.isInstanceOf[EraserGameScreen])
+    assert(game.getScreen.isInstanceOf[MainMenuScreen])
   }
 
 }
