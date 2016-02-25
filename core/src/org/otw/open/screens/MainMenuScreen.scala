@@ -31,8 +31,6 @@ class MainMenuScreen extends AbstractGameScreen with Disposable {
   themes.foreach(theme => {
     val actor = new MenuButtonActor(new Vector2(100 + index * 250, 600 - gridRowCount * 300), theme._1 + ".png", theme._1)
     if (gridRowCount == 2) gridRowCount = 0
-    val toTheme = ToTheme
-    toTheme.themeName = theme._1
     actor.addListener(new ThemeChoiceListener(theme._1))
     actor.addListener(new DispatchEventListener(ToTheme))
     themesList += actor
