@@ -15,11 +15,11 @@ class EraserGameScreen() extends AbstractGameScreen {
   val backgroundActor: BackgroundActor = new BackgroundActor("dark-background.png")
   val erasableImageActor: ErasableImageActor = new ErasableImageActor
 
-  Gdx.graphics.setCursor(clickCursor)
 
   override def buildStage(): Unit = {
     addActor(backgroundActor)
     addActor(erasableImageActor)
+    Gdx.graphics.setCursor(clickCursor)
   }
 
   override def dispose(): Unit = {

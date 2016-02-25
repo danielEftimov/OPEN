@@ -1,7 +1,7 @@
 package org.otw.open.controllers
 
 import com.badlogic.gdx.Screen
-import org.otw.open.screens.{EraserGameScreen, CauseAndEffectScreen, ActionResultScreen, AbstractGameScreen}
+import org.otw.open.screens._
 import org.otw.open.testconfig.UnitSpec
 import org.otw.open.OpenGame
 
@@ -76,10 +76,10 @@ class ScreenControllerTest extends UnitSpec {
 
   }
 
-  test("given ToMainMenu event is dispatched, the current game screen engine is EraserGameEngine") {
+  test("given ToMainMenu event is dispatched, the current game screen engine is MainMenuScreen") {
     ScreenController.dispatchEvent(NextLevel)
     val returnedScreenEngine: AbstractGameScreen = ScreenController.dispatchEvent(ToMainMenu)
-    assert(returnedScreenEngine.isInstanceOf[EraserGameScreen])
+    assert(returnedScreenEngine.isInstanceOf[MainMenuScreen])
     assert(GameState.getLevel == 1)
   }
 
