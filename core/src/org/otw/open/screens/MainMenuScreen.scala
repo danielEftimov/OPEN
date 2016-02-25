@@ -1,10 +1,12 @@
 package org.otw.open.screens
 
+import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.graphics.{Color, GL20}
 import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.utils.Disposable
 import org.otw.open.actors.MenuButtonActor
-import org.otw.open.controllers.{ScreenController, ToTheme, GameState}
-import org.otw.open.listeners.{ThemeChoiceListener, DispatchEventListener}
+import org.otw.open.controllers.{GameState, ToTheme}
+import org.otw.open.listeners.{DispatchEventListener, ThemeChoiceListener}
 
 import scala.collection.mutable.ListBuffer
 
@@ -42,6 +44,13 @@ class MainMenuScreen extends AbstractGameScreen with Disposable {
     }
 
   })
+
+  override def render(delta: Float): Unit = {
+    Gdx.gl.glClearColor(0.95f, 0.95f, 0.95f, Color.WHITE.a)
+    Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
+    act(delta)
+    draw
+  }
 
   /**
     * Methods to be overriden by all classes.
