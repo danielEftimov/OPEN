@@ -66,7 +66,10 @@ object GameState {
       level = newLevel
   }
 
-  def initializeUserSettings(theme: String): Unit = {
-    setThemName(theme)
+  def initializeUserSettings(blackAndWhiteParameter: String) = {
+    println("inside")
+    if (blackAndWhiteParameter.equals("true"))
+      themeMap.filter(entry => entry._1.endsWith("_bw"))
   }
+
 }
