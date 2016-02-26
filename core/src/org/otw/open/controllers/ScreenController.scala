@@ -28,7 +28,7 @@ object ScreenController {
       case CauseAndEffectFinishedUnsuccessfully => new ActionResultScreen(false)
       case RetryLevel => getScreenByLevel()
       case NextLevel => GameState.incrementLevel; getScreenByLevel()
-      case OtherTheme => GameState.nextTheme; getScreenByLevel()
+      case OtherTheme => GameState.setNextTheme; getScreenByLevel()
       case ToMainMenu => GameState.setLevel(1); new MainMenuScreen
       case ToTheme => getScreenByLevel()
     }

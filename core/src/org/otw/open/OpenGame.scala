@@ -1,7 +1,8 @@
 package org.otw.open
 
-import com.badlogic.gdx.{Game, Screen}
-import org.otw.open.screens.{MainMenuScreen, EraserGameScreen}
+import com.badlogic.gdx.{Game, Gdx, Preferences, Screen}
+import org.otw.open.screens.MainMenuScreen
+import org.otw.open.util.UserSettings
 
 /**
   * Created by eilievska on 1/13/2016.
@@ -13,6 +14,8 @@ class OpenGame private() extends Game {
     screen1.buildStage()
     setScreen(screen1)
   }
+
+
 }
 
 /**
@@ -28,6 +31,7 @@ object OpenGame {
   def getGame: OpenGame = game
 
   /**
+    *
     * Sets a new screen to our game.
     *
     * @param newScreen -  a new screen for our game.
