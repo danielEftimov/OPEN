@@ -16,10 +16,8 @@ import scala.collection.mutable.ListBuffer
   */
 class MainMenuScreen extends AbstractGameScreen with Disposable {
 
-  /**
-    * all existing themes to choose between
-    */
-  var themes: Map[String, Theme] = GameState.getThemeSettings
+  /** all existing themes to choose between */
+  val themes: Map[String, Theme] = GameState.getThemeSettings
 
   var themesList = new ListBuffer[MenuButtonActor]()
 
