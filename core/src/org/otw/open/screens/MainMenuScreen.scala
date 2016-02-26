@@ -19,7 +19,7 @@ class MainMenuScreen extends AbstractGameScreen with Disposable {
   /**
     * all existing themes to choose between
     */
-  val themes: Map[String, Theme] = GameState.getThemeSettings
+  var themes: Map[String, Theme] = GameState.getThemeSettings
 
   var themesList = new ListBuffer[MenuButtonActor]()
 
