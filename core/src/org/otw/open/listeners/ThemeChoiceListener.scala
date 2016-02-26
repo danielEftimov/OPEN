@@ -9,7 +9,7 @@ import org.otw.open.controllers.GameState
 class ThemeChoiceListener(themeName: String) extends InputListener {
 
   override def touchDown(event: InputEvent, x: Float, y: Float, pointer: Int, button: Int): Boolean = {
-    GameState.goToTheme(themeName)
+    GameState.setThemeOnLevelOne(themeName)
     true
   }
 

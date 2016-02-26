@@ -6,6 +6,7 @@ import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.utils.Disposable
 import org.otw.open.actors.MenuButtonActor
 import org.otw.open.controllers.{GameState, ToTheme}
+import org.otw.open.dto.Theme
 import org.otw.open.listeners.{DispatchEventListener, ThemeChoiceListener}
 
 import scala.collection.mutable.ListBuffer
@@ -18,13 +19,11 @@ class MainMenuScreen extends AbstractGameScreen with Disposable {
   /**
     * all existing themes to choose between
     */
-  val themes = GameState.getThemeMap
+  var themes: Map[String, Theme] = GameState.getThemeSettings
 
   var themesList = new ListBuffer[MenuButtonActor]()
 
-  /**
-    * for row count
-    */
+  /** for row count */
   var index = 0
 
   var gridRowCount = 0
