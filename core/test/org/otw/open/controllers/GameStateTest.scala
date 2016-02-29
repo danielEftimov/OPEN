@@ -1,7 +1,8 @@
 package org.otw.open.controllers
 
-import org.otw.open.dto.Point
+import org.otw.open.dto.{Theme, Point}
 import org.otw.open.testconfig.UnitSpec
+import org.otw.open.util.UserSettings
 import org.scalatest.BeforeAndAfterEach
 
 /**
@@ -11,6 +12,7 @@ class GameStateTest extends UnitSpec with BeforeAndAfterEach {
   override def beforeEach(): Unit = {
     GameState.setThemName("car_theme")
   }
+
   test("when getLevelStandPoints is invoked, for level 1 of car theme, it should return empty list") {
     GameState.setLevel(1)
     val standPoints: List[Point] = GameState.getLevelStandPoints
@@ -83,4 +85,23 @@ class GameStateTest extends UnitSpec with BeforeAndAfterEach {
     assert(GameState.getLevel == 1)
   }
 
+  test("when theme is Black and White, filter themes should only return black and white themes") {
+    UserSettings.setUserSettings("true", "s", "green")
+    val standPointsMap = Map("x" -> List.empty)
+    val theme: Theme = new Theme(new Point(0, 0), standPointsMap)
+    val testThemes: Map[String, Theme] = Map("car_bw" -> theme)
+
+    val themes = GameState.filterThemes(testThemes)
+    assert(themes.size == 1)
+  }
+
+  test("when theme is not Black and White, filter themes should only return not-blackAndWhite themes") {
+    UserSettings.setUserSettings("false", "s", "green")
+    val standPointsMap = Map("x" -> List.empty)
+    val theme: Theme = new Theme(new Point(0, 0), standPointsMap)
+    val testThemes: Map[String, Theme] = Map("car_bw" -> theme)
+
+    val themes = GameState.filterThemes(testThemes)
+    assert(themes.isEmpty)
+  }
 }

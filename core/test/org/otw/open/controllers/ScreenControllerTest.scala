@@ -4,6 +4,7 @@ import com.badlogic.gdx.Screen
 import org.otw.open.screens._
 import org.otw.open.testconfig.UnitSpec
 import org.otw.open.OpenGame
+import org.otw.open.util.UserSettings
 
 /**
   * Created by eilievska on 1/28/2016.
@@ -93,6 +94,23 @@ class ScreenControllerTest extends UnitSpec {
     GameState.setLevel(3)
     val returnedScreenEngine: AbstractGameScreen = ScreenController.getScreenByLevel
     assert(returnedScreenEngine.isInstanceOf[CauseAndEffectScreen])
+  }
+
+  test("given ToTheme event is dispatched, the returned game screen is the next theme but same level.") {
+    GameState.setLevel(1)
+    val returnedScreen: AbstractGameScreen = ScreenController.dispatchEvent(ToTheme)
+    assert(returnedScreen.isInstanceOf[EraserGameScreen])
+  }
+
+
+  test("given pointer is set to small, getPointerSizeFromUserSettings should return 64") {
+    UserSettings.pointerSize = "s"
+    assert(ScreenController.getPointerSizeFromUserSettings == 64)
+  }
+
+  test("given pointer is set to large, getPointerSizeFromUserSettings should return 256") {
+    UserSettings.pointerSize = "l"
+    assert(ScreenController.getPointerSizeFromUserSettings == 256)
   }
 
   /**
