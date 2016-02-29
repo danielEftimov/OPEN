@@ -1,14 +1,21 @@
 package org.otw.open.controllers
 
+import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.{Gdx, Screen}
 import org.otw.open.OpenGame
 import org.otw.open.screens._
+import org.otw.open.util.UserSettings
 
 /**
   * Screen controller.
   * Created by eilievska on 1/28/2016.
   */
 object ScreenController {
+
+  /**
+    * Cursor pixmap.
+    */
+  private val clickCursor = Gdx.graphics.newCursor(getCursorPixmap, 50, 0)
 
   /**
     * Switches the current game screen based on the Event type received.
@@ -18,7 +25,7 @@ object ScreenController {
     */
   def dispatchEvent(event: Event): AbstractGameScreen = {
 
-    Gdx.graphics.setCursor(None.orNull)
+    setUpCursor()
 
     val currentScreen: Screen = OpenGame.getGame.getScreen
 
@@ -36,6 +43,36 @@ object ScreenController {
     OpenGame.changeScreen(screen)
     currentScreen.dispose()
     screen
+  }
+
+  def setUpCursor(): Unit = {
+    Gdx.graphics.setCursor(clickCursor)
+  }
+
+  def getCursorPixmap: Pixmap = {
+    val pointerFileName: String = getPointerFileNameFromUserSettings
+    val handPixmap: Pixmap = new Pixmap(Gdx.files.internal(pointerFileName))
+    val pointerSize = getPointerSizeFromUserSettings
+    resizePointerToUserSpecifiedSize(handPixmap, pointerSize)
+  }
+
+  def resizePointerToUserSpecifiedSize(handPixmap: Pixmap, pointerSize: Int): Pixmap = {
+    val cursorPixmap = new Pixmap(pointerSize, pointerSize, handPixmap.getFormat())
+    cursorPixmap.drawPixmap(handPixmap, 0, 0, handPixmap.getWidth(), handPixmap.getHeight(), 0, 0,
+      cursorPixmap.getWidth(), cursorPixmap.getHeight())
+    cursorPixmap
+  }
+
+  def getPointerSizeFromUserSettings: Int = {
+    UserSettings.pointerSize match {
+      case "s" => 64
+      case "m" => 128
+      case "l" => 256
+    }
+  }
+
+  def getPointerFileNameFromUserSettings: String = {
+    "hand_" + (if (UserSettings.isBlackAndWhite) "bw" else UserSettings.pointerColor) + ".png"
   }
 
   def getScreenByLevel(): AbstractGameScreen = {

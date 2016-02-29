@@ -36,7 +36,7 @@ object GameState {
     * @return theme names
     */
   def filterThemes(themes: Map[String, Theme]): Map[String, Theme] = {
-    if (UserSettings.gameThemeNoColor == "true")
+    if (UserSettings.isBlackAndWhite)
       themes.filter(themeName => themeName._1.endsWith("_bw"))
     else
       themes.filter(themeName => !themeName._1.endsWith("_bw"))

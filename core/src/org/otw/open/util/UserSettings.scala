@@ -5,14 +5,14 @@ package org.otw.open.util
   */
 object UserSettings {
 
-  var gameThemeNoColor: String = "false"
+  var isBlackAndWhite: Boolean = false
 
   var pointerSize: String = "m"
 
   var pointerColor: String = "white"
 
   def setUserSettings(gameThemeColor: String, pointerSize: String, pointerColor: String) = {
-    this.gameThemeNoColor = gameThemeColor
+    this.isBlackAndWhite = if (gameThemeColor == "true") true else false
     this.pointerSize = pointerSize
     this.pointerColor = pointerColor
   }
