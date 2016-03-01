@@ -15,7 +15,11 @@ object ScreenController {
   /**
     * Cursor pixmap.
     */
-  private val clickCursor = Gdx.graphics.newCursor(getCursorPixmap, 50, 0)
+  private val clickCursor = UserSettings.pointerSize match {
+    case "s" => Gdx.graphics.newCursor(getCursorPixmap, 26, 4)
+    case "m" => Gdx.graphics.newCursor(getCursorPixmap, 52, 7)
+    case "l" => Gdx.graphics.newCursor(getCursorPixmap, 104, 15)
+  }
 
   /**
     * Switches the current game screen based on the Event type received.
