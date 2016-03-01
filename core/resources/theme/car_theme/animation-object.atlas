@@ -3,24 +3,24 @@ animation-object.png
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
-animation-object2
-  rotate: false
-  xy: 1, 112
-  size: 343, 107
-  orig: 343, 107
-  offset: 0, 0
-  index: -1
-animation-object3
+car-3
   rotate: false
   xy: 1, 1
-  size: 340, 109
-  orig: 340, 109
+  size: 331, 105
+  orig: 331, 105
   offset: 0, 0
   index: -1
-animation-object1
+car-1
   rotate: false
-  xy: 346, 113
-  size: 341, 106
-  orig: 341, 106
+  xy: 334, 4
+  size: 331, 102
+  orig: 331, 102
+  offset: 0, 0
+  index: -1
+car-2
+  rotate: false
+  xy: 667, 7
+  size: 331, 99
+  orig: 331, 99
   offset: 0, 0
   index: -1
