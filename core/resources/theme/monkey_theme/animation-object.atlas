@@ -1,0 +1,52 @@
+
+animation-object.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+animation-object-monkey
+  rotate: false
+  xy: 1, 1
+  size: 306, 792
+  orig: 306, 792
+  offset: 0, 0
+  index: -1
+animation-object-monkey2
+  rotate: false
+  xy: 309, 1
+  size: 306, 792
+  orig: 306, 792
+  offset: 0, 0
+  index: -1
+animation-object-monkey6
+  rotate: false
+  xy: 309, 1
+  size: 306, 792
+  orig: 306, 792
+  offset: 0, 0
+  index: -1
+animation-object-monkey3
+  rotate: false
+  xy: 617, 1
+  size: 306, 792
+  orig: 306, 792
+  offset: 0, 0
+  index: -1
+animation-object-monkey5
+  rotate: false
+  xy: 617, 1
+  size: 306, 792
+  orig: 306, 792
+  offset: 0, 0
+  index: -1
+
+animation-object2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+animation-object-monkey4
+  rotate: false
+  xy: 1, 1
+  size: 306, 792
+  orig: 306, 792
+  offset: 0, 0
+  index: -1
