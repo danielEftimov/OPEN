@@ -76,7 +76,10 @@ object ScreenController {
   }
 
   def getPointerFileNameFromUserSettings: String = {
-    "hand_" + (if (UserSettings.isBlackAndWhite) "bw" else UserSettings.pointerColor) + ".png"
+    UserSettings.isBlackAndWhite match {
+      case true => (if (UserSettings.pointerColor == "yellow") "hand_" + UserSettings.pointerColor else "hand_white") + ".png"
+      case false => "hand_" + UserSettings.pointerColor + ".png"
+    }
   }
 
   def getScreenByLevel(): AbstractGameScreen = {
