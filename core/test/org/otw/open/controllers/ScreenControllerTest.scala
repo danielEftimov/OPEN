@@ -108,9 +108,9 @@ class ScreenControllerTest extends UnitSpec {
     assert(ScreenController.getPointerSizeFromUserSettings == 64)
   }
 
-  test("given pointer is set to large, getPointerSizeFromUserSettings should return 256") {
-    UserSettings.pointerSize = "l"
-    assert(ScreenController.getPointerSizeFromUserSettings == 256)
+  test("given pointer is set to medium, getPointerSizeFromUserSettings should return 128") {
+    UserSettings.pointerSize = "m"
+    assert(ScreenController.getPointerSizeFromUserSettings == 128)
   }
 
 
