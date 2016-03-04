@@ -25,10 +25,13 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{65583A63-DE32-4014-9FD6-49B46909170E}"/>
+				<Prp name="activity" type="S" value="{74697AEB-B236-4392-8B77-B8C9DA3B6AA2}"/>
 			</Node>
 			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}">
 				<Node name="{2d3fa3fe-e64e-4d8d-81fc-f6be9ce5f38e}">
+					<Prp name="hash" type="I" value="1"/>
+				</Node>
+				<Node name="{8bbde00b-61c3-4325-94ed-d76c0a856bc0}">
 					<Prp name="hash" type="I" value="1"/>
 				</Node>
 				<Node name="{c55fd787-0c0d-4fd1-a7e9-c9d11e2b3101}">
@@ -39,35 +42,25 @@
 				<Node name="workspace">
 					<Node name="0">
 						<Node name="editor">
-							<Node name="{93765269-c25d-4cd5-b6bf-5d7454869c93}">
-								<Prp name="key" type="S" value="{32AEF8E6-B649-4A20-B29D-67087922370E}"/>
-							</Node>
-							<Prp name="editor" type="S" value="{9EBE19C4-D947-4910-B059-EFC573D17C19}"/>
-							<Prp name="focused" type="S" value="{26F47E4E-490A-448A-886A-72B83A529623}"/>
-						</Node>
-						<Prp name="edititem" type="S" value="{B76C092C-19A2-49A1-8D4F-69F5F3043A96}"/>
-					</Node>
-					<Node name="1">
-						<Node name="editor">
 							<Node name="{8c45957c-f4b3-4dd7-9212-49cbd350f69f}">
-								<Prp name="key" type="S" value="{DC55C09F-9C18-4B84-914E-EF780A4C333A}"/>
+								<Prp name="key" type="S" value="{9084E629-BA00-41E7-A6BB-16DA09F355CF}"/>
 							</Node>
 							<Node name="{d0151f8e-51fe-49da-8534-008b9f1b7c45}">
 								<Prp name="col" type="I" value="0"/>
-								<Prp name="key" type="S" value="{E862F626-DF5F-42D8-B1FB-CBB67BDDE364}"/>
-								<Prp name="line" type="I" value="1"/>
+								<Prp name="key" type="S" value="{C139FE83-F11B-4AB7-B6BC-B0D61812BC91}"/>
+								<Prp name="line" type="I" value="0"/>
 								<Prp name="sellength" type="I" value="0"/>
-								<Prp name="selstart" type="I" value="27"/>
+								<Prp name="selstart" type="I" value="0"/>
 								<Prp name="windowchar" type="I" value="0"/>
 								<Prp name="windowline" type="I" value="0"/>
 							</Node>
-							<Prp name="editor" type="S" value="{E5C2D63B-D1BB-49AD-A0C6-CD16FF3B7839}"/>
-							<Prp name="focused" type="S" value="{A84ACF44-3635-4F6C-A397-DC0CB20DEF45}"/>
+							<Prp name="editor" type="S" value="{2D9DFD7A-5A64-4679-8A5A-92F58B7A238E}"/>
+							<Prp name="focused" type="S" value="{C139FE83-F11B-4AB7-B6BC-B0D61812BC91}"/>
 						</Node>
-						<Prp name="edititem" type="S" value="{6A1E2EEE-23F5-4BE9-BF24-50B30106932B}"/>
+						<Prp name="edititem" type="S" value="{74697AEB-B236-4392-8B77-B8C9DA3B6AA2}"/>
 					</Node>
-					<Prp name="docking" type="H" value="617162696EF37A0101000000DB0200007801730C74F177F6E662800231203D9B958121961926828F9EC40491BDE3FDECBD7BEB47E7C59DD7AF94BE91E5648C044A804C3839B135E069CB05F74D42BE976B9B1FDB3D606460E8068A57B333305CC2B482059F6520B9FF50700868CE092C7CFCFA41AEBD0D55627DEDD0D3DD17D77A2E387656ECBF7585E563A089CB81726540979D4376993250D0992191A194A1982195C195210D08531992194A187C19F219F218B281BC4A8610860C209D0BC47E405117209D03D453C910CF60C060C8A007860C0C34F61F92F78E48EE9BE77E53C07343E4FBA3C5176B24F17A2F18E89D22864C8602A0A714805E49057A15C4F2017A251D4847130800FA790F1849C403002B358406"/>
-					<Prp name="editorscount" type="I" value="2"/>
+					<Prp name="docking" type="H" value="617162696EF37A0101000000F00100007801730C74F177F6E662800231203D9B958121961926828F5ECE0891BDE3FDECBD7BEB47E7C59DD7AF94BE91E564CC034A804C98C8B8BC94C92EDF7DE5038FA57D863FE63E008A7703C5ABD919182E615AC182CF3290DC7F28380434E704163E7EFD20D79E872AA9FA3B573725AAD2AD2B6AD2D7EE2AE5BEC740C9E540B932A0CBCE21BB4C1628E8CC90C850CA50CC90CAE0CA900684A90CC90C250CF10C460C0640329C2113C8CB600800AA2A02E25CA07C09101701753030D0D84F50EF104D0100B6105441"/>
+					<Prp name="editorscount" type="I" value="1"/>
 					<Prp name="enabled" type="B" value="-1"/>
 				</Node>
 			</Node>
@@ -1009,22 +1002,24 @@
 				<Node name="causeeffect">
 					<Node name="causeeffect">
 						<Node name="advanced">
-							<Node name="script">
-								<Node name="nodelayscenarios"/>
-							</Node>
+							<Node name="script"/>
 						</Node>
 					</Node>
 					<Node name="causeeffectblackandwhite">
 						<Node name="advanced">
 							<Node name="script"/>
 						</Node>
-						<Node name="testedapps"/>
 					</Node>
 					<Node name="causeeffectmonkeytheme">
 						<Node name="advanced">
 							<Node name="script"/>
 						</Node>
+						<Node name="testedapps"/>
 					</Node>
+					<Node name="causeeffectmonkeythemeblackandwhite"/>
+				</Node>
+				<Node name="causeeffect logs">
+					<Node name="causeeffect logs"/>
 				</Node>
 			</Node>
 		</Node>
