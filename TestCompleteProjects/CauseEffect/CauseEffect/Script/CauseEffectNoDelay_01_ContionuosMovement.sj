@@ -1,4 +1,5 @@
-﻿function causeEffect()
+﻿//USEUNIT CheckRegions
+function causeEffect()
 {
 try{
   //Launch the tested application.
@@ -42,13 +43,13 @@ function closeApp()
 function eraser ()
 {
   //Check if the first layer (top layer - leaves) is getting displayed
-  Regions.RegionLeaves.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 1, 29, 1445, 906, false));
+  CheckRegions.Region_Leaves();
   
 
   //perform the erase action (continuos movement of the mouse over the scene) 
   LLCollection.NoDelayContinuousMovement.Execute();
   
   //Check if the second layer (bottom layer - car/street) has been shown properly
-  Regions.RegionLeaves.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 1, 29, 1445, 906, false));
+ CheckRegions.Region_Leaves();
   
 }

@@ -28,8 +28,8 @@ function launchApp()
   //TestedApps.desktop.Params.SimpleParams.FilePath="\\mkskfs01\Projects\OpenTheWindows\game for testing";
   //TestedApps.desktop.Params.SimpleParams.FileName="desktop.exe"
   //TestedApps.desktop.Params.SimpleParams.Activate();
-  TestedApps.desktop.Run();
-  causeEffectObject = Aliases.javaw.wndLWJGL2;
+  TestedApps.desktop_1_0.Run();
+  causeEffectObject = Aliases.javaw.wndLWJGL;
 }
 
 function closeApp()
@@ -42,8 +42,23 @@ function closeApp()
 
 function eraser ()
 {
+
+CheckRegions.Region_ThemeSelect();
+  
+  
+  var coorX = 400;
+  var coorY = 231;
+ 
+  
+  // Specifies a delay in milliseconds
+  sDelay = 1000 ;
+  
+  // Simulates pressing and releasing the left mouse button
+  LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
+  LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay);
+  aqUtils.Delay(2000);
   //Check if the first layer (top layer - leaves) is getting displayed
-  Regions.RegionLeaves.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 1, 29, 1445, 906, false));
+  CheckRegions.Region_Leaves();
   
   aqUtils.Delay(3000);
 

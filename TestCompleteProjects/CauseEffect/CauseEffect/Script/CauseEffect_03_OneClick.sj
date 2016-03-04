@@ -1,5 +1,5 @@
 ﻿//USEUNIT CauseEffect_01_ContinuosMovement
-//USEUNIT CauseEffect_06_Navigation_NextLevel
+//USEUNIT CauseEffect_19_GameMenu
 //USEUNIT CheckRegions
 function causeEffect_OneClick()
 {
@@ -52,7 +52,7 @@ function oneClickCar()
   // Simulates pressing and releasing the left mouse button
   LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
-  aqUtils.Delay(1500);
+  aqUtils.Delay(4000);
   //Check if the happy animations has been shown properly
   
   CheckRegions.Region_HappyAnimation();   

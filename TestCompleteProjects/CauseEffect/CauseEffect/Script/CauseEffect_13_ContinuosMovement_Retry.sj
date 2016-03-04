@@ -1,17 +1,19 @@
-﻿//USEUNIT CauseEffect_09_Navigation_Restart
+﻿//USEUNIT CauseEffect_19_GameMenu
 //USEUNIT CheckRegions
+
 function causeEffect()
 {
 try{
   //Launch the tested application.
   launchApp();
   
+  
   //Removing leaves from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
   Log.PopLogFolder();    
   
- restart()
+ restart_passed();
  Log.AppendFolder("This test is for Retry  of eraser level");  
   eraser ();      
   Log.PopLogFolder();
@@ -50,7 +52,8 @@ function eraser ()
 {
   //Check if the first layer (top layer - leaves) is getting displayed
   CheckRegions.Region_Leaves();
-
+  aqUtils.Delay(3000);
+  
   //perform the erase action (continuos movement of the mouse over the scene) 
   LLCollection.ContinuousMovement.Execute();
   

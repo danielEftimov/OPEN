@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="folders"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.504602963"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{612E3120-B99A-4A1A-AE49-A82F759DF3CC}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_06 PM_37_695\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5051114699"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{202BFF0C-EC1A-4042-9D69-B281BDBDAE15}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_07 PM_21_629\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5063983102"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{F715C2E4-A0A4-43EB-8424-686CEEC9DD36}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_09 PM_12_813\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5078362384"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{3DE7CAF6-7BFE-4DE9-80AA-9B0114BA05C0}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_11 PM_17_50\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5120175231"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{EE3284A5-8C68-4F5D-B72E-9240E876F6C9}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_17 PM_18_313\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5227679051"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{EBC8C58A-F461-4EF6-A463-02EDD925D1AB}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_32 PM_47_147\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5233326736"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{FCF5CCC0-FD0D-4340-A7BB-3398F595860C}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_33 PM_35_943\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0007">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5345496412"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{AE46E9EB-9165-4E72-991F-912CBB874A93}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_49 PM_45_89\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0008">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5351675579"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{653DC4D9-03AE-44DB-B680-7569D786A7FD}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_50 PM_38_477\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0009">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5355662384"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{B5ADAEEE-ECAF-48C1-9DD7-92A43F09ACD5}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_51 PM_12_923\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0010">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5363326042"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{ABA458C1-7070-413C-B987-CB90C9700EC4}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_52 PM_19_137\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0011">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5412904398"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{E2E73978-5243-4FCA-A3CE-D0D638DA348B}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_03_OneClick\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_12_59 PM_27_494\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0012">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5580124653"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{4580456F-DE28-47C0-B6D1-3790AF052CB1}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_03_OneClick\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_23 PM_32_267\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0013">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5588615625"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{920173F5-832F-492D-A599-2C09FFF8AA9A}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyTheme_05_MultipleClicks\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_24 PM_45_639\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0014">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5804121528"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{BA77A020-F0E9-42CD-B55F-BF1E9369D281}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyThemeNoDelay_01_ContionuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_55 PM_47_610\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0015">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5806483102"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{D9C5C29C-2558-4BBD-B78E-EE38A198296C}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyThemeNoDelay_01_ContionuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_56 PM_08_11\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0016">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5822689931"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{B76C092C-19A2-49A1-8D4F-69F5F3043A96}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectMonkeyThemeNoDelay_01_ContionuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_58 PM_28_40\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

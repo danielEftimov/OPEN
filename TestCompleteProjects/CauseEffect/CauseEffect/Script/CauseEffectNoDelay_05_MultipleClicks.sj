@@ -3,6 +3,7 @@
 //USEUNIT CauseEffectNoDelay_02_Navigation_NextLevel
 //USEUNIT CauseEffectNoDelay_04_ClicksOnTheCarBeforeAudioIsFinished
 //USEUNIT CauseEffect_06_Navigation_NextLevel
+//USEUNIT CheckRegions
 function causeEffect_OneClick()
 {
 try{
@@ -74,6 +75,6 @@ function multipleClicks()
  
   aqUtils.Delay(1500);  
   //Check if the happy animations has been shown properly
-  Regions.HappyAnimation.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 571, 320, 338, 105, false),false,false,46024);  
+   CheckRegions.Region_HappyAnimation();
   
 }

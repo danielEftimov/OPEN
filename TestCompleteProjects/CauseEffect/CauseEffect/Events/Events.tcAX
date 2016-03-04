@@ -67,15 +67,6 @@
 						<Prp name="info_id" type="I" value="1610743808"/>
 						<Prp name="info_tlbver" type="S" value="version.dll"/>
 					</Node>
-					<Node name="event14info">
-						<Prp name="info_controlname" type="S" value="Test Engine Events"/>
-						<Prp name="info_description" type="S" value="Occurs when TestComplete starts running a test (whether it is run from the UI or command line, or as a project test item)."/>
-						<Prp name="info_eventname" type="S" value="OnStartTest"/>
-						<Prp name="info_eventrealname" type="S" value="OnStartTest"/>
-						<Prp name="info_guid" type="S" value="{F5856842-4323-49FD-B806-36E22179EF8A}"/>
-						<Prp name="info_id" type="I" value="1610743808"/>
-						<Prp name="info_tlbver" type="S" value="version.dll"/>
-					</Node>
 					<Node name="event1info">
 						<Prp name="info_controlname" type="S" value="General Events"/>
 						<Prp name="info_description" type="S" value="Occurs when an overlapping window appears."/>
@@ -186,7 +177,6 @@
 			<Prp name="tlbhistory" type="S" value="&quot;TestComplete general events&quot;"/>
 		</Node>
 		<Node name="data"/>
-		<Node name="folders"/>
 		<Node name="test data"/>
 		<Prp name="key" type="S" value="{D099ADA4-BB7D-45F4-BBDC-D3E3CC169359}"/>
 		<Prp name="signature" type="S" value="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}"/>

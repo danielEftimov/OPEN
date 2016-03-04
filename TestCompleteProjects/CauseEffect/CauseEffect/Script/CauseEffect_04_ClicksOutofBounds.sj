@@ -1,5 +1,5 @@
 ﻿//USEUNIT CauseEffect_01_ContinuosMovement
-//USEUNIT CauseEffect_06_Navigation_NextLevel
+//USEUNIT CauseEffect_19_GameMenu
 //USEUNIT CheckRegions
 function CauseEffect_ClicksOutOfBounds()
 {
@@ -66,4 +66,5 @@ function multipleClicksOutOfBounds()
   aqUtils.Delay(2000); 
   //Check if the unhappy animation has been shown properly
   CheckRegions.Region_SadAnimation();
+  
 }

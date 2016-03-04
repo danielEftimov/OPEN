@@ -1,6 +1,5 @@
 ﻿//USEUNIT BW_CauseEffect_01_ContinuosMovement
-//USEUNIT BW_CauseEffect_06_Navigation_NextLevel
-//USEUNIT BW_CheckRegions
+//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CheckRegions
 function CauseEffect_ClicksOutOfBounds()
 {
@@ -45,8 +44,8 @@ function multipleClicksOutOfBounds()
   BW_CheckRegions.Region_AnimationCar();
 
   //Specifies the coordinates of the first click
-  var coorX = 658;
-  var coorY = 658;
+  var coorX = 750;
+  var coorY = 750;
  
   // Specifies a delay in milliseconds
   sDelay = 1000 ;

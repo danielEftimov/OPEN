@@ -23,20 +23,21 @@
 			<Node name="item0">
 				<Node name="config">
 					<Node name="runmodeparams">
-						<Node name="simple">
-							<Prp name="filename" type="S" value="desktop.exe"/>
-							<Prp name="filepath" type="S" value="Z:\game for testing\test with B&amp;W with audio guidance fix\"/>
+						<Node name="java">
+							<Prp name="applicationarguments" type="S" value="true m red"/>
+							<Prp name="fixedversion" type="I" value="1040"/>
+							<Prp name="jarfilename" type="S" value="Z:\game for testing\test with added monkey theme\desktop-1.0.jar"/>
+							<Prp name="jvmexecutable" type="S" value="C:\Program Files\Java\jre1.8.0_74\Bin\javaw.exe"/>
 						</Node>
-						<Prp name="activerunmode" type="S" value="Simple"/>
+						<Prp name="activerunmode" type="S" value="Java"/>
 					</Node>
 					<Prp name="autorunonrecording" type="B" value="-1"/>
-					<Prp name="node name" type="S" value="desktop"/>
+					<Prp name="node name" type="S" value="desktop_1_0"/>
 					<Prp name="usefeaturedruntimeobject" type="B" value="-1"/>
-					<Prp name="userchangename" type="B" value="-1"/>
 				</Node>
 				<Node name="data"/>
 				<Node name="test data"/>
-				<Prp name="key" type="S" value="{854C9FC8-8B04-4C57-A0C9-A6EACCAFE4DD}"/>
+				<Prp name="key" type="S" value="{AB8126D8-91E8-4CF0-B718-B43D14CFFA4A}"/>
 				<Prp name="type" type="S" value="{FD30A383-63C2-4C25-948C-2595C0F81320}"/>
 				<Prp name="typename" type="S" value="Tested Application"/>
 			</Node>

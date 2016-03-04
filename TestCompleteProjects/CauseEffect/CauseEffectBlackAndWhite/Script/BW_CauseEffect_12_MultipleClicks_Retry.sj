@@ -1,7 +1,6 @@
 ﻿//USEUNIT BW_CauseEffect_01_ContinuosMovement
 //USEUNIT BW_CauseEffect_03_OneClick
-//USEUNIT BW_CauseEffect_06_Navigation_NextLevel
-//USEUNIT BW_CauseEffect_09_Navigation_Restart
+//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CauseEffect_04_ClicksOutofBounds
 //USEUNIT BW_CauseEffect_05_MultipleClicks
 function causeEffect_OneClick()

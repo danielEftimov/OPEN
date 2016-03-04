@@ -85,6 +85,47 @@
 									</Child>
 								</Children>
 							</Child>
+							<Child Name="wndShell_TrayWnd" Key="{0C12B465-0B54-4D32-A243-7CF3EE09ADF0}" ParallelWalk="True">
+								<Properties>
+									<Property Name="WndClass">
+										<Value PropertyType="0" Value="Shell_TrayWnd" Type="5" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="ReBarWindow32" Key="{1CC44E9B-C92E-45D7-A75E-7065A0BA927D}" ParallelWalk="True">
+										<Properties>
+											<Property Name="WndClass">
+												<Value PropertyType="0" Value="ReBarWindow32" Type="5" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="MSTaskSwWClass" Key="{F8123BC4-1EBC-4B7C-9B81-AA324F2C6884}" ParallelWalk="True">
+												<Properties>
+													<Property Name="WndClass">
+														<Value PropertyType="0" Value="MSTaskSwWClass" Type="5" />
+													</Property>
+													<Property Name="WndCaption">
+														<Value PropertyType="0" Value="Running applications" Type="5" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="MSTaskListWClass" Key="{48E30CDC-B5CF-41FE-AF49-4B2084B05107}" ParallelWalk="True">
+														<TypeInfo Item0="{17905F0B-C56E-46F0-88AB-D5B2B47BF2B4}" />
+														<Properties>
+															<Property Name="WndClass">
+																<Value PropertyType="0" Value="MSTaskListWClass" Type="5" />
+															</Property>
+															<Property Name="WndCaption">
+																<Value PropertyType="0" Value="Running applications" Type="5" />
+															</Property>
+														</Properties>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
 						</Children>
 					</Child>
 					<Child Name="chrome" Key="{F1D6E503-E9B5-492C-B34F-A05FA3777EBF}" ParallelWalk="True">
@@ -110,6 +151,26 @@
 							</Child>
 						</Children>
 					</Child>
+					<Child Name="java" Key="{BAF930EE-8DDB-4F18-9B64-92908093CF88}" ParallelWalk="True">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value PropertyType="0" Value="java" Type="5" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndLWJGL" Key="{3C14AEA6-1796-44A3-BC18-17E3DD96EA34}" ParallelWalk="True">
+								<TypeInfo Item0="{6644F20C-1D6A-439B-A1C7-B30E640402D7}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value PropertyType="0" Value="LWJGL" Type="5" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value PropertyType="0" Value="*" Type="5" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
 				</Children>
 			</Child>
 		</Children>
@@ -125,9 +186,19 @@
 					<Child Name="FolderView" Owner="{5311AC68-F406-42DE-B469-AED5477E5A6E}" />
 				</Child>
 			</Child>
+			<Child Name="wndShell_TrayWnd" Owner="{0C12B465-0B54-4D32-A243-7CF3EE09ADF0}">
+				<Child Name="ReBarWindow32" Owner="{1CC44E9B-C92E-45D7-A75E-7065A0BA927D}">
+					<Child Name="MSTaskSwWClass" Owner="{F8123BC4-1EBC-4B7C-9B81-AA324F2C6884}">
+						<Child Name="MSTaskListWClass" Owner="{48E30CDC-B5CF-41FE-AF49-4B2084B05107}" />
+					</Child>
+				</Child>
+			</Child>
 		</Child>
 		<Child Name="chrome" Owner="{F1D6E503-E9B5-492C-B34F-A05FA3777EBF}">
 			<Child Name="wndChrome_WidgetWin_1" Owner="{31009414-3787-4CE3-B70E-3080DC4CCEC9}" />
+		</Child>
+		<Child Name="java" Owner="{BAF930EE-8DDB-4F18-9B64-92908093CF88}">
+			<Child Name="wndLWJGL" Owner="{3C14AEA6-1796-44A3-BC18-17E3DD96EA34}" />
 		</Child>
 	</LogicalNodes>
 	<TypeInfo StoreCodeCompletion="1">
@@ -247,6 +318,64 @@
 						</Param1>
 						<ReturnValue Param0="8" />
 					</Child>
+					<Child Name="SetFocus" Doc="Sets focus to the specified Window object." IsBasic="True" Data="ZI4L1L4ZN18ZN">
+						<ReturnValue Param0="24" />
+					</Child>
+					<Child Name="Click" Doc="Simulates a left-button single click in a window or control as specified (relative position, shift keys)." IsBasic="True" Param0="ClientX" Param1="ClientY" Param2="Shift" Data="ZI4L1L4L3Z018ZN">
+						<Param0>
+							<TypeDesc Param0="3" />
+							<ParamDesc Flags="49" Value="-1" Type="0" />
+						</Param0>
+						<Param1>
+							<TypeDesc Param0="3" />
+							<ParamDesc Flags="49" Value="-1" Type="0" />
+						</Param1>
+						<Param2>
+							<TypeDesc Param0="29" Type0="TShiftKey" />
+							<ParamDesc Flags="49" Value="0" Type="0" />
+						</Param2>
+						<ReturnValue Param0="24" />
+					</Child>
+					<Child Name="ClickR" Doc="Simulates a right-button single click in a window or control as specified (relative position, shift keys)." IsBasic="True" Param0="ClientX" Param1="ClientY" Param2="Shift" Data="ZI4L1L4L3Z018ZN">
+						<Param0>
+							<TypeDesc Param0="3" />
+							<ParamDesc Flags="49" Value="-1" Type="0" />
+						</Param0>
+						<Param1>
+							<TypeDesc Param0="3" />
+							<ParamDesc Flags="49" Value="-1" Type="0" />
+						</Param1>
+						<Param2>
+							<TypeDesc Param0="29" Type0="TShiftKey" />
+							<ParamDesc Flags="49" Value="0" Type="0" />
+						</Param2>
+						<ReturnValue Param0="24" />
+					</Child>
+					<Child Name="Keys" Doc="Simulates one or several keypresses." IsBasic="True" Param0="Keys" Data="ZI4L1L4L1Z018ZN">
+						<Param0>
+							<TypeDesc Param0="8" />
+							<ParamDesc Flags="1" />
+						</Param0>
+						<ReturnValue Param0="24" />
+					</Child>
+					<Child Name="Visible" IsBasic="True" Data="ZI4L2L4ZOBZN">
+						<ReturnValue Param0="11" />
+					</Child>
+					<Child Name="Width" IsBasic="True" Data="ZI4L2L4ZN13ZN">
+						<ReturnValue Param0="19" />
+					</Child>
+					<Child Name="Height" IsBasic="True" Data="ZI4L2L4ZN13ZN">
+						<ReturnValue Param0="19" />
+					</Child>
+					<Child Name="Enabled" IsBasic="True" Data="ZI4L2L4ZOBZN">
+						<ReturnValue Param0="11" />
+					</Child>
+				</FunctionDescriptions>
+			</Data>
+		</Child>
+		<Child Hash="157446646" Key="{17905F0B-C56E-46F0-88AB-D5B2B47BF2B4}">
+			<Data Properties="80D674F5BC29B84BB78E4025020CD639UFFFFFFFFFFFFFFFFV4L8ZZY">
+				<FunctionDescriptions>
 					<Child Name="SetFocus" Doc="Sets focus to the specified Window object." IsBasic="True" Data="ZI4L1L4ZN18ZN">
 						<ReturnValue Param0="24" />
 					</Child>

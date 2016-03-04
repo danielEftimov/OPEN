@@ -29,6 +29,78 @@
 				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
 				<Prp name="typename" type="S" value="Keyword Test"/>
 			</Node>
+			<Node name="test2">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Test2.tcKDTest"/>
+				</Node>
+				<Prp name="key" type="S" value="{4B16CF04-7313-4BD8-A64B-DD7AA66BD123}"/>
+				<Prp name="pluginname" type="S" value="Keyword Testing"/>
+				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
+				<Prp name="typename" type="S" value="Keyword Test"/>
+			</Node>
+			<Node name="test3">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Test3.tcKDTest"/>
+				</Node>
+				<Prp name="key" type="S" value="{D85F5226-D176-4791-9556-0C8AB009CA0A}"/>
+				<Prp name="pluginname" type="S" value="Keyword Testing"/>
+				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
+				<Prp name="typename" type="S" value="Keyword Test"/>
+			</Node>
+			<Node name="test4">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Test4.tcKDTest"/>
+				</Node>
+				<Prp name="key" type="S" value="{AC6E3C8C-BF61-43EC-B3C8-C9D1E687131F}"/>
+				<Prp name="pluginname" type="S" value="Keyword Testing"/>
+				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
+				<Prp name="typename" type="S" value="Keyword Test"/>
+			</Node>
+			<Node name="test5">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Test5.tcKDTest"/>
+				</Node>
+				<Prp name="key" type="S" value="{A22A188B-1A93-4E3D-883E-E4177B03E74F}"/>
+				<Prp name="pluginname" type="S" value="Keyword Testing"/>
+				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
+				<Prp name="typename" type="S" value="Keyword Test"/>
+			</Node>
+			<Node name="test6">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Test6.tcKDTest"/>
+				</Node>
+				<Prp name="key" type="S" value="{FAEAB910-BAAB-4062-9C61-2B65FA5E50F6}"/>
+				<Prp name="pluginname" type="S" value="Keyword Testing"/>
+				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
+				<Prp name="typename" type="S" value="Keyword Test"/>
+			</Node>
+			<Node name="test7">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Test7.tcKDTest"/>
+				</Node>
+				<Prp name="key" type="S" value="{3C038EDC-6389-4A6F-8AA5-C8ADB8AF3DAB}"/>
+				<Prp name="pluginname" type="S" value="Keyword Testing"/>
+				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
+				<Prp name="typename" type="S" value="Keyword Test"/>
+			</Node>
+			<Node name="test8">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Test8.tcKDTest"/>
+				</Node>
+				<Prp name="key" type="S" value="{77F5E87F-F123-4E4B-BB54-7D584B1ADA31}"/>
+				<Prp name="pluginname" type="S" value="Keyword Testing"/>
+				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
+				<Prp name="typename" type="S" value="Keyword Test"/>
+			</Node>
+			<Node name="test9">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Test9.tcKDTest"/>
+				</Node>
+				<Prp name="key" type="S" value="{09EAE875-8233-4FC1-A520-2BFFAAEC434D}"/>
+				<Prp name="pluginname" type="S" value="Keyword Testing"/>
+				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
+				<Prp name="typename" type="S" value="Keyword Test"/>
+			</Node>
 		</Node>
 		<Node name="folders"/>
 		<Node name="settings"/>

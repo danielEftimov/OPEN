@@ -1,4 +1,4 @@
-﻿//USEUNIT BW_CauseEffect_09_Navigation_Restart
+﻿//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CheckRegions
 function causeEffect()
 {
@@ -11,7 +11,7 @@ try{
   eraser ();
   Log.PopLogFolder();    
   
- restart()
+ restart_passed();
  Log.AppendFolder("This test is for Retry  of eraser level");  
   eraser ();      
   Log.PopLogFolder();

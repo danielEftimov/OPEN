@@ -1,6 +1,6 @@
 ﻿//USEUNIT CauseEffect_01_ContinuosMovement
 //USEUNIT CauseEffectNoDelay_02_Navigation_NextLevel
-
+//USEUNIT CheckRegions
 function causeEffect_OneClick()
 {
 
@@ -63,7 +63,7 @@ function ClicksOntheCarBeforeAudioIsFinished()
 
   
   //Check if the car is moved
-  Regions.AnimationCar.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+ CheckRegions.Region_AnimationCar();
      
 
 }
