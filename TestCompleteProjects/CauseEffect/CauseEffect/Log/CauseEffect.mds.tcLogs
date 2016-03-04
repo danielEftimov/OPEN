@@ -19,15 +19,70 @@
 ]>
 <Nodes version="1">
 	<Node name="root">
-		<Node name="folders"/>
+		<Node name="folders">
+			<Node name="regression color">
+				<Node name="folders"/>
+				<Node name="references">
+					<Prp name="{964285e2-b94c-454e-b760-246af080d031}" type="S" value=""/>
+				</Node>
+				<Prp name="caption" type="S" value="Regression Color"/>
+				<Prp name="description" type="S" value="A logical folder that is used to organize test log items."/>
+				<Prp name="moniker" type="S" value=""/>
+			</Node>
+		</Node>
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42419.5932243403"/>
+				<Prp name="datetime" type="D" value="42429.4567551968"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{60B2328A-E8B1-46D5-84F3-544A71617FB0}"/>
+				<Prp name="key" type="S" value="{964285E2-B94C-454E-B760-246AF080D031}"/>
 				<Prp name="nameofroot" type="S" value="CauseEffect"/>
-				<Prp name="relpath" type="S" value="2_19_2016_2_14 PM_14_583\Description.tcLog"/>
+				<Prp name="relpath" type="S" value="2_29_2016_10_57 AM_43_649\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5436182407"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{26A41806-4260-43ED-8A4C-D7816E85E3E6}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_02 PM_48_616\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5443227894"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{B7AC7DD6-B6A9-4EC3-9C0D-259726B02693}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_03 PM_49_489\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5449888542"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{CC8AFEC5-1438-40C3-9020-4611F3DE8875}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_04 PM_47_27\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5461880671"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{08DD00A8-C0AB-46E8-8C0E-8B90E90C71AB}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_06 PM_30_649\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.551886088"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{0E03FB29-98C4-469F-A69F-441D9D2C3569}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_14 PM_42_957\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 		</Node>

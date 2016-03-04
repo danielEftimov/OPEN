@@ -41,6 +41,24 @@
 				<Prp name="type" type="S" value="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}"/>
 				<Prp name="typename" type="S" value="Project"/>
 			</Node>
+			<Node name="causeeffectmonkeytheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme\CauseEffectMonkeyTheme.mds"/>
+				</Node>
+				<Prp name="key" type="S" value="{180FAAA7-203E-4DCD-BF49-8B4612F48A3C}"/>
+				<Prp name="pluginname" type="S" value=""/>
+				<Prp name="type" type="S" value="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}"/>
+				<Prp name="typename" type="S" value="Project"/>
+			</Node>
+			<Node name="causeeffectmonkeythemeblackandwhite">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyThemeBlackAndWhite\CauseEffectMonkeyThemeBlackAndWhite.mds"/>
+				</Node>
+				<Prp name="key" type="S" value="{E90D8759-0B28-45DA-AF28-49F108770B2B}"/>
+				<Prp name="pluginname" type="S" value=""/>
+				<Prp name="type" type="S" value="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}"/>
+				<Prp name="typename" type="S" value="Project"/>
+			</Node>
 		</Node>
 		<Node name="folders"/>
 		<Node name="scc">
@@ -69,6 +87,20 @@
 					<Prp name="description" type="S" value=""/>
 					<Prp name="enabled" type="B" value="-1"/>
 					<Prp name="key" type="S" value="{B0E0D56B-80FF-49E0-BD3E-972093D9C3F5}"/>
+					<Prp name="stoponerror" type="B" value="-1"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0002">
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="key" type="S" value="{180FAAA7-203E-4DCD-BF49-8B4612F48A3C}"/>
+					<Prp name="stoponerror" type="B" value="-1"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0003">
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="key" type="S" value="{E90D8759-0B28-45DA-AF28-49F108770B2B}"/>
 					<Prp name="stoponerror" type="B" value="-1"/>
 					<Prp name="timeout" type="I" value="0"/>
 				</Node>

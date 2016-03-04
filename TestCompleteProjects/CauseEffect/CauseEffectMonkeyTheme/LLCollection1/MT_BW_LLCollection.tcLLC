@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child list">
+			<Node name="mt_bw_continuousmovement">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="MT_BW_ContinuousMovement.tcLLP"/>
+				</Node>
+				<Prp name="key" type="S" value="{211164DB-B767-45E7-9AC6-E05C51B55D94}"/>
+				<Prp name="pluginname" type="S" value="Low-Level Procedures Container"/>
+				<Prp name="type" type="S" value="{62402E6C-6E6D-4AA5-9AFF-5A20AD691C44}"/>
+				<Prp name="typename" type="S" value="Low-Level Procedure"/>
+			</Node>
+			<Node name="mt_bw_draganddrop">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="MT_BW_DragAndDrop.tcLLP"/>
+				</Node>
+				<Prp name="key" type="S" value="{8F5C2005-82A2-4F28-80FB-530587AEF75F}"/>
+				<Prp name="pluginname" type="S" value="Low-Level Procedures Container"/>
+				<Prp name="type" type="S" value="{62402E6C-6E6D-4AA5-9AFF-5A20AD691C44}"/>
+				<Prp name="typename" type="S" value="Low-Level Procedure"/>
+			</Node>
+			<Node name="mt_bw_draganddropfailed">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="MT_BW_DragAndDropFailed.tcLLP"/>
+				</Node>
+				<Prp name="key" type="S" value="{6C0568F8-8FB7-45A7-9878-FBAAE52D8AA1}"/>
+				<Prp name="pluginname" type="S" value="Low-Level Procedures Container"/>
+				<Prp name="type" type="S" value="{62402E6C-6E6D-4AA5-9AFF-5A20AD691C44}"/>
+				<Prp name="typename" type="S" value="Low-Level Procedure"/>
+			</Node>
+			<Node name="mt_bw_nodelaycontinuousmovement">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="MT_BW_NoDelayContinuousMovement.tcLLP"/>
+				</Node>
+				<Prp name="key" type="S" value="{21DB1562-042A-4684-9077-8BF7314332EE}"/>
+				<Prp name="pluginname" type="S" value="Low-Level Procedures Container"/>
+				<Prp name="type" type="S" value="{62402E6C-6E6D-4AA5-9AFF-5A20AD691C44}"/>
+				<Prp name="typename" type="S" value="Low-Level Procedure"/>
+			</Node>
+		</Node>
+		<Node name="folders"/>
+		<Node name="settings"/>
+		<Prp name="signature" type="S" value="{2D89293F-6B07-4679-9906-EFAE4B1A433C}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

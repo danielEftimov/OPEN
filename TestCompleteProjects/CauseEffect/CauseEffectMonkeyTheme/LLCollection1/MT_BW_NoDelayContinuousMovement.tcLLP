@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="config"/>
+		<Node name="llp">
+			<Node name="llevent0">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="305"/>
+				<Prp name="y" type="I" value="215"/>
+			</Node>
+			<Node name="llevent1">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="305"/>
+				<Prp name="y" type="I" value="215"/>
+			</Node>
+			<Node name="llevent10">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="10"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="292"/>
+				<Prp name="y" type="I" value="189"/>
+			</Node>
+			<Node name="llevent100">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="100"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="395"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent101">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="101"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="398"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent102">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="102"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="399"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent103">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="103"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="400"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent104">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="104"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="401"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent105">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="105"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="402"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent106">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="106"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="403"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent107">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="107"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="404"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent108">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="108"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="406"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent109">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="109"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="407"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent11">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="11"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="291"/>
+				<Prp name="y" type="I" value="187"/>
+			</Node>
+			<Node name="llevent110">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="110"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="409"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent111">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="111"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="411"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent112">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="112"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="415"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent113">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="113"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="422"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent114">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="114"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="424"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent115">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="115"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="426"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent116">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="116"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="429"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent117">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="117"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="432"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent118">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="118"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="434"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent119">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="119"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="435"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent12">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="12"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="289"/>
+				<Prp name="y" type="I" value="183"/>
+			</Node>
+			<Node name="llevent13">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="13"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="284"/>
+				<Prp name="y" type="I" value="175"/>
+			</Node>
+			<Node name="llevent14">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="14"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="280"/>
+				<Prp name="y" type="I" value="168"/>
+			</Node>
+			<Node name="llevent15">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="15"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="278"/>
+				<Prp name="y" type="I" value="165"/>
+			</Node>
+			<Node name="llevent16">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="16"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="275"/>
+				<Prp name="y" type="I" value="162"/>
+			</Node>
+			<Node name="llevent17">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="17"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="274"/>
+				<Prp name="y" type="I" value="161"/>
+			</Node>
+			<Node name="llevent18">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="18"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="274"/>
+				<Prp name="y" type="I" value="161"/>
+			</Node>
+			<Node name="llevent19">
+				<Prp name="delay" type="I" value="109"/>
+				<Prp name="index" type="I" value="19"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="274"/>
+				<Prp name="y" type="I" value="160"/>
+			</Node>
+			<Node name="llevent2">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="305"/>
+				<Prp name="y" type="I" value="214"/>
+			</Node>
+			<Node name="llevent20">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="20"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="275"/>
+				<Prp name="y" type="I" value="160"/>
+			</Node>
+			<Node name="llevent21">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="21"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="277"/>
+				<Prp name="y" type="I" value="161"/>
+			</Node>
+			<Node name="llevent22">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="22"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="279"/>
+				<Prp name="y" type="I" value="162"/>
+			</Node>
+			<Node name="llevent23">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="23"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="281"/>
+				<Prp name="y" type="I" value="163"/>
+			</Node>
+			<Node name="llevent24">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="24"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="285"/>
+				<Prp name="y" type="I" value="164"/>
+			</Node>
+			<Node name="llevent25">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="25"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="288"/>
+				<Prp name="y" type="I" value="166"/>
+			</Node>
+			<Node name="llevent26">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="26"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="293"/>
+				<Prp name="y" type="I" value="166"/>
+			</Node>
+			<Node name="llevent27">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="27"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="298"/>
+				<Prp name="y" type="I" value="166"/>
+			</Node>
+			<Node name="llevent28">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="28"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="304"/>
+				<Prp name="y" type="I" value="167"/>
+			</Node>
+			<Node name="llevent29">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="29"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="307"/>
+				<Prp name="y" type="I" value="167"/>
+			</Node>
+			<Node name="llevent3">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="303"/>
+				<Prp name="y" type="I" value="212"/>
+			</Node>
+			<Node name="llevent30">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="30"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="312"/>
+				<Prp name="y" type="I" value="168"/>
+			</Node>
+			<Node name="llevent31">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="31"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="318"/>
+				<Prp name="y" type="I" value="169"/>
+			</Node>
+			<Node name="llevent32">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="32"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="337"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent33">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="33"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="345"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent34">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="34"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="353"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent35">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="35"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="362"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent36">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="36"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="369"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent37">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="37"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="375"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent38">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="38"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="381"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent39">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="39"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="392"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent4">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="301"/>
+				<Prp name="y" type="I" value="210"/>
+			</Node>
+			<Node name="llevent40">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="40"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="394"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent41">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="41"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="395"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent42">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="42"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="398"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent43">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="43"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="399"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent44">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="44"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="400"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent45">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="45"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="401"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent46">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="46"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="402"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent47">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="47"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="403"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent48">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="48"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="404"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent49">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="49"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="406"/>
+				<Prp name="y" type="I" value="173"/>
+			</Node>
+			<Node name="llevent5">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="5"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="301"/>
+				<Prp name="y" type="I" value="207"/>
+			</Node>
+			<Node name="llevent50">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="50"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="407"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent51">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="51"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="409"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent52">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="52"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="411"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent53">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="53"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="415"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent54">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="54"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="422"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent55">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="55"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="424"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent56">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="56"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="426"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent57">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="57"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="429"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent58">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="58"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="432"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent59">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="59"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="434"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent6">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="6"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="300"/>
+				<Prp name="y" type="I" value="205"/>
+			</Node>
+			<Node name="llevent60">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="60"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="435"/>
+				<Prp name="y" type="I" value="174"/>
+			</Node>
+			<Node name="llevent61">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="61"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="305"/>
+				<Prp name="y" type="I" value="214"/>
+			</Node>
+			<Node name="llevent62">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="62"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="303"/>
+				<Prp name="y" type="I" value="212"/>
+			</Node>
+			<Node name="llevent63">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="63"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="301"/>
+				<Prp name="y" type="I" value="210"/>
+			</Node>
+			<Node name="llevent64">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="64"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="301"/>
+				<Prp name="y" type="I" value="207"/>
+			</Node>
+			<Node name="llevent65">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="65"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="300"/>
+				<Prp name="y" type="I" value="205"/>
+			</Node>
+			<Node name="llevent66">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="66"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="299"/>
+				<Prp name="y" type="I" value="202"/>
+			</Node>
+			<Node name="llevent67">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="67"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="298"/>
+				<Prp name="y" type="I" value="198"/>
+			</Node>
+			<Node name="llevent68">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="68"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="295"/>
+				<Prp name="y" type="I" value="195"/>
+			</Node>
+			<Node name="llevent69">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="69"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="292"/>
+				<Prp name="y" type="I" value="189"/>
+			</Node>
+			<Node name="llevent7">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="7"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="299"/>
+				<Prp name="y" type="I" value="202"/>
+			</Node>
+			<Node name="llevent70">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="70"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="291"/>
+				<Prp name="y" type="I" value="187"/>
+			</Node>
+			<Node name="llevent71">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="71"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="289"/>
+				<Prp name="y" type="I" value="183"/>
+			</Node>
+			<Node name="llevent72">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="72"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="284"/>
+				<Prp name="y" type="I" value="175"/>
+			</Node>
+			<Node name="llevent73">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="73"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="280"/>
+				<Prp name="y" type="I" value="168"/>
+			</Node>
+			<Node name="llevent74">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="74"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="278"/>
+				<Prp name="y" type="I" value="165"/>
+			</Node>
+			<Node name="llevent75">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="75"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="275"/>
+				<Prp name="y" type="I" value="162"/>
+			</Node>
+			<Node name="llevent76">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="76"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="274"/>
+				<Prp name="y" type="I" value="161"/>
+			</Node>
+			<Node name="llevent77">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="77"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="274"/>
+				<Prp name="y" type="I" value="161"/>
+			</Node>
+			<Node name="llevent78">
+				<Prp name="delay" type="I" value="109"/>
+				<Prp name="index" type="I" value="78"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="274"/>
+				<Prp name="y" type="I" value="160"/>
+			</Node>
+			<Node name="llevent79">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="79"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="275"/>
+				<Prp name="y" type="I" value="160"/>
+			</Node>
+			<Node name="llevent8">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="8"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="298"/>
+				<Prp name="y" type="I" value="198"/>
+			</Node>
+			<Node name="llevent80">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="80"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="277"/>
+				<Prp name="y" type="I" value="161"/>
+			</Node>
+			<Node name="llevent81">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="81"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="279"/>
+				<Prp name="y" type="I" value="162"/>
+			</Node>
+			<Node name="llevent82">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="82"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="281"/>
+				<Prp name="y" type="I" value="163"/>
+			</Node>
+			<Node name="llevent83">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="83"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="285"/>
+				<Prp name="y" type="I" value="164"/>
+			</Node>
+			<Node name="llevent84">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="84"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="288"/>
+				<Prp name="y" type="I" value="166"/>
+			</Node>
+			<Node name="llevent85">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="85"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="293"/>
+				<Prp name="y" type="I" value="166"/>
+			</Node>
+			<Node name="llevent86">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="86"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="298"/>
+				<Prp name="y" type="I" value="166"/>
+			</Node>
+			<Node name="llevent87">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="87"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="304"/>
+				<Prp name="y" type="I" value="167"/>
+			</Node>
+			<Node name="llevent88">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="88"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="307"/>
+				<Prp name="y" type="I" value="167"/>
+			</Node>
+			<Node name="llevent89">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="89"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="312"/>
+				<Prp name="y" type="I" value="168"/>
+			</Node>
+			<Node name="llevent9">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="9"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="295"/>
+				<Prp name="y" type="I" value="195"/>
+			</Node>
+			<Node name="llevent90">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="90"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="318"/>
+				<Prp name="y" type="I" value="169"/>
+			</Node>
+			<Node name="llevent91">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="91"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="337"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent92">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="92"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="345"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent93">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="93"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="353"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent94">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="94"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="362"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent95">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="95"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="369"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent96">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="96"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="375"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent97">
+				<Prp name="delay" type="I" value="16"/>
+				<Prp name="index" type="I" value="97"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="381"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent98">
+				<Prp name="delay" type="I" value="0"/>
+				<Prp name="index" type="I" value="98"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="392"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+			<Node name="llevent99">
+				<Prp name="delay" type="I" value="15"/>
+				<Prp name="index" type="I" value="99"/>
+				<Prp name="message" type="I" value="512"/>
+				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="x" type="I" value="394"/>
+				<Prp name="y" type="I" value="172"/>
+			</Node>
+		</Node>
+		<Node name="settings"/>
+		<Prp name="signature" type="S" value="{62402E6C-6E6D-4AA5-9AFF-5A20AD691C44}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

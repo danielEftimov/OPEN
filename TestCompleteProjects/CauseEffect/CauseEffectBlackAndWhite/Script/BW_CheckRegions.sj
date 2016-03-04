@@ -26,3 +26,7 @@ Regions.BW_nextLevel.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
 function Region_RestartSad(){
 Regions.BW_SadRestart.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
 }
+
+function Region_SelectTheme(){
+Regions.ThemeSelect.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 73, 111, 284, 264, false));
+}

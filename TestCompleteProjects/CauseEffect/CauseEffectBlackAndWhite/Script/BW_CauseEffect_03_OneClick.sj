@@ -1,5 +1,5 @@
 ﻿//USEUNIT BW_CauseEffect_01_ContinuosMovement
-//USEUNIT BW_CauseEffect_06_Navigation_NextLevel
+//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CheckRegions
 function causeEffect_OneClick()
 {
@@ -41,8 +41,8 @@ function oneClickCar()
   //Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
   
   //Specifies the coordinates of the first click (it depends on the screen resolution)
-  var coorX = 450;
-  var coorY = 500;
+   var coorX = 300;
+   var coorY = 620;
  
   // Specifies a delay in milliseconds
   sDelay = 1000 ;
@@ -51,7 +51,7 @@ function oneClickCar()
   LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
   
-  aqUtils.Delay(2000);
+  aqUtils.Delay(4000);
   //Check if the happy animations has been shown properly
   BW_CheckRegions.Region_HappyAnimation();
   }

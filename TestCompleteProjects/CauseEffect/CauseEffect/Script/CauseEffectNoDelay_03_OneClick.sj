@@ -1,7 +1,7 @@
 ﻿//USEUNIT CauseEffect_01_ContinuosMovement
 //USEUNIT CauseEffectNoDelay_02_Navigation_NextLevel
 //USEUNIT CauseEffectNoDelay_04_ClicksOnTheCarBeforeAudioIsFinished
-
+//USEUNIT CheckRegions
 function causeEffect_OneClick()
 {
 
@@ -19,10 +19,7 @@ try{
   navigationNextLevel();
   
   //Click the object on the screen so that it reaches the target in one step
-  Log.AppendFolder("This test is for Reaching the goal with one click");  
-  
-  oneClickCar;     
-  Log.PopLogFolder(); 
+
  
  Log.AppendFolder("This test is for Reaching the goal with one click before audio is finished");  
   
@@ -62,7 +59,7 @@ function oneClickCar()
   LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
   
-  //Check if the car is moved
+  CheckRegions.Region_HappyAnimation();
      
 
 }

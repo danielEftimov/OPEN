@@ -3,6 +3,7 @@
 //USEUNIT CauseEffect_05_MultipleClicks
 //USEUNIT CauseEffectNoDelay_02_Navigation_NextLevel
 //USEUNIT CauseEffect_06_Navigation_NextLevel
+//USEUNIT CheckRegions
 
 function causeEffect_OneClick()
 {

@@ -2,8 +2,7 @@
 //USEUNIT BW_CauseEffect_03_OneClick
 //USEUNIT BW_CauseEffect_04_ClicksOutofBounds
 //USEUNIT BW_CauseEffect_05_MultipleClicks
-//USEUNIT BW_CauseEffect_06_Navigation_NextLevel
-//USEUNIT BW_CauseEffect_09_Navigation_Restart
+//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CauseEffect_14_Drag_and_Drop
 //USEUNIT BW_CauseEffect_15_DragAndDropFailed
 
@@ -22,7 +21,7 @@ try{
   
   Log.AppendFolder("This test for failed attempt on   one click level");  
   multipleClicksOutOfBounds();  
-  aqUtils.Delay(1500);  
+  
   Log.PopLogFolder();
   restart()
  Log.AppendFolder("This test is for Retry  of one click level");  
@@ -35,7 +34,7 @@ try{
   //Click the object on the screen so that it reaches the target in one step
   Log.AppendFolder("This test for failed attempt on 3 clicks level");  
   multipleClicksOutOfBounds();
-  aqUtils.Delay(1500); 
+ 
   Log.PopLogFolder();
   restart() 
   Log.AppendFolder("This test is for 3 clicks level");

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="item idx=0000">
+				<Prp name="click point x" type="I" value="837"/>
+				<Prp name="click point y" type="I" value="843"/>
+				<Prp name="datetime" type="D" value="42424.589525463"/>
+				<Prp name="image file name" type="S" value="tcvi1661957851040.png"/>
+				<Prp name="kind" type="I" value="0"/>
+				<Prp name="line #" type="I" value="1"/>
+				<Prp name="need update" type="B" value="0"/>
+				<Prp name="object bottom" type="I" value="947"/>
+				<Prp name="object left" type="I" value="0"/>
+				<Prp name="object name" type="S" value="Aliases.javaw.wndLWJGL2"/>
+				<Prp name="object right" type="I" value="1458"/>
+				<Prp name="object top" type="I" value="0"/>
+				<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+				<Prp name="storage file name" type="S" value=""/>
+				<Prp name="version" type="I" value="1"/>
+			</Node>
+			<Node name="item idx=0001">
+				<Prp name="click point x" type="I" value="254"/>
+				<Prp name="click point y" type="I" value="552"/>
+				<Prp name="datetime" type="D" value="42424.5895717593"/>
+				<Prp name="image file name" type="S" value="tcvi1662378151041.png"/>
+				<Prp name="kind" type="I" value="0"/>
+				<Prp name="line #" type="I" value="2"/>
+				<Prp name="need update" type="B" value="0"/>
+				<Prp name="object bottom" type="I" value="947"/>
+				<Prp name="object left" type="I" value="0"/>
+				<Prp name="object name" type="S" value="Aliases.javaw.wndLWJGL2"/>
+				<Prp name="object right" type="I" value="1458"/>
+				<Prp name="object top" type="I" value="0"/>
+				<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+				<Prp name="storage file name" type="S" value=""/>
+				<Prp name="version" type="I" value="1"/>
+			</Node>
+			<Node name="item idx=0002">
+				<Prp name="click point x" type="I" value="253"/>
+				<Prp name="click point y" type="I" value="562"/>
+				<Prp name="datetime" type="D" value="42424.5896064815"/>
+				<Prp name="image file name" type="S" value="tcvi1662629651042.png"/>
+				<Prp name="kind" type="I" value="0"/>
+				<Prp name="line #" type="I" value="3"/>
+				<Prp name="need update" type="B" value="0"/>
+				<Prp name="object bottom" type="I" value="947"/>
+				<Prp name="object left" type="I" value="0"/>
+				<Prp name="object name" type="S" value="Aliases.javaw.wndLWJGL2"/>
+				<Prp name="object right" type="I" value="1458"/>
+				<Prp name="object top" type="I" value="0"/>
+				<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+				<Prp name="storage file name" type="S" value=""/>
+				<Prp name="version" type="I" value="1"/>
+			</Node>
+			<Node name="item idx=0003">
+				<Prp name="click point x" type="I" value="384"/>
+				<Prp name="click point y" type="I" value="583"/>
+				<Prp name="datetime" type="D" value="42424.5896296296"/>
+				<Prp name="image file name" type="S" value="tcvi1662867151043.png"/>
+				<Prp name="kind" type="I" value="0"/>
+				<Prp name="line #" type="I" value="4"/>
+				<Prp name="need update" type="B" value="0"/>
+				<Prp name="object bottom" type="I" value="947"/>
+				<Prp name="object left" type="I" value="0"/>
+				<Prp name="object name" type="S" value="Aliases.javaw.wndLWJGL2"/>
+				<Prp name="object right" type="I" value="1458"/>
+				<Prp name="object top" type="I" value="0"/>
+				<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+				<Prp name="storage file name" type="S" value=""/>
+				<Prp name="version" type="I" value="1"/>
+			</Node>
+			<Node name="item idx=0004">
+				<Prp name="click point x" type="I" value="835"/>
+				<Prp name="click point y" type="I" value="840"/>
+				<Prp name="datetime" type="D" value="42424.5896759259"/>
+				<Prp name="image file name" type="S" value="tcvi1663187551044.png"/>
+				<Prp name="kind" type="I" value="0"/>
+				<Prp name="line #" type="I" value="5"/>
+				<Prp name="need update" type="B" value="0"/>
+				<Prp name="object bottom" type="I" value="947"/>
+				<Prp name="object left" type="I" value="0"/>
+				<Prp name="object name" type="S" value="Aliases.javaw.wndLWJGL2"/>
+				<Prp name="object right" type="I" value="1458"/>
+				<Prp name="object top" type="I" value="0"/>
+				<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+				<Prp name="storage file name" type="S" value=""/>
+				<Prp name="version" type="I" value="1"/>
+			</Node>
+			<Node name="item idx=0005">
+				<Prp name="click point x" type="I" value="338"/>
+				<Prp name="click point y" type="I" value="569"/>
+				<Prp name="datetime" type="D" value="42424.5897685185"/>
+				<Prp name="image file name" type="S" value="tcvi1664062551045.png"/>
+				<Prp name="kind" type="I" value="0"/>
+				<Prp name="line #" type="I" value="6"/>
+				<Prp name="need update" type="B" value="0"/>
+				<Prp name="object bottom" type="I" value="947"/>
+				<Prp name="object left" type="I" value="0"/>
+				<Prp name="object name" type="S" value="Aliases.javaw.wndLWJGL2"/>
+				<Prp name="object right" type="I" value="1458"/>
+				<Prp name="object top" type="I" value="0"/>
+				<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+				<Prp name="storage file name" type="S" value=""/>
+				<Prp name="version" type="I" value="1"/>
+			</Node>
+			<Node name="item idx=0006">
+				<Prp name="click point x" type="I" value="653"/>
+				<Prp name="click point y" type="I" value="586"/>
+				<Prp name="datetime" type="D" value="42424.5898032407"/>
+				<Prp name="image file name" type="S" value="tcvi1664309351046.png"/>
+				<Prp name="kind" type="I" value="0"/>
+				<Prp name="line #" type="I" value="7"/>
+				<Prp name="need update" type="B" value="0"/>
+				<Prp name="object bottom" type="I" value="947"/>
+				<Prp name="object left" type="I" value="0"/>
+				<Prp name="object name" type="S" value="Aliases.javaw.wndLWJGL2"/>
+				<Prp name="object right" type="I" value="1458"/>
+				<Prp name="object top" type="I" value="0"/>
+				<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+				<Prp name="storage file name" type="S" value=""/>
+				<Prp name="version" type="I" value="1"/>
+			</Node>
+			<Node name="item idx=0007">
+				<Prp name="click point x" type="I" value="909"/>
+				<Prp name="click point y" type="I" value="585"/>
+				<Prp name="datetime" type="D" value="42424.5898263889"/>
+				<Prp name="image file name" type="S" value="tcvi1664578151047.png"/>
+				<Prp name="kind" type="I" value="0"/>
+				<Prp name="line #" type="I" value="8"/>
+				<Prp name="need update" type="B" value="0"/>
+				<Prp name="object bottom" type="I" value="947"/>
+				<Prp name="object left" type="I" value="0"/>
+				<Prp name="object name" type="S" value="Aliases.javaw.wndLWJGL2"/>
+				<Prp name="object right" type="I" value="1458"/>
+				<Prp name="object top" type="I" value="0"/>
+				<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+				<Prp name="storage file name" type="S" value=""/>
+				<Prp name="version" type="I" value="1"/>
+			</Node>
+			<Node name="item idx=0008">
+				<Prp name="click point x" type="I" value="824"/>
+				<Prp name="click point y" type="I" value="829"/>
+				<Prp name="datetime" type="D" value="42424.5898726852"/>
+				<Prp name="image file name" type="S" value="tcvi1664948451048.png"/>
+				<Prp name="kind" type="I" value="0"/>
+				<Prp name="line #" type="I" value="9"/>
+				<Prp name="need update" type="B" value="0"/>
+				<Prp name="object bottom" type="I" value="947"/>
+				<Prp name="object left" type="I" value="0"/>
+				<Prp name="object name" type="S" value="Aliases.javaw.wndLWJGL2"/>
+				<Prp name="object right" type="I" value="1458"/>
+				<Prp name="object top" type="I" value="0"/>
+				<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+				<Prp name="storage file name" type="S" value=""/>
+				<Prp name="version" type="I" value="1"/>
+			</Node>
+			<Prp name="key" type="S" value="{A22A188B-1A93-4E3D-883E-E4177B03E74F}"/>
+		</Node>
+		<Prp name="signature" type="S" value="{42D2222C-ACA2-405F-8E67-05D5C42EB839}"/>
+		<Prp name="version" type="I" value="1"/>
+	</Node>
+</Nodes>

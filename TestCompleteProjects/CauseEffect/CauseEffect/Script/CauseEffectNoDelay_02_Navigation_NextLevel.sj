@@ -1,4 +1,5 @@
 ﻿//USEUNIT CauseEffect_01_ContinuosMovement
+//USEUNIT CheckRegions
 function causeEffect_Navigation_NextLevel()
 {
 try{
@@ -27,19 +28,22 @@ try{
 function navigationNextLevel()
 {
 //create region of the nextLevelButton
-Regions.NextLevel.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 7, 735, 1446, 210, false), false, false, 0, 0, "NextLevel_Mask");
+CheckRegions.Region_NextLevel();
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)
-var coorX = 1010;
-var coorY = 840;
+var coorX = 1030;
+var coorY = 920;
 sDelay = 1000 ;
  
 // Simulates pressing and releasing the left mouse button
 LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
 LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
+aqUtils.Delay(50);
+LLPlayer.MouseDown(MK_LBUTTON, coorX+10, coorY+10, sDelay);
+LLPlayer.MouseUp(MK_LBUTTON, coorX+10, coorY+10, sDelay);
   
  
 //validate if same theme is displayed (means you are still on the same theme but different level)
-Regions.AnimationCar.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+CheckRegions.Region_AnimationCar();
 //Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
 }

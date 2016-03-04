@@ -1,7 +1,6 @@
 ﻿//USEUNIT BW_CauseEffect_01_ContinuosMovement
 //USEUNIT BW_CauseEffect_03_OneClick
-//USEUNIT BW_CauseEffect_06_Navigation_NextLevel
-//USEUNIT BW_CauseEffect_09_Navigation_Restart
+//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CauseEffect_05_MultipleClicks
 //USEUNIT BW_CauseEffect_14_Drag_and_Drop
 //USEUNIT BW_CauseEffect_15_DragAndDropFailed

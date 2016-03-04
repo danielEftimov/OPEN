@@ -23,17 +23,20 @@
 			<Node name="{16d9af07-7169-43f9-b646-face569eb0cc}">
 				<Prp name="relpath" type="S" value="CauseEffect\CauseEffect.mds.tcLS"/>
 			</Node>
+			<Node name="{180faaa7-203e-4dcd-bf49-8b4612f48a3c}">
+				<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme\CauseEffectMonkeyTheme.mds.tcLS"/>
+			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="default project" type="S" value="{16D9AF07-7169-43F9-B646-FACE569EB0CC}"/>
+				<Prp name="default project" type="S" value="{B0E0D56B-80FF-49E0-BD3E-972093D9C3F5}"/>
 			</Node>
 			<Node name="{b0e0d56b-80ff-49e0-bd3e-972093d9c3f5}">
 				<Prp name="relpath" type="S" value="CauseEffectBlackAndWhite\CauseEffectBlackAndWhite.mds.tcLS"/>
 			</Node>
-			<Node name="{f51674f3-c826-41da-800f-10f6cf3c4633}">
-				<Prp name="relpath" type="S" value="CauseEffect_ContinuousMovement\CauseEffect_ContinuousMovement.mds.tcLS"/>
+			<Node name="{e90d8759-0b28-45da-af28-49f108770b2b}">
+				<Prp name="relpath" type="S" value="CauseEffectMonkeyThemeBlackAndWhite\CauseEffectMonkeyThemeBlackAndWhite.mds.tcLS"/>
 			</Node>
 			<Node name="logs">
-				<Prp name="key" type="S" value="{3FADB168-145D-4167-8967-DD66EF29E6BA}"/>
+				<Prp name="key" type="S" value="{790E74FD-D6EA-4E8C-8DA7-0E8B0C16D400}"/>
 				<Prp name="relpath" type="S" value="Log"/>
 			</Node>
 			<Node name="variables"/>

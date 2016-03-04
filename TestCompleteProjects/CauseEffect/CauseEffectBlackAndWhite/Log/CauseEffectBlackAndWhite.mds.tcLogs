@@ -19,8 +19,82 @@
 ]>
 <Nodes version="1">
 	<Node name="root">
-		<Node name="folders"/>
-		<Node name="logs"/>
+		<Node name="folders">
+			<Node name="regression black and white">
+				<Node name="folders"/>
+				<Node name="references">
+					<Prp name="{8fc5b380-de65-49b9-bef4-c995e6edd0a6}" type="S" value=""/>
+				</Node>
+				<Prp name="caption" type="S" value="Regression Black And White"/>
+				<Prp name="description" type="S" value="A logical folder that is used to organize test log items."/>
+				<Prp name="moniker" type="S" value=""/>
+			</Node>
+		</Node>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42429.5468841667"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{8FC5B380-DE65-49B9-BEF4-C995E6EDD0A6}"/>
+				<Prp name="nameofroot" type="S" value="CauseEffectBlackAndWhite"/>
+				<Prp name="relpath" type="S" value="2_29_2016_1_07 PM_30_792\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5511646991"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{45627EC8-8AE9-4FF4-90BE-5EBB007C532B}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_01_ContinuosMovement\BWcauseEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_13 PM_40_629\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5529572685"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{88BF3250-E1EE-406F-94A6-2363EC425881}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffectNoDelay_01_ContionuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_16 PM_15_508\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5532352894"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{23AC2411-6E73-4EE7-82A2-186BE47C6C26}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffectNoDelay_01_ContionuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_16 PM_39_528\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.5538041551"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{95CD55E7-5795-4C87-A120-E8AC3604BAC1}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_01_ContinuosMovement\BWcauseEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_17 PM_28_679\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.554489213"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{7F39F32F-5387-417E-8717-BCBD28D5FCB4}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffectNoDelay_01_ContionuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_18 PM_27_867\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42432.554905706"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{4DAABEC9-0803-44B3-804A-74BF8BC3FBF1}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffectNoDelay_01_ContionuosMovement\causeEffect]"/>
+				<Prp name="relpath" type="S" value="3_3_2016_1_19 PM_03_853\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

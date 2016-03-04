@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="summary">
+			<Node name="executed">
+				<Prp name="total (sum)" type="I" value="17"/>
+			</Node>
+			<Node name="failed">
+				<Prp name="total (sum)" type="I" value="0"/>
+			</Node>
+			<Node name="warning">
+				<Prp name="total (sum)" type="I" value="0"/>
+			</Node>
+			<Node name="passed">
+				<Prp name="total (sum)" type="I" value="17"/>
+			</Node>
+			<Node name="total">
+				<Prp name="total (sum)" type="I" value="17"/>
+			</Node>
+			<Prp name="test" type="S" value="CauseEffectBlackAndWhite"/>
+			<Prp name="log status" type="I" value="0"/>
+			<Prp name="start date" type="D" value="42429.5468846296"/>
+			<Prp name="user" type="S" value="jmitkov"/>
+			<Prp name="host" type="S" value="EN310010"/>
+			<Prp name="stop date" type="D" value="42429.560838044"/>
+		</Node>
+		<Node name="log data">
+			<Node name="row11">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5574430556"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="3ClickRetry"/>
+				<Prp name="details" type="S" value="{5DA8CAA9-61EE-429B-AA3C-28D12525B664}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5563025463"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="11"/>
+			</Node>
+			<Node name="row8">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.554936713"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="DragAndDropFailed"/>
+				<Prp name="details" type="S" value="{873A15C0-B5F8-40A2-A843-D0FF6ADDEACA}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5537948264"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="8"/>
+			</Node>
+			<Node name="row0">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5479493403"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="AllLevelsPassed"/>
+				<Prp name="details" type="S" value="{17479B40-7C92-4574-BF0C-EB499F0B8131}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5468846296"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="0"/>
+			</Node>
+			<Node name="row16">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.560838044"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="DragAndDropNoDelay"/>
+				<Prp name="details" type="S" value="{842E1F50-CC61-4164-A0B7-F7624668D58C}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5599406481"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="16"/>
+			</Node>
+			<Node name="row1">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.549823125"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="FailedRetrySuccessNextLevel"/>
+				<Prp name="details" type="S" value="{1991ADA8-8423-4A78-AF21-CFBEADDF6614}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5479493403"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="1"/>
+			</Node>
+			<Node name="row2">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5501094097"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="Eraser"/>
+				<Prp name="details" type="S" value="{FD5A0FB6-93F5-40A0-994B-4FCBD76CFAD5}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.549823125"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="2"/>
+			</Node>
+			<Node name="row6">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5527608912"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="3ClicksFailed"/>
+				<Prp name="details" type="S" value="{AFFED79D-D129-4B7C-ABE5-499FA8E8D521}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5519629745"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="6"/>
+			</Node>
+			<Node name="row15">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5599406481"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="3ClicksNoDelay"/>
+				<Prp name="details" type="S" value="{4E3F5D05-97EF-4504-B5F5-E20676F55AFB}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5592946412"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="15"/>
+			</Node>
+			<Node name="row10">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5563025463"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="OneClickRetry"/>
+				<Prp name="details" type="S" value="{E6CDB5FB-3F63-4961-99A6-C46D861A44D1}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5555277546"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="10"/>
+			</Node>
+			<Node name="row14">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5592946412"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="OneClickNoDelay"/>
+				<Prp name="details" type="S" value="{22F03154-828A-41D5-A976-04A6C533A382}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5588712384"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="14"/>
+			</Node>
+			<Node name="row7">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5537948264"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="DragAndDropPassed"/>
+				<Prp name="details" type="S" value="{21DC0AA0-DBDA-453E-A2DA-635EA54DD7EE}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5527611227"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="7"/>
+			</Node>
+			<Node name="row4">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.55118625"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="OneClickFailed"/>
+				<Prp name="details" type="S" value="{4336022A-33D2-4A38-87B5-507492294DBF}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5506351042"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="4"/>
+			</Node>
+			<Node name="row5">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5519629745"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="3ClicksPassed"/>
+				<Prp name="details" type="S" value="{2F3B902B-E4CC-4DD1-A8D3-A9AEBAD21E0E}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.55118625"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="5"/>
+			</Node>
+			<Node name="row13">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5588712384"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="EraserNoDelay"/>
+				<Prp name="details" type="S" value="{A7A492C3-C9D1-4CF9-9BE9-C1D15DD3796E}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5587967824"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="13"/>
+			</Node>
+			<Node name="row3">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5506351042"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="OneClickLevelPassed"/>
+				<Prp name="details" type="S" value="{17F63822-8326-4B9E-9FF2-E5309A2AECE8}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5501094097"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="3"/>
+			</Node>
+			<Node name="row12">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5587967824"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="DragAndDropRetry"/>
+				<Prp name="details" type="S" value="{3FA5B5D3-E6A7-4073-9076-03BBB755F5ED}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.5574430556"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="12"/>
+			</Node>
+			<Node name="row9">
+				<Node name="messages"/>
+				<Prp name="end time" type="D" value="42429.5555276389"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="name" type="S" value="EraserRetry"/>
+				<Prp name="details" type="S" value="{0FD20566-5C3C-4792-9E10-AA4C4331384F}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="42429.554936713"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="9"/>
+			</Node>
+		</Node>
+		<Prp name="hassummary" type="B" value="-1"/>
+	</Node>
+</Nodes>

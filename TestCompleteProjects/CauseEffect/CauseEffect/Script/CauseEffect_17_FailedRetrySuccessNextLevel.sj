@@ -2,8 +2,7 @@
 //USEUNIT CauseEffect_03_OneClick
 //USEUNIT CauseEffect_04_ClicksOutofBounds
 //USEUNIT CauseEffect_05_MultipleClicks
-//USEUNIT CauseEffect_06_Navigation_NextLevel
-//USEUNIT CauseEffect_09_Navigation_Restart
+//USEUNIT CauseEffect_19_GameMenu
 //USEUNIT CauseEffect_14_Drag_and_Drop
 //USEUNIT CauseEffect_15_DragAndDropFailed
 

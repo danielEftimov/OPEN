@@ -1,6 +1,6 @@
 ﻿//USEUNIT BW_CauseEffect_01_ContinuosMovement
 //USEUNIT BW_CauseEffect_03_OneClick
-//USEUNIT BW_CauseEffect_06_Navigation_NextLevel
+//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CheckRegions
 function causeEffect_OneClick()
 {
@@ -45,8 +45,8 @@ try{
 function multipleClicks()
 {  
   //Specifies the coordinates of the first click (it depends on the screen resolution)
-  var coorX = 450;
-  var coorY = 500;
+    var coorX = 300;
+    var coorY = 620;
  
   // Specifies a delay in milliseconds
   sDelay = 1000 ;
@@ -57,13 +57,13 @@ function multipleClicks()
   //check if car is moved (create Region1)
   
   // Simulates the secound click
-  LLPlayer.MouseDown(MK_LBUTTON, coorX+300, coorY, sDelay);
-  LLPlayer.MouseUp(MK_LBUTTON, coorX+300, coorY, sDelay);
+  LLPlayer.MouseDown(MK_LBUTTON, coorX+350, coorY, sDelay);
+  LLPlayer.MouseUp(MK_LBUTTON, coorX+350, coorY, sDelay);
   //check if car is moved (create Region2)
   
   // Simulates the 3rd click
-  LLPlayer.MouseDown(MK_LBUTTON, coorX+600, coorY, sDelay);
-  LLPlayer.MouseUp(MK_LBUTTON, coorX+600, coorY, sDelay);
+  LLPlayer.MouseDown(MK_LBUTTON, coorX+700, coorY, sDelay);
+  LLPlayer.MouseUp(MK_LBUTTON, coorX+700, coorY, sDelay);
   //check if car is moved (create Region3)
   
  
