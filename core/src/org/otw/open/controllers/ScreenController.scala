@@ -18,7 +18,7 @@ object ScreenController {
   private val clickCursor = UserSettings.pointerSize match {
     case "s" => Gdx.graphics.newCursor(getCursorPixmap, 26, 4)
     case "m" => Gdx.graphics.newCursor(getCursorPixmap, 52, 7)
-    case "l" => Gdx.graphics.newCursor(getCursorPixmap, 104, 15)
+    //case "l" => Gdx.graphics.newCursor(getCursorPixmap, 104, 15)
   }
 
   /**
@@ -71,7 +71,7 @@ object ScreenController {
     UserSettings.pointerSize match {
       case "s" => 64
       case "m" => 128
-      case "l" => 256
+      //case "l" => 256
     }
   }
 
