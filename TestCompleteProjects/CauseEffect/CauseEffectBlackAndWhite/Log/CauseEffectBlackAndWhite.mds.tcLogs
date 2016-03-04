@@ -94,6 +94,15 @@
 				<Prp name="relpath" type="S" value="3_3_2016_1_19 PM_03_853\Description.tcLog"/>
 				<Prp name="status" type="I" value="0"/>
 			</Node>
+			<Node name="log idx=0007">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42433.4790972222"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{47002381-B09E-4E3C-AB33-56D42E01624F}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_03_OneClick\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_4_2016_11_29 AM_54_0\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>

@@ -25,13 +25,10 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{6A1E2EEE-23F5-4BE9-BF24-50B30106932B}"/>
+				<Prp name="activity" type="S" value="{65583A63-DE32-4014-9FD6-49B46909170E}"/>
 			</Node>
 			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}">
 				<Node name="{2d3fa3fe-e64e-4d8d-81fc-f6be9ce5f38e}">
-					<Prp name="hash" type="I" value="1"/>
-				</Node>
-				<Node name="{8bbde00b-61c3-4325-94ed-d76c0a856bc0}">
 					<Prp name="hash" type="I" value="1"/>
 				</Node>
 				<Node name="{c55fd787-0c0d-4fd1-a7e9-c9d11e2b3101}">
@@ -43,7 +40,7 @@
 					<Node name="0">
 						<Node name="editor">
 							<Node name="{93765269-c25d-4cd5-b6bf-5d7454869c93}">
-								<Prp name="key" type="S" value="{26F47E4E-490A-448A-886A-72B83A529623}"/>
+								<Prp name="key" type="S" value="{32AEF8E6-B649-4A20-B29D-67087922370E}"/>
 							</Node>
 							<Prp name="editor" type="S" value="{9EBE19C4-D947-4910-B059-EFC573D17C19}"/>
 							<Prp name="focused" type="S" value="{26F47E4E-490A-448A-886A-72B83A529623}"/>
@@ -53,11 +50,11 @@
 					<Node name="1">
 						<Node name="editor">
 							<Node name="{8c45957c-f4b3-4dd7-9212-49cbd350f69f}">
-								<Prp name="key" type="S" value="{70B19E0F-CB6B-4D43-947F-0851FDE90708}"/>
+								<Prp name="key" type="S" value="{DC55C09F-9C18-4B84-914E-EF780A4C333A}"/>
 							</Node>
 							<Node name="{d0151f8e-51fe-49da-8534-008b9f1b7c45}">
 								<Prp name="col" type="I" value="0"/>
-								<Prp name="key" type="S" value="{A84ACF44-3635-4F6C-A397-DC0CB20DEF45}"/>
+								<Prp name="key" type="S" value="{E862F626-DF5F-42D8-B1FB-CBB67BDDE364}"/>
 								<Prp name="line" type="I" value="1"/>
 								<Prp name="sellength" type="I" value="0"/>
 								<Prp name="selstart" type="I" value="27"/>
@@ -1009,7 +1006,26 @@
 				</Node>
 			</Node>
 			<Node name="{fc9c0755-2819-4b25-8964-06a87b81e1ad}">
-				<Node name="causeeffect"/>
+				<Node name="causeeffect">
+					<Node name="causeeffect">
+						<Node name="advanced">
+							<Node name="script">
+								<Node name="nodelayscenarios"/>
+							</Node>
+						</Node>
+					</Node>
+					<Node name="causeeffectblackandwhite">
+						<Node name="advanced">
+							<Node name="script"/>
+						</Node>
+						<Node name="testedapps"/>
+					</Node>
+					<Node name="causeeffectmonkeytheme">
+						<Node name="advanced">
+							<Node name="script"/>
+						</Node>
+					</Node>
+				</Node>
 			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{8EBE6EB3-803D-4913-AD7A-D71552123A67}"/>

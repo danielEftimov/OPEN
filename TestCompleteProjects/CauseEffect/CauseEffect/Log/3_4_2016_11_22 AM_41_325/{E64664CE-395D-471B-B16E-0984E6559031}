@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 12">
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="owner id" type="I" value="9"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;NEXTLEVEL&quot; passed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture18.png;Picture19.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{0F038AE0-4C89-4810-B768-BCFA7FF7BF4C}&quot;&gt; Click here to show or modify data of the checkpoint &quot;NEXTLEVEL&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="42433.4747507523"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="22"/>
+		</Node>
+		<Node name="message 21">
+			<Prp name="id" type="I" value="21"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="stack beginning" type="I" value="30"/>
+			<Prp name="stack end" type="I" value="30"/>
+			<Prp name="message" type="S" value="Script execution was interrupted."/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="picture" type="S" value="Picture31.png"/>
+			<Prp name="remarks" type="S" value="Possible reasons:&#xA; - An error or warning occurred during the test run. See the preceding log entries to locate and identify the error.&#xA; - The test run was stopped manually.&#xA; - The test run was terminated as a result of the Runner.Halt method call."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="date" type="D" value="42433.4756396412"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="37"/>
+		</Node>
+		<Node name="item 21">
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="GeneralEvents_OnLogError"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="This test is for ContinuousMovement of the mouse"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="42433.4741281944"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="11"/>
+		</Node>
+		<Node name="message 17">
+			<Prp name="id" type="I" value="17"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="stack beginning" type="I" value="10"/>
+			<Prp name="stack end" type="I" value="17"/>
+			<Prp name="message" type="S" value="The object does not exist. See Additional Information for details."/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="picture" type="S" value="Picture27.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;style&gt;body {font-family : Courier New, Arial; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;body&gt;&lt;p&gt;An error occurred while accessing the &quot;Close&quot; method or property of the &quot;&lt;a href=&quot;lnamemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{4B549951-55BF-400F-AAE8-E96341F1C512}&quot;&gt;wndLWJGL&lt;/a&gt;&quot; object.&lt;br/&gt;The object or one of its parent objects was not found.&lt;/p&gt;&lt;h4&gt;Object Whose Method or Property Was Accessed&lt;/h4&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; noborder&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Alias:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Aliases.javaw.wndLWJGL&lt;/td&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name mapping item:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;NameMapping.Sys.javaw.wndLWJGL&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h4&gt;Object That Was Not Found&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Alias:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;lnamemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{4B549951-55BF-400F-AAE8-E96341F1C512}&quot;&gt;Aliases.javaw.wndLWJGL&lt;/a&gt;&lt;/td&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name mapping item:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;namemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{0472CE1E-E328-4B3D-BCFE-4DBBF10667DC}&quot;&gt;NameMapping.Sys.javaw.wndLWJGL&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p style=&quot;margin-top: 12px;&quot;&gt;Click the link above to view and configure mapping settings for the missing object.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;aqa-help://2201&quot;&gt;Learn about possible causes of the error&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="400"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="date" type="D" value="42433.47562"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="37"/>
+		</Node>
+		<Node name="item 27">
+			<Prp name="line no" type="I" value="40"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="stacktext" type="S" value="causeEffect_OneClick"/>
+		</Node>
+		<Node name="item 24">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="This test is for Reaching the goal with one click"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="42433.4746265972"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="18"/>
+		</Node>
+		<Node name="item 11">
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="GeneralEvents_OnLogError"/>
+		</Node>
+		<Node name="item 7">
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="GeneralEvents_OnLogError"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;RegionLeaves&quot; passed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture3.png;Picture4.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{3A235DF8-796D-412C-A66B-D8ECDF3F44E0}&quot;&gt; Click here to show or modify data of the checkpoint &quot;RegionLeaves&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="42433.4742066782"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="3"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{2D1F8477-3B7F-44BF-BF9F-BFDC8D790A37}"/>
+			<Prp name="unit 3" type="S" value="{6B55C8AA-DE75-4D12-A53D-4E0BEABF0FA4}"/>
+			<Prp name="unit 1" type="S" value="{8BF0088C-E19F-4802-A890-1A5E8A0D7683}"/>
+			<Prp name="unit 2" type="S" value="{C590DA2E-7DA7-48FB-81E7-0DDB30703498}"/>
+		</Node>
+		<Node name="item 26">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;AnimationCar&quot; passed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture9.png;Picture10.png;Picture11.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{53DE195A-13F1-4EA0-9D3C-E94275C17CBA}&quot;&gt; Click here to show or modify data of the checkpoint &quot;AnimationCar&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="42433.4745685532"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="18"/>
+		</Node>
+		<Node name="message 15">
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="owner id" type="I" value="14"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;happyAnimation&quot; passed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture23.png;Picture24.png;Picture25.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{5E26A90E-4733-455C-98EE-5918B230D2E8}&quot;&gt; Click here to show or modify data of the checkpoint &quot;happyAnimation&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="42433.4750109028"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="8"/>
+		</Node>
+		<Node name="item 30">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value=""/>
+		</Node>
+		<Node name="item 19">
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="GeneralEvents_OnLogError"/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="GeneralEvents_OnLogError"/>
+		</Node>
+		<Node name="item 5">
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="GeneralEvents_OnLogError"/>
+		</Node>
+		<Node name="message 20">
+			<Prp name="id" type="I" value="20"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="stack beginning" type="I" value="28"/>
+			<Prp name="stack end" type="I" value="29"/>
+			<Prp name="message" type="S" value="The object does not exist. See Additional Information for details."/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="picture" type="S" value="Picture30.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;style&gt;body {font-family : Courier New, Arial; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;body&gt;&lt;p&gt;An error occurred while accessing the &quot;Close&quot; method or property of the &quot;&lt;a href=&quot;lnamemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{4B549951-55BF-400F-AAE8-E96341F1C512}&quot;&gt;wndLWJGL&lt;/a&gt;&quot; object.&lt;br/&gt;The object or one of its parent objects was not found.&lt;/p&gt;&lt;h4&gt;Object Whose Method or Property Was Accessed&lt;/h4&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; noborder&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Alias:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Aliases.javaw.wndLWJGL&lt;/td&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name mapping item:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;NameMapping.Sys.javaw.wndLWJGL&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h4&gt;Object That Was Not Found&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Alias:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;lnamemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{4B549951-55BF-400F-AAE8-E96341F1C512}&quot;&gt;Aliases.javaw.wndLWJGL&lt;/a&gt;&lt;/td&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name mapping item:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;namemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{0472CE1E-E328-4B3D-BCFE-4DBBF10667DC}&quot;&gt;NameMapping.Sys.javaw.wndLWJGL&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p style=&quot;margin-top: 12px;&quot;&gt;Click the link above to view and configure mapping settings for the missing object.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;aqa-help://2201&quot;&gt;Learn about possible causes of the error&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="400"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="date" type="D" value="42433.4756349653"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="37"/>
+		</Node>
+		<Node name="item 28">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;NEXTLEVEL&quot; passed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture7.png;Picture8.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{0F038AE0-4C89-4810-B768-BCFA7FF7BF4C}&quot;&gt; Click here to show or modify data of the checkpoint &quot;NEXTLEVEL&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="42433.4744926736"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="22"/>
+		</Node>
+		<Node name="message 18">
+			<Prp name="id" type="I" value="18"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="stack beginning" type="I" value="18"/>
+			<Prp name="stack end" type="I" value="23"/>
+			<Prp name="message" type="S" value="The object does not exist. See Additional Information for details."/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="picture" type="S" value="Picture28.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;style&gt;body {font-family : Courier New, Arial; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;body&gt;&lt;p&gt;An error occurred while accessing the &quot;Close&quot; method or property of the &quot;&lt;a href=&quot;lnamemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{4B549951-55BF-400F-AAE8-E96341F1C512}&quot;&gt;wndLWJGL&lt;/a&gt;&quot; object.&lt;br/&gt;The object or one of its parent objects was not found.&lt;/p&gt;&lt;h4&gt;Object Whose Method or Property Was Accessed&lt;/h4&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; noborder&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Alias:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Aliases.javaw.wndLWJGL&lt;/td&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name mapping item:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;NameMapping.Sys.javaw.wndLWJGL&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h4&gt;Object That Was Not Found&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Alias:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;lnamemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{4B549951-55BF-400F-AAE8-E96341F1C512}&quot;&gt;Aliases.javaw.wndLWJGL&lt;/a&gt;&lt;/td&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name mapping item:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;namemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{0472CE1E-E328-4B3D-BCFE-4DBBF10667DC}&quot;&gt;NameMapping.Sys.javaw.wndLWJGL&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p style=&quot;margin-top: 12px;&quot;&gt;Click the link above to view and configure mapping settings for the missing object.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;aqa-help://2201&quot;&gt;Learn about possible causes of the error&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="400"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="date" type="D" value="42433.4756254398"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="37"/>
+		</Node>
+		<Node name="item 12">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="message 11">
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="owner id" type="I" value="9"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;happyAnimation&quot; passed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture15.png;Picture16.png;Picture17.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{5E26A90E-4733-455C-98EE-5918B230D2E8}&quot;&gt; Click here to show or modify data of the checkpoint &quot;happyAnimation&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="42433.4747234143"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="8"/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="d-0" type="D" value="42433.4756396412"/>
+			</Node>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="isinteger" type="B" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="columnindex" type="I" value="0"/>
+		</Node>
+		<Node name="item 23">
+			<Prp name="line no" type="I" value="40"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="stacktext" type="S" value="causeEffect_OneClick"/>
+		</Node>
+		<Node name="item 14">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="item 18">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="item 13">
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="GeneralEvents_OnLogError"/>
+		</Node>
+		<Node name="item 8">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Execution of the low-level procedure ContinuousMovement completed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="500"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="42433.4744743519"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="65"/>
+		</Node>
+		<Node name="message 16">
+			<Prp name="id" type="I" value="16"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="stack end" type="I" value="9"/>
+			<Prp name="message" type="S" value="The object does not exist. See Additional Information for details."/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="picture" type="S" value="Picture26.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;style&gt;body {font-family : Courier New, Arial; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;body&gt;&lt;p&gt;An error occurred while accessing the &quot;Close&quot; method or property of the &quot;&lt;a href=&quot;lnamemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{4B549951-55BF-400F-AAE8-E96341F1C512}&quot;&gt;wndLWJGL&lt;/a&gt;&quot; object.&lt;br/&gt;The object or one of its parent objects was not found.&lt;/p&gt;&lt;h4&gt;Object Whose Method or Property Was Accessed&lt;/h4&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; noborder&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Alias:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Aliases.javaw.wndLWJGL&lt;/td&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name mapping item:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;NameMapping.Sys.javaw.wndLWJGL&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h4&gt;Object That Was Not Found&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Alias:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;lnamemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{4B549951-55BF-400F-AAE8-E96341F1C512}&quot;&gt;Aliases.javaw.wndLWJGL&lt;/a&gt;&lt;/td&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name mapping item:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;namemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{0472CE1E-E328-4B3D-BCFE-4DBBF10667DC}&quot;&gt;NameMapping.Sys.javaw.wndLWJGL&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p style=&quot;margin-top: 12px;&quot;&gt;Click the link above to view and configure mapping settings for the missing object.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;aqa-help://2201&quot;&gt;Learn about possible causes of the error&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="400"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="date" type="D" value="42433.4756148727"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="37"/>
+		</Node>
+		<Node name="item 15">
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="GeneralEvents_OnLogError"/>
+		</Node>
+		<Node name="item 22">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="item 10">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="owner id" type="I" value="9"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;AnimationCar&quot; passed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture12.png;Picture13.png;Picture14.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{53DE195A-13F1-4EA0-9D3C-E94275C17CBA}&quot;&gt; Click here to show or modify data of the checkpoint &quot;AnimationCar&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="42433.4746443171"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="18"/>
+		</Node>
+		<Node name="item 6">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="item 20">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;happyAnimation&quot; passed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture5.png;Picture6.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{5E26A90E-4733-455C-98EE-5918B230D2E8}&quot;&gt; Click here to show or modify data of the checkpoint &quot;happyAnimation&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="42433.4744835995"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="8"/>
+		</Node>
+		<Node name="item 29">
+			<Prp name="line no" type="I" value="40"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="stacktext" type="S" value="causeEffect_OneClick"/>
+		</Node>
+		<Node name="message 19">
+			<Prp name="id" type="I" value="19"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="stack beginning" type="I" value="24"/>
+			<Prp name="stack end" type="I" value="27"/>
+			<Prp name="message" type="S" value="The object does not exist. See Additional Information for details."/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="picture" type="S" value="Picture29.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;style&gt;body {font-family : Courier New, Arial; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;body&gt;&lt;p&gt;An error occurred while accessing the &quot;Close&quot; method or property of the &quot;&lt;a href=&quot;lnamemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{4B549951-55BF-400F-AAE8-E96341F1C512}&quot;&gt;wndLWJGL&lt;/a&gt;&quot; object.&lt;br/&gt;The object or one of its parent objects was not found.&lt;/p&gt;&lt;h4&gt;Object Whose Method or Property Was Accessed&lt;/h4&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; noborder&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Alias:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Aliases.javaw.wndLWJGL&lt;/td&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name mapping item:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;NameMapping.Sys.javaw.wndLWJGL&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h4&gt;Object That Was Not Found&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Alias:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;lnamemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{4B549951-55BF-400F-AAE8-E96341F1C512}&quot;&gt;Aliases.javaw.wndLWJGL&lt;/a&gt;&lt;/td&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name mapping item:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;namemapping://{2592C8E1-15F8-4D6F-A0C1-421FD4202DC0}.{0472CE1E-E328-4B3D-BCFE-4DBBF10667DC}&quot;&gt;NameMapping.Sys.javaw.wndLWJGL&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p style=&quot;margin-top: 12px;&quot;&gt;Click the link above to view and configure mapping settings for the missing object.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;aqa-help://2201&quot;&gt;Learn about possible causes of the error&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="400"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="date" type="D" value="42433.4756301852"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="37"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 13">
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="owner id" type="I" value="9"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;AnimationCar&quot; passed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture20.png;Picture21.png;Picture22.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{53DE195A-13F1-4EA0-9D3C-E94275C17CBA}&quot;&gt; Click here to show or modify data of the checkpoint &quot;AnimationCar&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="42433.4748256829"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="18"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Execution of the low-level procedure ContinuousMovement started."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="500"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="42433.4742416782"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="65"/>
+		</Node>
+		<Node name="item 3">
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="GeneralEvents_OnLogError"/>
+		</Node>
+		<Node name="item 9">
+			<Prp name="line no" type="I" value="40"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="stacktext" type="S" value="causeEffect_OneClick"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;SelectCar&quot; passed."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture1.png;Picture2.png"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{1DC27F0A-9CD9-48AA-A817-6456DBFA7796}&quot;&gt; Click here to show or modify data of the checkpoint &quot;SelectCar&quot;. &lt;/a&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="42433.4741471412"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="30"/>
+		</Node>
+		<Node name="item 16">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="item 2">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="item 4">
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="closeApp"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="The application &quot;C:\Program Files\Java\jre1.8.0_74\Bin\javaw.exe  -jar &quot;Z:\game for testing\test with added monkey theme\desktop-1.0.jar&quot; false m red&quot; started."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="The process ID is 4400."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="42433.4740997801"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="30"/>
+		</Node>
+		<Node name="item 25">
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="GeneralEvents_OnLogError"/>
+		</Node>
+		<Node name="message 14">
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="This test is for Reaching the goal with multiple clicks"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="42433.4748837963"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="27"/>
+		</Node>
+		<Node name="item 17">
+			<Prp name="line no" type="I" value="40"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="stacktext" type="S" value="causeEffect_OneClick"/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+		<Prp name="perfcounterslength" type="I" value="1"/>
+	</Node>
+</Nodes>

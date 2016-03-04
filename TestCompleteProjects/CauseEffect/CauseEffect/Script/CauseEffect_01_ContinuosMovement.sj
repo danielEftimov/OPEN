@@ -28,8 +28,8 @@ function launchApp()
   //TestedApps.desktop.Params.SimpleParams.FilePath="\\mkskfs01\Projects\OpenTheWindows\game for testing";
   //TestedApps.desktop.Params.SimpleParams.FileName="desktop.exe"
   //TestedApps.desktop.Params.SimpleParams.Activate();
-  TestedApps.desktop_1_0.Run();
-  causeEffectObject = Aliases.javaw.wndLWJGL;
+  TestedApps.desktop_1_01.Run();
+  causeEffectObject = Aliases.javaw.wndLWJGL2;
 }
 
 function closeApp()
