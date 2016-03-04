@@ -113,6 +113,86 @@ class ScreenControllerTest extends UnitSpec {
     assert(ScreenController.getPointerSizeFromUserSettings == 256)
   }
 
+
+  test("given pointer is set to small, theme is in color and pointer color is white, getPointerFileNameFromUserSettings should return hand_white.png") {
+    UserSettings.setUserSettings("false", "s", "white")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_white.png")
+  }
+
+  test("given pointer is set to small, theme is in color and pointer color is yellow, getPointerFileNameFromUserSettings should return hand_yellow.png") {
+    UserSettings.setUserSettings("false", "s", "yellow")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_yellow.png")
+  }
+
+  test("given pointer is set to small, theme is in color and pointer color is red, getPointerFileNameFromUserSettings should return hand_red.png") {
+    UserSettings.setUserSettings("false", "s", "red")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_red.png")
+  }
+
+  test("given pointer is set to small, theme is in color and pointer color is green, getPointerFileNameFromUserSettings should return hand_green.png") {
+    UserSettings.setUserSettings("false", "s", "green")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_green.png")
+  }
+
+  test("given pointer is set to small, theme is in color and pointer color is blue, getPointerFileNameFromUserSettings should return hand_blue.png") {
+    UserSettings.setUserSettings("false", "s", "blue")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_blue.png")
+  }
+
+  test("given pointer is set to medium, theme is in color and pointer color is white, getPointerFileNameFromUserSettings should return hand_white.png") {
+    UserSettings.setUserSettings("false", "m", "white")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_white.png")
+  }
+
+  test("given pointer is set to medium, theme is in color and pointer color is yellow, getPointerFileNameFromUserSettings should return hand_yellow.png") {
+    UserSettings.setUserSettings("false", "m", "yellow")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_yellow.png")
+  }
+
+  test("given pointer is set to medium, theme is in color and pointer color is red, getPointerFileNameFromUserSettings should return hand_red.png") {
+    UserSettings.setUserSettings("false", "m", "red")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_red.png")
+  }
+
+  test("given pointer is set to medium, theme is in color and pointer color is green, getPointerFileNameFromUserSettings should return hand_green.png") {
+    UserSettings.setUserSettings("false", "m", "green")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_green.png")
+  }
+
+  test("given pointer is set to medium, theme is in color and pointer color is blue, getPointerFileNameFromUserSettings should return hand_blue.png") {
+    UserSettings.setUserSettings("false", "m", "blue")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_blue.png")
+  }
+
+  test("given pointer is set to small, theme is in black_white and pointer color is white, getPointerFileNameFromUserSettings should return hand_white.png") {
+    UserSettings.setUserSettings("true", "s", "white")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_white.png")
+  }
+
+  test("given pointer is set to small, theme is in black_white and pointer color is yellow, getPointerFileNameFromUserSettings should return hand_yellow.png") {
+    UserSettings.setUserSettings("true", "s", "yellow")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_yellow.png")
+  }
+
+  test("given pointer is set to medium, theme is in black_white and pointer color is white, getPointerFileNameFromUserSettings should return hand_white.png") {
+    UserSettings.setUserSettings("true", "m", "white")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_white.png")
+  }
+
+  test("given pointer is set to medium, theme is in black_white and pointer color is yellow, getPointerFileNameFromUserSettings should return hand_yellow.png") {
+    UserSettings.setUserSettings("true", "m", "yellow")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_yellow.png")
+  }
+
+  test("given pointer is set to small, theme is in black_white and pointer color is any color besides white and yellow, getPointerFileNameFromUserSettings should return hand_white.png") {
+    UserSettings.setUserSettings("true", "s", "any_color")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_white.png")
+  }
+
+  test("given pointer is set to medium, theme is in black_white and pointer color is any color besides white and yellow, getPointerFileNameFromUserSettings should return hand_white.png") {
+    UserSettings.setUserSettings("true", "m", "any_color")
+    assert(ScreenController.getPointerFileNameFromUserSettings == "hand_white.png")
+  }
   /**
     *
     * @return gets the current screen of our singleton game instance.
