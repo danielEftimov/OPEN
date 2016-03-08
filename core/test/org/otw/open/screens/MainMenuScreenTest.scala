@@ -13,7 +13,7 @@ class MainMenuScreenTest extends UnitSpec {
   test("when render is invoked in the main menu screen, it should set the background color to grey") {
     val mainManuScreen = new MainMenuScreen
     mainManuScreen.render(0.1f)
-    verify(Gdx.gl).glClearColor(0.95f, 0.95f, 0.95f, Color.WHITE.a)
+    verify(Gdx.gl).glClearColor(0.90f, 0.90f, 0.90f, Color.WHITE.a)
     verify(Gdx.gl).glClear(GL20.GL_COLOR_BUFFER_BIT)
   }
 
