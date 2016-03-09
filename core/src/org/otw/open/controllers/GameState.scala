@@ -111,11 +111,16 @@ object GameState {
     *
     */
   def setNextTheme = {
-    themeName = gameSettings.keys.toList match {
-      case themeMap :: x :: _ => x
-      case _ => themeName
-    }
-    setLevel(1)
-  }
+    val themesList: List[String] = gameSettings.keys.toList
 
+    val currentThemeIndex = themesList.indexOf(themeName)
+    if (currentThemeIndex != null && currentThemeIndex < themesList.size - 1)
+      themeName = themesList match {
+        case themeMap :: x :: _ => x
+        case _ => themeName
+      }
+    else themeName = themesList(0)
+    themeName
+
+  }
 }
