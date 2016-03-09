@@ -1,6 +1,7 @@
 package org.otw.open.util
 
 import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.graphics.g2d.Animation.PlayMode
 import com.badlogic.gdx.graphics.g2d.{Animation, TextureAtlas}
 import org.otw.open.controllers.GameState
 
@@ -9,13 +10,14 @@ import org.otw.open.controllers.GameState
   *
   * Created by jivanovski on 1/25/2016.
   */
-class Animator(val atlasFileName: String) {
+class Animator(val atlasFileName: String, val playMode: PlayMode = PlayMode.LOOP) {
 
   /** global atlas */
   private val atlas = new TextureAtlas(Gdx.files.internal("theme/" + GameState.getThemeName + "/" + atlasFileName))
 
   /** animation setup */
   private val animation = new Animation(1 / 7f, atlas.getRegions)
+  animation.setPlayMode(playMode)
 
   /**
     *
@@ -33,5 +35,11 @@ class Animator(val atlasFileName: String) {
     atlas.dispose()
     true
   }
+
+  /**
+    * A private method that will return Animation object. This method is strictly for unit testing purposes.
+    * @return the used Animation object.
+    */
+  private def getAnimationObject: Animation = animation
 }
 
