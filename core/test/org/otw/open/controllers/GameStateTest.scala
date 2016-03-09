@@ -117,4 +117,19 @@ class GameStateTest extends UnitSpec with BeforeAndAfterEach {
     val returnedPoint: Vector2 = GameState.getResultAnimationStandPoint
     assert(returnedPoint.x.toInt == 563 && returnedPoint.y.toInt == 49)
   }
+
+  test("when setNextTheme is invoked and current theme is car_theme, new theme should be monkey_theme, but level should be the same") {
+    GameState.setLevel(1)
+    GameState.setNextTheme
+    assert(GameState.getThemeName == "monkey_theme")
+    assert(GameState.getLevel == 1)
+  }
+
+  test("when setNextTheme is invoked and current theme is monkey_theme, new theme should be car_theme, but level should be the same") {
+    GameState.setThemName("monkey_theme")
+    GameState.setLevel(3)
+    GameState.setNextTheme
+    assert(GameState.getThemeName == "car_theme")
+    assert(GameState.getLevel == 3)
+  }
 }
