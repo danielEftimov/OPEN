@@ -71,6 +71,10 @@ object GameState {
     theme.start_point
   }
 
+  /**
+    *
+    * @return the Vector2 point where the happy/sad animation object for the theme should be placed.
+    */
   def getResultAnimationStandPoint: Vector2 = {
     val theme: Theme = gameSettings.get(themeName).orNull
     val point: Point = theme.result_animation_point
