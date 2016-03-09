@@ -114,11 +114,8 @@ object GameState {
     val themesList: List[String] = gameSettings.keys.toList
 
     val currentThemeIndex = themesList.indexOf(themeName)
-    if (currentThemeIndex != null && currentThemeIndex < themesList.size - 1)
-      themeName = themesList match {
-        case themeMap :: x :: _ => x
-        case _ => themeName
-      }
+    if (currentThemeIndex >= 0 && currentThemeIndex < themesList.size - 1)
+      themeName = themesList(currentThemeIndex + 1)
     else themeName = themesList(0)
     themeName
 
