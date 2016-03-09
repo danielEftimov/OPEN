@@ -34,7 +34,7 @@ class ActionResultScreenTest extends UnitSpec with BeforeAndAfterEach {
     GameState.setLevel(4)
     val screen = new ActionResultScreen(true)
     screen.buildStage()
-    val actor = screen.getActors.get(1) match {
+    val actor = screen.getActors.get(2) match {
       case x: MenuButtonActor => x
       case _ => throw new ClassCastException
     }
@@ -47,7 +47,7 @@ class ActionResultScreenTest extends UnitSpec with BeforeAndAfterEach {
     GameState.setLevel(2)
     val screen = new ActionResultScreen(true)
     screen.buildStage()
-    val actor = screen.getActors.get(1) match {
+    val actor = screen.getActors.get(2) match {
       case x: MenuButtonActor => x
       case _ => throw new ClassCastException
     }
@@ -64,7 +64,7 @@ class ActionResultScreenTest extends UnitSpec with BeforeAndAfterEach {
   test("when stage is build the third actor should be retry level button") {
     val screen = new ActionResultScreen(true)
     screen.buildStage()
-    val actor = screen.getActors.get(2) match {
+    val actor = screen.getActors.get(3) match {
       case x: MenuButtonActor => x
       case _ => throw new ClassCastException
     }
@@ -81,7 +81,7 @@ class ActionResultScreenTest extends UnitSpec with BeforeAndAfterEach {
   test("when stage is build the fourth actor should be to main menu button") {
     val screen = new ActionResultScreen(true)
     screen.buildStage()
-    val actor = screen.getActors.get(3) match {
+    val actor = screen.getActors.get(4) match {
       case x: MenuButtonActor => x
       case _ => throw new ClassCastException
     }
@@ -98,7 +98,7 @@ class ActionResultScreenTest extends UnitSpec with BeforeAndAfterEach {
   test("when stage is build the fifth actor should be to other theme button") {
     val screen = new ActionResultScreen(true)
     screen.buildStage()
-    val actor = screen.getActors.get(4) match {
+    val actor = screen.getActors.get(5) match {
       case x: MenuButtonActor => x
       case _ => throw new ClassCastException
     }
@@ -115,7 +115,7 @@ class ActionResultScreenTest extends UnitSpec with BeforeAndAfterEach {
   test("when stage is build, and action IS SUCCESSFUL the sixth actor should be a static animation actor") {
     val screen = new ActionResultScreen(true)
     screen.buildStage()
-    val actor = screen.getActors.get(5) match {
+    val actor = screen.getActors.get(1) match {
       case x: StaticAnimationActor => x
       case _ => throw new ClassCastException
     }
@@ -126,7 +126,7 @@ class ActionResultScreenTest extends UnitSpec with BeforeAndAfterEach {
   test("when stage is build, and action IS NOT SUCCESSFUL the sixth actor should be a static animation actor") {
     val screen = new ActionResultScreen(false)
     screen.buildStage()
-    val actor = screen.getActors.get(5) match {
+    val actor = screen.getActors.get(1) match {
       case x: StaticAnimationActor => x
       case _ => throw new ClassCastException
     }

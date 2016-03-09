@@ -4,6 +4,10 @@
       "x": 0,
       "y": 480
     },
+    "result_animation_point": {
+      "x": 464,
+      "y": 194
+    },
     "levels": {
       "1": [],
       "2": [
@@ -39,6 +43,10 @@
       "x": 20,
       "y": 300
     },
+    "result_animation_point": {
+      "x": 464,
+      "y": 194
+    },
     "levels": {
       "1": [],
       "2": [
@@ -72,6 +80,10 @@
   "monkey_theme": {
     "start_point": {
       "x": 62,
+      "y": 49
+    },
+    "result_animation_point": {
+      "x": 563,
       "y": 49
     },
     "levels": {

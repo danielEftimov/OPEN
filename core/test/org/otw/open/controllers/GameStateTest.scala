@@ -1,5 +1,6 @@
 package org.otw.open.controllers
 
+import com.badlogic.gdx.math.Vector2
 import org.otw.open.dto.{Theme, Point}
 import org.otw.open.testconfig.UnitSpec
 import org.otw.open.util.UserSettings
@@ -88,7 +89,7 @@ class GameStateTest extends UnitSpec with BeforeAndAfterEach {
   test("when theme is Black and White, filter themes should only return black and white themes") {
     UserSettings.setUserSettings("true", "s", "green")
     val standPointsMap = Map("x" -> List.empty)
-    val theme: Theme = new Theme(new Point(0, 0), standPointsMap)
+    val theme: Theme = new Theme(new Point(0, 0), new Point(0, 0), standPointsMap)
     val testThemes: Map[String, Theme] = Map("car_bw" -> theme)
 
     val themes = GameState.filterThemes(testThemes)
@@ -98,10 +99,22 @@ class GameStateTest extends UnitSpec with BeforeAndAfterEach {
   test("when theme is not Black and White, filter themes should only return not-blackAndWhite themes") {
     UserSettings.setUserSettings("false", "s", "green")
     val standPointsMap = Map("x" -> List.empty)
-    val theme: Theme = new Theme(new Point(0, 0), standPointsMap)
+    val theme: Theme = new Theme(new Point(0, 0), new Point(0, 0), standPointsMap)
     val testThemes: Map[String, Theme] = Map("car_bw" -> theme)
 
     val themes = GameState.filterThemes(testThemes)
     assert(themes.isEmpty)
+  }
+
+  test("when theme is car theme the returned result animation vector should be on coordinates 464, 194") {
+    GameState.setThemName("car_theme")
+    val returnedPoint: Vector2 = GameState.getResultAnimationStandPoint
+    assert(returnedPoint.x.toInt == 464 && returnedPoint.y.toInt == 194)
+  }
+
+  test("when theme is monkey theme the returned result animation vector should be on coordinates 563, 49") {
+    GameState.setThemName("monkey_theme")
+    val returnedPoint: Vector2 = GameState.getResultAnimationStandPoint
+    assert(returnedPoint.x.toInt == 563 && returnedPoint.y.toInt == 49)
   }
 }

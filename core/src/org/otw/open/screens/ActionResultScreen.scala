@@ -43,13 +43,15 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
   private val audio = AudioManager(audioGuidanceFileName)
   audio.getAudio.play
 
-  private val staticAnimationActor = new StaticAnimationActor(new Vector2(464, 194), atlasFileName)
+  private val position: Vector2 = GameState.getResultAnimationStandPoint
+  private val staticAnimationActor = new StaticAnimationActor(position, atlasFileName)
 
   /**
     * Methods to be overridden by all classes.
     */
   override def buildStage(): Unit = {
     addActor(backgroundActor)
+    addActor(staticAnimationActor)
     if (GameState.getLevel == 4)
       addActor(disabledNextLevelButton)
     else
@@ -57,7 +59,6 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
     addActor(retryLevelButton)
     addActor(toMainMenuButton)
     addActor(toOtherThemeButton)
-    addActor(staticAnimationActor)
   }
 
   override def dispose(): Unit = {

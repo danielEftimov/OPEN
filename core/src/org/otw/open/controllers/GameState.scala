@@ -1,9 +1,10 @@
 package org.otw.open.controllers
 
 import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.math.Vector2
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
-import org.otw.open.dto.Theme
+import org.otw.open.dto.{Point, Theme}
 import org.otw.open.util.UserSettings
 
 /**
@@ -68,6 +69,16 @@ object GameState {
   def getLevelStartPoint = {
     val theme: Theme = gameSettings.get(themeName).orNull
     theme.start_point
+  }
+
+  /**
+    *
+    * @return the Vector2 point where the happy/sad animation object for the theme should be placed.
+    */
+  def getResultAnimationStandPoint: Vector2 = {
+    val theme: Theme = gameSettings.get(themeName).orNull
+    val point: Point = theme.result_animation_point
+    new Vector2(point.x, point.y)
   }
 
   /**
