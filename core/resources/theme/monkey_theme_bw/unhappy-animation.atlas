@@ -1,0 +1,52 @@
+
+unhappy-animation.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Monkey1
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey2
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey3
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+unhappy-animation2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Monkey4
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey5
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey6
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
