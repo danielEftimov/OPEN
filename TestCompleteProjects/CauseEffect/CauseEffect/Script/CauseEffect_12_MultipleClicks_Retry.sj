@@ -6,6 +6,8 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -30,8 +32,8 @@ try{
   multipleClicksOutOfBounds();  
   Log.PopLogFolder();
   
-   restart()
- Log.AppendFolder("This test is for Retry  of the multiple clicks level");  
+  restart()
+  Log.AppendFolder("This test is for Retry  of the multiple clicks level");  
   multipleClicks();      
   Log.PopLogFolder();
  }

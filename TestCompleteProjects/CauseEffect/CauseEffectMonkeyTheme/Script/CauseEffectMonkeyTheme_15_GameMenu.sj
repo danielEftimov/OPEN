@@ -2,8 +2,7 @@
 
 function navigationNextLevel()
 {
-//create region of the nextLevelButton
-//Regions.nextLevel.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+//Check if the next level button is displayed
 Region_NextLevel();
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)
@@ -20,16 +19,16 @@ LLPlayer.MouseUp(MK_LBUTTON, coorX+10, coorY+10, sDelay);
 
   
 //validate if same theme is displayed (means you are still on the same theme but different level)
-Region_AnimationCar();
+Region_AnimationMonkey();
 aqUtils.Delay(5000);
-//Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+
 }
 
 
 function navigationNextTheme()
 {
-//create region of the nextThemeButton
-Regions.nextTheme.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+//Check if the next theme button is displayed
+Region_NextTheme();
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)
 var coorX = 1250;
@@ -39,12 +38,15 @@ sDelay = 1000 ;
 // Simulates pressing and releasing the left mouse button
 LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
 LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
+aqUtils.Delay(50);
+LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
+LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay);
 }
 
 function navigationGameMenu()
 {
-//create region of the GameManu Button
-Regions.gameManu.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+//Check if the game menu button is displayed
+Region_gameManu();
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)
 var coorX = 650;
@@ -55,13 +57,11 @@ sDelay = 1000 ;
 LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
 LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
 
-// validate ig game manu is shown properly
-
 }
 
 function restart()
 {
-//create region of the nextThemeButton
+//Check if the sad animation is displayed
 Region_RestartSad();
 
 
@@ -80,7 +80,7 @@ aqUtils.Delay(6000);
 
 function restart_passed()
 {
-//create region of the nextThemeButton
+//Check if happy animation is displayed
 Region_HappyAnimation();
 
 

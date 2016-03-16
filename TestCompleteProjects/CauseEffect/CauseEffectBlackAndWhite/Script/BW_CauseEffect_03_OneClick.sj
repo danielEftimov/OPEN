@@ -4,6 +4,8 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -37,12 +39,11 @@ try{
 function oneClickCar()
 {  
   //Check if the proper layer is getting displayed
-  BW_CheckRegions.Region_AnimationCar();
-  //Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+  Region_AnimationCar();
   
   //Specifies the coordinates of the first click (it depends on the screen resolution)
-   var coorX = 300;
-   var coorY = 620;
+  var coorX = 300;
+  var coorY = 620;
  
   // Specifies a delay in milliseconds
   sDelay = 1000 ;
@@ -53,5 +54,5 @@ function oneClickCar()
   
   aqUtils.Delay(4000);
   //Check if the happy animations has been shown properly
-  BW_CheckRegions.Region_HappyAnimation();
+  Region_HappyAnimation();
   }

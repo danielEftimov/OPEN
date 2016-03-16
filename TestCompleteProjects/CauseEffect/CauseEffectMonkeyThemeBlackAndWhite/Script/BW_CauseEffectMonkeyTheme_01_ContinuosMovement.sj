@@ -2,6 +2,8 @@
 function causeEffect()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -28,8 +30,8 @@ function launchApp()
   //TestedApps.desktop.Params.SimpleParams.FilePath="\\mkskfs01\Projects\OpenTheWindows\game for testing";
   //TestedApps.desktop.Params.SimpleParams.FileName="desktop.exe"
   //TestedApps.desktop.Params.SimpleParams.Activate();
-  TestedApps.desktop.Run();
-  causeEffectObject = Aliases.javaw.wndLWJGL2;
+  TestedApps.desktop_1_0.Run();
+  causeEffectObject = Aliases.javaw.wndLWJGL;
 }
 
 function closeApp()
@@ -42,7 +44,7 @@ function closeApp()
 
 function eraser ()
 {
-  BW_CheckRegions.Region_SelectTheme();
+  Region_SelectTheme();
   
   
   var coorX = 680;
@@ -57,7 +59,7 @@ function eraser ()
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay);
   aqUtils.Delay(2000);
   //Check if the first layer (top layer - leaves) is getting displayed
-  Region_Leaves();
+  Region_Bananas();
   
   aqUtils.Delay(3000);
 

@@ -9,6 +9,8 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -19,13 +21,13 @@ try{
   navigationNextLevel();
   Log.PopLogFolder(); 
   
-  Log.AppendFolder("This test for failed attempt on   one click level");  
+  Log.AppendFolder("This test is for failed attempt on one click level");  
   multipleClicksOutOfBounds();  
    
   Log.PopLogFolder();
   restart()
- Log.AppendFolder("This test is for Retry  of one click level");  
- oneClickCar ();      
+  Log.AppendFolder("This test is for Retry  of one click level");  
+  oneClickCar ();      
  
   //Navigation towards next level 
   navigationNextLevel();
@@ -39,6 +41,7 @@ try{
   restart() 
   Log.AppendFolder("This test is for 3 clicks level");
   //Navigation towards next level 
+  
   aqUtils.Delay(1000);
   multipleClicks();
   
@@ -49,9 +52,11 @@ try{
   //Click the object on the screen so that it moves forward 1/3 towards the target and reach the target in 3 steps
   Log.AppendFolder("This test for failed attempt on drag and drop level");  
   DragAndDropFailed();  
+  
   Log.PopLogFolder(); 
   restart()
-Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
+
+  Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
   DragAndDrop();  
   Log.PopLogFolder();
   

@@ -8,6 +8,8 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -59,12 +61,12 @@ function DragAndDrop()
 {
   var coorX = 450;
   var coorY = 500;
- sDelay=1500;
+ sDelay=10;
  //LLCollection.DragAndDrop.Execute();
  LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
  LLPlayer.MouseUp(MK_LBUTTON, coorX+300, coorY, sDelay);
  LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
  LLPlayer.MouseUp(MK_LBUTTON, coorX+300, coorY, sDelay);
  
- Region_AnimationCar();
+ Region_AnimationMonkey();
 }

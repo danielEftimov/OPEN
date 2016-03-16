@@ -1579,34 +1579,6 @@
 					<Prp name="description" type="S" value=""/>
 					<Prp name="enabled" type="B" value="-1"/>
 					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{95C8D587-9E42-484A-A3AA-18C5BAF913CA}"/>
-					<Prp name="name" type="S" value="AllgameLevelsFinishedOK"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{61F2C6F2-4A1E-4871-B358-CB084C4A18C4}causeEffect_OneClick"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0001">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{EDE16D6B-BF67-4A62-90E5-3897B36711B8}"/>
-					<Prp name="name" type="S" value="FailedRetryOkNextLevel"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{33974FFD-26AF-45AE-BDD4-6703581B131B}causeEffect_OneClick"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0002">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
 					<Prp name="key" type="S" value="{65DE47FA-48B6-423A-998D-87F96605BC0E}"/>
 					<Prp name="name" type="S" value="EraserBeforeAudioIsFinished"/>
 					<Prp name="stoponerror" type="I" value="2"/>
@@ -1614,49 +1586,7 @@
 					<Prp name="test moniker" type="S" value="{127A5BE8-F385-4E3F-8D06-6E450B1F1A1F}causeEffect"/>
 					<Prp name="timeout" type="I" value="0"/>
 				</Node>
-				<Node name="item idx=0003">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{B5E75860-3B50-4C3E-ADB0-5D7C19F05F94}"/>
-					<Prp name="name" type="S" value="OneClickLevelBeforeAudioIsFinished"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{03CBCD69-FCA5-4E25-A4D5-9DD4510D75A5}causeEffect_OneClick"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0004">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{22C86E2C-E31B-473A-AAA2-A0133DD1ECA0}"/>
-					<Prp name="name" type="S" value="3ClicksLevelBeforeAudioIsFinished"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{8BF0088C-E19F-4802-A890-1A5E8A0D7683}causeEffect_OneClick"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0005">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{EEEBE7EC-7C7C-43A5-81C6-BA421D58D37C}"/>
-					<Prp name="name" type="S" value="DragAndDropBeforeAudioIsFinished"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{C416FFB3-ED42-4761-AE2B-D9364D205EEE}causeEffect_OneClick"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0006">
+				<Node name="item idx=0001">
 					<Node name="child list"/>
 					<Node name="test parameters"/>
 					<Prp name="count" type="I" value="1"/>
@@ -1670,91 +1600,7 @@
 					<Prp name="test moniker" type="S" value="{2D1F8477-3B7F-44BF-BF9F-BFDC8D790A37}causeEffect"/>
 					<Prp name="timeout" type="I" value="0"/>
 				</Node>
-				<Node name="item idx=0007">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{AD19EC72-127F-4663-8329-7D1153A732FD}"/>
-					<Prp name="name" type="S" value="OneClickLevelPassed"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{65583A63-DE32-4014-9FD6-49B46909170E}causeEffect_OneClick"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0008">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{7C62905B-D176-4AFB-9AB4-47F87D163668}"/>
-					<Prp name="name" type="S" value="OneClickFailed"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{804B8CFE-B2B9-4455-AAC3-F8D3FA878EFC}CauseEffect_ClicksOutOfBounds"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0009">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{A28F3683-25B4-4547-906A-8C838434682E}"/>
-					<Prp name="name" type="S" value="3ClicksPassed"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{8BF0088C-E19F-4802-A890-1A5E8A0D7683}causeEffect_OneClick"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0010">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{E0CCF0BE-980D-4CEA-92EF-B5E3ECA995D0}"/>
-					<Prp name="name" type="S" value="3ClicksFailed"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{96C12F62-5406-4F03-8468-635674793FDE}causeEffect_OneClick"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0011">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{27DE94C7-6FCF-4C79-959E-D30169A941CD}"/>
-					<Prp name="name" type="S" value="DragAndDropPassed"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{61F2C6F2-4A1E-4871-B358-CB084C4A18C4}causeEffect_OneClick"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0012">
-					<Node name="child list"/>
-					<Node name="test parameters"/>
-					<Prp name="count" type="I" value="1"/>
-					<Prp name="description" type="S" value=""/>
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="group" type="B" value="0"/>
-					<Prp name="key" type="S" value="{5E066776-1540-4CE7-AC0E-DB95DDAFF7B6}"/>
-					<Prp name="name" type="S" value="DragAndDropFailed"/>
-					<Prp name="stoponerror" type="I" value="2"/>
-					<Prp name="stoponexception" type="I" value="2"/>
-					<Prp name="test moniker" type="S" value="{0A93104D-D946-47FF-B61D-F70C255AB50C}causeEffect_OneClick"/>
-					<Prp name="timeout" type="I" value="0"/>
-				</Node>
-				<Node name="item idx=0013">
+				<Node name="item idx=0002">
 					<Node name="child list"/>
 					<Node name="test parameters"/>
 					<Prp name="count" type="I" value="1"/>
@@ -1768,7 +1614,77 @@
 					<Prp name="test moniker" type="S" value="{5B61EE55-972E-485D-93E8-40B9B6CF60B5}causeEffect"/>
 					<Prp name="timeout" type="I" value="0"/>
 				</Node>
-				<Node name="item idx=0014">
+				<Node name="item idx=0003">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{31F53D36-5616-49C5-B83E-356F44846441}"/>
+					<Prp name="name" type="S" value="CMNextTheme"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{F0F0D316-5559-4CB1-9AB6-082718F1C1AF}causeEffect"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0004">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{B5E75860-3B50-4C3E-ADB0-5D7C19F05F94}"/>
+					<Prp name="name" type="S" value="OneClickLevelBeforeAudioIsFinished"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{03CBCD69-FCA5-4E25-A4D5-9DD4510D75A5}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0005">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{AD19EC72-127F-4663-8329-7D1153A732FD}"/>
+					<Prp name="name" type="S" value="OneClickLevelPassed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{65583A63-DE32-4014-9FD6-49B46909170E}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0006">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{60B3E897-1499-498D-B9E8-6CC4E0E8270F}"/>
+					<Prp name="name" type="S" value="OneClickNextTheme"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{1D4ED51D-23DD-47CB-AFA3-B664DB498CBF}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0007">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{7C62905B-D176-4AFB-9AB4-47F87D163668}"/>
+					<Prp name="name" type="S" value="OneClickFailed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{804B8CFE-B2B9-4455-AAC3-F8D3FA878EFC}CauseEffect_ClicksOutOfBounds"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0008">
 					<Node name="child list"/>
 					<Node name="test parameters"/>
 					<Prp name="count" type="I" value="1"/>
@@ -1782,7 +1698,21 @@
 					<Prp name="test moniker" type="S" value="{97ED9AED-6894-46C2-B9B6-02737C803949}causeEffect_OneClick"/>
 					<Prp name="timeout" type="I" value="0"/>
 				</Node>
-				<Node name="item idx=0015">
+				<Node name="item idx=0009">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{E0CCF0BE-980D-4CEA-92EF-B5E3ECA995D0}"/>
+					<Prp name="name" type="S" value="3ClicksFailed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{96C12F62-5406-4F03-8468-635674793FDE}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0010">
 					<Node name="child list"/>
 					<Node name="test parameters"/>
 					<Prp name="count" type="I" value="1"/>
@@ -1796,7 +1726,63 @@
 					<Prp name="test moniker" type="S" value="{EDD799E6-0B26-4144-919C-5C4462575759}causeEffect_OneClick"/>
 					<Prp name="timeout" type="I" value="0"/>
 				</Node>
-				<Node name="item idx=0016">
+				<Node name="item idx=0011">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{22C86E2C-E31B-473A-AAA2-A0133DD1ECA0}"/>
+					<Prp name="name" type="S" value="3ClicksLevelBeforeAudioIsFinished"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{8BF0088C-E19F-4802-A890-1A5E8A0D7683}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0012">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{A28F3683-25B4-4547-906A-8C838434682E}"/>
+					<Prp name="name" type="S" value="3ClicksPassed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{8BF0088C-E19F-4802-A890-1A5E8A0D7683}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0013">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{9CB1EF21-219E-466A-998E-B0CDEEAF3B86}"/>
+					<Prp name="name" type="S" value="MultipleClicksNextTheme"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{BFC693E5-68BC-48E9-9E95-0AA89EB44AB9}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0014">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{EEEBE7EC-7C7C-43A5-81C6-BA421D58D37C}"/>
+					<Prp name="name" type="S" value="DragAndDropBeforeAudioIsFinished"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{C416FFB3-ED42-4761-AE2B-D9364D205EEE}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0015">
 					<Node name="child list"/>
 					<Node name="test parameters"/>
 					<Prp name="count" type="I" value="1"/>
@@ -1808,6 +1794,76 @@
 					<Prp name="stoponerror" type="I" value="2"/>
 					<Prp name="stoponexception" type="I" value="2"/>
 					<Prp name="test moniker" type="S" value="{3A46F12F-96CE-4DC1-A037-9C6B8C70C818}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0016">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{5E066776-1540-4CE7-AC0E-DB95DDAFF7B6}"/>
+					<Prp name="name" type="S" value="DragAndDropFailed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{0A93104D-D946-47FF-B61D-F70C255AB50C}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0017">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{27DE94C7-6FCF-4C79-959E-D30169A941CD}"/>
+					<Prp name="name" type="S" value="DragAndDropPassed"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{61F2C6F2-4A1E-4871-B358-CB084C4A18C4}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0018">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{C5E9750A-F03B-497E-AFDC-B2FF146354D3}"/>
+					<Prp name="name" type="S" value="DragAndDropNextTheme"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{8179BDD6-D9D1-4562-89B5-D6D59568CDFD}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0019">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{95C8D587-9E42-484A-A3AA-18C5BAF913CA}"/>
+					<Prp name="name" type="S" value="AllgameLevelsFinishedOK"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{61F2C6F2-4A1E-4871-B358-CB084C4A18C4}causeEffect_OneClick"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item idx=0020">
+					<Node name="child list"/>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="group" type="B" value="0"/>
+					<Prp name="key" type="S" value="{EDE16D6B-BF67-4A62-90E5-3897B36711B8}"/>
+					<Prp name="name" type="S" value="FailedRetryOkNextLevel"/>
+					<Prp name="stoponerror" type="I" value="2"/>
+					<Prp name="stoponexception" type="I" value="2"/>
+					<Prp name="test moniker" type="S" value="{33974FFD-26AF-45AE-BDD4-6703581B131B}causeEffect_OneClick"/>
 					<Prp name="timeout" type="I" value="0"/>
 				</Node>
 			</Node>

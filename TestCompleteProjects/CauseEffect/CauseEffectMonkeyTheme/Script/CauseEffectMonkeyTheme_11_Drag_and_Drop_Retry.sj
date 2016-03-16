@@ -8,13 +8,16 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
-  //Removing leaves from the top layer of the scene by continuous movement of the mouse
+  //Removing bananas from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
- //Navigation towards next level 
+  
+  //Navigation towards next level 
   navigationNextLevel();
   Log.PopLogFolder();  
   
@@ -34,12 +37,12 @@ try{
   navigationNextLevel();
   Log.PopLogFolder(); 
   
-Log.AppendFolder("This test is for Reaching the goal with multiple clicks");  
+  Log.AppendFolder("This test is for Reaching the goal with multiple clicks");  
   DragAndDropFailed();  
   Log.PopLogFolder();
   
-   restart()
- Log.AppendFolder("This test is for Retry  of the multiple clicks level");  
+  restart()
+  Log.AppendFolder("This test is for Retry  of the multiple clicks level");  
   DragAndDrop();      
   Log.PopLogFolder();
  }

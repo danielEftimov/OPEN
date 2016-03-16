@@ -5,10 +5,13 @@
 //USEUNIT BW_CauseEffectMonkeyTheme_10_Drag_and_Drop
 //USEUNIT BW_CauseEffectMonkeyTheme_12_DragAndDropFailed
 //USEUNIT BW_CauseEffectMonkeyTheme_15_GameMenu
+//USEUNIT MT_BW_CheckRegions
 
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -51,7 +54,7 @@ try{
   DragAndDropFailed();  
   Log.PopLogFolder(); 
   restart()
-Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
+  Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
   DragAndDrop();  
   Log.PopLogFolder();
   

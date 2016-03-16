@@ -1,12 +1,14 @@
 ﻿//USEUNIT BW_CauseEffectMonkeyTheme_01_ContinuosMovement
 //USEUNIT BW_CauseEffectMonkeyThemeNoDelay_02_Navigation_NextLevel
-//USEUNIT BW_CauseEffectMonkeyThemeNoDelay_04_ClicksOnTheCarBeforeAudioIsFinished
+//USEUNIT BW_CauseEffectMTNoDelay_04_ClicksCarBeforeAudioIsFinished
 //USEUNIT MT_BW_CheckRegions
 function causeEffect_OneClick()
 {
 
 
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -42,9 +44,6 @@ try{
 
 function oneClickCar()
 {  
-  //Check if the proper layer is getting displayed
-  
-  //Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
   
   //Specifies the coordinates of the first click (it depends on the screen resolution)
   var coorX = 450;

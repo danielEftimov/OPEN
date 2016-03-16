@@ -2,11 +2,13 @@
 //USEUNIT BW_CauseEffectMonkeyTheme_03_OneClick
 //USEUNIT BW_CauseEffectMonkeyTheme_15_GameMenu
 //USEUNIT BW_CauseEffectMonkeyThemeNoDelay_02_Navigation_NextLevel
-//USEUNIT BW_CauseEffectMonkeyThemeNoDelay_04_ClicksOnTheCarBeforeAudioIsFinished
+//USEUNIT BW_CauseEffectMTNoDelay_04_ClicksCarBeforeAudioIsFinished
 //USEUNIT MT_BW_CheckRegions
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -60,21 +62,18 @@ function multipleClicks()
   // Simulates the first click
   LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
-  //check if car is moved (create Region1)
   
   // Simulates the secound click
   LLPlayer.MouseDown(MK_LBUTTON, coorX+300, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX+300, coorY, sDelay);
-  //check if car is moved (create Region2)
-  
+ 
   // Simulates the 3rd click
   LLPlayer.MouseDown(MK_LBUTTON, coorX+600, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX+600, coorY, sDelay);
-  //check if car is moved (create Region3)
-  
+ 
  
   aqUtils.Delay(1500);  
   //Check if the happy animations has been shown properly
-   Region_HappyAnimation();
+  Region_HappyAnimation();
   
 }

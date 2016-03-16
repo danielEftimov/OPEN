@@ -8,6 +8,8 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -34,12 +36,12 @@ try{
   navigationNextLevel();
   Log.PopLogFolder(); 
   
-Log.AppendFolder("This test is for Reaching the goal with multiple clicks");  
+  Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
   DragAndDropFailed();  
   Log.PopLogFolder();
   
    restart()
- Log.AppendFolder("This test is for Retry  of the multiple clicks level");  
+  Log.AppendFolder("This test is for Retry  of the multiple clicks level");  
   DragAndDrop();      
   Log.PopLogFolder();
  }

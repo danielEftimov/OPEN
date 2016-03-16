@@ -24,6 +24,7 @@
 				<Node name="folders"/>
 				<Node name="references">
 					<Prp name="{964285e2-b94c-454e-b760-246af080d031}" type="S" value=""/>
+					<Prp name="{c3dc21fc-9a7d-4de6-8742-5c0b145c18a2}" type="S" value=""/>
 				</Node>
 				<Prp name="caption" type="S" value="Regression Color"/>
 				<Prp name="description" type="S" value="A logical folder that is used to organize test log items."/>
@@ -42,74 +43,29 @@
 			</Node>
 			<Node name="log idx=0001">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.5436182407"/>
+				<Prp name="datetime" type="D" value="42439.6436383565"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{26A41806-4260-43ED-8A4C-D7816E85E3E6}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_02 PM_48_616\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
+				<Prp name="key" type="S" value="{C3DC21FC-9A7D-4DE6-8742-5C0B145C18A2}"/>
+				<Prp name="nameofroot" type="S" value="CauseEffect"/>
+				<Prp name="relpath" type="S" value="3_10_2016_3_26 PM_50_354\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
 			</Node>
 			<Node name="log idx=0002">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.5443227894"/>
+				<Prp name="datetime" type="D" value="42443.5812386806"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{B7AC7DD6-B6A9-4EC3-9C0D-259726B02693}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_03 PM_49_489\Description.tcLog"/>
+				<Prp name="key" type="S" value="{38158979-A80C-4360-ADFC-DE537F028695}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectNoDelay_06_Drag_and_Drop\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_14_2016_1_56 PM_59_22\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0003">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.5449888542"/>
+				<Prp name="datetime" type="D" value="42444.3961854167"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{CC8AFEC5-1438-40C3-9020-4611F3DE8875}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_04 PM_47_27\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
-			</Node>
-			<Node name="log idx=0004">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.5461880671"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{08DD00A8-C0AB-46E8-8C0E-8B90E90C71AB}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_06 PM_30_649\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
-			</Node>
-			<Node name="log idx=0005">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.551886088"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{0E03FB29-98C4-469F-A69F-441D9D2C3569}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_01_ContinuosMovement\causeEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_14 PM_42_957\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0006">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42433.4740895255"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{4E46B3DC-82BF-4458-AD9D-169045EF8290}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_05_MultipleClicks\causeEffect_OneClick]"/>
-				<Prp name="relpath" type="S" value="3_4_2016_11_22 AM_41_325\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0007">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42433.4770392014"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{FCEAD336-A9B7-4D8A-99C3-92B43B84F768}"/>
+				<Prp name="key" type="S" value="{4036E6AF-8904-4B2E-9DE2-410A60A2BBA3}"/>
 				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_03_OneClick\causeEffect_OneClick]"/>
-				<Prp name="relpath" type="S" value="3_4_2016_11_26 AM_56_187\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0008">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42433.4806251157"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{5D8135F3-0858-43B6-A39B-9F606DA8FD3C}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_03_OneClick\causeEffect_OneClick]"/>
-				<Prp name="relpath" type="S" value="3_4_2016_11_32 AM_06_10\Description.tcLog"/>
+				<Prp name="relpath" type="S" value="3_15_2016_9_30 AM_30_419\Description.tcLog"/>
 				<Prp name="status" type="I" value="0"/>
 			</Node>
 		</Node>

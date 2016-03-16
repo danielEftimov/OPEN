@@ -2,6 +2,8 @@
 function causeEffect()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -29,7 +31,7 @@ function launchApp()
   //TestedApps.desktop.Params.SimpleParams.FileName="desktop.exe"
   //TestedApps.desktop.Params.SimpleParams.Activate();
   TestedApps.desktop_1_0.Run();
-  causeEffectObject = Aliases.javaw.wndLWJGL2;
+  causeEffectObject = Aliases.javaw.wndLWJGL;
 }
 
 function closeApp()
@@ -42,7 +44,7 @@ function closeApp()
 
 function eraser ()
 {
-  BW_CheckRegions.Region_SelectTheme();
+  Region_SelectTheme();
   
   
   var coorX = 680;
@@ -50,19 +52,19 @@ function eraser ()
  
   
   // Specifies a delay in milliseconds
-  sDelay = 1000 ;
+  sDelay = 10 ;
   
   // Simulates pressing and releasing the left mouse button
   LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay);
   //Check if the first layer (top layer - leaves) is getting displayed
-  Region_Leaves();
+  Region_Bananas();
   
 
   //perform the erase action (continuos movement of the mouse over the scene) 
   MT_BW_LLCollection.MT_BW_NoDelayContinuousMovement.Execute();
   
   //Check if the second layer (bottom layer - car/street) has been shown properly
- Region_Leaves();
+  Region_Bananas();
   
 }

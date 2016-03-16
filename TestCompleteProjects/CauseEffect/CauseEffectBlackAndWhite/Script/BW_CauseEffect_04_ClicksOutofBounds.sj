@@ -5,6 +5,7 @@ function CauseEffect_ClicksOutOfBounds()
 {
  try{
     
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -41,7 +42,7 @@ function CauseEffect_ClicksOutOfBounds()
 function multipleClicksOutOfBounds()
 {
   //Check if the proper layer is getting displayed
-  BW_CheckRegions.Region_AnimationCar();
+  Region_AnimationCar();
 
   //Specifies the coordinates of the first click
   var coorX = 750;
@@ -63,8 +64,9 @@ function multipleClicksOutOfBounds()
   LLPlayer.MouseUp(MK_LBUTTON, coorX+400, coorY, sDelay);
   
   aqUtils.Delay(2000); 
+  
   //Check if the unhappy animation has been shown properly
-  BW_CheckRegions.Region_SadAnimation();
+  Region_SadAnimation();
 }
 
 

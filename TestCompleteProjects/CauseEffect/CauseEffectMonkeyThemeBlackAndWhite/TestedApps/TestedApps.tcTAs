@@ -20,7 +20,28 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="child list">
-			<Prp name="item count" type="I" value="0"/>
+			<Node name="item0">
+				<Node name="config">
+					<Node name="runmodeparams">
+						<Node name="java">
+							<Prp name="applicationarguments" type="S" value="-bw true"/>
+							<Prp name="fixedversion" type="I" value="1040"/>
+							<Prp name="jarfilename" type="S" value="Z:\game for testing\test with black and white monkey\desktop-1.0.jar"/>
+							<Prp name="jvmexecutable" type="S" value="C:\Program Files\Java\jre1.8.0_74\Bin\javaw.exe"/>
+						</Node>
+						<Prp name="activerunmode" type="S" value="Java"/>
+					</Node>
+					<Prp name="autorunonrecording" type="B" value="-1"/>
+					<Prp name="node name" type="S" value="desktop_1_0"/>
+					<Prp name="usefeaturedruntimeobject" type="B" value="-1"/>
+				</Node>
+				<Node name="data"/>
+				<Node name="test data"/>
+				<Prp name="key" type="S" value="{FF20BBB5-9F7F-42FC-94D2-CB3D3EFA07FC}"/>
+				<Prp name="type" type="S" value="{FD30A383-63C2-4C25-948C-2595C0F81320}"/>
+				<Prp name="typename" type="S" value="Tested Application"/>
+			</Node>
+			<Prp name="item count" type="I" value="1"/>
 		</Node>
 		<Node name="config">
 			<Prp name="node name" type="S" value="TestedApps"/>

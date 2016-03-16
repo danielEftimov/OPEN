@@ -6,10 +6,13 @@ function causeEffect_OneClick()
 
 
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
-  //Removing leaves from the top layer of the scene by continuous movement of the mouse
+  
+  //Removing bananas from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
   Log.PopLogFolder();
@@ -38,8 +41,7 @@ try{
 function oneClickCar()
 {  
   //Check if the proper layer is getting displayed
-  Region_AnimationCar()
-  //Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+  Region_AnimationMonkey()
   
   //Specifies the coordinates of the first click (it depends on the screen resolution)
   var coorX = 450;
@@ -53,7 +55,7 @@ function oneClickCar()
   LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
   aqUtils.Delay(4000);
-  //Check if the happy animations has been shown properly
   
+  //Check if the happy animations has been shown properly 
   Region_HappyAnimation();   
 }

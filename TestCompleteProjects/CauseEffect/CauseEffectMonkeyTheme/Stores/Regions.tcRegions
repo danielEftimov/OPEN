@@ -24,14 +24,30 @@
 				<Node name="item data">
 					<Node name="settings"/>
 					<Prp name="caption" type="S" value="AnimationCar"/>
-					<Prp name="filename" type="S" value="Regions\AnimationCar.png"/>
-					<Prp name="id" type="S" value="{27F752A6-FA08-433B-AF9C-BA099FDDA276}"/>
+					<Prp name="filename" type="S" value="..\..\CauseEffect\Stores\Regions\AnimationCar.png"/>
+					<Prp name="id" type="S" value="{61490571-C8EF-40D8-9490-FBD60C5C89ED}"/>
 					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
-				<Prp name="index" type="I" value="1"/>
-				<Prp name="key" type="S" value="{27F752A6-FA08-433B-AF9C-BA099FDDA276}"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="key" type="S" value="{61490571-C8EF-40D8-9490-FBD60C5C89ED}"/>
+				<Prp name="pluginname" type="S" value="Stores"/>
+				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+				<Prp name="typename" type="S" value="Region"/>
+			</Node>
+			<Node name="animationmonkey">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="AnimationMonkey"/>
+					<Prp name="filename" type="S" value="Regions\AnimationMonkey.png"/>
+					<Prp name="id" type="S" value="{6B38CA69-CB44-405F-8DE7-9341B33865C0}"/>
+					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+					<Prp name="update" type="B" value="0"/>
+					<Prp name="version" type="S" value="11.0"/>
+				</Node>
+				<Prp name="index" type="I" value="6"/>
+				<Prp name="key" type="S" value="{6B38CA69-CB44-405F-8DE7-9341B33865C0}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 				<Prp name="typename" type="S" value="Region"/>
@@ -39,15 +55,15 @@
 			<Node name="happyanimation">
 				<Node name="item data">
 					<Node name="settings"/>
-					<Prp name="caption" type="S" value="happyAnimation"/>
-					<Prp name="filename" type="S" value="..\..\CauseEffect\Stores\Regions\happyAnimation.png"/>
-					<Prp name="id" type="S" value="{1D72AA7B-F4BF-4540-B46D-68C4B117906A}"/>
+					<Prp name="caption" type="S" value="HappyAnimation"/>
+					<Prp name="filename" type="S" value="Regions\HappyAnimation.png"/>
+					<Prp name="id" type="S" value="{0753D816-54CC-45B1-AF9C-C96C19AF6E99}"/>
 					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
-				<Prp name="index" type="I" value="3"/>
-				<Prp name="key" type="S" value="{1D72AA7B-F4BF-4540-B46D-68C4B117906A}"/>
+				<Prp name="index" type="I" value="8"/>
+				<Prp name="key" type="S" value="{0753D816-54CC-45B1-AF9C-C96C19AF6E99}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 				<Prp name="typename" type="S" value="Region"/>
@@ -62,24 +78,24 @@
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
-				<Prp name="index" type="I" value="5"/>
+				<Prp name="index" type="I" value="2"/>
 				<Prp name="key" type="S" value="{C863391E-387E-43B7-92FA-F9F5CA70A1E0}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 				<Prp name="typename" type="S" value="Region"/>
 			</Node>
-			<Node name="nextlevel">
+			<Node name="nextlevelnew">
 				<Node name="item data">
 					<Node name="settings"/>
-					<Prp name="caption" type="S" value="NextLevel"/>
-					<Prp name="filename" type="S" value="Regions\NextLevel.png"/>
-					<Prp name="id" type="S" value="{F18E9D0C-301A-4AA5-AF09-A54CCC62632C}"/>
+					<Prp name="caption" type="S" value="nextLevelNew"/>
+					<Prp name="filename" type="S" value="Regions\nextLevelNew.png"/>
+					<Prp name="id" type="S" value="{7AB51310-E338-4356-BEFC-99744DF2EFDC}"/>
 					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
-				<Prp name="index" type="I" value="4"/>
-				<Prp name="key" type="S" value="{F18E9D0C-301A-4AA5-AF09-A54CCC62632C}"/>
+				<Prp name="index" type="I" value="7"/>
+				<Prp name="key" type="S" value="{7AB51310-E338-4356-BEFC-99744DF2EFDC}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 				<Prp name="typename" type="S" value="Region"/>
@@ -89,13 +105,13 @@
 					<Node name="settings"/>
 					<Prp name="caption" type="S" value="NextTheme"/>
 					<Prp name="filename" type="S" value="Regions\NextTheme.png"/>
-					<Prp name="id" type="S" value="{FD91A39A-00FA-4B36-8FA4-26475081B1F2}"/>
+					<Prp name="id" type="S" value="{D2E31530-F806-424F-846E-2F3936BDE1E9}"/>
 					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
-				<Prp name="index" type="I" value="6"/>
-				<Prp name="key" type="S" value="{FD91A39A-00FA-4B36-8FA4-26475081B1F2}"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="key" type="S" value="{D2E31530-F806-424F-846E-2F3936BDE1E9}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 				<Prp name="typename" type="S" value="Region"/>
@@ -110,8 +126,72 @@
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
-				<Prp name="index" type="I" value="2"/>
+				<Prp name="index" type="I" value="1"/>
 				<Prp name="key" type="S" value="{CDF6B13A-8DA5-4E02-8C23-991342126D02}"/>
+				<Prp name="pluginname" type="S" value="Stores"/>
+				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+				<Prp name="typename" type="S" value="Region"/>
+			</Node>
+			<Node name="regionleaves">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="RegionLeaves"/>
+					<Prp name="filename" type="S" value="..\..\CauseEffect\Stores\Regions\RegionLeaves.png"/>
+					<Prp name="id" type="S" value="{80485819-B6F9-4704-9FD2-18A7B75BB324}"/>
+					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+					<Prp name="update" type="B" value="0"/>
+					<Prp name="version" type="S" value="11.0"/>
+				</Node>
+				<Prp name="index" type="I" value="5"/>
+				<Prp name="key" type="S" value="{80485819-B6F9-4704-9FD2-18A7B75BB324}"/>
+				<Prp name="pluginname" type="S" value="Stores"/>
+				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+				<Prp name="typename" type="S" value="Region"/>
+			</Node>
+			<Node name="sadanimation">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="SadAnimation"/>
+					<Prp name="filename" type="S" value="Regions\SadAnimation.png"/>
+					<Prp name="id" type="S" value="{1BBA508F-72D7-466D-9526-1D7705F13C10}"/>
+					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+					<Prp name="update" type="B" value="0"/>
+					<Prp name="version" type="S" value="11.0"/>
+				</Node>
+				<Prp name="index" type="I" value="9"/>
+				<Prp name="key" type="S" value="{1BBA508F-72D7-466D-9526-1D7705F13C10}"/>
+				<Prp name="pluginname" type="S" value="Stores"/>
+				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+				<Prp name="typename" type="S" value="Region"/>
+			</Node>
+			<Node name="sadanimationnew">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="SadAnimationNew"/>
+					<Prp name="filename" type="S" value="Regions\SadAnimationNew.png"/>
+					<Prp name="id" type="S" value="{C5178605-D5CA-49B4-973F-A85696628B75}"/>
+					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+					<Prp name="update" type="B" value="0"/>
+					<Prp name="version" type="S" value="11.0"/>
+				</Node>
+				<Prp name="index" type="I" value="10"/>
+				<Prp name="key" type="S" value="{C5178605-D5CA-49B4-973F-A85696628B75}"/>
+				<Prp name="pluginname" type="S" value="Stores"/>
+				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+				<Prp name="typename" type="S" value="Region"/>
+			</Node>
+			<Node name="sadanimationnew1">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="SadAnimationNew1"/>
+					<Prp name="filename" type="S" value="Regions\SadAnimationNew1.png"/>
+					<Prp name="id" type="S" value="{FC5E7ADD-4C27-4E30-8CF1-3A4F75CE58A4}"/>
+					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+					<Prp name="update" type="B" value="0"/>
+					<Prp name="version" type="S" value="11.0"/>
+				</Node>
+				<Prp name="index" type="I" value="11"/>
+				<Prp name="key" type="S" value="{FC5E7ADD-4C27-4E30-8CF1-3A4F75CE58A4}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 				<Prp name="typename" type="S" value="Region"/>

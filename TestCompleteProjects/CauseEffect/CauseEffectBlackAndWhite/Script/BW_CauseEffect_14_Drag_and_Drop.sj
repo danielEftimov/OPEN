@@ -7,13 +7,15 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
   //Removing leaves from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
- //Navigation towards next level 
+  //Navigation towards next level 
   navigationNextLevel();
   Log.PopLogFolder();  
   
@@ -35,7 +37,7 @@ try{
   navigationNextLevel();
   Log.PopLogFolder();
  
- Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
+  Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
   DragAndDrop();  
   Log.PopLogFolder();
  }
@@ -57,7 +59,10 @@ try{
 function DragAndDrop()
 {
  sDelay = 1000 ;
+ 
  BW_LLCollection.DragAndDrop.Execute();
  aqUtils.Delay(1500);
- BW_CheckRegions.Region_HappyAnimation();
+ 
+ //Check if the happy animation is shown properly
+ Region_HappyAnimation();
 }

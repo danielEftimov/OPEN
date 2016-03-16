@@ -3,7 +3,6 @@
 function navigationNextLevel()
 {
 //create region of the nextLevelButton
-//Regions.nextLevel.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
 Region_NextLevel();
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)
@@ -20,9 +19,9 @@ LLPlayer.MouseUp(MK_LBUTTON, coorX+10, coorY+10, sDelay);
 
   
 //validate if same theme is displayed (means you are still on the same theme but different level)
-Region_AnimationCar();
+Region_AnimationMonkey();
 aqUtils.Delay(5000);
-//Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+
 }
 
 

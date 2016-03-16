@@ -155,15 +155,6 @@
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
 			</Node>
-			<Node name="bw_causeeffectmonkeytheme_16_withparameters">
-				<Node name="item data">
-					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_16_WithParameters.sj"/>
-				</Node>
-				<Prp name="key" type="S" value="{5F67C56C-30D3-4FE3-B94A-6DE2D9C03702}"/>
-				<Prp name="pluginname" type="S" value="Script"/>
-				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
-				<Prp name="typename" type="S" value="Script Unit"/>
-			</Node>
 			<Node name="bw_causeeffectmonkeytheme_17_alllevels">
 				<Node name="item data">
 					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_17_AllLevels.sj"/>
@@ -200,15 +191,6 @@
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
 			</Node>
-			<Node name="bw_causeeffectmonkeythemenodelay_04_clicksonthecarbeforeaudioisfinished">
-				<Node name="item data">
-					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyThemeNoDelay_04_ClicksOnTheCarBeforeAudioIsFinished.sj"/>
-				</Node>
-				<Prp name="key" type="S" value="{622C0DBD-715B-481B-A690-BE155C0169D7}"/>
-				<Prp name="pluginname" type="S" value="Script"/>
-				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
-				<Prp name="typename" type="S" value="Script Unit"/>
-			</Node>
 			<Node name="bw_causeeffectmonkeythemenodelay_05_multipleclicks">
 				<Node name="item data">
 					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyThemeNoDelay_05_MultipleClicks.sj"/>
@@ -227,6 +209,51 @@
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
 			</Node>
+			<Node name="bw_causeeffectmt_18_continuosmovementnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMT_18_ContinuosMovementNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{A272C1CC-2DBF-4E14-83DF-47DD09618723}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmt_19_oneclicknexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMT_19_OneClickNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{BB24F23C-72D0-491C-AB96-416D214EAC43}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmt_20_multipleclicksnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMT_20_MultipleClicksNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{A6DDBE4F-B99D-4134-BB50-9D6FF66AA9B6}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmt_21_drag_and_dropnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMT_21_Drag_and_DropNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{2D35FCBD-20AD-4AC9-8EAD-1E4489DD740A}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmtnodelay_04_clickscarbeforeaudioisfinished">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMTNoDelay_04_ClicksCarBeforeAudioIsFinished.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{622C0DBD-715B-481B-A690-BE155C0169D7}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
 			<Node name="mt_bw_checkregions">
 				<Node name="item data">
 					<Prp name="relpath" type="S" value="MT_BW_CheckRegions.sj"/>
@@ -241,15 +268,6 @@
 					<Prp name="relpath" type="S" value="OnLogError.sj"/>
 				</Node>
 				<Prp name="key" type="S" value="{565FE3DA-E6BF-43E8-B9F5-FF6D8012F315}"/>
-				<Prp name="pluginname" type="S" value="Script"/>
-				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
-				<Prp name="typename" type="S" value="Script Unit"/>
-			</Node>
-			<Node name="unit1">
-				<Node name="item data">
-					<Prp name="relpath" type="S" value="Unit1.sj"/>
-				</Node>
-				<Prp name="key" type="S" value="{868D02F3-4836-4719-981B-16418E90FFCA}"/>
 				<Prp name="pluginname" type="S" value="Script"/>
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>

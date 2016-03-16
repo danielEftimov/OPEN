@@ -2,10 +2,12 @@
 //USEUNIT BW_CauseEffectMonkeyTheme_03_OneClick
 //USEUNIT BW_CauseEffectMonkeyTheme_04_ClicksOutofBounds
 //USEUNIT BW_CauseEffectMonkeyTheme_15_GameMenu
-
+//USEUNIT MT_BW_CheckRegions
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   

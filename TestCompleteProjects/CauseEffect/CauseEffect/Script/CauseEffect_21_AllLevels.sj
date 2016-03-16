@@ -1,4 +1,4 @@
-﻿//USEUNIT CauseEffect_20_WithParameters
+﻿//USEUNIT CauseEffect_01_ContinuosMovement
 //USEUNIT CauseEffect_03_OneClick
 //USEUNIT CauseEffect_19_GameMenu
 //USEUNIT CauseEffect_05_MultipleClicks
@@ -7,6 +7,8 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -35,7 +37,7 @@ try{
   navigationNextLevel();
   Log.PopLogFolder();
  
- Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
+  Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
   DragAndDrop();  
   Log.PopLogFolder();
  }
@@ -57,7 +59,12 @@ try{
 function DragAndDrop()
 {
  sDelay = 1000 ;
+ 
+ //perform the drag and drop action
  LLCollection.DragAndDrop.Execute();
+ 
  aqUtils.Delay(1500);
- CheckRegions.Region_HappyAnimation();
+ 
+ //Check if the happy animations has been shown properly
+ Region_HappyAnimation();
 }

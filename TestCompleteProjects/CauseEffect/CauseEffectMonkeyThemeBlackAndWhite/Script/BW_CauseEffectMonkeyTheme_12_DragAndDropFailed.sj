@@ -6,6 +6,8 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -54,6 +56,8 @@ try{
 function DragAndDropFailed()
 {
  
+  MT_BW_LLCollection.MT_BW_DragAndDropFailed.Execute();
+  
   MT_BW_LLCollection.MT_BW_DragAndDropFailed.Execute();
   aqUtils.Delay(2000); 
   //Check if the unhappy animation has been shown properly

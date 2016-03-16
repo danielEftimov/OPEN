@@ -7,6 +7,7 @@
 function causeEffect_OneClick()
 {
 try{
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -57,6 +58,8 @@ try{
 function DragAndDrop()
 {
  sDelay = 1000 ;
+ MT_BW_LLCollection.MT_BW_DragAndDrop.Execute();
+ 
  MT_BW_LLCollection.MT_BW_DragAndDrop.Execute();
  aqUtils.Delay(1500);
  Region_HappyAnimation();

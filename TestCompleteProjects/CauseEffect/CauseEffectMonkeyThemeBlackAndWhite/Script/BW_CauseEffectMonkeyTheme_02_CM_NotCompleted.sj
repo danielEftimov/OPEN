@@ -3,6 +3,8 @@
 function CauseEffect_NotCompleted ()
 {
  try{
+ 
+  aqUtils.Delay(1000);
     
   //Launch the tested application.
   launchApp();
@@ -11,7 +13,7 @@ function CauseEffect_NotCompleted ()
   Log.AppendFolder("This is negative scenario for ContinuousMovement of the mouse 'User does not remove all leaves from the screen'")
   
   //Check if the first layer (top layer - leaves) is getting displayed
-  Regions.RegionLeaves.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 1, 29, 1445, 906, false));
+  Region_Bananas();
   
   Eraser_N();
   

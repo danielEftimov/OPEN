@@ -42,65 +42,110 @@
 			</Node>
 			<Node name="log idx=0001">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.5511646991"/>
+				<Prp name="datetime" type="D" value="42444.5673010417"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{45627EC8-8AE9-4FF4-90BE-5EBB007C532B}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_01_ContinuosMovement\BWcauseEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_13 PM_40_629\Description.tcLog"/>
+				<Prp name="key" type="S" value="{359AA746-109A-4D00-A3AA-E428CA30B315}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_20_ContinuosMovementNextTheme\BWcauseEffect]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_36 PM_54_810\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0002">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.5529572685"/>
+				<Prp name="datetime" type="D" value="42444.5683850463"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{88BF3250-E1EE-406F-94A6-2363EC425881}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffectNoDelay_01_ContionuosMovement\causeEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_16 PM_15_508\Description.tcLog"/>
+				<Prp name="key" type="S" value="{D02FA7A3-6122-49CA-B59C-26571CE8D4C4}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_01_ContinuosMovement\BWcauseEffect]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_38 PM_28_467\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0003">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.5532352894"/>
+				<Prp name="datetime" type="D" value="42444.5684993634"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{23AC2411-6E73-4EE7-82A2-186BE47C6C26}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffectNoDelay_01_ContionuosMovement\causeEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_16 PM_39_528\Description.tcLog"/>
+				<Prp name="key" type="S" value="{5EDDDD26-6987-4877-A13B-3401149D8FC4}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_01_ContinuosMovement\BWcauseEffect]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_38 PM_38_345\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0004">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.5538041551"/>
+				<Prp name="datetime" type="D" value="42444.5687571412"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{95CD55E7-5795-4C87-A120-E8AC3604BAC1}"/>
+				<Prp name="key" type="S" value="{164FD095-5BF4-4896-A2E4-B001EEB26481}"/>
 				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_01_ContinuosMovement\BWcauseEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_17 PM_28_679\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_39 PM_00_617\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0005">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.554489213"/>
+				<Prp name="datetime" type="D" value="42444.5696673495"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{7F39F32F-5387-417E-8717-BCBD28D5FCB4}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffectNoDelay_01_ContionuosMovement\causeEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_18 PM_27_867\Description.tcLog"/>
+				<Prp name="key" type="S" value="{4FE5ED7B-5EB8-4E66-8573-20E992874DDD}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_01_ContinuosMovement\BWcauseEffect]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_40 PM_19_259\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0006">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42432.554905706"/>
+				<Prp name="datetime" type="D" value="42444.5700853819"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{4DAABEC9-0803-44B3-804A-74BF8BC3FBF1}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffectNoDelay_01_ContionuosMovement\causeEffect]"/>
-				<Prp name="relpath" type="S" value="3_3_2016_1_19 PM_03_853\Description.tcLog"/>
+				<Prp name="key" type="S" value="{396E7DF4-585B-42AC-95BA-88174EE4B0AD}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_01_ContinuosMovement\BWcauseEffect]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_40 PM_55_367\Description.tcLog"/>
 				<Prp name="status" type="I" value="0"/>
 			</Node>
 			<Node name="log idx=0007">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42433.4790972222"/>
+				<Prp name="datetime" type="D" value="42444.5712579051"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{47002381-B09E-4E3C-AB33-56D42E01624F}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_03_OneClick\causeEffect_OneClick]"/>
-				<Prp name="relpath" type="S" value="3_4_2016_11_29 AM_54_0\Description.tcLog"/>
+				<Prp name="key" type="S" value="{7CE5C687-B01E-43E9-B2BF-B6E0233FAE4C}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_20_ContinuosMovementNextTheme\BWcauseEffect]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_42 PM_36_683\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0008">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42444.5719394213"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{E184ED86-5ECF-476F-A756-7E71E6203B18}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_21_OneClickNextTheme\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_43 PM_35_566\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0009">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42444.5748700926"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{EB405D4B-E602-4960-A155-5CB81D4FF08E}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_21_OneClickNextTheme\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_47 PM_48_766\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0010">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42444.5756246875"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{916E18D0-E6D7-4607-8E95-8786778DC7DA}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_22_MultipleClicksNextTheme\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_48 PM_53_973\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0011">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42444.5767978819"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{2A0B9A66-6C03-4EEC-B531-0ED4C17E4F25}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_23_Drag_and_DropNextTheme\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_50 PM_35_337\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0012">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42444.5789124537"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{582346E5-F833-4C21-B490-D6CA02150B92}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [BW_CauseEffect_23_Drag_and_DropNextTheme\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_1_53 PM_38_36\Description.tcLog"/>
 				<Prp name="status" type="I" value="0"/>
 			</Node>
 		</Node>

@@ -2,13 +2,16 @@
 function causeEffect()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
-  //Removing leaves from the top layer of the scene by continuous movement of the mouse
+  //Removing bananas from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
-  Log.PopLogFolder();    
+  Log.PopLogFolder();
+  aqUtils.Delay(2000);    
  }
 catch(e)
   {
@@ -30,6 +33,8 @@ function launchApp()
   //TestedApps.desktop.Params.SimpleParams.Activate();
   TestedApps.desktop_1_0.Run();
   causeEffectObject = Aliases.javaw.wndLWJGL;
+  
+  
 }
 
 function closeApp()
@@ -42,7 +47,8 @@ function closeApp()
 
 function eraser ()
 {
-Region_ThemeSelect();
+  // Check if the theme select region is displayed
+  Region_ThemeSelect();
   
   
   var coorX = 680;
@@ -56,15 +62,15 @@ Region_ThemeSelect();
   LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay);
   aqUtils.Delay(2000);
-  //Check if the first layer (top layer - leaves) is getting displayed
-  Region_Leaves();
+  //Check if the first layer (top layer - bananas) is getting displayed
+  Region_Bananas();
   
   aqUtils.Delay(3000);
 
   //perform the erase action (continuos movement of the mouse over the scene) 
   MT_LLCollection.MT_ContinuousMovement.Execute();
   
-  //Check if the second layer (bottom layer - car/street) has been shown properly
+  //Check if the region happy animation is displayed
   Region_HappyAnimation();
   
 }

@@ -4,11 +4,13 @@
 function CauseEffect_ClicksOutOfBounds()
 {
  try{
-    
+ 
+  
+  aqUtils.Delay(1000);  
   //Launch the tested application.
   launchApp();
   
-  //User 3 times is clicking out of the object bounds.  
+    
   Log.AppendFolder("GIVEN a scene with object WHEN number of retries is equal to 3 THEN unhappy animation is shown AND game ends")
   
   //Removing leaves from the top layer of the scene by continuous movement of the mouse
@@ -41,7 +43,7 @@ function CauseEffect_ClicksOutOfBounds()
 function multipleClicksOutOfBounds()
 {
   //Check if the proper layer is getting displayed
-  Regions.AnimationCar.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+  Region_AnimationCar();
 
   //Specifies the coordinates of the first click
   var coorX = 658;
@@ -64,6 +66,7 @@ function multipleClicksOutOfBounds()
   LLPlayer.MouseUp(MK_LBUTTON, coorX+400, coorY, sDelay);
   
   aqUtils.Delay(2000); 
+  
   //Check if the unhappy animation has been shown properly
   CheckRegions.Region_SadAnimation();
   

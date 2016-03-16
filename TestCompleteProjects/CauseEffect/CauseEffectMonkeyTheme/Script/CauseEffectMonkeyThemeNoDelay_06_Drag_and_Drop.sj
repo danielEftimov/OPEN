@@ -8,10 +8,12 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
-  //Removing leaves from the top layer of the scene by continuous movement of the mouse
+  //Removing bananas from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
  //Navigation towards next level 
@@ -36,7 +38,7 @@ try{
   CauseEffectMonkeyThemeNoDelay_02_Navigation_NextLevel.navigationNextLevel();
   Log.PopLogFolder();
  
- Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
+  Log.AppendFolder("This test is for Reaching the goal with drag and drop before audio is finished");  
   DragAndDrop();  
   Log.PopLogFolder();
  }
@@ -60,11 +62,12 @@ function DragAndDrop()
   var coorX = 450;
   var coorY = 500;
  sDelay=1500;
- //LLCollection.DragAndDrop.Execute();
+ 
  LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
  LLPlayer.MouseUp(MK_LBUTTON, coorX+300, coorY, sDelay);
  LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
  LLPlayer.MouseUp(MK_LBUTTON, coorX+300, coorY, sDelay);
  
- Regions.AnimationCar.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+ //Check if animation monkey region is displayed
+ Region_AnimationMonkey();
 }

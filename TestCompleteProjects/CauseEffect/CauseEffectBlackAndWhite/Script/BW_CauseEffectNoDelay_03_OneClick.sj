@@ -9,6 +9,8 @@ function causeEffect_OneClick()
 
 
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -21,11 +23,9 @@ try{
   navigationNextLevel();
   
   //Click the object on the screen so that it reaches the target in one step
-
- 
- Log.AppendFolder("This test is for Reaching the goal with one click before audio is finished");  
+  Log.AppendFolder("This test is for Reaching the goal with one click before audio is finished");  
   
- ClicksOntheCarBeforeAudioIsFinished();
+  ClicksOntheCarBeforeAudioIsFinished();
       
   Log.PopLogFolder(); 
  }
@@ -44,9 +44,7 @@ try{
 
 function oneClickCar()
 {  
-  //Check if the proper layer is getting displayed
   
-  //Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
   
   //Specifies the coordinates of the first click (it depends on the screen resolution)
   var coorX = 300;
@@ -61,6 +59,7 @@ function oneClickCar()
   LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
   
-  BW_CheckRegions.Region_HappyAnimation();   
+  //Check for happy animation checkpoint
+  Region_HappyAnimation();   
 
 }

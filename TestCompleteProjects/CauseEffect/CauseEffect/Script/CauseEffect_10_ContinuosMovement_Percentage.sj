@@ -1,8 +1,10 @@
 ﻿//USEUNIT CauseEffect_01_ContinuosMovement
-
+//USEUNIT CheckRegions
 function causeEffect()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -24,14 +26,4 @@ finally
  }
 }
 
-function eraser ()
-{
-  //Check if the first layer (top layer - leaves) is getting displayed
-  CheckRegions.Region_Leaves();
-  
-  //perform the erase action (continuos movement of the mouse over the scene) 
-  LLCollection.ContinuousMovement.Execute();
-  
-  //Check if the happy animation is properly showed 
- CheckRegions.Region_HappyAnimation();
-}
+

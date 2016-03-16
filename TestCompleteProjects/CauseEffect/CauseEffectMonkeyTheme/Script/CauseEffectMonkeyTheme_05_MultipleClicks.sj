@@ -5,13 +5,16 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
-  //Removing leaves from the top layer of the scene by continuous movement of the mouse
+  //Removing bananas from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
- //Navigation towards next level 
+  
+  //Navigation towards next level 
   navigationNextLevel();
   Log.PopLogFolder();  
   
@@ -55,20 +58,19 @@ function multipleClicks()
   // Simulates the first click
   LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
-  //check if car is moved (create Region1)
+  
   sDelay = 1000;
   // Simulates the secound click
   LLPlayer.MouseDown(MK_LBUTTON, coorX+300, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX+300, coorY, sDelay);
-  //check if car is moved (create Region2)
+  
   sDelay = 1000;
   // Simulates the 3rd click
   LLPlayer.MouseDown(MK_LBUTTON, coorX+600, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX+600, coorY, sDelay);
-  //check if car is moved (create Region3)
-  
  
   aqUtils.Delay(4000);  
+  
   //Check if the happy animations has been shown properly
   Region_HappyAnimation(); 
   

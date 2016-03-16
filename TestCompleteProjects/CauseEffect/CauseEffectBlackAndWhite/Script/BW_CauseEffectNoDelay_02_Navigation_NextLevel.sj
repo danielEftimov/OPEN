@@ -3,6 +3,8 @@
 function causeEffect_Navigation_NextLevel()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -28,7 +30,7 @@ try{
 function navigationNextLevel()
 {
 //create region of the nextLevelButton
-BW_CheckRegions.Region_NextLevel();
+Region_NextLevel();
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)
 var coorX = 1010;
@@ -44,6 +46,6 @@ LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay);
   
  
 //validate if same theme is displayed (means you are still on the same theme but different level)
-BW_CheckRegions.Region_AnimationCar();
-//Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+Region_AnimationCar();
+
 }

@@ -6,10 +6,12 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
-  //Removing leaves from the top layer of the scene by continuous movement of the mouse
+  //Removing bananas from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
  //Navigation towards next level 
@@ -34,7 +36,7 @@ try{
   navigationNextLevel();
   Log.PopLogFolder();
  
- Log.AppendFolder("This test is for 3 unsussessful ties for drag and drop");  
+  Log.AppendFolder("This test is for 3 unsussessful ties for drag and drop");  
   DragAndDropFailed();
   aqUtils.Delay(1500);  
   Log.PopLogFolder();
@@ -56,6 +58,7 @@ function DragAndDropFailed()
  
   MT_LLCollection.MT_DragAndDropFailed.Execute();
   aqUtils.Delay(2000); 
+  
   //Check if the unhappy animation has been shown properly
   Region_SadAnimation();
 }

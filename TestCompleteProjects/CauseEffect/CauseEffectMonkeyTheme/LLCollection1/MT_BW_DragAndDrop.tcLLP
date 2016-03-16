@@ -3103,10 +3103,10 @@
 				<Prp name="delay" type="I" value="797"/>
 				<Prp name="index" type="I" value="406"/>
 				<Prp name="message" type="I" value="514"/>
-				<Prp name="mousedata" type="I" value="0"/>
+				<Prp name="mousedata" type="I" value="24835288"/>
 				<Prp name="type" type="I" value="0"/>
-				<Prp name="x" type="I" value="1465"/>
-				<Prp name="y" type="I" value="522"/>
+				<Prp name="x" type="I" value="1380"/>
+				<Prp name="y" type="I" value="600"/>
 			</Node>
 			<Node name="llevent41">
 				<Prp name="delay" type="I" value="0"/>

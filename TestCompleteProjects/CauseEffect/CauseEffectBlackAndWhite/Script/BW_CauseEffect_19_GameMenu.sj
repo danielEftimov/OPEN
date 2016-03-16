@@ -2,8 +2,8 @@
 
 function navigationNextLevel()
 {
-//create region of the nextLevelButton
-BW_CheckRegions.Region_NextLevel();
+//Check if the next level button is displayed
+Region_NextLevel();
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)
 var coorX = 1010;
@@ -19,17 +19,18 @@ LLPlayer.MouseUp(MK_LBUTTON, coorX+10, coorY+10, sDelay);
 
 
 //validate if same theme is displayed (means you are still on the same theme but different level)
-BW_CheckRegions.Region_AnimationCar();
+Region_AnimationCar();
+
 aqUtils.Delay(5000);
-//Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+
 }
 
 
 
 function navigationNextTheme()
 {
-//create region of the nextThemeButton
-Regions.BW_nextTheme.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+//Check if the next theme button is displayed
+Region_NextTheme()
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)
 var coorX = 1250;
@@ -40,13 +41,18 @@ sDelay = 1000 ;
 LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
 LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
 
+aqUtils.Delay(50);
+
+LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
+LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
+
 }
 
 
 function navigationGameManu()
 {
-//create region of the GameManu Button
-Regions.BW_GameMenu.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+//Check if the game menu button is displayed
+BW_GameMenu()
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)
 var coorX = 650;
@@ -57,15 +63,13 @@ sDelay = 1000 ;
 LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
 LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
 
-// validate ig game manu is shown properly
-
 }
 
 
 function restart()
 {
-//create region of the nextThemeButton
-BW_CheckRegions.Region_RestartSad();
+//Check if the sad face is displayed
+Region_RestartSad();
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)
 var coorX = 850;
@@ -84,8 +88,8 @@ aqUtils.Delay(6000);
 
 function restart_passed()
 {
-//create region of the nextThemeButton
-BW_CheckRegions.Region_HappyAnimation();
+//Check if the happy face is displayed
+Region_HappyAnimation();
 
 
 //Specifies the coordinates of the first click (it depends on the screen resolution)

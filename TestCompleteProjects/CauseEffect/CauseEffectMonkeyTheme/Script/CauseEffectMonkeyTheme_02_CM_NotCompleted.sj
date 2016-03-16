@@ -4,20 +4,21 @@ function CauseEffect_NotCompleted ()
 {
  try{
     
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
-  //User does not remove all leaves from the screen  
+  //User does not remove all bananas from the screen  
   Log.AppendFolder("This is negative scenario for ContinuousMovement of the mouse 'User does not remove all leaves from the screen'")
   
-  //Check if the first layer (top layer - leaves) is getting displayed
-  Regions.RegionLeaves.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 1, 29, 1445, 906, false));
+  //Check if the first layer (top layer - bananas) is getting displayed
+  
   
   Eraser_N();
   
   //Check if the second layer (bottom layer - car/street) has been shown properly
-  if(!Regions.Compare(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 571, 320, 305, 143, false),"AnimationCar",lmNone))
-  Log.Message("Leaves are not removed properly");
+  if(!Regions.Compare(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL, 571, 320, 305, 143, false),"RegionBananas",lmNone))
+  Log.Message("Bananas are not removed properly");
   
   Log.PopLogFolder();  
      
@@ -36,6 +37,25 @@ function CauseEffect_NotCompleted ()
 }
 function Eraser_N()
 {
+  // Check if the theme select region is displayed
+  Region_ThemeSelect();
+  
+  
+  var coorX = 680;
+  var coorY = 260;
+ 
+  
+  // Specifies a delay in milliseconds
+  sDelay = 1000 ;
+  
+  // Simulates pressing and releasing the left mouse button
+  LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
+  LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay);
+  aqUtils.Delay(2000);
+  //Check if the first layer (top layer - leaves) is getting displayed
+  Region_Bananas();
+  
+  aqUtils.Delay(3000);
   //Specifies the coordinates of the first click
   var destX = 171;
   var destY = 215;

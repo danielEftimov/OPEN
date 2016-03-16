@@ -1,8 +1,10 @@
 ﻿//USEUNIT BW_CauseEffectMonkeyTheme_01_ContinuosMovement
-
+//USEUNIT MT_BW_CheckRegions
 function causeEffect()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -27,7 +29,7 @@ finally
 function eraser ()
 {
   //Check if the first layer (top layer - leaves) is getting displayed
-  Region_Leaves();
+  Region_Bananas();
   
   //perform the erase action (continuos movement of the mouse over the scene) 
   MT_BW_LLCollection.MT_BW_ContinuousMovement.Execute();

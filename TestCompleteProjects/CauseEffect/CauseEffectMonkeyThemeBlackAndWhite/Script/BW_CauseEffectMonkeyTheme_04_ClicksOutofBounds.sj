@@ -4,6 +4,8 @@
 function CauseEffect_ClicksOutOfBounds()
 {
  try{
+ 
+  aqUtils.Delay(1000);
     
   //Launch the tested application.
   launchApp();
@@ -41,7 +43,7 @@ function CauseEffect_ClicksOutOfBounds()
 function multipleClicksOutOfBounds()
 {
   //Check if the proper layer is getting displayed
-  Region_AnimationCar();
+  Region_AnimationMonkey();
 
   //Specifies the coordinates of the first click
   var coorX = 658;

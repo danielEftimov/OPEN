@@ -3,6 +3,8 @@
 function BWcauseEffect()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -43,7 +45,9 @@ function closeApp()
 
 function eraser ()
 {
-  BW_CheckRegions.Region_SelectTheme();
+
+  //Check if the first page for select Theme is displayed
+  Region_SelectTheme();
   
   
   var coorX = 400;
@@ -58,7 +62,7 @@ function eraser ()
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay);
   aqUtils.Delay(2000);
   //Check if the first layer (top layer - leaves) is getting displayed
-  BW_CheckRegions.Region_Leaves();
+  Region_Leaves();
   aqUtils.Delay(3000);
 
   //perform the erase action (continuos movement of the mouse over the scene) 
@@ -66,5 +70,5 @@ function eraser ()
   
  
   //Check for happy animation checkpoint 
-  BW_CheckRegions.Region_HappyAnimation();
+  Region_HappyAnimation();
   }

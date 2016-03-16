@@ -4,6 +4,8 @@
 function causeEffect()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -44,8 +46,8 @@ function closeApp()
 
 function eraser ()
 {
-
-  BW_CheckRegions.Region_SelectTheme();
+  //Check if the first page for select Theme is displayed
+  Region_SelectTheme();
   
   
   var coorX = 400;
@@ -60,13 +62,13 @@ function eraser ()
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay);
   
   //Check if the first layer (top layer - leaves) is getting displayed
-  BW_CheckRegions.Region_Leaves();
+  Region_Leaves();
   
 
   //perform the erase action (continuos movement of the mouse over the scene) 
   BW_LLCollection.NoDelayContinuousMovement.Execute();
   
   //Check if the second layer (bottom layer - car/street) has been shown properly
- BW_CheckRegions.Region_Leaves();
+  Region_Leaves();
   
 }

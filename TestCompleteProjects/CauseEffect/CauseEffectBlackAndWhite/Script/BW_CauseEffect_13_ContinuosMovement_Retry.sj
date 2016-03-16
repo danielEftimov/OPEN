@@ -3,6 +3,8 @@
 function causeEffect()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -11,8 +13,8 @@ try{
   eraser ();
   Log.PopLogFolder();    
   
- restart_passed();
- Log.AppendFolder("This test is for Retry  of eraser level");  
+  restart_passed();
+  Log.AppendFolder("This test is for Retry  of eraser level");  
   eraser ();      
   Log.PopLogFolder();
   }
@@ -49,11 +51,11 @@ function closeApp()
 function eraser ()
 {
   //Check if the first layer (top layer - leaves) is getting displayed
-  BW_CheckRegions.Region_Leaves();
+  Region_Leaves();
 
   //perform the erase action (continuos movement of the mouse over the scene) 
   BW_LLCollection.ContinuousMovement.Execute();
   
   //Check if the second layer (bottom layer - car/street) has been shown properly
-  BW_CheckRegions.Region_HappyAnimation();
+  Region_HappyAnimation();
 }

@@ -1,12 +1,12 @@
 ﻿//USEUNIT CauseEffect_01_ContinuosMovement
 //USEUNIT CauseEffect_03_OneClick
-//USEUNIT CauseEffectNoDelay_02_Navigation_NextLevel
 //USEUNIT CauseEffectNoDelay_04_ClicksOnTheCarBeforeAudioIsFinished
-//USEUNIT CauseEffect_06_Navigation_NextLevel
 //USEUNIT CheckRegions
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -14,7 +14,7 @@ try{
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
  //Navigation towards next level 
-  CauseEffect_06_Navigation_NextLevel.navigationNextLevel();
+  CauseEffect_19_GameMenu.navigationNextLevel();
   Log.PopLogFolder();  
   
   //Click the object on the screen so that it reaches the target in one step
@@ -60,17 +60,17 @@ function multipleClicks()
   // Simulates the first click
   LLPlayer.MouseDown(MK_LBUTTON, coorX, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX, coorY, sDelay); 
-  //check if car is moved (create Region1)
+  
   
   // Simulates the secound click
   LLPlayer.MouseDown(MK_LBUTTON, coorX+300, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX+300, coorY, sDelay);
-  //check if car is moved (create Region2)
+  
   
   // Simulates the 3rd click
   LLPlayer.MouseDown(MK_LBUTTON, coorX+600, coorY, sDelay);
   LLPlayer.MouseUp(MK_LBUTTON, coorX+600, coorY, sDelay);
-  //check if car is moved (create Region3)
+  
   
  
   aqUtils.Delay(1500);  

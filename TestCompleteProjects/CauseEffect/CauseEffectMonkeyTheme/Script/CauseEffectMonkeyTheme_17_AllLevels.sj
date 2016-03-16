@@ -1,4 +1,4 @@
-﻿//USEUNIT CauseEffectMonkeyTheme_16_WithParameters
+﻿//USEUNIT CauseEffectMonkeyTheme_01_ContinuosMovement
 //USEUNIT CauseEffectMonkeyTheme_03_OneClick
 //USEUNIT CauseEffectMonkeyTheme_15_GameMenu
 //USEUNIT CauseEffectMonkeyTheme_05_MultipleClicks
@@ -7,13 +7,15 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
-  //Removing leaves from the top layer of the scene by continuous movement of the mouse
+  //Removing bananas from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
- //Navigation towards next level 
+  //Navigation towards next level 
   navigationNextLevel();
   Log.PopLogFolder();  
   
@@ -35,7 +37,7 @@ try{
   navigationNextLevel();
   Log.PopLogFolder();
  
- Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
+  Log.AppendFolder("This test is for Reaching the goal with drag and drop");  
   DragAndDrop();  
   Log.PopLogFolder();
  }
@@ -59,5 +61,7 @@ function DragAndDrop()
  sDelay = 1000 ;
  MT_LLCollection.MT_DragAndDrop.Execute();
  aqUtils.Delay(1500);
+ 
+ //Check if the region happy animation is displayed
  Region_HappyAnimation();
 }

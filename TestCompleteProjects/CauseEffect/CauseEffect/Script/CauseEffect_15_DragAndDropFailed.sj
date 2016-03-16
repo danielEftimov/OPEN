@@ -6,6 +6,8 @@
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -34,7 +36,7 @@ try{
   navigationNextLevel();
   Log.PopLogFolder();
  
- Log.AppendFolder("This test is for 3 unsussessful ties for drag and drop");  
+  Log.AppendFolder("This test is for 3 unsussessful tries for drag and drop");  
   DragAndDropFailed();
   aqUtils.Delay(1500);  
   Log.PopLogFolder();
@@ -53,9 +55,11 @@ try{
 }
 function DragAndDropFailed()
 {
- 
+  //perform the drag and drop failed action 
   LLCollection.DragAndDropFailed.Execute();
+ 
   aqUtils.Delay(2000); 
+ 
   //Check if the unhappy animation has been shown properly
   CheckRegions.Region_SadAnimation();
 }

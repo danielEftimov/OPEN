@@ -20,6 +20,38 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="child list">
+			<Node name="animationmonkey">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="AnimationMonkey"/>
+					<Prp name="filename" type="S" value="..\..\CauseEffectMonkeyThemeBlackAndWhite\Stores\Regions\AnimationMonkey.png"/>
+					<Prp name="id" type="S" value="{163327C8-0DB5-4E91-B3C8-15BD19E05294}"/>
+					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+					<Prp name="update" type="B" value="0"/>
+					<Prp name="version" type="S" value="11.0"/>
+				</Node>
+				<Prp name="index" type="I" value="8"/>
+				<Prp name="key" type="S" value="{163327C8-0DB5-4E91-B3C8-15BD19E05294}"/>
+				<Prp name="pluginname" type="S" value="Stores"/>
+				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+				<Prp name="typename" type="S" value="Region"/>
+			</Node>
+			<Node name="bananas">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="Bananas"/>
+					<Prp name="filename" type="S" value="..\..\CauseEffectMonkeyThemeBlackAndWhite\Stores\Regions\Bananas.png"/>
+					<Prp name="id" type="S" value="{5E506E75-F644-4980-AED6-87D86B53115C}"/>
+					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+					<Prp name="update" type="B" value="0"/>
+					<Prp name="version" type="S" value="11.0"/>
+				</Node>
+				<Prp name="index" type="I" value="7"/>
+				<Prp name="key" type="S" value="{5E506E75-F644-4980-AED6-87D86B53115C}"/>
+				<Prp name="pluginname" type="S" value="Stores"/>
+				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+				<Prp name="typename" type="S" value="Region"/>
+			</Node>
 			<Node name="bw_animationcar">
 				<Node name="item data">
 					<Node name="settings"/>
@@ -36,22 +68,6 @@
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 				<Prp name="typename" type="S" value="Region"/>
 			</Node>
-			<Node name="bw_gamemenu">
-				<Node name="item data">
-					<Node name="settings"/>
-					<Prp name="caption" type="S" value="BW_GameMenu"/>
-					<Prp name="filename" type="S" value="Regions\BW_GameMenu.png"/>
-					<Prp name="id" type="S" value="{33531C76-AF7C-470F-A5F2-A60C905B92C7}"/>
-					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
-					<Prp name="update" type="B" value="0"/>
-					<Prp name="version" type="S" value="11.0"/>
-				</Node>
-				<Prp name="index" type="I" value="7"/>
-				<Prp name="key" type="S" value="{33531C76-AF7C-470F-A5F2-A60C905B92C7}"/>
-				<Prp name="pluginname" type="S" value="Stores"/>
-				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
-				<Prp name="typename" type="S" value="Region"/>
-			</Node>
 			<Node name="bw_happyanimation">
 				<Node name="item data">
 					<Node name="settings"/>
@@ -62,40 +78,8 @@
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
-				<Prp name="index" type="I" value="3"/>
-				<Prp name="key" type="S" value="{998601B5-6370-4DBD-BA57-D7FD8A127CBF}"/>
-				<Prp name="pluginname" type="S" value="Stores"/>
-				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
-				<Prp name="typename" type="S" value="Region"/>
-			</Node>
-			<Node name="bw_nextlevel">
-				<Node name="item data">
-					<Node name="settings"/>
-					<Prp name="caption" type="S" value="BW_nextLevel"/>
-					<Prp name="filename" type="S" value="Regions\BW_nextLevel.png"/>
-					<Prp name="id" type="S" value="{BB8B0B4B-1E99-4435-A31B-EFA5B0A0943F}"/>
-					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
-					<Prp name="update" type="B" value="0"/>
-					<Prp name="version" type="S" value="11.0"/>
-				</Node>
 				<Prp name="index" type="I" value="2"/>
-				<Prp name="key" type="S" value="{BB8B0B4B-1E99-4435-A31B-EFA5B0A0943F}"/>
-				<Prp name="pluginname" type="S" value="Stores"/>
-				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
-				<Prp name="typename" type="S" value="Region"/>
-			</Node>
-			<Node name="bw_nexttheme">
-				<Node name="item data">
-					<Node name="settings"/>
-					<Prp name="caption" type="S" value="BW_NextTheme"/>
-					<Prp name="filename" type="S" value="Regions\BW_NextTheme.png"/>
-					<Prp name="id" type="S" value="{DCE1A2BE-55FC-4F4F-A292-B48DD016389E}"/>
-					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
-					<Prp name="update" type="B" value="0"/>
-					<Prp name="version" type="S" value="11.0"/>
-				</Node>
-				<Prp name="index" type="I" value="6"/>
-				<Prp name="key" type="S" value="{DCE1A2BE-55FC-4F4F-A292-B48DD016389E}"/>
+				<Prp name="key" type="S" value="{998601B5-6370-4DBD-BA57-D7FD8A127CBF}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 				<Prp name="typename" type="S" value="Region"/>
@@ -110,7 +94,7 @@
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
-				<Prp name="index" type="I" value="5"/>
+				<Prp name="index" type="I" value="4"/>
 				<Prp name="key" type="S" value="{EF17E5FC-51CB-4ACD-93DB-26F7FB96BB26}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
@@ -126,7 +110,7 @@
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
-				<Prp name="index" type="I" value="4"/>
+				<Prp name="index" type="I" value="3"/>
 				<Prp name="key" type="S" value="{DBD04EF7-53DD-49BA-885C-8977938E906B}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
@@ -142,7 +126,7 @@
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
-				<Prp name="index" type="I" value="8"/>
+				<Prp name="index" type="I" value="5"/>
 				<Prp name="key" type="S" value="{E756C744-8ACD-480E-AA00-1F58270CB1A6}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
@@ -164,18 +148,66 @@
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 				<Prp name="typename" type="S" value="Region"/>
 			</Node>
-			<Node name="themeselect">
+			<Node name="gamemenu">
 				<Node name="item data">
 					<Node name="settings"/>
-					<Prp name="caption" type="S" value="ThemeSelect"/>
-					<Prp name="filename" type="S" value="Regions\ThemeSelect.png"/>
-					<Prp name="id" type="S" value="{534C7490-3D33-4B4E-9986-42935F66FF89}"/>
+					<Prp name="caption" type="S" value="GameMenu"/>
+					<Prp name="filename" type="S" value="..\..\CauseEffectMonkeyThemeBlackAndWhite\Stores\Regions\GameMenu.png"/>
+					<Prp name="id" type="S" value="{D8C1F371-00FB-4703-BD21-57C7B025E2F3}"/>
+					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+					<Prp name="update" type="B" value="0"/>
+					<Prp name="version" type="S" value="11.0"/>
+				</Node>
+				<Prp name="index" type="I" value="11"/>
+				<Prp name="key" type="S" value="{D8C1F371-00FB-4703-BD21-57C7B025E2F3}"/>
+				<Prp name="pluginname" type="S" value="Stores"/>
+				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+				<Prp name="typename" type="S" value="Region"/>
+			</Node>
+			<Node name="nextlevel">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="NextLevel"/>
+					<Prp name="filename" type="S" value="..\..\CauseEffectMonkeyThemeBlackAndWhite\Stores\Regions\NextLevel.png"/>
+					<Prp name="id" type="S" value="{5D12F5B6-00AE-45A5-A06F-ADF7D4FB0E1D}"/>
+					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+					<Prp name="update" type="B" value="0"/>
+					<Prp name="version" type="S" value="11.0"/>
+				</Node>
+				<Prp name="index" type="I" value="10"/>
+				<Prp name="key" type="S" value="{5D12F5B6-00AE-45A5-A06F-ADF7D4FB0E1D}"/>
+				<Prp name="pluginname" type="S" value="Stores"/>
+				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+				<Prp name="typename" type="S" value="Region"/>
+			</Node>
+			<Node name="nexttheme">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="NextTheme"/>
+					<Prp name="filename" type="S" value="Regions\NextTheme.png"/>
+					<Prp name="id" type="S" value="{E741D669-4AC2-4026-AAAF-B70837663E07}"/>
+					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+					<Prp name="update" type="B" value="0"/>
+					<Prp name="version" type="S" value="11.0"/>
+				</Node>
+				<Prp name="index" type="I" value="6"/>
+				<Prp name="key" type="S" value="{E741D669-4AC2-4026-AAAF-B70837663E07}"/>
+				<Prp name="pluginname" type="S" value="Stores"/>
+				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
+				<Prp name="typename" type="S" value="Region"/>
+			</Node>
+			<Node name="selecttheme">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="SelectTheme"/>
+					<Prp name="filename" type="S" value="..\..\CauseEffectMonkeyThemeBlackAndWhite\Stores\Regions\SelectTheme.png"/>
+					<Prp name="id" type="S" value="{761E37C7-AE7F-4E85-8784-B3B6C75F1BA9}"/>
 					<Prp name="signature" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 					<Prp name="update" type="B" value="0"/>
 					<Prp name="version" type="S" value="11.0"/>
 				</Node>
 				<Prp name="index" type="I" value="9"/>
-				<Prp name="key" type="S" value="{534C7490-3D33-4B4E-9986-42935F66FF89}"/>
+				<Prp name="key" type="S" value="{761E37C7-AE7F-4E85-8784-B3B6C75F1BA9}"/>
 				<Prp name="pluginname" type="S" value="Stores"/>
 				<Prp name="type" type="S" value="{1FD256C1-604C-48A1-9990-9A9329139EC4}"/>
 				<Prp name="typename" type="S" value="Region"/>

@@ -6,6 +6,8 @@ function causeEffect_OneClick()
 
 
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -38,8 +40,7 @@ try{
 function oneClickCar()
 {  
   //Check if the proper layer is getting displayed
-  Region_AnimationCar()
-  //Regions.CarStreetActive.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+  Region_AnimationMonkey()
   
   //Specifies the coordinates of the first click (it depends on the screen resolution)
   var coorX = 450;
