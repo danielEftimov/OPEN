@@ -1,0 +1,26 @@
+
+animation-object.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+white1
+  rotate: false
+  xy: 1, 285
+  size: 438, 140
+  orig: 438, 140
+  offset: 0, 0
+  index: -1
+white2
+  rotate: false
+  xy: 1, 143
+  size: 438, 140
+  orig: 438, 140
+  offset: 0, 0
+  index: -1
+white3
+  rotate: false
+  xy: 1, 1
+  size: 438, 140
+  orig: 438, 140
+  offset: 0, 0
+  index: -1

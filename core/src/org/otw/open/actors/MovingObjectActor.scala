@@ -32,9 +32,14 @@ class MovingObjectActor extends Actor with Disposable {
   private var objectMissedCount = 0
 
   /**
-    * Animator object
+    * Idle Object  animation atlas
     */
-  private val animator: Animator = new Animator("animation-object.atlas")
+  private val animatorIdle: Animator = new Animator("animation-idle-object.atlas")
+
+  /**
+    * Moving object animation atlas
+    */
+  private val animatorMoving: Animator = new Animator("animation-moving-object.atlas")
 
   /**
     * Move actions for the actor
@@ -69,12 +74,12 @@ class MovingObjectActor extends Actor with Disposable {
   /**
     * the width of actor object
     */
-  private val actorWidth: Float = animator.getCurrentTexture(0).getRegionWidth
+  private val actorWidth: Float = animatorIdle.getCurrentTexture(0).getRegionWidth
 
   /**
     * the height of actor object
     */
-  private val actorHeight: Float = animator.getCurrentTexture(0).getRegionHeight
+  private val actorHeight: Float = animatorIdle.getCurrentTexture(0).getRegionHeight
 
   setWidth(actorWidth)
   setHeight(actorHeight)
@@ -135,10 +140,26 @@ class MovingObjectActor extends Actor with Disposable {
     */
   override def draw(batch: Batch, parentAlpha: Float): Unit = {
     animationTime += Gdx.graphics.getDeltaTime
-    batch.draw(animator.getCurrentTexture(animationTime), getX, getY)
+    isInMotion match {
+      case true => batch.draw(animatorMoving.getCurrentTexture(animationTime), getX, getY)
+      case false => batch.draw(animatorIdle.getCurrentTexture(animationTime), getX, getY)
+
+    }
     if (!isInMotion && actorFinishedAllActions) {
       sound.getAudio.stop
       ScreenController.dispatchEvent(CauseAndEffectFinishedSuccessfully)
+    }
+  }
+
+  /**
+    * runs after an action is complete
+    *
+    * @return
+    */
+  def completeAction = new Action() {
+    def act(delta: Float): Boolean = {
+      sound.getAudio.stop
+      true
     }
   }
 
@@ -159,15 +180,9 @@ class MovingObjectActor extends Actor with Disposable {
     sound.getAudio.stop
   }
 
-  def completeAction = new Action() {
-    def act(delta: Float): Boolean = {
-      sound.getAudio.stop
-      true
-    }
-  }
-
   override def dispose(): Unit = {
     sound.getAudio.dispose
-    animator.dispose
+    animatorIdle.dispose
+    animatorMoving.dispose()
   }
 }
