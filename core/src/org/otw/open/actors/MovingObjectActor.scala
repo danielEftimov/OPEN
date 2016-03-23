@@ -24,7 +24,7 @@ class MovingObjectActor extends Actor with Disposable {
   /**
     * animation object sound
     */
-  val sound = AudioManager("movingObjectSound.mp3")
+  private val sound = AudioManager("movingObjectSound.mp3")
 
   /**
     * Number of times the actor was missed by a click or not placed on the correct position with drag and drop.
@@ -70,7 +70,6 @@ class MovingObjectActor extends Actor with Disposable {
     */
   private var currentMoveToAction = actionsQueue.head
 
-  resetPosition()
   /**
     * the width of actor object
     */
@@ -83,6 +82,7 @@ class MovingObjectActor extends Actor with Disposable {
 
   setWidth(actorWidth)
   setHeight(actorHeight)
+  resetPosition()
 
   /**
     * set actor's position to start point
