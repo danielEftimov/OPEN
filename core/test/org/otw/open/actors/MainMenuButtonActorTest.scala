@@ -23,7 +23,7 @@ class MainMenuButtonActorTest extends UnitSpec {
     val position = new Vector2(0, 0)
     val mockBatch = Mockito.mock(classOf[Batch])
 
-    val actor = new MainMenuButtonActor(position, theme)
+    val actor = new MainMenuButtonActor(theme)
     actor.draw(mockBatch, 0.3f)
     Mockito.verify(mockBatch).draw(Matchers.any(classOf[Texture]), Matchers.eq(actor.getX), Matchers.eq(actor.getY))
   }
@@ -32,7 +32,7 @@ class MainMenuButtonActorTest extends UnitSpec {
     val theme = "car_theme"
     val position = new Vector2(0, 0)
     val mockBatch = Mockito.mock(classOf[Batch])
-    val actor = new MainMenuButtonActor(position, theme)
+    val actor = new MainMenuButtonActor(theme)
     val listener: InputListener = actor.getListeners.get(0) match {
       case x: InputListener => x
       case _ => throw new ClassCastException
@@ -47,7 +47,7 @@ class MainMenuButtonActorTest extends UnitSpec {
     val theme = "car_theme"
     val position = new Vector2(0, 0)
     val mockBatch = Mockito.mock(classOf[Batch])
-    val actor = new MainMenuButtonActor(position, theme)
+    val actor = new MainMenuButtonActor(theme)
     val listener: InputListener = actor.getListeners.get(0) match {
       case x: InputListener => x
       case _ => throw new ClassCastException
