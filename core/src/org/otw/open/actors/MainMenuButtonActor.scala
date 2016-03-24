@@ -11,8 +11,8 @@ import com.badlogic.gdx.utils.Disposable
   */
 class MainMenuButtonActor(val theme: String) extends Actor with Disposable {
 
-  private val imageText = new Texture(Gdx.files.internal("theme/" + theme + "/" + theme + ".png"))
-  private val imageWithShadow = new Texture(Gdx.files.internal("theme/" + theme + "/" + theme + "_sh.png"))
+  private val imageText = new Texture(Gdx.files.internal("theme/" + theme + "/main-menu-btn.png"))
+  private val imageWithShadow = new Texture(Gdx.files.internal("theme/" + theme + "/main-menu-btn-shadow.png"))
   private var isEntered = false
 
   setWidth(imageText.getWidth)
