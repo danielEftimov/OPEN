@@ -50,7 +50,7 @@ class CauseAndEffectScreenTest extends UnitSpec {
     when(Gdx.audio.newMusic(any(classOf[FileHandle]))).thenReturn(new MockMusic)
 
     val music: TestMockMusic = new TestMockMusic
-    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audioGuidanceCauseAndEffect.mp3"))).thenReturn(music)
+    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audio-guidance-cause-and-effect.mp3"))).thenReturn(music)
 
     screen = new CauseAndEffectScreen
     assert(music.listener.isDefined)
@@ -62,7 +62,7 @@ class CauseAndEffectScreenTest extends UnitSpec {
     when(Gdx.audio.newMusic(any(classOf[FileHandle]))).thenReturn(new MockMusic)
 
     val music: TestMockMusic = new TestMockMusic
-    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audioGuidanceCauseAndEffect.mp3"))).thenReturn(music)
+    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audio-guidance-cause-and-effect.mp3"))).thenReturn(music)
     screen = new CauseAndEffectScreen
     screen.buildStage()
     music.listener.orNull.onCompletion(music)
@@ -80,7 +80,7 @@ class CauseAndEffectScreenTest extends UnitSpec {
     when(Gdx.audio.newMusic(any(classOf[FileHandle]))).thenReturn(new MockMusic)
 
     val music: TestMockMusic = new TestMockMusic
-    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audioGuidanceCauseAndEffect.mp3"))).thenReturn(music)
+    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audio-guidance-cause-and-effect.mp3"))).thenReturn(music)
     screen = new CauseAndEffectScreen
     screen.buildStage()
 
@@ -94,7 +94,7 @@ class CauseAndEffectScreenTest extends UnitSpec {
     when(Gdx.audio.newMusic(any(classOf[FileHandle]))).thenReturn(new MockMusic)
 
     val music: TestMockMusic = new TestMockMusic
-    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audioGuidanceCauseAndEffect.mp3"))).thenReturn(music)
+    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audio-guidance-cause-and-effect.mp3"))).thenReturn(music)
     screen = new CauseAndEffectScreen
     screen.buildStage()
 
@@ -108,7 +108,7 @@ class CauseAndEffectScreenTest extends UnitSpec {
     when(Gdx.audio.newMusic(any(classOf[FileHandle]))).thenReturn(new MockMusic)
 
     val music: TestMockMusic = new TestMockMusic
-    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audioGuidanceCauseAndEffect.mp3"))).thenReturn(music)
+    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audio-guidance-cause-and-effect.mp3"))).thenReturn(music)
     screen = new CauseAndEffectScreen
     screen.buildStage()
 
@@ -122,7 +122,7 @@ class CauseAndEffectScreenTest extends UnitSpec {
     when(Gdx.audio.newMusic(any(classOf[FileHandle]))).thenReturn(new MockMusic)
 
     val music: TestMockMusic = new TestMockMusic
-    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audioGuidanceDragAndDrop.mp3"))).thenReturn(music)
+    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audio-guidance-drag-and-drop.mp3"))).thenReturn(music)
 
     screen = new CauseAndEffectScreen
     assert(music.listener.isDefined)
@@ -135,7 +135,7 @@ class CauseAndEffectScreenTest extends UnitSpec {
     when(Gdx.audio.newMusic(any(classOf[FileHandle]))).thenReturn(new MockMusic)
 
     val music: TestMockMusic = new TestMockMusic
-    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audioGuidanceDragAndDrop.mp3"))).thenReturn(music)
+    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audio-guidance-drag-and-drop.mp3"))).thenReturn(music)
 
     screen = new CauseAndEffectScreen
     screen.buildStage()
@@ -152,7 +152,7 @@ class CauseAndEffectScreenTest extends UnitSpec {
     when(Gdx.audio.newMusic(any(classOf[FileHandle]))).thenReturn(new MockMusic)
 
     val music: TestMockMusic = new TestMockMusic
-    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audioGuidanceDragAndDrop.mp3"))).thenReturn(music)
+    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audio-guidance-drag-and-drop.mp3"))).thenReturn(music)
 
     screen = new CauseAndEffectScreen
     screen.buildStage()
@@ -166,7 +166,7 @@ class CauseAndEffectScreenTest extends UnitSpec {
     when(Gdx.audio.newMusic(any(classOf[FileHandle]))).thenReturn(new MockMusic)
 
     val music: TestMockMusic = new TestMockMusic
-    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audioGuidanceDragAndDrop.mp3"))).thenReturn(music)
+    when(Gdx.audio.newMusic(Gdx.files.internal("theme/" + GameState.getThemeName + "/audio-guidance-drag-and-drop.mp3"))).thenReturn(music)
 
     screen = new CauseAndEffectScreen
     screen.buildStage()

@@ -24,7 +24,7 @@ class MovingObjectActor extends Actor with Disposable {
   /**
     * animation object sound
     */
-  private val sound = AudioManager("movingObjectSound.mp3")
+  private val sound = AudioManager("moving-object-sound.mp3")
 
   /**
     * Number of times the actor was missed by a click or not placed on the correct position with drag and drop.

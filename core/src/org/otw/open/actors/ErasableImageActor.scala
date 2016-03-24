@@ -40,7 +40,7 @@ class ErasableImageActor extends Actor with Disposable {
   setBounds(0, 0, getWidth, getHeight)
 
   /** Sound instance for audio guidance */
-  private val audio = AudioManager("audioGuidanceEraserGame.mp3")
+  private val audio = AudioManager("audio-guidance-eraser-game.mp3")
   audio.getAudio.play()
 
   override def draw(batch: Batch, parentAlpha: Float): Unit = {
