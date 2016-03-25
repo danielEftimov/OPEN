@@ -25,7 +25,7 @@ class CauseAndEffectScreen extends AbstractGameScreen {
   private val movingObjectActor = new MovingObjectActor
 
   /** Sound instance for audio guidance in Cause And Effect Game with clicks */
-  private val audioCauseAndEffect = AudioManager("audioGuidanceCauseAndEffect.mp3")
+  private val audioCauseAndEffect = AudioManager("audio-guidance-cause-and-effect.mp3")
 
   audioCauseAndEffect.getAudio.setOnCompletionListener(new OnCompletionListener {
     override def onCompletion(music: Music): Unit = {
@@ -35,7 +35,7 @@ class CauseAndEffectScreen extends AbstractGameScreen {
   })
 
   /** Sound instance for audio guidance Cause And Effect Game with drag and drop */
-  private val audioDragAndDrop = AudioManager("audioGuidanceDragAndDrop.mp3")
+  private val audioDragAndDrop = AudioManager("audio-guidance-drag-and-drop.mp3")
 
   audioDragAndDrop.getAudio.setOnCompletionListener(new OnCompletionListener {
     override def onCompletion(music: Music): Unit = {

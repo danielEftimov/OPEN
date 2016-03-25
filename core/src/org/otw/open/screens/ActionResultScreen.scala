@@ -37,7 +37,7 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
 
   private val atlasFileName = if (isSuccessfulAction) "happy-animation.atlas" else "unhappy-animation.atlas"
 
-  private val audioGuidanceFileName = if (isSuccessfulAction) "audioGuidanceHappyAnimation.mp3" else "audioGuidanceSadAnimation.mp3"
+  private val audioGuidanceFileName = if (isSuccessfulAction) "audio-guidance-happy-animation.mp3" else "audio-guidance-sad-animation.mp3"
 
   /** Sound instance for audio guidance */
   private val audio = AudioManager(audioGuidanceFileName)
