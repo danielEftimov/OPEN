@@ -104,7 +104,9 @@ class MainMenuScreen extends AbstractGameScreen with Disposable {
   override def buildStage = {
     val table: Table = new Table
     table.setBounds(0, 0, Gdx.graphics.getWidth, Gdx.graphics.getHeight)
+    scrollPane.setFillParent(true)
     table.add(scrollPane).fill().expand()
+    table.setFillParent(true)
     this.addActor(table)
   }
 
