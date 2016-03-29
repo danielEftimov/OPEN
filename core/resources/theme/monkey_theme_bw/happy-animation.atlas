@@ -1,0 +1,182 @@
+
+happy-animation.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Monkey10
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey11
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey12
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Monkey13
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey14
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey15
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Monkey16
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey17
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey18
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Monkey19
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey2
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey20
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation5.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Monkey21
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey3
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey4
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation6.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Monkey5
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey6
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey7
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation7.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Monkey8
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey9
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+Monkey1
+  rotate: false
+  xy: 635, 1
+  size: 306, 792
+  orig: 306, 792
+  offset: 0, 0
+  index: -1

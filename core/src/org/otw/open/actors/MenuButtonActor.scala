@@ -14,8 +14,7 @@ import com.badlogic.gdx.utils.Disposable
 class MenuButtonActor(val position: Vector2, val imageFileName: String) extends Actor with Disposable {
 
   setTouchable(Touchable.enabled)
-
-  private val imageText = new Texture(Gdx.files.internal("theme/" + GameState.getThemeName + "/" + imageFileName))
+  private val imageText = new Texture(Gdx.files.internal(imageFileName))
 
   setX(position.x)
   setY(position.y)

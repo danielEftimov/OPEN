@@ -19,16 +19,54 @@
 ]>
 <Nodes version="1">
 	<Node name="root">
-		<Node name="folders"/>
+		<Node name="folders">
+			<Node name="regression color">
+				<Node name="folders"/>
+				<Node name="references">
+					<Prp name="{964285e2-b94c-454e-b760-246af080d031}" type="S" value=""/>
+					<Prp name="{c3dc21fc-9a7d-4de6-8742-5c0b145c18a2}" type="S" value=""/>
+				</Node>
+				<Prp name="caption" type="S" value="Regression Color"/>
+				<Prp name="description" type="S" value="A logical folder that is used to organize test log items."/>
+				<Prp name="moniker" type="S" value=""/>
+			</Node>
+		</Node>
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="42419.5932243403"/>
+				<Prp name="datetime" type="D" value="42429.4567551968"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{60B2328A-E8B1-46D5-84F3-544A71617FB0}"/>
+				<Prp name="key" type="S" value="{964285E2-B94C-454E-B760-246AF080D031}"/>
 				<Prp name="nameofroot" type="S" value="CauseEffect"/>
-				<Prp name="relpath" type="S" value="2_19_2016_2_14 PM_14_583\Description.tcLog"/>
+				<Prp name="relpath" type="S" value="2_29_2016_10_57 AM_43_649\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42439.6436383565"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{C3DC21FC-9A7D-4DE6-8742-5C0B145C18A2}"/>
+				<Prp name="nameofroot" type="S" value="CauseEffect"/>
+				<Prp name="relpath" type="S" value="3_10_2016_3_26 PM_50_354\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42443.5812386806"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{38158979-A80C-4360-ADFC-DE537F028695}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffectNoDelay_06_Drag_and_Drop\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_14_2016_1_56 PM_59_22\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="42444.3961854167"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{4036E6AF-8904-4B2E-9DE2-410A60A2BBA3}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CauseEffect_03_OneClick\causeEffect_OneClick]"/>
+				<Prp name="relpath" type="S" value="3_15_2016_9_30 AM_30_419\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
 			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>

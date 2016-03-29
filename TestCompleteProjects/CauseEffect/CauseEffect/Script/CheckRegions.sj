@@ -20,9 +20,26 @@ Regions.AnimationCar.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
 }
 
 function Region_NextLevel(){
-Regions.NextLevel.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 7, 735, 1446, 210, false), false, false, 0, 0, "NextLevel_Mask");
+Regions.NEXTLEVEL.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 736, 767, 174, 130, false));
 }
 
 function Region_RestartSad(){
 Regions.RestartSad.Check(Aliases.javaw.wndLWJGL2, false, false, 46024);
+}
+
+function Region_ThemeSelect(){
+Regions.SelectCar.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 107, 134, 201, 206, false));
+}
+
+function Region_nextTheme(){
+Regions.nextTheme.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 969, 766, 97, 158, false));
+}
+
+function Region_AnimationMonkey(){
+
+Regions.AnimationMonkey.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 1075, 279, 357, 383, false));
+}
+
+function Region_Bananas(){
+Regions.RegionBananas.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 6, 25, 1452, 919, false));
 }

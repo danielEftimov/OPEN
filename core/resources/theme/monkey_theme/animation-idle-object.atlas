@@ -1,0 +1,71 @@
+
+animation-object.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+eyesCenter
+  rotate: false
+  xy: 1, 1
+  size: 307, 792
+  orig: 307, 792
+  offset: 0, 0
+  index: -1
+eyesCenter1
+  rotate: false
+  xy: 310, 1
+  size: 307, 792
+  orig: 307, 792
+  offset: 0, 0
+  index: -1
+eyesLeft
+  rotate: false
+  xy: 619, 1
+  size: 307, 792
+  orig: 307, 792
+  offset: 0, 0
+  index: -1
+
+animation-object2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+eyesLeft1
+  rotate: false
+  xy: 1, 1
+  size: 307, 792
+  orig: 307, 792
+  offset: 0, 0
+  index: -1
+eyesLeft2
+  rotate: false
+  xy: 310, 1
+  size: 307, 792
+  orig: 307, 792
+  offset: 0, 0
+  index: -1
+eyesRight
+  rotate: false
+  xy: 619, 1
+  size: 307, 792
+  orig: 307, 792
+  offset: 0, 0
+  index: -1
+
+animation-object3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+eyesRight1
+  rotate: false
+  xy: 1, 1
+  size: 307, 792
+  orig: 307, 792
+  offset: 0, 0
+  index: -1
+eyesRight2
+  rotate: false
+  xy: 310, 1
+  size: 307, 792
+  orig: 307, 792
+  offset: 0, 0
+  index: -1

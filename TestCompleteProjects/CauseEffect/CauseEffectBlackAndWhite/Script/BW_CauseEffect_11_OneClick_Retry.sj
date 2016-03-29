@@ -1,10 +1,12 @@
 ﻿//USEUNIT BW_CauseEffect_01_ContinuosMovement
-//USEUNIT BW_CauseEffect_06_Navigation_NextLevel
-//USEUNIT BW_CauseEffect_09_Navigation_Restart
+//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CauseEffect_04_ClicksOutofBounds
+//USEUNIT BW_CauseEffect_03_OneClick
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -21,8 +23,8 @@ try{
   multipleClicksOutOfBounds();     
   Log.PopLogFolder(); 
  
- restart()
- Log.AppendFolder("This test is for Retry  one click");  
+  restart()
+  Log.AppendFolder("This test is for Retry  one click");  
   oneClickCar();     
   Log.PopLogFolder(); 
  }

@@ -1,11 +1,11 @@
 ﻿//USEUNIT BW_CauseEffect_01_ContinuosMovement
-//USEUNIT BW_CauseEffect_06_Navigation_NextLevel
-//USEUNIT BW_CheckRegions
+//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CheckRegions
 function CauseEffect_ClicksOutOfBounds()
 {
  try{
     
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -42,11 +42,11 @@ function CauseEffect_ClicksOutOfBounds()
 function multipleClicksOutOfBounds()
 {
   //Check if the proper layer is getting displayed
-  BW_CheckRegions.Region_AnimationCar();
+  Region_AnimationCar();
 
   //Specifies the coordinates of the first click
-  var coorX = 658;
-  var coorY = 658;
+  var coorX = 750;
+  var coorY = 750;
  
   // Specifies a delay in milliseconds
   sDelay = 1000 ;
@@ -64,8 +64,9 @@ function multipleClicksOutOfBounds()
   LLPlayer.MouseUp(MK_LBUTTON, coorX+400, coorY, sDelay);
   
   aqUtils.Delay(2000); 
+  
   //Check if the unhappy animation has been shown properly
-  BW_CheckRegions.Region_SadAnimation();
+  Region_SadAnimation();
 }
 
 

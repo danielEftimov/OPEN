@@ -1,7 +1,9 @@
 package org.otw.open.controllers
 
-import org.otw.open.dto.Point
+import com.badlogic.gdx.math.Vector2
+import org.otw.open.dto.{Theme, Point}
 import org.otw.open.testconfig.UnitSpec
+import org.otw.open.util.UserSettings
 import org.scalatest.BeforeAndAfterEach
 
 /**
@@ -11,6 +13,7 @@ class GameStateTest extends UnitSpec with BeforeAndAfterEach {
   override def beforeEach(): Unit = {
     GameState.setThemName("car_theme")
   }
+
   test("when getLevelStandPoints is invoked, for level 1 of car theme, it should return empty list") {
     GameState.setLevel(1)
     val standPoints: List[Point] = GameState.getLevelStandPoints
@@ -83,4 +86,50 @@ class GameStateTest extends UnitSpec with BeforeAndAfterEach {
     assert(GameState.getLevel == 1)
   }
 
+  test("when theme is Black and White, filter themes should only return black and white themes") {
+    UserSettings.setUserSettings("true", "s", "green")
+    val standPointsMap = Map("x" -> List.empty)
+    val theme: Theme = new Theme(new Point(0, 0), new Point(0, 0), standPointsMap)
+    val testThemes: Map[String, Theme] = Map("car_bw" -> theme)
+
+    val themes = GameState.filterThemes(testThemes)
+    assert(themes.size == 1)
+  }
+
+  test("when theme is not Black and White, filter themes should only return not-blackAndWhite themes") {
+    UserSettings.setUserSettings("false", "s", "green")
+    val standPointsMap = Map("x" -> List.empty)
+    val theme: Theme = new Theme(new Point(0, 0), new Point(0, 0), standPointsMap)
+    val testThemes: Map[String, Theme] = Map("car_bw" -> theme)
+
+    val themes = GameState.filterThemes(testThemes)
+    assert(themes.isEmpty)
+  }
+
+  test("when theme is car theme the returned result animation vector should be on coordinates 464, 194") {
+    GameState.setThemName("car_theme")
+    val returnedPoint: Vector2 = GameState.getResultAnimationStandPoint
+    assert(returnedPoint.x.toInt == 464 && returnedPoint.y.toInt == 194)
+  }
+
+  test("when theme is monkey theme the returned result animation vector should be on coordinates 563, 49") {
+    GameState.setThemName("monkey_theme")
+    val returnedPoint: Vector2 = GameState.getResultAnimationStandPoint
+    assert(returnedPoint.x.toInt == 563 && returnedPoint.y.toInt == 49)
+  }
+
+  test("when setNextTheme is invoked and current theme is car_theme, new theme should be monkey_theme, but level should be the same") {
+    GameState.setLevel(1)
+    GameState.setNextTheme
+    assert(GameState.getThemeName == "monkey_theme")
+    assert(GameState.getLevel == 1)
+  }
+
+  test("when setNextTheme is invoked and current theme is monkey_theme, new theme should be car_theme, but level should be the same") {
+    GameState.setThemName("monkey_theme")
+    GameState.setLevel(3)
+    GameState.setNextTheme
+    assert(GameState.getThemeName == "car_theme")
+    assert(GameState.getLevel == 3)
+  }
 }

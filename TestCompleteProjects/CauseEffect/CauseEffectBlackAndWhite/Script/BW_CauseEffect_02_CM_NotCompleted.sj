@@ -2,6 +2,9 @@
 function CauseEffect_NotCompleted ()
 {
  try{
+ 
+ 
+  aqUtils.Delay(1000);
     
   //Launch the tested application.
   launchApp();

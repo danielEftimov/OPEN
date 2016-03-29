@@ -24,7 +24,16 @@
 				<Node name="item data">
 					<Prp name="relpath" type="S" value="Test1.tcKDTest"/>
 				</Node>
-				<Prp name="key" type="S" value="{C84C3F10-5F47-49D6-BB22-97D0EF3CD234}"/>
+				<Prp name="key" type="S" value="{AE599DEE-B313-4616-BE38-571FDDFFEDF2}"/>
+				<Prp name="pluginname" type="S" value="Keyword Testing"/>
+				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
+				<Prp name="typename" type="S" value="Keyword Test"/>
+			</Node>
+			<Node name="test9">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Test9.tcKDTest"/>
+				</Node>
+				<Prp name="key" type="S" value="{09EAE875-8233-4FC1-A520-2BFFAAEC434D}"/>
 				<Prp name="pluginname" type="S" value="Keyword Testing"/>
 				<Prp name="type" type="S" value="{B9D9273E-7266-43E0-BF02-97F168593604}"/>
 				<Prp name="typename" type="S" value="Keyword Test"/>

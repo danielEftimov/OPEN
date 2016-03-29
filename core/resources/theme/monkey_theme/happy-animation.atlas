@@ -1,0 +1,182 @@
+
+happy-animation.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+001
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+002
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+003
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+004
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+005
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+006
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+007
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+008
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+009
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+010
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+011
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+012
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation5.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+013
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+014
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+015
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation6.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+016
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+017
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+018
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+
+happy-animation7.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+019
+  rotate: false
+  xy: 1, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+020
+  rotate: false
+  xy: 318, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1
+021
+  rotate: false
+  xy: 635, 1
+  size: 315, 792
+  orig: 315, 792
+  offset: 0, 0
+  index: -1

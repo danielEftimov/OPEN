@@ -1,17 +1,19 @@
 ﻿//USEUNIT BW_CauseEffect_01_ContinuosMovement
 //USEUNIT BW_CauseEffect_03_OneClick
-//USEUNIT BW_CauseEffect_06_Navigation_NextLevel
+//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CauseEffect_04_ClicksOutofBounds
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
   //Removing leaves from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
- //Navigation towards next level 
+  //Navigation towards next level 
   navigationNextLevel();
   Log.PopLogFolder();  
   

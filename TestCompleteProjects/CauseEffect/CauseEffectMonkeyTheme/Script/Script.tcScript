@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child list">
+			<Node name="causeeffectmonkeytheme_01_continuosmovement">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_01_ContinuosMovement.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{555AFBAD-4293-47B5-8D14-805AEBD41BC7}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_02_cm_notcompleted">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_02_CM_NotCompleted.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{F9BBF562-F59F-4DAE-B552-80E2B232E630}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_03_oneclick">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_03_OneClick.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{A4F609B3-E949-49EE-921B-FB568842C1DD}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_04_clicksoutofbounds">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_04_ClicksOutofBounds.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{4AB99046-42D0-4D74-9C95-C817640CF257}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_05_multipleclicks">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_05_MultipleClicks.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{B1D0E9B8-9994-43ED-B52A-C52487C724BF}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_06_continuosmovement_percentage">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_06_ContinuosMovement_Percentage.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{CD765377-91CA-4F1E-B44E-F5E990076A8E}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_07_oneclick_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_07_OneClick_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{8688229C-3649-4D87-841D-242EB88F46F2}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_08_multipleclicks_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_08_MultipleClicks_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{64960C37-5AD5-4F98-8DEA-6469C309308D}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_09_continuosmovement_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_09_ContinuosMovement_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{D756E787-BB46-49D2-816F-B28A9D090BD4}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_10_drag_and_drop">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_10_Drag_and_Drop.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{3E1865E6-C173-4D90-B486-24511800AACA}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_11_drag_and_drop_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_11_Drag_and_Drop_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{5527DD8B-1ACE-4023-8685-F0C2D9110611}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_12_draganddropfailed">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_12_DragAndDropFailed.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{724D1CA3-EE2B-48B2-AA4C-8F25E9F05E5F}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_13_failedretrysuccessnextlevel">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_13_FailedRetrySuccessNextLevel.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{B143F4CF-0791-47BF-8E78-7EDB2C3FF17E}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_14_multipleclicksofbounds">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_14_MultipleClicksOfBounds.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{BAED1FCE-08E1-47BB-9DC8-4DDC59A93F3B}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_15_gamemenu">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_15_GameMenu.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{AB0954C2-A7BC-4833-88D6-469E5C1AFABF}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeytheme_17_alllevels">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyTheme_17_AllLevels.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{07F572B2-62E5-48EB-83B3-E8FE6C681153}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeythemenodelay_01_contionuosmovement">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyThemeNoDelay_01_ContionuosMovement.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{6A1E2EEE-23F5-4BE9-BF24-50B30106932B}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeythemenodelay_02_navigation_nextlevel">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyThemeNoDelay_02_Navigation_NextLevel.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{E79CDD4F-8C5B-45AD-97C2-D9602B0289F1}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeythemenodelay_03_oneclick">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyThemeNoDelay_03_OneClick.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{E94E1A5B-5093-4CBD-8641-F13A3A44A4A1}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeythemenodelay_05_multipleclicks">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyThemeNoDelay_05_MultipleClicks.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{9DF64D78-CF24-4769-8925-EB07FF120AE1}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmonkeythemenodelay_06_drag_and_drop">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMonkeyThemeNoDelay_06_Drag_and_Drop.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{AB16F283-62EE-4C93-85D8-FBFC88295791}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmt_18_continuousmovementnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMT_18_ContinuousMovementNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{32B05E83-CA63-479B-9A97-E49A566FC43C}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmt_19_oneclicknexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMT_19_OneClickNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{F9804636-9A03-46C0-83F1-9DF7CFFB25BE}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmt_20_multipleclicksnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMT_20_MultipleClicksNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{A1AA0BAB-2B97-4AA7-B977-0E8B9D223264}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmt_21_draganddropnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMT_21_DragAndDropNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{E6EBF913-5F90-47E0-9CA9-72BDE48C7316}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffectmtnodelay_04_clicksonthecarbeforeaudioisfinished">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffectMTNoDelay_04_ClicksOnTheCarBeforeAudioIsFinished.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{F63DCB1A-114E-4F9E-AACE-4ED1761E2402}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="mt_checkregions">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="MT_CheckRegions.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{02FD07D7-7D24-433C-B215-320959B30E45}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="onlogerror">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="OnLogError.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{2795E1B3-D9D3-4B39-A409-1FDB5C3B8356}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+		</Node>
+		<Node name="folders">
+			<Node name="nodelay">
+				<Node name="folders"/>
+				<Node name="references">
+					<Prp name="{6a1e2eee-23f5-4be9-bf24-50b30106932b}" type="S" value=""/>
+					<Prp name="{9df64d78-cf24-4769-8925-eb07ff120ae1}" type="S" value=""/>
+					<Prp name="{ab16f283-62ee-4c93-85d8-fbfc88295791}" type="S" value=""/>
+					<Prp name="{e79cdd4f-8c5b-45ad-97c2-d9602b0289f1}" type="S" value=""/>
+					<Prp name="{e94e1a5b-5093-4cbd-8641-f13a3a44a4a1}" type="S" value=""/>
+					<Prp name="{f63dcb1a-114e-4f9e-aace-4ed1761e2402}" type="S" value=""/>
+				</Node>
+				<Prp name="caption" type="S" value="NoDelay"/>
+				<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+				<Prp name="moniker" type="S" value=""/>
+			</Node>
+		</Node>
+		<Node name="settings"/>
+		<Prp name="signature" type="S" value="{9252F941-DB23-4FCA-AA50-858B33BB4A19}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

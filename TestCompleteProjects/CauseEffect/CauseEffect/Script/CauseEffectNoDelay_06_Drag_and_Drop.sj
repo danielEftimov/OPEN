@@ -1,12 +1,13 @@
 ﻿//USEUNIT CauseEffect_01_ContinuosMovement
 //USEUNIT CauseEffect_03_OneClick
 //USEUNIT CauseEffect_05_MultipleClicks
-//USEUNIT CauseEffectNoDelay_02_Navigation_NextLevel
-//USEUNIT CauseEffect_06_Navigation_NextLevel
+//USEUNIT CheckRegions
 
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -14,7 +15,7 @@ try{
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
  //Navigation towards next level 
-  CauseEffect_06_Navigation_NextLevel.navigationNextLevel();
+  CauseEffect_19_GameMenu.navigationNextLevel();
   Log.PopLogFolder();  
   
   //Click the object on the screen so that it reaches the target in one step
@@ -23,7 +24,7 @@ try{
    
   
   //Navigation towards next level 
-  CauseEffect_06_Navigation_NextLevel.navigationNextLevel();
+  CauseEffect_19_GameMenu.navigationNextLevel();
   Log.PopLogFolder(); 
   
   //Click the object on the screen so that it moves forward 1/3 towards the target and reach the target in 3 steps

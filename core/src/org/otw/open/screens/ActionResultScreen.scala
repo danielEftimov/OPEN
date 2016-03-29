@@ -10,7 +10,7 @@ import org.otw.open.util.AudioManager
 /**
   * Created by eilievska on 2/19/2016.
   */
-class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameScreen with Disposable {
+class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameScreen {
 
   /**
     * Screen background.
@@ -37,19 +37,21 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
 
   private val atlasFileName = if (isSuccessfulAction) "happy-animation.atlas" else "unhappy-animation.atlas"
 
-  private val audioGuidanceFileName = if (isSuccessfulAction) "audioGuidanceHappyAnimation.mp3" else "audioGuidanceSadAnimation.mp3"
+  private val audioGuidanceFileName = if (isSuccessfulAction) "audio-guidance-happy-animation.mp3" else "audio-guidance-sad-animation.mp3"
 
   /** Sound instance for audio guidance */
   private val audio = AudioManager(audioGuidanceFileName)
   audio.getAudio.play
 
-  private val staticAnimationActor = new StaticAnimationActor(new Vector2(464, 194), atlasFileName)
+  private val position: Vector2 = GameState.getResultAnimationStandPoint
+  private val staticAnimationActor = new StaticAnimationActor(position, atlasFileName)
 
   /**
     * Methods to be overridden by all classes.
     */
   override def buildStage(): Unit = {
     addActor(backgroundActor)
+    addActor(staticAnimationActor)
     if (GameState.getLevel == 4)
       addActor(disabledNextLevelButton)
     else
@@ -57,7 +59,6 @@ class ActionResultScreen(val isSuccessfulAction: Boolean) extends AbstractGameSc
     addActor(retryLevelButton)
     addActor(toMainMenuButton)
     addActor(toOtherThemeButton)
-    addActor(staticAnimationActor)
   }
 
   override def dispose(): Unit = {

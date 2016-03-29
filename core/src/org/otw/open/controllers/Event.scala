@@ -40,3 +40,8 @@ case object OtherTheme extends Event
   * Continue to game main menu.
   */
 case object ToMainMenu extends Event
+
+/**
+  * Continue to game main menu.
+  */
+case object ToTheme extends Event

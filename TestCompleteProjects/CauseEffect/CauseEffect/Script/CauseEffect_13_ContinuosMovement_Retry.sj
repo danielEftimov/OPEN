@@ -1,19 +1,25 @@
-﻿//USEUNIT CauseEffect_09_Navigation_Restart
+﻿//USEUNIT CauseEffect_19_GameMenu
 //USEUNIT CheckRegions
+//USEUNIT CauseEffect_01_ContinuosMovement
+
 function causeEffect()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
+  
   
   //Removing leaves from the top layer of the scene by continuous movement of the mouse
   Log.AppendFolder("This test is for ContinuousMovement of the mouse");
   eraser ();
   Log.PopLogFolder();    
   
- restart()
- Log.AppendFolder("This test is for Retry  of eraser level");  
-  eraser ();      
+  restart_passed();
+  Log.AppendFolder("This test is for Retry  of eraser level");  
+  
+  Region_Leaves();      
   Log.PopLogFolder();
   }
 catch(e)
@@ -29,31 +35,5 @@ finally
  }
 }
 
-function launchApp()
-{
-  //TestedApps.desktop.Params.SimpleParams.FilePath="\\mkskfs01\Projects\OpenTheWindows\game for testing";
-  //TestedApps.desktop.Params.SimpleParams.FileName="desktop.exe"
-  //TestedApps.desktop.Params.SimpleParams.Activate();
-  TestedApps.desktop.Run();
-  causeEffectObject = Aliases.javaw.wndLWJGL2;
-}
-
-function closeApp()
-{
- //Closes the game window.
-  causeEffectObject.Close();
-  Log.Message("The 'Cause and Effect' game finshed")
-}
 
 
-function eraser ()
-{
-  //Check if the first layer (top layer - leaves) is getting displayed
-  CheckRegions.Region_Leaves();
-
-  //perform the erase action (continuos movement of the mouse over the scene) 
-  LLCollection.ContinuousMovement.Execute();
-  
-  //Check if the second layer (bottom layer - car/street) has been shown properly
-  CheckRegions.Region_HappyAnimation();
-}

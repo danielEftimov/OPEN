@@ -1,11 +1,13 @@
 ﻿//USEUNIT BW_CauseEffect_01_ContinuosMovement
 //USEUNIT BW_CauseEffect_03_OneClick
-//USEUNIT BW_CauseEffect_06_Navigation_NextLevel
+//USEUNIT BW_CauseEffect_19_GameMenu
 //USEUNIT BW_CauseEffect_05_MultipleClicks
 //USEUNIT BW_CheckRegions
 function causeEffect_OneClick()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -34,7 +36,7 @@ try{
   navigationNextLevel();
   Log.PopLogFolder();
  
- Log.AppendFolder("This test is for 3 unsussessful ties for drag and drop");  
+  Log.AppendFolder("This test is for 3 unsussessful ties for drag and drop");  
   DragAndDropFailed();
   aqUtils.Delay(1500);  
   Log.PopLogFolder();
@@ -55,7 +57,10 @@ function DragAndDropFailed()
 {
  
   BW_LLCollection.DragAndDropFailed.Execute();
-  aqUtils.Delay(2000); 
+  aqUtils.Delay(500); 
+  BW_LLCollection.DragAndDropFailed.Execute();
+  
   //Check if the unhappy animation has been shown properly
+  aqUtils.Delay(2000);
   BW_CheckRegions.Region_SadAnimation();
 }

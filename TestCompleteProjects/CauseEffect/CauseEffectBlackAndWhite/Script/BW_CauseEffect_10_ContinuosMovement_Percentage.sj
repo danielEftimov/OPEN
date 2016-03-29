@@ -3,6 +3,8 @@
 function causeEffect()
 {
 try{
+
+  aqUtils.Delay(1000);
   //Launch the tested application.
   launchApp();
   
@@ -27,11 +29,11 @@ finally
 function eraser ()
 {
   //Check if the first layer (top layer - leaves) is getting displayed
-  Regions.firstlayer.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 1, 29, 1445, 906, false));
+  Region_Leaves();
   
   //perform the erase action (continuos movement of the mouse over the scene) 
   BW_LLCollection.ContinuousMovement.Execute();
   
   //Check if the happy animation is properly showed 
- Regions.BW_HappyAnimation.Check(Regions.CreateRegionInfo(Aliases.javaw.wndLWJGL2, 571, 320, 338, 105, false),false,false,46024);
+ Region_HappyAnimation();
 }

@@ -69,7 +69,7 @@ class MovingObjectActorTest extends UnitSpec with BeforeAndAfterEach {
       case _ => None
     }
     assert(screen.isDefined)
-    assert(screen.get.isSuccessfulAction == false)
+    assert(screen.orNull.isSuccessfulAction == false)
   }
 
   test("when draw method is invoked, it should draw a texture of the animator on screen") {
@@ -94,7 +94,7 @@ class MovingObjectActorTest extends UnitSpec with BeforeAndAfterEach {
     }
     verify(batch).draw(any(classOf[TextureRegion]), Matchers.eq(actor.getX), Matchers.eq(actor.getY))
     assert(screen.isDefined)
-    assert(screen.get.isSuccessfulAction == true)
+    assert(screen.orNull.isSuccessfulAction == true)
   }
 
   def getGameScreen(screen: Screen) = screen match {

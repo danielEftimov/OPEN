@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child list">
+			<Node name="bw_causeeffectmonkeytheme_01_continuosmovement">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_01_ContinuosMovement.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{343E291D-D72F-45AC-A578-915D98D6BC7D}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_02_cm_notcompleted">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_02_CM_NotCompleted.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{2921058C-AFC1-4C46-9D35-CEE810DBEA00}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_03_oneclick">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_03_OneClick.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{AB04BFF0-188E-43C6-BFBE-B67A64E0CED8}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_04_clicksoutofbounds">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_04_ClicksOutofBounds.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{48C75D26-88F1-41D4-B1AC-259CB2899E04}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_05_multipleclicks">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_05_MultipleClicks.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{3826C6D1-E994-4047-B795-50E1A91D7995}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_06_continuosmovement_percentage">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_06_ContinuosMovement_Percentage.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{B935AC9D-1232-4272-9A1A-E54BBD6B418B}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_07_oneclick_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_07_OneClick_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{2D9367DB-DC29-4065-85B6-B2E9985396D1}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_08_multipleclicks_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_08_MultipleClicks_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{779CC0D1-0B79-4F8E-A2FA-9A9E2D0E821F}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_09_continuosmovement_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_09_ContinuosMovement_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{D28989A5-EC8B-4284-B8A2-21EE1177B65A}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_10_drag_and_drop">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_10_Drag_and_Drop.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{0CDE4E7C-0EF9-4E84-B5FB-8D05AF23258A}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_11_drag_and_drop_retry">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_11_Drag_and_Drop_Retry.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{2261487C-CB7C-4157-B934-0C76D1EC5C0E}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_12_draganddropfailed">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_12_DragAndDropFailed.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{5B2AA445-EDBD-48EA-9492-F411D6C2E022}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_13_failedretrysuccessnextlevel">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_13_FailedRetrySuccessNextLevel.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{1A403F76-7149-4BBE-8593-7FF5D862570A}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_14_multipleclicksofbounds">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_14_MultipleClicksOfBounds.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{A8156942-E861-4886-8CAB-CE36D48ACD9C}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_15_gamemenu">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_15_GameMenu.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{B36D77E8-80D1-49C8-A738-35FC4D3D1C68}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeytheme_17_alllevels">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyTheme_17_AllLevels.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{6E0949BA-F319-4A11-BE54-976062CDCFAA}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeythemenodelay_01_contionuosmovement">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyThemeNoDelay_01_ContionuosMovement.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{18ED89D4-A161-4C5E-941E-C8D6C239CC01}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeythemenodelay_02_navigation_nextlevel">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyThemeNoDelay_02_Navigation_NextLevel.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{FA597F60-6F90-466A-927A-15FAAC2006EC}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeythemenodelay_03_oneclick">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyThemeNoDelay_03_OneClick.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{546A52C2-153E-4387-BB9F-53D3F1DDCF69}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeythemenodelay_05_multipleclicks">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyThemeNoDelay_05_MultipleClicks.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{4EDADE60-7201-4B6F-86A2-E3DC51853AEA}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmonkeythemenodelay_06_drag_and_drop">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMonkeyThemeNoDelay_06_Drag_and_Drop.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{69230347-FA85-4C6E-96D5-6395FEBE49F4}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmt_18_continuosmovementnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMT_18_ContinuosMovementNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{A272C1CC-2DBF-4E14-83DF-47DD09618723}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmt_19_oneclicknexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMT_19_OneClickNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{BB24F23C-72D0-491C-AB96-416D214EAC43}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmt_20_multipleclicksnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMT_20_MultipleClicksNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{A6DDBE4F-B99D-4134-BB50-9D6FF66AA9B6}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmt_21_drag_and_dropnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMT_21_Drag_and_DropNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{2D35FCBD-20AD-4AC9-8EAD-1E4489DD740A}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="bw_causeeffectmtnodelay_04_clickscarbeforeaudioisfinished">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="BW_CauseEffectMTNoDelay_04_ClicksCarBeforeAudioIsFinished.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{622C0DBD-715B-481B-A690-BE155C0169D7}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="mt_bw_checkregions">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="MT_BW_CheckRegions.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{3F048B8A-FBB0-4BA6-8E2F-13D9294EFB33}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="onlogerror">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="OnLogError.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{565FE3DA-E6BF-43E8-B9F5-FF6D8012F315}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+		</Node>
+		<Node name="folders">
+			<Node name="mt_nodelay">
+				<Node name="folders"/>
+				<Node name="references">
+					<Prp name="{18ed89d4-a161-4c5e-941e-c8d6c239cc01}" type="S" value=""/>
+					<Prp name="{4edade60-7201-4b6f-86a2-e3dc51853aea}" type="S" value=""/>
+					<Prp name="{546a52c2-153e-4387-bb9f-53d3f1ddcf69}" type="S" value=""/>
+					<Prp name="{622c0dbd-715b-481b-a690-be155c0169d7}" type="S" value=""/>
+					<Prp name="{69230347-fa85-4c6e-96d5-6395febe49f4}" type="S" value=""/>
+					<Prp name="{fa597f60-6f90-466a-927a-15faac2006ec}" type="S" value=""/>
+				</Node>
+				<Prp name="caption" type="S" value="MT_NoDelay"/>
+				<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+				<Prp name="moniker" type="S" value=""/>
+			</Node>
+		</Node>
+		<Node name="settings"/>
+		<Prp name="signature" type="S" value="{9252F941-DB23-4FCA-AA50-858B33BB4A19}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

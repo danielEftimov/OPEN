@@ -65,42 +65,6 @@
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
 			</Node>
-			<Node name="causeeffect_06_navigation_nextlevel">
-				<Node name="item data">
-					<Prp name="relpath" type="S" value="CauseEffect_06_Navigation_NextLevel.sj"/>
-				</Node>
-				<Prp name="key" type="S" value="{8B94948B-C4B5-4BCC-B38C-6A2E38292CA7}"/>
-				<Prp name="pluginname" type="S" value="Script"/>
-				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
-				<Prp name="typename" type="S" value="Script Unit"/>
-			</Node>
-			<Node name="causeeffect_07_navigation_nexttheme">
-				<Node name="item data">
-					<Prp name="relpath" type="S" value="CauseEffect_07_Navigation_NextTheme.sj"/>
-				</Node>
-				<Prp name="key" type="S" value="{E617A060-BEE4-4FC0-9A73-FAC28F0487FF}"/>
-				<Prp name="pluginname" type="S" value="Script"/>
-				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
-				<Prp name="typename" type="S" value="Script Unit"/>
-			</Node>
-			<Node name="causeeffect_08_navigation_gamemenu">
-				<Node name="item data">
-					<Prp name="relpath" type="S" value="CauseEffect_08_Navigation_GameMenu.sj"/>
-				</Node>
-				<Prp name="key" type="S" value="{02482C6A-5A94-4745-8F71-972781DE6A1A}"/>
-				<Prp name="pluginname" type="S" value="Script"/>
-				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
-				<Prp name="typename" type="S" value="Script Unit"/>
-			</Node>
-			<Node name="causeeffect_09_navigation_restart">
-				<Node name="item data">
-					<Prp name="relpath" type="S" value="CauseEffect_09_Navigation_Restart.sj"/>
-				</Node>
-				<Prp name="key" type="S" value="{C0E66E3D-1754-4D83-9056-CB361A67D2C8}"/>
-				<Prp name="pluginname" type="S" value="Script"/>
-				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
-				<Prp name="typename" type="S" value="Script Unit"/>
-			</Node>
 			<Node name="causeeffect_10_continuosmovement_percentage">
 				<Node name="item data">
 					<Prp name="relpath" type="S" value="CauseEffect_10_ContinuosMovement_Percentage.sj"/>
@@ -178,6 +142,60 @@
 					<Prp name="relpath" type="S" value="CauseEffect_18_MultipleClicksOfBounds.sj"/>
 				</Node>
 				<Prp name="key" type="S" value="{96C12F62-5406-4F03-8468-635674793FDE}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffect_19_gamemenu">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffect_19_GameMenu.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{E814D657-56BF-4E6D-8481-5159972B65A2}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffect_21_alllevels">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffect_21_AllLevels.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{A3C4E380-28F6-4A9C-AB16-80E5C93E9157}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffect_22_continuousmovementnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffect_22_ContinuousMovementNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{F0F0D316-5559-4CB1-9AB6-082718F1C1AF}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffect_23_oneclicknexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffect_23_OneClickNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{1D4ED51D-23DD-47CB-AFA3-B664DB498CBF}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffect_24_multipleclicksnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffect_24_MultipleClicksNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{BFC693E5-68BC-48E9-9E95-0AA89EB44AB9}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="causeeffect_25_draganddropnexttheme">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="CauseEffect_25_DragAndDropNextTheme.sj"/>
+				</Node>
+				<Prp name="key" type="S" value="{8179BDD6-D9D1-4562-89B5-D6D59568CDFD}"/>
 				<Prp name="pluginname" type="S" value="Script"/>
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
